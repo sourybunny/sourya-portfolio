@@ -34,15 +34,15 @@
   };
 </script>
 
-<style>
+<style lang="scss">
   .code {
     border-radius: 1rem;
-  }
-  .card-content {
-    margin-bottom: 0.8rem;
-    height: 5rem;
-  }
-  .card-image img {
-    border-radius: 1rem !important;
+    .card-content {
+      margin-bottom: 0.8rem;
+      height: 5rem;
+    }
+    .card-image img {
+      border-radius: 1rem !important;
+    }
   }
 </style>

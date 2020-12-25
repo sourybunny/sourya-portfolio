@@ -74,8 +74,7 @@
 
           <!-- <h5>&lt; web developer /&gt;</h5> -->
           <p class="grey lighten-4">Grow With Google Scholar, 2018 and Udacity Certified Mobile Web Specialist.</p>
-          <p>
-          </p>
+          <p></p>
           <div class="main-buttons">
             <a class="waves-effect waves-light  btn-large  z-depth-4" href="#portfolio">Portfolio</a>
             <a
@@ -98,8 +97,13 @@
         <div :class="{ 'active-tab': active == 4 }" class="card z-depth-0 center-align tab-title" @click="active = 4">Art</div>
       </div>
       <div class="container">
-        <div class="projects" v-if="active == 2 || active == 3">
+        <div class="projects" v-if="active == 3">
           <project v-for="project in getTab()" :key="project.id" :item="project" />
+        </div>
+        <div class="">
+          <div class="major" v-if="active == 2">
+            <major  v-for="project in getTab()" :key="project.id" :item="project" />
+          </div>
         </div>
         <div class="projects" v-if="active == 4">
           <art v-for="project in getTab()" :key="project.id" :item="project" />
@@ -112,7 +116,7 @@
       <h2 class="center-align">skills</h2>
       <div class="row left-align">
         <!-- <div class="col s12"></div> -->
-        <div class="col s3 ">
+        <div class="col s12 m3 ">
           <div class="left-align">
             <span>Programming</span>
             <div class="skill-bar"></div>
@@ -124,7 +128,7 @@
             <p class="grey-text text-darken-2">Unity + Vuforia Engine</p>
           </div>
         </div>
-        <div class="col s3 ">
+        <div class="col s12 m3 ">
           <div class="left-align">
             <span>UX Research</span>
             <div class="skill-bar"></div>
@@ -136,7 +140,7 @@
             <p class="grey-text text-darken-2">Heuristic Evaluation</p>
           </div>
         </div>
-        <div class="col s2 ">
+        <div class="col s12 m2 ">
           <div class="left-align">
             <span>Visual Toolkit</span>
             <div class="skill-bar"></div>
@@ -147,7 +151,7 @@
           </div>
         </div>
 
-        <div class="col s3">
+        <div class="col s12 m3">
           <div class="left-align">
             <img :src="require('@/assets/media/skills.png')" alt="" />
           </div>
@@ -179,8 +183,9 @@
 <script>
   import Project from "./project";
   import Art from "./art";
+  import Major from "./major";
   export default {
-    name: "HelloWorld",
+    name: "Home",
     props: {
       msg: String,
     },
@@ -256,12 +261,25 @@
           { title: "", image: "https://i.imgur.com/j3Re5kz.jpg", id: 5 },
           { title: "", image: "https://i.imgur.com/lKRhimz.jpg", id: 6 },
         ],
+        major: [
+          {
+            title: "Covid-Viz",
+            image: "https://i.imgur.com/OZQvghB.png?1",
+            desc: "Covid19 map dashboard visualization of Global and India cases. Utilizes data form RapidApiCovid19 and NovelCovidApi.",
+            id: 1,
+            tags: ['Javascript', 'VueJs', 'MapboxGl Js'],
+            live: "https://covidviz.netlify.app/",
+            link: "https://github.com/sourybunny/covid-19-Geojson",
+          },
+          
+        ],
       };
     },
 
     components: {
       Project,
       Art,
+      Major,
     },
     methods: {
       getTab() {
@@ -333,6 +351,32 @@
   .ig {
     margin: 0 0.5rem;
   }
+  .major {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 500px) {
+  .major {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 18rem;
+    padding-top: 2rem;
+    .card {
+      width: 10rem;
+      padding: 0.5rem 0;
+      margin: 0.5rem;
+    }
+    .tab-title {
+      font-size: 1rem;
+    }
+  }
+  
+}
   /* a {
     color: #42b983;
   } */

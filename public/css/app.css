@@ -23,7 +23,15 @@ html,body{
   top:100px;
   width:65vh;
 }
-
+.ml-5 {
+  margin-left: 1rem;
+}
+.mb-5 {
+  margin-bottom: 0.5rem;
+}
+.mt-5 {
+  margin-top: 1rem;
+}
 .contain{
   display:flex;
 }
