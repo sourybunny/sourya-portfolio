@@ -10,7 +10,7 @@
         <div class="details">
           <p class="white-text">contact :</p>
           <p class="white-text">
-            soury.bunny@gmail.com <a class="white-text" href="mailto:soury.bunny@gmail.com"><i class="fa fa-envelope"></i></a>
+            sourya0411@gmail.com <a class="white-text" href="mailto:sourya0411@gmail.com"><i class="fa fa-envelope"></i></a>
           </p>
           <p class="white-text">Find me on</p>
           <ul>
@@ -30,7 +30,7 @@
                 class="waves-effect waves-light btn-floating social linkedin z-depth-5 tooltipped"
                 data-position="bottom"
                 data-tooltip="linkedin"
-                href="https://www.linkedin.com/in/sourya-v-8614b979/"
+                href="https://www.linkedin.com/in/souryav/"
                 target="_blank"
               >
                 <i class="fa fa-linkedin"></i>
@@ -80,7 +80,7 @@
             <a
               class="waves-effect  waves-light btn-large z-depth-4"
               target="_blank"
-              href="https://drive.google.com/file/d/1POX9ib81bTSpg50t0jaOZtKlgzZnzTOf/view?usp=sharing"
+              href="https://drive.google.com/file/d/1G5DYEYGUK-cTU5CE511401vASl233563/view?usp=sharing"
               >Resume</a
             >
           </div>
@@ -89,7 +89,7 @@
     </div>
 
     <section class="portfolio " id="portfolio">
-      <!-- <h2 class="center-align ">portfolio</h2> -->
+      <h2 class="center-align ">portfolio</h2>
       <div class="tabs">
         <div :class="{ 'active-tab': active == 1 }" class="card z-depth-0 center-align tab-title" @click="active = 1">UX/UI Design</div>
         <div :class="{ 'active-tab': active == 2 }" class="card z-depth-0 center-align tab-title" @click="active = 2">Code</div>
@@ -159,21 +159,14 @@
       </div>
     </section>
     <footer class="page-footer white">
-      <!-- <div class="container">
-        <h5 class="black-text center-align">want to know more ?</h5>
-        <h6 class="grey-text text-darken-3 center-align">
-          Download my <a target="_blank" href="https://drive.google.com/file/d/1POX9ib81bTSpg50t0jaOZtKlgzZnzTOf/view?usp=sharing">Resume</a>.
-        </h6>
-      </div> -->
-
       <div class="footer-copyright">
         <div class="container grey-text text-darken-3">
           © 2020 Copyright Sourya, All rights reserved.
-          <a class="grey-text text-darken-3 right" target="_blank" href="https://www.facebook.com/Sourybunny/"><i class="fa fa-facebook"></i></a>
+          <!-- <a class="grey-text text-darken-3 right" target="_blank" href="https://www.facebook.com/Sourybunny/"><i class="fa fa-facebook"></i></a>
           <a class="grey-text text-darken-3 ig right" target="_blank" href="https://www.instagram.com/sourya_sketches/"
             ><i class="fab fa-instagram"></i
-          ></a>
-          <a class="grey-text text-darken-3 right" href="mailto:soury.bunny@gmail.com"><i class="far fa-envelope"></i></a>
+          ></a> -->
+          <a class="grey-text text-darken-3 right" href="mailto:sourya0411@gmail.com">Email <i class="far fa-envelope"></i></a>
         </div>
       </div>
     </footer>

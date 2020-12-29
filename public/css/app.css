@@ -4,7 +4,6 @@ html,body{
   overflow-x: hidden;
   width: 100%;
 }
-
 .card-photo .card-image{
   background-image: url("/images/profilepic1.jpg");
   background-repeat: no-repeat;
@@ -211,6 +210,7 @@ html,body{
   background:white;
   border: 2px solid black;
 }
+
 .card-reveal .btn-small{
   background: #4a21fc;
   padding:8px;

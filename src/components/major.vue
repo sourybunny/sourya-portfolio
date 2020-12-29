@@ -1,7 +1,7 @@
 <template>
   <div class="card hoverable z-depth-1">
     <div class="card-image">
-      <img class="activator " :src="item.image" />
+      <img class="activator " :src="item.image|| require(`@/assets/media/default-placeholder.png`)" />
       <span class="card-title">{{ item.title }}</span>
       <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a> -->
     </div>

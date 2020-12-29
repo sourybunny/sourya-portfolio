@@ -1,7 +1,7 @@
 <template>
   <div class="code card white lighten-4 hoverable z-depth-1">
     <div class="card-image z-depth-0">
-      <img class="activator " :src="item.image" />
+      <img class="activator " :src="item.image|| require(`@/assets/media/default-placeholder.png`)" />
       <div>
         <a
           data-tooltip="github"
@@ -42,6 +42,7 @@
       height: 5rem;
     }
     .card-image img {
+      min-height: 10rem;
       border-radius: 1rem !important;
     }
   }
