@@ -15,7 +15,7 @@
       </p>
     </div>
     <div class="card-action">
-      <a target="_blank" :href="item.live" class="blue-text text-darken-2">View Case Study</a>
+      <a target="_blank" :href="item.live" class="blue-text text-darken-4">View Case Study</a>
     </div>
   </div>
   <!-- <div class="card hoverable z-depth-1">

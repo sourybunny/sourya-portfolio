@@ -73,7 +73,14 @@
           <h3>Sourya</h3>
 
           <!-- <h5>&lt; web developer /&gt;</h5> -->
-          <p class="grey lighten-4">Grow With Google Scholar, 2018 and Udacity Certified Mobile Web Specialist.</p>
+          <!-- https://confirm.udacity.com/KAVXFTHZ -->
+          <p class="grey lighten-4">Grow With Google Scholar, 2018 and
+            <a
+              class="grey-text text-darken-4"
+              target="_blank"
+              href="https://confirm.udacity.com/KAVXFTHZ"
+              >Udacity Certified Mobile Web Specialist.</a>
+          </p>
           <p>
             A UX/UI designer | Front-end developer and a persistent learner driven by passion to design and build user-friendly applications
           </p>
