@@ -74,7 +74,9 @@
 
           <!-- <h5>&lt; web developer /&gt;</h5> -->
           <p class="grey lighten-4">Grow With Google Scholar, 2018 and Udacity Certified Mobile Web Specialist.</p>
-          <p></p>
+          <p>
+            A UX/UI designer | Front-end developer and a persistent learner driven by passion to design and build user-friendly applications
+          </p>
           <div class="main-buttons">
             <a class="waves-effect waves-light  btn-large  z-depth-4" href="#portfolio">Portfolio</a>
             <a
@@ -100,9 +102,12 @@
         <div class="projects" v-if="active == 3">
           <project v-for="project in getTab()" :key="project.id" :item="project" />
         </div>
+        <div class="major" v-if="active == 1">
+          <design v-for="project in getTab()" :key="project.id" :item="project" />
+        </div>
         <div class="">
           <div class="major" v-if="active == 2">
-            <major  v-for="project in getTab()" :key="project.id" :item="project" />
+            <major v-for="project in getTab()" :key="project.id" :item="project" />
           </div>
         </div>
         <div class="projects" v-if="active == 4">
@@ -177,6 +182,7 @@
   import Project from "./project";
   import Art from "./art";
   import Major from "./major";
+  import Design from "./design";
   export default {
     name: "Home",
     props: {
@@ -184,16 +190,25 @@
     },
     data() {
       return {
-        design: [{ title: "", image: "", link: "", desc: "", id: "" }],
         active: 1,
-        major: [
+        design: [
           {
-            title: "Pomodoro Clock",
-            image: "https://i.imgur.com/5Jow8Ms.png",
-            live: "https://sourybunny.github.io/pomodoro-clock/",
-            desc: "",
+            title: "Loofi",
+            image: "https://i.imgur.com/SCcdxSg.png?2",
+            live: "https://drive.google.com/file/d/1PZ1ZDm9NGkYo22booZjk3j0uZansPj_m/view?usp=sharing",
+            desc: "Loofi is a reimagined public toilet system that helps people find and use clean and hygienic toilets across the country. It motivates people to use public toilets.",
+            tags: ['UX Research', "Persona", "Journey Map","Conceptual Model", "Wireframes"],
             id: 1,
-            link: "https://github.com/sourybunny/pomodoro-clock",
+            link: "https://drive.google.com/file/d/1PZ1ZDm9NGkYo22booZjk3j0uZansPj_m/view?usp=sharing",
+          },
+          {
+            title: "Mappuzzle",
+            image: "https://i.imgur.com/RzjBlRi.png?3",
+            live: "https://drive.google.com/file/d/10IQjuZP91-IyZI0_0M3U8Vws-3ykLwmx/view?usp=sharing",
+            desc: "Mappuzzle is a set of 3 interactive game based learning-aids (Word game, World map, India map) designed for visually impaired K-12 students to improve learning experience. ",
+            tags: ['UX Research', "Persona","Ideation","Conceptual Model", "Prototypes"],
+            id: 2,
+            link: "https://drive.google.com/file/d/10IQjuZP91-IyZI0_0M3U8Vws-3ykLwmx/view?usp=sharing",
           },
         ],
         minis: [
@@ -260,11 +275,10 @@
             image: "https://i.imgur.com/OZQvghB.png?1",
             desc: "Covid19 map dashboard visualization of Global and India cases. Utilizes data form RapidApiCovid19 and NovelCovidApi.",
             id: 1,
-            tags: ['Javascript', 'VueJs', 'MapboxGl Js'],
+            tags: ["Javascript", "VueJs", "MapboxGl Js"],
             live: "https://covidviz.netlify.app/",
             link: "https://github.com/sourybunny/covid-19-Geojson",
           },
-          
         ],
       };
     },
@@ -273,6 +287,7 @@
       Project,
       Art,
       Major,
+      Design,
     },
     methods: {
       getTab() {
@@ -350,26 +365,25 @@
     grid-template-columns: repeat(2, 1fr);
   }
   @media only screen and (max-width: 500px) {
-  .major {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .tabs {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 18rem;
-    padding-top: 2rem;
-    .card {
-      width: 10rem;
-      padding: 0.5rem 0;
-      margin: 0.5rem;
+    .major {
+      grid-template-columns: repeat(1, 1fr);
     }
-    .tab-title {
-      font-size: 1rem;
+    .tabs {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 18rem;
+      padding-top: 2rem;
+      .card {
+        width: 10rem;
+        padding: 0.5rem 0;
+        margin: 0.5rem;
+      }
+      .tab-title {
+        font-size: 1rem;
+      }
     }
   }
-  
-}
   /* a {
     color: #42b983;
   } */
