@@ -227,14 +227,14 @@
             id: 1,
             link: "https://github.com/sourybunny/pomodoro-clock",
           },
-          {
-            title: "Slice It",
-            image: "https://i.imgur.com/yA3jnXD.png",
-            live: "https://sourybunny.github.io/slice-it/",
-            desc: "",
-            id: 2,
-            link: "https://github.com/sourybunny/slice-it",
-          },
+          // {
+          //   title: "Slice It",
+          //   image: "https://i.imgur.com/yA3jnXD.png",
+          //   live: "https://sourybunny.github.io/slice-it/",
+          //   desc: "",
+          //   id: 2,
+          //   link: "https://github.com/sourybunny/slice-it",
+          // },
           {
             title: "Tic Tac Toe",
             image: "https://i.imgur.com/Odp8PxJ.png",
@@ -286,6 +286,16 @@
             live: "https://covidviz.netlify.app/",
             link: "https://github.com/sourybunny/covid-19-Geojson",
           },
+          {
+            title: "Slice It",
+            image: "https://i.imgur.com/yA3jnXD.png",
+            live: "https://sourybunny.github.io/slice-it/",
+            desc: "'Slice it' is a fruit slicing game I built as a personal project using JQuery UI, when I was learning Javascript and DOM manipulation.",
+            tags: ["Javascript", "JQuery", "JQueryUI"],
+            id: 2,
+            link: "https://github.com/sourybunny/slice-it",
+          },
+          
         ],
       };
     },
