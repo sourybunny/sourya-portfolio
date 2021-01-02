@@ -290,7 +290,7 @@
             title: "Streamanity",
             image: "https://i.imgur.com/fkRJafa.png",
             live: "https://streamanity.com",
-            desc: "At Keyport Labs, in a team of 3, I led everything design and development related, including interaction design and building the MVP.   ",
+            desc: "At Keyport Labs, in a team of 3, I led everything design and front-end development related, including interaction design, building the MVP.   ",
             tags: ["Vuejs","Vuex","Javascript"],
             id: 3,
             link: "",
