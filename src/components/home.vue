@@ -105,7 +105,7 @@
         <div :class="{ 'active-tab': active == 3 }" class="card z-depth-0 center-align tab-title" @click="active = 3">Mini Code</div>
         <div :class="{ 'active-tab': active == 4 }" class="card z-depth-0 center-align tab-title" @click="active = 4">Art</div>
       </div>
-      <div class="container">
+      <div class="container" >
         <div class="projects" v-if="active == 3">
           <project v-for="project in getTab()" :key="project.id" :item="project" />
         </div>
@@ -113,7 +113,7 @@
           <design v-for="project in getTab()" :key="project.id" :item="project" />
         </div>
         <div class="">
-          <div class="major" v-if="active == 2">
+          <div class="major" v-if="active == 2" style="display: flex;">
             <major v-for="project in getTab()" :key="project.id" :item="project" />
           </div>
         </div>
@@ -280,11 +280,20 @@
           {
             title: "Covid-Viz",
             image: "https://i.imgur.com/OZQvghB.png?1",
-            desc: "Covid19 map dashboard visualization of Global and India cases. Utilizes data form RapidApiCovid19 and NovelCovidApi.",
+            desc: "Covid19 map dashboard visualization of Global and India cases. Utilizes data form NovelCovidApi.",
             id: 1,
-            tags: ["Javascript", "VueJs", "MapboxGl Js"],
+            tags: ["Javascript", "VueJs", "MapboxGlJs"],
             live: "https://covidviz.netlify.app/",
             link: "https://github.com/sourybunny/covid-19-Geojson",
+          },
+          {
+            title: "Streamanity",
+            image: "https://i.imgur.com/fkRJafa.png",
+            live: "https://streamanity.com",
+            desc: "At Keyport Labs, in a team of 3, I led everything design and development related, including interaction design and building the MVP.   ",
+            tags: ["Vuejs","Vuex","Javascript"],
+            id: 3,
+            link: "",
           },
           {
             title: "Slice It",
@@ -295,6 +304,7 @@
             id: 2,
             link: "https://github.com/sourybunny/slice-it",
           },
+          
           
         ],
       };
@@ -380,6 +390,7 @@
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
   }
   @media only screen and (max-width: 500px) {
     .major {
