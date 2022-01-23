@@ -2,7 +2,7 @@
   <div>
     <v-container class="my-16">
       <v-layout row xs12 wrap class="my-16 py-16">
-        <v-flex xs12 sm7 >
+        <v-flex xs12 sm8 >
           <div>
             <p class="font-weight-bold display-3">
               Hey, I'm
@@ -10,10 +10,10 @@
                 >Sourya</span
               >
             </p>
-            <p class="gradient display-2">I Design and < Code /> stuff!</p>
+            <p class="gradient display-3 font-weight-bold ">I Design and < Code /> stuff!</p>
 
             <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
-            <p class="font-weight-light mt-8 body-1 intro-left">
+            <p class="font-weight-light mt-8 title intro-left">
               Currently a master’s student at
               <strong class="primary--text font-weight-medium"
                 >Indiana University Bloomington’s HCI program.</strong
@@ -21,7 +21,7 @@
             </p>
           </div>
         </v-flex>
-        <v-flex :order="$vuetify.breakpoint.xsOnly?'-1':'13'" xs12 sm5 center-align>
+        <v-flex :order="$vuetify.breakpoint.xsOnly?'-1':'13'" xs12 sm4 center-align>
           <h1>image</h1>
         </v-flex>
       </v-layout>
@@ -36,18 +36,7 @@ export default {};
 
 <style lang="scss" scoped>
 .intro-left {
-  max-width: 500px;
+  max-width: 600px;
 }
-.gradient {
-  background-image: linear-gradient(
-    108deg,
-    #b16cea 8%,
-    #ff5e69 40%,
-    #ff8a56 77%,
-    #ffa84b 91%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 </style>

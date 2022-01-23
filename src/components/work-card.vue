@@ -15,10 +15,10 @@
       {{ item.name }}
     </v-card-title>
 
-    <v-card-subtitle class="body-1 pl-6 pt-1">
+    <v-card-subtitle class="title font-weight-medium pl-6 pt-1">
       {{ item.tags }}
     </v-card-subtitle>
-    <v-card-text class="body-1 pl-6">
+    <v-card-text class="title font-weight-light pl-6">
       {{ item.description }}
     </v-card-text>
     <v-card-actions> </v-card-actions>

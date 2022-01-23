@@ -1,12 +1,20 @@
 <template>
-    <v-container >
-      <p class="display-3 font-weight-bold  text-left ">
+<v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: .6
+        }"
+        transition="fade-transition"
+      >
+    <v-container fluid class=" black white--text py-16 px-10 center-align" width="100%" :class="$vuetify.breakpoint.mdAndUp?'display-3':'display-2'">
+      <p class="font-weight-bold  text-center ">
         To know more about me or my work, 
-        <p class="display-3 font-weight-bold">reach out to me at, </p>
-        <p class="display-3 font-weight-bold">sovarana@iu.edu</p>
+        <p class="font-weight-bold">reach out to me at,   <span class="font-weight-bold gradient" ><a href="mailto:sourya0411@gmail.com">sovarana@iu.edu</a></span></p>
+      
       </p>
 
     </v-container>
+</v-lazy>
 </template>
 
 <script>
