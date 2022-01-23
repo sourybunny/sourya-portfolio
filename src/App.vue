@@ -40,9 +40,9 @@
     <template>
       <v-footer dark padless>
         <v-card class="flex" flat tile>
-          <v-card-title class="primary">
-            <strong class="subheading"
-              >Get connected with us on social networks!</strong
+          <v-card-title class="primary text-center">
+            <strong class="body-2 "
+              >This site is a work in progress, built with Vuetify using VueJs and hosted by Netlify</strong
             >
 
             <v-spacer></v-spacer>

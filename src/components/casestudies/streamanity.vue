@@ -18,7 +18,7 @@
       <section class="streamanity py-10">
         <v-container width="100%" class="px-16">
           <v-layout row xs12 align="start" justify="center">
-            <v-flex xs12 sm7>
+            <v-flex xs12 sm6>
               <div>
                 <h6 class="title">My Role</h6>
                 <h6>UX Design Engineer, Developer, Interaction Design</h6>
@@ -40,7 +40,8 @@
                 <h6>13 months</h6>
               </div>
             </v-flex>
-            <v-flex xs12 sm5>
+            <v-spacer></v-spacer>
+            <v-flex xs12 sm4>
               <div>
                 <h6 class="title">Team Size</h6>
                 <h6>3 members</h6>
@@ -55,7 +56,7 @@
               </div>
               <div class="mt-8">
                 <h6 class="title">Timeline</h6>
-                <h6>February 2019- March 2020</h6>
+                <h6>February 2019 - March 2020</h6>
               </div>
             </v-flex>
           </v-layout>
