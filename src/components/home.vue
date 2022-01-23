@@ -2,7 +2,7 @@
   <div>
     <Intro />
     <Work />
-    <Aboutme />
+    <Aboutme id="about" />
     <Contact />
   </div>
 </template>

@@ -9,7 +9,9 @@ export default new Vuetify({
           light: {
             primary: '#3f51b2',
             secondary: '#b0bec5',
-            gradient: '',
+            streamanity: '#c1e2d9',
+            streamanity_green:'#35d7a5',
+            greybg:'#EAEAEB',
             accent: '#8c9eff',
             error: '#b71c1c',
             nav: '#fff'

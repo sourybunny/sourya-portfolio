@@ -2,7 +2,7 @@
   <div>
     <v-container class="my-16">
       <v-layout row xs12 wrap class="my-16 py-16">
-        <v-flex xs12 sm8 >
+        <v-flex xs12 sm8>
           <div>
             <p class="font-weight-bold display-3">
               Hey, I'm
@@ -10,7 +10,9 @@
                 >Sourya</span
               >
             </p>
-            <p class="gradient display-3 font-weight-bold ">I Design and < Code /> stuff!</p>
+            <p class="gradient display-3 font-weight-bold ">
+              I Design and < Code /> stuff!
+            </p>
 
             <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
             <p class="font-weight-light mt-8 title intro-left">
@@ -21,7 +23,12 @@
             </p>
           </div>
         </v-flex>
-        <v-flex :order="$vuetify.breakpoint.xsOnly?'-1':'13'" xs12 sm4 center-align>
+        <v-flex
+          :order="$vuetify.breakpoint.xsOnly ? '-1' : '13'"
+          xs12
+          sm4
+          center-align
+        >
           <h1>image</h1>
         </v-flex>
       </v-layout>
@@ -38,5 +45,4 @@ export default {};
 .intro-left {
   max-width: 600px;
 }
-
 </style>

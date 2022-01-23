@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar flat app color="nav" class="">
+    <v-app-bar flat app color="nav" class="" hide-on-scroll>
       <v-container class="d-flex align-center">
         <h4 @click="$router.push({ path: '/' })" class="black--text is-pointer">
           Sourya Varanasi
@@ -17,9 +17,8 @@
         >
           <span class="mr-2 text-capitalize body-1">Extras</span>
         </v-btn>
-        <v-btn
-          href="https://github.com/vuetifyjs/vuetify/releases/latest"
-          target="_blank"
+        <v-btn @click="$router.push({path:'/'})"
+          href="#about"
           text
         >
           <span class="mr-2 text-capitalize body-1">About</span>
