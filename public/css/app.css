@@ -1,6 +1,6 @@
 html,body{
   margin:0;
-  font-family:'Palanquin dark';
+  font-family:'OpenSans';
   overflow-x: hidden;
   width: 100%;
 }
@@ -34,7 +34,9 @@ html,body{
 .contain{
   display:flex;
 }
-
+.is--pointer {
+  cursor:pointer;
+}
 .right-content{
   flex-basis:180px;
   
