@@ -2,9 +2,9 @@
   <v-app>
     <v-app-bar flat app color="nav" class="" hide-on-scroll>
       <v-container class="d-flex align-center">
-        <h4 @click="$router.push({ path: '/' })" class="black--text is-pointer">
+        <span @click="$router.push({ path: '/' })" class="black--text is-pointer headline font-weight-bold">
           Sourya Varanasi
-        </h4>
+        </span>
         <v-spacer></v-spacer>
 
         <v-btn @click="$router.push({ path: '/projects' })" text>
@@ -78,8 +78,4 @@ export default {
   }),
 };
 </script>
-<style lang="scss">
-.v-application {
-  font-family: "OpenSans";
-}
-</style>
+
