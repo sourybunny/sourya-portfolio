@@ -1,8 +1,9 @@
 <template>
   <div>
     <v-container>
-      <p class="font-weight-bold display-2">Selected Work.</p>
-      <v-layout class="mt-16 mx-auto " row xs12 wrap no-gutters>
+       <p class="font-weight-bold display-2 mt-10">Selected Work.</p>
+      <!-- <p class="font-weight-medium display-2 mt-10">Selected Work.</p> -->
+      <v-layout class="mt-10 mx-auto " row xs12 wrap no-gutters>
         <v-flex xs12 sm6 md6 v-for="project in projects" :key="project.id">
           <WorkCard class="work-card" :item="project" />
         </v-flex>

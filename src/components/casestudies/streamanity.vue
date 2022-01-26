@@ -3,6 +3,11 @@
     <template>
       <section class=" py-16" style="height:100vh;">
         <v-container width="100%" class="px-16">
+          <!-- <i class="fas fa-arrow-left fa-3x"></i> -->
+          <i
+            @click="$router.push({ path: '/' })"
+            class="is-pointer fas fa-long-arrow-alt-left fa-3x greybg--text text--darken-3"
+          ></i>
           <v-row align="center" justify="center">
             <v-col class="text-left" cols="12">
               <h3 class="font-weight-medium">Streamanity</h3>
@@ -10,8 +15,9 @@
                 class="title grey--text text--darken-2 font-weight-medium mb-4"
               >
                 Designed and developed a simplified mobile-web based video
-                streaming interface to help small video content creators upload videos and
-                earn money in BitcoinSV directly from their followers.
+                streaming interface to help small video content creators upload
+                videos and earn money from every view in BitcoinSV directly from their
+                followers.
               </h1>
             </v-col>
           </v-row>
@@ -24,12 +30,12 @@
             <v-flex xs12 sm6>
               <div>
                 <h6 class="title font-weight-bold">My Role</h6>
-                <h6 class="grey--text text--darken-2">
+                <h6 class="grey--text text--darken-2 subtitle-1 font-weight-medium">
                   UX Design Engineer, Developer, Interaction Design
                 </h6>
                 <p class="grey--text text--darken-2 mt-2">
                   I
-                  <span class="font-weight-bold grey--text text--darken-3"
+                  <span class="font-weight-bold grey--text text--darken-3 subtitle-1 font-weight-medium"
                     >single-handedly designed, developed and shipped </span
                   >the web and mobile interfaces for a new product offering
                   based on the company's vision for content monetization in
@@ -38,34 +44,34 @@
               </div>
               <div class="my-8">
                 <h6 class="title font-weight-bold">Tools</h6>
-                <h6 class="grey--text text--darken-2">
+                <h6 class="grey--text text--darken-2 subtitle-1 font-weight-medium">
                   Javascript, VueJs, Google Workbox PWA, Figma
                 </h6>
               </div>
               <div>
                 <h6 class="title font-weight-bold">Duration</h6>
-                <h6 class="grey--text text--darken-2">13 months</h6>
+                <h6 class="grey--text text--darken-2 subtitle-1 font-weight-medium">13 months</h6>
               </div>
             </v-flex>
             <v-spacer></v-spacer>
             <v-flex xs12 sm4>
               <div>
                 <h6 class="title font-weight-bold">Team Size</h6>
-                <h6 class="grey--text text--darken-2">3 members</h6>
+                <h6 class="grey--text text--darken-2 subtitle-1 font-weight-medium">3 members</h6>
               </div>
               <div class="my-8">
                 <h6 class="title font-weight-bold">Company/Client</h6>
-                <h6 class="grey--text text--darken-2">
+                <h6 class="grey--text text--darken-2 subtitle-1 font-weight-medium">
                   Keyport Labs Pvt Ltd, funded by CoinGeek
                 </h6>
               </div>
               <div>
                 <h6 class="title font-weight-bold">Project Status</h6>
-                <h6 class="grey--text text--darken-2">Shipped</h6>
+                <h6 class="grey--text text--darken-2 subtitle-1 font-weight-medium">Shipped</h6>
               </div>
               <div class="mt-8">
                 <h6 class="title font-weight-bold">Timeline</h6>
-                <h6 class="grey--text text--darken-2">
+                <h6 class="grey--text text--darken-2 subtitle-1 font-weight-medium">
                   February 2019 - March 2020
                 </h6>
               </div>
@@ -88,7 +94,7 @@
                 niche viedeo content and earn money in BitcoinSV.
               </h6>
               <p
-                class="mt-10 subheading font-weight-medium grey--text text--darken-2"
+                class="mt-10 subtitle-1 font-weight-medium font-weight-medium grey--text text--darken-2"
               >
                 Here I was a UX Design Engineer in a team of 3 people (1 Primary
                 Manager, 1 Backend Developer, and
@@ -97,16 +103,25 @@
                   >myself -- UX Design Engineer).</span
                 >
               </p>
-              <p class="subheading font-weight-bold">
+              <p class="subtitle-1 font-weight-medium font-weight-medium">
                 My main responsibility was to work on creating prototypes, build
                 MVP using VueJs & Javascript, brainstorm ideas and iterate new
                 solutions to improve user acquisition and engagement.
               </p>
             </v-flex>
-            <v-flex xs12 sm4>
-              live site
-            </v-flex>
             <v-spacer></v-spacer>
+            <v-flex xs12 sm4 align-self-center>
+              <div>
+                <h4 class="text-h6 font-weight-bold"> Impact</h4>
+                <p>
+                  Streamanity was later acquired by RelayX.io
+                </p>
+                <v-btn medium class="text-capitalize" outlined rounded>
+                Live Site
+              </v-btn>
+              </div>
+            </v-flex>
+            <!-- <v-spacer></v-spacer> -->
           </v-layout>
         </v-container>
       </section>
@@ -187,47 +202,69 @@
 
       <section>
         <v-container class="py-16">
-          <v-layout class="px-10" row align-center justify-center>
+          <v-layout class="px-10 mx-auto" row justify-center align-center>
+            <!-- <v-spacer></v-spacer> -->
+            
             <v-flex xs12 sm8>
+              <v-card flat max-width="700"> 
               <p
                 class="title streamanity_green--text text--darken-1 font-weight-bold "
               >
                 Key Features
               </p>
 
-              <p class="font-weight-bold">
-                Revenue Share:
-                <span class="grey--text text--darken-2 font-weight-medium"
-                  >I worked alongside my manager to establish our process as a
-                  team and crafted visuals for the development teams to build
-                  the core experience we needed to deliver for our users</span
+              <p class="font-weight-medium body-1">
+                Revenue Share.
+                <span class="grey--text text--darken-2  subtitle-1 font-weight-medium"
+                  >This feature allows the ability to split BSV payments to a
+                  collection of recipients. Creators who co-create content can
+                  set a percentage to automatically earn their share of revenue
+                  for a video.
+                </span>
+              </p>
+              
+              <p class="font-weight-medium body-1 mt-8">
+                Upload.
+                <span class="grey--text text--darken-2 subtitle-1 font-weight-medium"
+                  >Creators can upload videos seamlessly with this simple and
+                  intuitive upload feature.</span
                 >
               </p>
-              <p class="font-weight-bold">
-                Video Boosting
-                <span class="grey--text text--darken-2 font-weight-medium"
-                  >I worked alongside my manager to establish our process as a
-                  team and crafted visuals for the development teams to build
-                  the core experience we needed to deliver for our users</span
+             <div class="mt-8 mb-3 title font-weight-medium font-italic"> To improve user engagement,</div>
+              <p class="font-weight-medium body-1 mt-8">
+                Video Boosting.
+                <span class="grey--text text--darken-2 subtitle-1 font-weight-medium font-weight-medium"
+                  >content creators, or big fans of them, can boost a video to
+                  really grow their audience. This feature allows anyone to pay
+                  for a video to be free for whatever the balance of the boost
+                  is, and features it on the boosted page. For new audiences
+                  looking for great content, this is a cool way to catch their
+                  eyes.</span
                 >
               </p>
-              <p class="font-weight-bold">
-                Tipping
-                <span class="grey--text text--darken-2 font-weight-medium"
-                  >I worked alongside my manager to establish our process as a
-                  team and crafted visuals for the development teams to build
-                  the core experience we needed to deliver for our users</span
+              <p class="font-weight-medium body-1 my-8">
+                Tipping.
+                <span class="grey--text text--darken-2 subtitle-1 font-weight-medium"
+                  >Users can also tip the video creator with micropayments for
+                  content they interact with.</span
                 >
               </p>
-              <p class="font-weight-bold">
-                Upload
-                <span class="grey--text text--darken-2 font-weight-medium"
-                  >I worked alongside my manager to establish our process as a
-                  team and crafted visuals for the development teams to build
-                  the core experience we needed to deliver for our users</span
+              
+              <p class="font-weight-medium body-1">
+                Notifications.
+                <span class="grey--text text--darken-2 subtitle-1 font-weight-medium"
+                  >Notifications to be informed about new video releases on Streamanity by creators you follow.</span
                 >
               </p>
+              <p class="font-weight-medium body-1 my-8">
+                Comments.
+                <span class="grey--text text--darken-2 subtitle-1 font-weight-medium"
+                  >Comments provides a way to interact directly with fans and creators.</span
+                >
+              </p>
+              </v-card>
             </v-flex>
+            <!-- <v-spacer></v-spacer> -->
           </v-layout>
         </v-container>
       </section>
@@ -257,14 +294,21 @@
               </p>
 
               <p>
-                I worked alongside my manager to establish our process as a team
-                and crafted visuals for the development teams to build the core
-                experience we needed to deliver for our users
+                I worked alongside my manager to establish our process as a team,
+               crafted visuals for Hi-Fi prototypes and developed MVP to build the core
+                experience we needed to deliver for our users.
               </p>
+              <v-img
+                class="mx-auto"
+                max-width="700"
+                max-height="600"
+                :src="require(`@/assets/media/streamanity/ddp.png`)"
+              ></v-img>
+             <p class="text-center caption text-capitalize"> double diamond process</p>
               <section>
-              <p>User Research</p>
+                <p class="title"> User Research</p>
                 <p>Talking to content creators</p>
-                <p>After conducting interviews, </p>
+                <p>After conducting interviews,</p>
               </section>
 
               <p>User Stories</p>

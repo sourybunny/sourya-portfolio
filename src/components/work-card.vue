@@ -2,10 +2,10 @@
   <v-card @click="$router.push({path: item.to})"
     flat
     max-width="560"
-    class="my-4 transition-swing work-card__item"
+    class="my-4 transition-swing work-card__item rounded-lg"
     :class="$vuetify.breakpoint.xsOnly ? 'mx-auto' : 'mx-4'"
   >
-    <v-img
+    <v-img 
       src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
       max-height="440px"
       :min-height="$vuetify.breakpoint.mdAndUp ? '420px' : ''"

@@ -1,5 +1,5 @@
 <template>
-  <div> 
+  <div>
     <v-lazy
       v-model="isActive"
       :options="{
@@ -50,16 +50,26 @@
               </p>
             </div>
           </v-flex>
+          <v-spacer></v-spacer>
           <v-flex
             :order="$vuetify.breakpoint.xsOnly ? 1 : 2"
             xs12
-            md6
+            md5
             :right-align="!$vuetify.breakpoint.mobile"
           >
-            <h1>image</h1>
+            <v-card flat class="mt-8">
+              <v-img
+                class=""
+                max-width="400"
+                max-height="500"
+                :src="require(`@/assets/media/me/me.jpeg`)"
+              ></v-img>
+            </v-card>
           </v-flex>
         </v-layout>
-        <v-btn class="my-8">see my resume</v-btn>
+        <v-btn medium class="my-8 text-capitalize" outlined rounded>
+          see my resume
+        </v-btn>
         <v-divider></v-divider>
       </v-container>
     </v-lazy>

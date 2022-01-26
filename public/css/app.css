@@ -35,7 +35,7 @@ body {
 .contain {
   display: flex;
 }
-.is--pointer {
+.is-pointer {
   cursor: pointer;
 }
 .right-content {
