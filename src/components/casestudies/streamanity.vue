@@ -43,7 +43,7 @@
                 </p>
               </div>
               <div class="my-8">
-                <h6 class="title font-weight-bold">Tools</h6>
+                <h6 class="title font-weight-medium">Tools</h6>
                 <h6 class="grey--text text--darken-2 subtitle-1 font-weight-medium">
                   Javascript, VueJs, Google Workbox PWA, Figma
                 </h6>
