@@ -1,7 +1,12 @@
 <template>
-  <div>
+  <div class="black pb-16"> 
+      <v-divider class="white"></v-divider>
+      <v-container>
+
+       <p class="font-weight-bold white--text font-italic display-3 my-10 " style="font-family:'Limelight' !important;">Selected Work.</p>
+      </v-container>
+       <v-divider class="white"></v-divider>
     <v-container>
-       <p class="font-weight-bold display-2 mt-10">Selected Work.</p>
       <!-- <p class="font-weight-medium display-2 mt-10">Selected Work.</p> -->
       <v-layout class="mt-10 mx-auto " row xs12 wrap no-gutters>
         <v-flex xs12 sm6 md6 v-for="project in projects" :key="project.id">

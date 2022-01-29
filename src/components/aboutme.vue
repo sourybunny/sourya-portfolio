@@ -1,37 +1,47 @@
 <template>
-  <div>
-    <v-lazy
+  <div class="black pt-16">
+    <!-- <v-lazy
       v-model="isActive"
       :options="{
         threshold: 0.6,
       }"
       min-height="500"
       transition="fade-transition"
-    >
-      <v-container class="my-16">
-        <p class="font-weight-bold display-2">About Me.</p>
+    > -->
+      <v-divider class="white"></v-divider>
+      <v-container>
+        <p
+          class="font-weight-bold white--text font-italic display-3 my-10"
+          style="font-family:'Limelight' !important;"
+        >
+          About Me.
+        </p>
+      </v-container>
+      <v-divider class="white"></v-divider>
+      <v-container class="mt-16">
+        <!-- <p class="font-weight-bold display-2">About Me.</p> -->
         <v-layout row xs12 wrap>
           <v-flex xs12 md6>
-            <div class="pl-3">
+            <div class="pl-3 slate--text">
               <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
               <p class="font-weight-light mt-8 title">
                 Hello again, I’m Sourya. I am a
-                <strong class="primary--text font-weight-medium"
+                <strong class="white--text font-weight-medium"
                   >UX Generalist</strong
                 >
                 pursiung my
-                <strong class="primary--text font-weight-medium"
+                <strong class="white--text font-weight-medium"
                   >Masters degree in Human-Computer Interaction Design</strong
                 >
                 at Indiana University Bloomington. Having a
-                <strong class="primary--text font-weight-medium"
+                <strong class="white--text font-weight-medium"
                   >Bachelors degree in Computer Science Engineering</strong
                 >, I learnt to convert my design solutions into functional
                 prototypes.
               </p>
               <p class="font-weight-light mt-4 title">
                 Over the past 4 years, I’ve worked in multiple roles at
-                <strong class="primary--text font-weight-medium">
+                <strong class="white--text font-weight-medium">
                   IBM, Keyport Labs and Sensehawk Inc</strong
                 >
                 that helped me accrue a breadth of skills in the overall
@@ -39,11 +49,11 @@
               </p>
               <p class="font-weight-light mt-4 title">
                 Working with the startup industry, as a
-                <strong class="primary--text font-weight-medium"
+                <strong class="white--text font-weight-medium"
                   >UX designer, UX Engineer & Front-end developer</strong
                 >, taught me how design processes could influence product and
                 business decisions. These insights allow me to
-                <strong class="primary--text font-weight-medium"
+                <strong class="white--text font-weight-medium"
                   >use design as a strategy rather than being just another
                   deliverable.</strong
                 >
@@ -57,7 +67,7 @@
             md5
             :right-align="!$vuetify.breakpoint.mobile"
           >
-            <v-card flat class="mt-8">
+            <v-card flat class="mt-8 black">
               <v-img
                 class=""
                 max-width="400"
@@ -72,7 +82,7 @@
         </v-btn>
         <v-divider></v-divider>
       </v-container>
-    </v-lazy>
+    <!-- </v-lazy> -->
   </div>
 </template>
 
