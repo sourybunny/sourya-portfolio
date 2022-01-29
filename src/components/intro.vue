@@ -1,7 +1,7 @@
 <template>
   <div class="black">
     <v-container>
-      <v-card flat class="black d-flex align-center" height="90vh">
+      <v-card flat class="black d-flex align-center" height="100vh">
         <v-layout row xs12 wrap class="mb-16 mx-auto py-16">
           <v-spacer></v-spacer>
           <v-flex xs12 sm7>
@@ -47,7 +47,6 @@
 
 <script>
 export default {
-  data: () => {},
 };
 </script>
 

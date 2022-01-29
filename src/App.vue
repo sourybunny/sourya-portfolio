@@ -1,56 +1,28 @@
 <template>
   <v-app>
-    <v-app-bar flat app color="black" dark hide-on-scroll>
-      <v-container class="d-flex align-center">
-        <span @click="$router.push({ path: '/' })" class="white--text is-pointer headline font-weight-medium">
-          Sourya Varanasi
-        </span>
-        <v-spacer></v-spacer>
-
-        <v-btn depressed @click="$router.push({ path: '/projects' })" text>
-          <span class="mr-2 text-capitalize body-1">Projects</span>
-        </v-btn>
-        <!-- <v-btn
-          href="https://github.com/vuetifyjs/vuetify/releases/latest"
-          target="_blank"
-          text
-        >
-          <span class="mr-2 text-capitalize body-1">Extras</span>
-        </v-btn> -->
-        <v-btn @click="$router.push({path:'/'})"
-          href="#about"
-          text
-        >
-          <span class="mr-2 text-capitalize body-1">About</span>
-        </v-btn>
-        <v-btn
-          href="https://github.com/vuetifyjs/vuetify/releases/latest"
-          target="_blank"
-          text
-        >
-          <span class="mr-2 text-capitalize body-1">Resume</span>
-        </v-btn>
-      </v-container>
-    </v-app-bar>
-    <v-main>
-      <router-view>
-        <Home class="px-3 px-sm-6" />
-      </router-view>
+    <Header />
+    
+    <v-main class="pa-0">
+      <template>
+        <keep-alive>
+          <router-view :key="$route.fullPath"></router-view>
+        </keep-alive>
+      </template>
     </v-main>
     <template>
       <v-footer dark padless>
         <v-card class="flex" flat tile>
-          <v-card-title class="primary text-center">
+          <v-card-title class="grey darken-3 text-center">
             <strong class="body-2 "
-              >This site is a work in progress, built with Vuetify using VueJs and hosted by Netlify</strong
+              >This site is a work in progress, built with Vuetify using VueJs
+              and hosted by Netlify</strong
             >
 
             <v-spacer></v-spacer>
-
           </v-card-title>
 
           <v-card-text class="py-2 white--text text-center">
-           <strong>Built with VueJs</strong>
+            <strong>2022</strong>
           </v-card-text>
         </v-card>
       </v-footer>
@@ -59,18 +31,13 @@
 </template>
 
 <script>
-import Home from "./components/home";
+import Header from "./components/header";
 
 export default {
   name: "App",
 
   components: {
-    Home,
+    Header,
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
-

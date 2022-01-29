@@ -1,5 +1,5 @@
 <template>
-  <v-card @click="$router.push({path: item.to})"
+  <v-card :to="item.to"
     flat
     max-width="560"
     class="my-4 transition-swing work-card__item "
