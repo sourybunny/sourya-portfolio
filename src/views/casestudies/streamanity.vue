@@ -13,7 +13,7 @@
             ></i>
             <span>Back</span>
           </div>
-          <v-layout row wrap class="my-10" align-start>
+          <v-layout row wrap class="my-5" align-start>
 
             <v-flex xs12 sm4>
               <p
@@ -32,7 +32,7 @@
                 every view in BitcoinSV directly from their followers.
               </h1>
             </v-flex>
-            <v-flex xs12 class="my-12">
+            <v-flex xs12 class="py-8">
               <v-dialog v-model="dialog" width="100%">
                 <template v-slot:activator="{ on, attrs }">
                   <v-img

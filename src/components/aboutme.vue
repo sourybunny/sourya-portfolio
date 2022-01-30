@@ -1,5 +1,5 @@
 <template>
-  <div class="black pt-16">
+  <div class="black pt-14">
     <!-- <v-lazy
       v-model="isActive"
       :options="{
@@ -18,7 +18,7 @@
         </p>
       </v-container>
       <v-divider class="white"></v-divider>
-      <v-container class="mt-16">
+      <v-container class="mt-5">
         <!-- <p class="font-weight-bold display-2">About Me.</p> -->
         <v-layout row xs12 wrap>
           <v-flex xs12 md6>

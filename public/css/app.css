@@ -56,14 +56,43 @@ body {
 .font-2 {
   font-family: 'Limelight' !important;
 }
-
-.slide-up {
-  animation: slide-up ease .5s forwards 1.2s;
+.text-shine {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 12s infinite linear;
 }
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+.slidee-up {
+  animation: slideup 0.5s ease;
+  /*animation: animation-name animation-duration animation-direction animation-iteration-count */
+  transition: 2s ease-out;
+}
+.fadee-in {
+  animation: fadeIn ease 1.8s;
+}
+@keyframes slideup {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
 
-@keyframes slide-up {
-  0% {transform: translateY(0);}
-  100% {transform: translateY(-40px);opacity:1;}
+  }
 }
 
 .left-content {

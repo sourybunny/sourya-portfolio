@@ -35,6 +35,7 @@ export default {
             "Designing a video platform for Bitcoin SV users to monetize their video content and earn money",
           extra: "",
           to: "/streamanity",
+          img: require(`@/assets/media/streamanity/str-display.png`),
         },
         {
           id: 2,
@@ -44,6 +45,7 @@ export default {
             "Lufe is a re-imagined public toilet system that helps users to find clean and hygienic toilets easily and motivatesthem to use public toilets.",
           extra: "",
           to: "/lufe",
+          img: require(`@/assets/media/streamanity/str-display.png`),
         },
       ],
     };

@@ -1,15 +1,14 @@
 <template>
-  <v-card :to="item.to"
+  <v-card :to="item.to" width="100%" height="100%"
     flat
     max-width="560"
     class="my-4 transition-swing work-card__item "
     :class="$vuetify.breakpoint.xsOnly ? 'mx-auto' : 'mx-4'"
   >
-    <v-img 
-      src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-      max-height="440px"
-      :min-height="$vuetify.breakpoint.mdAndUp ? '420px' : ''"
-    ></v-img>
+    <img 
+      width="100%"
+      :src="item.img"
+    />
 
     <v-card-title class="headline font-weight-bold pl-6">
       {{ item.name }}

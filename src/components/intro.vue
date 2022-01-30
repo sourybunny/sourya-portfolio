@@ -5,27 +5,47 @@
         <v-layout row xs12 wrap class="mb-16 mx-auto py-16">
           <v-spacer></v-spacer>
           <v-flex xs12 sm7>
-            <div class="white--text mb-4 text-uppercase body-2" style="opacity:0.6;">Hello / Namastey</div>
-            <div>
+            <div
+              class="white--text mb-4 text-uppercase body-2"
+              style="opacity:0.6;"
+            >
+              Hello / Namastey
+            </div>
+            <div class="">
               <p class="font-weight-medium display-4 white--text ">
-                <span style="opacity:0.4;font-family:'Limelight' !important;"> I'm </span>
+                <span style="opacity:0.4;font-family:'Limelight' !important;">
+                  I'm
+                </span>
 
-                <span class="white--text font-weight-medium display-4" style="font-family:'Limelight' !important;"
+                <span
+                  class="white--text font-weight-medium display-4"
+                  style="font-family:'Limelight' !important;"
                   >Sourya.</span
                 >
               </p>
-              <p class="my-6">
-                <span class="gradient display-3 font-weight-medium">I design and < build /> products </span> <span style="opacity:0.6;" class="white--text display-3 font-weight-medium mb-3">that delight and inspire people.</span>
+              <p class="my-6 slidee-up">
+                <span class="gradient text-shine display-3 font-weight-medium"
+                  >I design and < build /> products
+                </span>
+                <span
+                  style="opacity:0.6;"
+                  class="white--text display-3 font-weight-medium mb-3"
+                  >that delight and inspire people.</span
+                >
               </p>
 
               <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
-              <div class="font-weight-light mt-11 white--text title intro-left">
-                <span style="opacity:0.6;"
-                  >Currently a master’s student at
-                </span>
-              </div>
-              <div class="white--text font-weight-medium title">
-                Indiana University Bloomington’s HCI program.
+              <div class="fadee-in">
+                <div
+                  class="font-weight-light mt-11 white--text title intro-left"
+                >
+                  <span style="opacity:0.6;"
+                    >Currently a master’s student at
+                  </span>
+                </div>
+                <div class="white--text font-weight-medium title">
+                  Indiana University Bloomington’s HCI program.
+                </div>
               </div>
             </div>
           </v-flex>
@@ -46,11 +66,10 @@
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
-<style lang="scss" >
+<style lang="scss">
 .intro-left {
   // max-width: 800px;
 }
@@ -60,4 +79,7 @@ export default {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+
+
+
 </style>
