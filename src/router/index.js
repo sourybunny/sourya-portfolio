@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/home.vue'
+// import Home from '../views/home.vue'
 // import About from '../views/about.vue'
 
 import Streamanity from '../views/casestudies/streamanity.vue'
@@ -12,7 +12,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: Home
+    component: () => import(/* webpackChunkName: "home" */ '../views/home.vue')
     },
   {
     path: '/streamanity',
