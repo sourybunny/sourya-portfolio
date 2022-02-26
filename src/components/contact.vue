@@ -1,8 +1,5 @@
 <template>
   <div class="black">
-    <v-divider class="white"></v-divider>
-
-    <v-divider class="white"></v-divider>
     <v-lazy
       v-model="isActive"
       :options="{

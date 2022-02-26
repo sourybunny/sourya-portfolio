@@ -54,12 +54,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .font-2 {
-  font-family: 'Limelight' !important;
+  font-family: 'Playfair Display' !important;
 }
 .text-shine {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 12s infinite linear;
+  -webkit-animation: hue 8s infinite linear;
 }
 @-webkit-keyframes hue {
   from {
@@ -70,9 +70,9 @@ body {
   }
 }
 .slidee-up {
-  animation: slideup 0.5s ease;
+  animation: slideup 0.8s ease;
   /*animation: animation-name animation-duration animation-direction animation-iteration-count */
-  transition: 2s ease-out;
+  transition: 2.5s ease-out;
 }
 .fadee-in {
   animation: fadeIn ease 1.8s;

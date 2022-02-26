@@ -1,8 +1,8 @@
 <template>
   <div v-if="!loading">
     <template>
-      <section class="streamanity-gradient py-10" style="height:100vh;">
-        <v-container width="100%" class="py-14">
+      <section class="streamanity-gradient py-10">
+        <v-container class="py-14">
           <!-- <i class="fas fa-arrow-left fa-3x"></i> -->
           <div
             class="d-flex align-center"
@@ -14,20 +14,17 @@
             <span>Back</span>
           </div>
           <v-layout row wrap class="my-5" align-start>
-
             <v-flex xs12 sm4>
               <p
                 class="font-weight-bold black--text display-2 pl-2"
-                style="font-family:'Limelight' !important;"
+                style="font-family:'Playfair Display' !important;"
               >
                 Streamanity
               </p>
             </v-flex>
             <v-flex xs12 sm7>
-              <h1
-                class="title grey--text text--darken-2 font-weight-medium"
-              >
-                A simplified mobile-web based video streaming interface to help
+              <h1 class="title grey--text text--darken-2 font-weight-medium">
+                A ad-free mobile-web based video streaming platform to help
                 small video content creators upload videos and earn money from
                 every view in BitcoinSV directly from their followers.
               </h1>
@@ -37,20 +34,14 @@
                 <template v-slot:activator="{ on, attrs }">
                   <v-img
                     v-bind="attrs"
-                    width="100%"
-                    height="100%"
                     :src="
                       require(`@/assets/media/streamanity/streamanity-main.png`)
                     "
                   ></v-img>
-                  <!-- v-on="on" -->
-                  <!-- @click="dialog = !dialog" -->
-                  <p class="text-center caption ">
-                    <!-- Click to view fullscreen image -->
-                  </p>
+                  <p class="text-center caption "></p>
                 </template>
                 <v-img
-                  width=""
+                  width="100%"
                   height="100%"
                   :src="
                     require(`@/assets/media/streamanity/streamanity-main.png`)
@@ -63,16 +54,14 @@
       </section>
       <section class="pb-10">
         <div class=" text-center">
-          <v-divider class="black"></v-divider>
           <v-container>
             <p
-              class="font-weight-bold black--text font-italic display-3 my-10"
-              style="font-family:'Limelight' !important;"
+              class="grey--text text--darken-2 font-weight-medium display-3 my-10"
+              style="font-family:'Playfair Display' !important;"
             >
               A Brief Overview
             </p>
           </v-container>
-          <v-divider class="black"></v-divider>
         </div>
         <v-container width="100%" class="px-16">
           <v-layout row xs12 align="start" justify="center" class="my-10">
@@ -103,7 +92,7 @@
                 </p>
               </div>
               <div class="my-8">
-                <h6 class="title font-weight-medium">Tools</h6>
+                <h6 class="title font-weight-bold">Tools</h6>
                 <h6
                   class="grey--text text--darken-2 subtitle-1 font-weight-medium"
                 >
@@ -194,9 +183,15 @@
                 <p>
                   Streamanity was later acquired by RelayX.io
                 </p>
-                <v-btn medium class="text-capitalize" outlined rounded>
-                  Live Site
-                </v-btn>
+                <a
+                  class="text-decoration-none"
+                  href="https://streamanity.com/"
+                  target="_blank"
+                >
+                  <v-btn medium class="text-capitalize" outlined rounded>
+                    Live Site
+                  </v-btn>
+                </a>
               </div>
             </v-flex>
             <!-- <v-spacer></v-spacer> -->
@@ -356,7 +351,7 @@
           </v-layout>
         </v-container>
       </section>
-      <section>
+      <section class="streamanity">
         <v-container class="py-16">
           <v-layout class="px-10" row align-center justify-center>
             <v-flex xs12 sm8>
@@ -383,39 +378,164 @@
           </v-layout>
         </v-container>
       </section>
-      <section>
-        <v-container class="py-16">
-          <v-layout class="px-10" row align-center justify-center>
-            <v-flex xs12 sm8>
-              <p
-                class="title streamanity_green--text text--darken-1 font-weight-bold "
-              >
-                Design Outcome
-              </p>
-              <v-flex>
-                images
-              </v-flex>
-              <p></p>
+      <section class="">
+        <v-container>
+          <p
+            class="title streamanity_green--text text--darken-1 font-weight-bold "
+          >
+            Design Outcome
+          </p>
+        </v-container>
+        <v-container class="py-16 ">
+          <v-layout row align-start justify-space-between>
+            <v-flex xs12 sm3>
+              <div class="body-1">Discover Content & Creators</div>
+
+              <v-card class="card-shadow d-flex my-5">
+                <div
+                  style="width:0.5rem;height='100%';"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="ma-5">
+                  Autistic people have the same travel demands as everyone has.
+                  There are limited resources for Autistic people in regards to
+                </p>
+              </v-card>
+              <v-card class="card-shadow d-flex my-5">
+                <div
+                  style="width:0.5rem;height='100%';"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="ma-5">
+                  Autistic people have the same travel demands as everyone has.
+                  There are limited resources for Autistic people in regards to
+                </p>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm9>
+              <video
+                height="100%"
+                width="100%"
+                :src="
+                  require(`@/assets/media/streamanity/discover_desktop.mp4`)
+                "
+                autoplay
+                muted
+                loop
+                class="mx-10"
+              ></video>
             </v-flex>
           </v-layout>
         </v-container>
       </section>
+      <section class="streamanity">
+        <v-container class="py-16 ">
+          <v-layout row align-start justify-space-between>
+            <v-flex xs12 sm7>
+              <video
+                style="border-radius:35px;"
+                height="100%"
+                width="100%"
+                :src="require(`@/assets/media/streamanity/upload_tab.mp4`)"
+                autoplay
+                muted
+                loop
+                class="mx-10"
+              ></video>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <div class="body-1">Video Upload and Revenue Share</div>
+
+              <v-card class="card-shadow d-flex my-5">
+                <div
+                  style="width:0.5rem;height='100%';"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="ma-5">
+                  Autistic people have the same travel demands as everyone has.
+                  There are limited resources for Autistic people in regards to
+                </p>
+              </v-card>
+              <v-card class="card-shadow d-flex my-5">
+                <div
+                  style="width:0.5rem;height='100%';"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="ma-5">
+                  Autistic people have the same travel demands as everyone has.
+                  There are limited resources for Autistic people in regards to
+                </p>
+              </v-card>
+              <v-card class="card-shadow d-flex my-5">
+                <div
+                  style="width:0.5rem;height='100%';"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="ma-5">
+                  Autistic people have the same travel demands as everyone has.
+                  There are limited resources for Autistic people in regards to
+                </p>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+      <section class="">
+        <v-container class="py-16 ">
+          <v-layout row align-start justify-space-between>
+            <v-flex xs12 sm3>
+              <div class="body-1">Video Boost & Comments</div>
+
+              <v-card class="card-shadow d-flex my-5">
+                <div
+                  style="width:0.5rem;height='100%';"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="ma-5">
+                  Autistic people have the same travel demands as everyone has.
+                  There are limited resources for Autistic people in regards to
+                </p>
+              </v-card>
+              <v-card class="card-shadow d-flex my-5">
+                <div
+                  style="width:0.5rem;height='100%';"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="ma-5">
+                  Autistic people have the same travel demands as everyone has.
+                  There are limited resources for Autistic people in regards to
+                </p>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm9>
+              <video
+                height="100%"
+                width="100%"
+                :src="require(`@/assets/media/streamanity/boostt_desktop.mp4`)"
+                autoplay
+                muted
+                loop
+                class="mx-10"
+              ></video>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+
       <section>
         <div class=" text-center">
-          <v-divider class="black"></v-divider>
           <v-container>
             <p
-              class="font-weight-bold black--text font-italic display-3 my-10"
-              style="font-family:'Limelight' !important;"
+              class="grey--text text--darken-2 font-weight-medium display-3 my-10"
+              style="font-family:'Playfair Display' !important;"
             >
               My Design Process
             </p>
           </v-container>
-          <v-divider class="black"></v-divider>
         </div>
         <v-container class="py-16">
           <v-layout class="px-10" row align-center justify-center>
-            <v-flex xs12 sm8>
+            <v-flex xs12 sm12>
               <p
                 class="title streamanity_green--text text--darken-1 font-weight-bold "
               >
@@ -429,8 +549,8 @@
               </p>
               <v-img
                 class="mx-auto"
-                max-width="700"
-                max-height="600"
+                max-width="100%"
+                max-height="100%"
                 :src="require(`@/assets/media/streamanity/ddp.png`)"
               ></v-img>
               <p class="text-center caption text-capitalize">
@@ -438,58 +558,168 @@
               </p>
 
               <section>
-                <p class="title">User Research</p>
-                <p>Talking to content creators</p>
-                <p>After conducting interviews,</p>
+                <p
+                  class="title streamanity_green--text text--darken-1 font-weight-bold"
+                >
+                  User Research
+                </p>
+                <p>
+                  A series of in-depth interviews were then conducted on 5
+                  participants to further identify pain points, frustrations,
+                  needs, and desires with existing products to determine how
+                  Streamanity could improve this experience.
+                </p>
               </section>
 
-              <p>User Stories</p>
-
-              <p>Wireframes/early explorations</p>
+              <p>Wireframes/early expPlayfair Displaytions</p>
             </v-flex>
           </v-layout>
         </v-container>
       </section>
       <section class="streamanity py-8">
-        <v-container width="100%" class="py-16 ">
-          <v-layout class="px-10" row align="center" justfy="center">
-            <v-spacer></v-spacer>
-            <v-flex xs12 sm5>
-              <h6
-                class="title streamanity_green--text text--darken-1 font-weight-bold"
+        <v-container width="100%">
+          <v-layout class="px-10" row align-start justify-space-between>
+            <v-flex xs12 sm12>
+              <p
+                class="title streamanity_green--text text--darken-1 font-weight-bold "
               >
                 Research Opportunity
-              </h6>
-              <div class="my-5">
-                We gathered our research reflecting this problem space
+              </p>
+            </v-flex>
+            <v-flex xs12 sm6>
+              <div>
+                We gathered our research reflecting this problem space by
+                conducting survey with creators in cryptocurrency domain.
               </div>
 
-              <div>
-                More than 3.5 million Americans live with Autism Spectrum
-                Disorder.
-              </div>
-              <div class="my-4">
-                In the coming decade, half-million people with Autism Spectrum
-                Disorder will enter adulthood.
+              <div class="my-5">
+                80% of content creators are unhappy with Youtube's monetization
+                policies and revenue share.
               </div>
               <div>
-                Autistic people have the same travel demands as everyone has.
-                There are limited resources for Autistic people in regards to
-                <div class="mt-4">public transportation.</div>
-                <div>Paratransit​ Transportation</div>
-                <div>Training Relatives Driving</div>
+                Crypto content creators face difficulty in increasing the reach
+                of their content.
+              </div>
+              <div class="my-5">
+                Creators want to engage with their fans directly and earn money
+                with their content.
+              </div>
+              <div>
+                Users feel Youtube is overcrowded and distracting with ads, they
+                want to have a platform specific to crypto
               </div>
             </v-flex>
-            <v-spacer></v-spacer>
-            <v-flex xs12 sm5>
+            <v-flex xs12 sm6>
               image
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+      <section class=" py-8">
+        <v-container width="100%" class="py-16">
+          <v-layout class="px-10" row align-start justify-center>
+            <v-flex xs12>
+              <h6
+                class="title  mb-10  streamanity_green--text text--darken-1 font-weight-bold"
+              >
+                Key Takeaways
+              </h6>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <v-card class="card-shadow mx-4">
+                <div
+                  style="width:100%;height:5px;"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="pa-5 text-center">
+                  What products exist to discover, share and monetize content?
+                </p>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <v-card class="card-shadow  mx-4">
+                <div
+                  style="width:100%;height:5px;"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="pa-5 text-center">
+                  What are users current pain points with existing products?
+                </p>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <v-card class="card-shadow mx-4">
+                <div
+                  style="width:100%;height:5px;"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="pa-5  text-center">
+                  Which features are essential to monetize videos?
+                </p>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <v-card class="card-shadow mx-4">
+                <div
+                  style="width:100%;height:5px;"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="pa-5 text-center">
+                  What are the users needs and pain points?
+                </p>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <v-card class="card-shadow  mx-4">
+                <div
+                  style="width:100%;height:5px;"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="pa-5  text-center">
+                  What are the existing mental models of users?
+                </p>
+              </v-card>
             </v-flex>
           </v-layout>
         </v-container>
       </section>
       <section>
         <v-container class="py-16">
-          <v-layout class="px-10" row align-center justify-center>
+          <v-layout class="px-10" row align-start justify-space-between>
+            <v-flex xs12 sm12>
+              <p
+                class="title streamanity_green--text text--darken-1 font-weight-bold "
+              >
+                Market Research
+              </p>
+            </v-flex>
+            <v-flex xs12 sm5>
+              <p>
+                We did a broad sweep of companies to compare, touching different
+                industries and business types across a number of different
+                business sizes.
+              </p>
+              <p>
+                This graph plots brands/companies in relation to Streamanity
+                from an innovation standpoint as well as in business similarity.
+              </p>
+            </v-flex>
+            <v-flex xs12 sm6>
+              <v-card class="pa-10 mx-auto">
+                <v-img
+                  class="mx-auto"
+                  max-width="100%"
+                  max-height="100%"
+                  :src="require(`@/assets/media/streamanity/comp.png`)"
+                ></v-img>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+      <section>
+        <v-container class="py-16">
+          <v-layout class="px-10" row align-center justify-space-between>
             <v-flex xs12 sm8>
               <p
                 class="title streamanity_green--text text--darken-1 font-weight-bold "
@@ -497,66 +727,68 @@
                 User Stories
               </p>
             </v-flex>
-            <v-flex xs12 sm8>
+            <v-flex xs12 sm6>
               <v-card class="card-shadow d-flex my-5">
                 <div
                   style="width:0.5rem;height='100%';"
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-10">
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
+                  As a content creator, I want to be able to earn money and
+                  share my revenue with co-creators.
                 </p>
               </v-card>
             </v-flex>
-            <v-flex xs12 sm8>
+            <v-flex xs12 sm6>
               <v-card class="card-shadow d-flex">
                 <div
                   style="width:0.5rem;height='100%';"
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-10">
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
+                  As a content creator, I want to have direct control over
+                  monetization of my videos.
                 </p>
               </v-card>
             </v-flex>
-            <v-flex xs12 sm8>
+            <v-flex xs12 sm6>
               <v-card class="card-shadow d-flex my-5">
                 <div
                   style="width:0.5rem;height='100%';"
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-10">
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
+                  As a viewer, I want to engage with the creators and encourage
+                  by providing incentives to quality content.
+                </p>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm6>
+              <v-card class="card-shadow d-flex">
+                <div
+                  style="width:0.5rem;height='100%';"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="ma-10">
+                  As a viewer, I want to watch and appreciate quality content
+                  about Bitcoin and cryptocurrency.
                 </p>
               </v-card>
             </v-flex>
           </v-layout>
         </v-container>
       </section>
-      <section>
-        <v-container class="py-16">
-          <v-layout class="px-10" row align-center justify-center>
-            <v-flex xs12 sm8>
-              <p
-                class="title streamanity_green--text text--darken-1 font-weight-bold "
-              >
-                Market Research
-              </p>
-            </v-flex>
-            <v-flex xs12 sm8>
-              <v-card class="card-shadow pa-10 mt-10">
-                <p>
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
-                </p>
-              </v-card>
-            </v-flex>
-          </v-layout>
+
+      <div class=" text-center">
+        <v-container>
+          <p
+            class="grey--text text--darken-2 font-weight-medium display-3 my-10"
+            style="font-family:'Playfair Display' !important;"
+          >
+            Carving out a niche in a saturated market.
+          </p>
         </v-container>
-      </section>
+      </div>
       <section>
         <v-container class="py-16">
           <v-layout class="px-10" row align-center justify-center>
@@ -601,6 +833,45 @@
                 Reflections
               </p>
             </v-flex>
+            <v-layout row align-center justify-center>
+              <v-flex xs12 sm4>
+                <v-card class="card-shadow d-flex my-5">
+                  <div
+                    style="width:15px;height:'100%';"
+                    class="streamanity_green lighten-1"
+                  ></div>
+                  <p class="ma-10">
+                    To bring a behavioural change in the public while using
+                    public toilets and provide clean restrooms across the
+                    country.
+                  </p>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm4>
+                <v-card class="card-shadow d-flex mx-4">
+                  <div
+                    style="width:15px;height:'100%';"
+                    class="streamanity_green lighten-1"
+                  ></div>
+                  <p class="ma-10">
+                    Change the common belief that public toilets are unclean.
+                    Generate revenue to maintain toilets.
+                  </p>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm4>
+                <v-card class="card-shadow d-flex my-5">
+                  <div
+                    style="width:15px;heightL'100%';"
+                    class="streamanity_green lighten-1"
+                  ></div>
+                  <p class="ma-10">
+                    To make people find and use clean & safe restrooms with
+                    ease.
+                  </p>
+                </v-card>
+              </v-flex>
+            </v-layout>
           </v-layout>
         </v-container>
       </section>
@@ -614,6 +885,12 @@
                 Impact & Takeaways
               </p>
             </v-flex>
+            <!-- <iframe
+              width="800"
+              height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGQNscXSgAzfQNJkchmBT38%2Fopenscholarship%3Fpage-id%3D102%253A2%26node-id%3D291%253A2525%26viewport%3D241%252C48%252C0.19%26scaling%3Dscale-down%26starting-point-node-id%3D291%253A2525"
+              allowfullscreen
+            ></iframe> -->
           </v-layout>
         </v-container>
       </section>

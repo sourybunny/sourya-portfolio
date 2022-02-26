@@ -9,6 +9,7 @@ export default new Vuetify({
           light: {
             primary: '#3f51b2',
             secondary: '#b0bec5',
+            mainbg: '#000',
             streamanity: '#d6f5ec',
             streamanity_green:'#21ce98',
             greybg:'#EAEAEB',

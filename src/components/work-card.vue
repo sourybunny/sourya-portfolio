@@ -2,7 +2,7 @@
   <v-card :to="item.to" width="100%" height="100%"
     flat
     max-width="560"
-    class="my-4 transition-swing work-card__item "
+    class="my-4 transition-swing work-card__item  "
     :class="$vuetify.breakpoint.xsOnly ? 'mx-auto' : 'mx-4'"
   >
     <img 

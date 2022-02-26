@@ -1,8 +1,8 @@
 <template>
-  <div class="black">
+  <div class="mainbg">
     <v-container>
-      <v-card flat class="black d-flex align-center" height="100vh">
-        <v-layout row xs12 wrap class="mb-16 mx-auto py-16">
+      <v-card flat class="mainbg d-flex align-center " height="100vh">
+        <v-layout row xs12 wrap class="mb-16 mx-auto align-center py-16">
           <v-spacer></v-spacer>
           <v-flex xs12 sm7>
             <div
@@ -12,14 +12,16 @@
               Hello / Namastey
             </div>
             <div class="">
-              <p class="font-weight-medium display-4 white--text ">
-                <span style="opacity:0.4;font-family:'Limelight' !important;">
+              <p
+                class="font-weight-medium display-4 white--text text-animatebg"
+              >
+                <span style="opacity:0.4;font-family:'Playfair Display' !important;">
                   I'm
                 </span>
 
                 <span
-                  class="white--text font-weight-medium display-4"
-                  style="font-family:'Limelight' !important;"
+                  class="white--text font-weight-medium display-4 name"
+                  style="font-family:'Playfair Display' !important; stroke: #ffa5d8;stroke-width: 3;"
                   >Sourya.</span
                 >
               </p>
@@ -57,6 +59,7 @@
           >
             <h1 class="white--text">image</h1>
           </v-flex>
+          <div id="motion-demo"></div>
         </v-layout>
         <!-- <v-divider></v-divider> -->
       </v-card>
@@ -80,6 +83,34 @@ export default {};
   -webkit-text-stroke-color: black;
 }
 
+#motion-demo {
+  width: 40px;
+  height: 40px;
+  background: #2bc4a2;
+  offset-rotate: auto;
+  animation: 5s move 1.5s 1 forwards ease-in-out;
+  offset-path: path("M5,16 q20,95 360,104 q237,17 248,228");
+  // clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 25% 50%);
+  background: cyan;
+}
 
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
 
+.text-animatebg {
+  background-position: left;
+  background-size: 0% 100%;
+  background-image: linear-gradient(blue, red);
+  transition: all 500ms ease-in-out;
+  &:hover {
+    background-size: 100% 100%;
+  }
+}
 </style>

@@ -17,7 +17,7 @@
             <v-flex xs12 sm4>
               <p
                 class="font-weight-bold black--text display-2 pl-2"
-                style="font-family:'Limelight' !important;"
+                style="font-family:'Playfair Display' !important;"
               >
                 Lufi
               </p>
@@ -32,27 +32,27 @@
             <v-flex xs12 class="py-8">
               <v-dialog v-model="dialog" width="100%">
                 <template v-slot:activator="{ on, attrs }">
-                  <v-img
+                  <!-- <v-img
                     v-bind="attrs"
                     width="100%"
                     height="100%"
                     :src="
                       require(`@/assets/media/streamanity/streamanity-main.png`)
                     "
-                  ></v-img>
+                  ></v-img> -->
                   <!-- v-on="on" -->
                   <!-- @click="dialog = !dialog" -->
                   <p class="text-center caption ">
                     <!-- Click to view fullscreen image -->
                   </p>
                 </template>
-                <v-img
+                <!-- <v-img
                   width=""
                   height="100%"
                   :src="
                     require(`@/assets/media/streamanity/streamanity-main.png`)
                   "
-                ></v-img>
+                ></v-img> -->
               </v-dialog>
             </v-flex>
           </v-layout>
@@ -64,7 +64,7 @@
           <v-container>
             <p
               class="font-weight-bold black--text font-italic display-3 my-10"
-              style="font-family:'Limelight' !important;"
+              style="font-family:'Playfair Display' !important;"
             >
               A Brief Overview
             </p>
@@ -333,7 +333,7 @@
           <v-container>
             <p
               class="font-weight-bold black--text font-italic display-3 my-10"
-              style="font-family:'Limelight' !important;"
+              style="font-family:'Playfair Display' !important;"
             >
               My Design Process
             </p>
@@ -577,7 +577,7 @@
           <v-layout class="px-10" row align-center justify-center>
             <v-flex xs12 sm8>
               <p class="title lufi_blue--text text--darken-1 font-weight-bold ">
-                Design Explorations
+                Design ExpPlayfair Displaytions
               </p>
             </v-flex>
             <v-flex xs12 sm8>

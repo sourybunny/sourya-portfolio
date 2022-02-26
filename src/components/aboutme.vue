@@ -8,16 +8,14 @@
       min-height="500"
       transition="fade-transition"
     > -->
-      <v-divider class="white"></v-divider>
       <v-container>
         <p
-          class="font-weight-bold white--text font-italic display-3 my-10"
-          style="font-family:'Limelight' !important;"
+          class="font-weight-bold white--text  display-2 my-10"
         >
-          About Me.
+          <!-- style="font-family:'Playfair Display' !important;" -->
+          Why me.
         </p>
       </v-container>
-      <v-divider class="white"></v-divider>
       <v-container class="mt-5">
         <!-- <p class="font-weight-bold display-2">About Me.</p> -->
         <v-layout row xs12 wrap>
