@@ -43,18 +43,18 @@ export default {
           video: require(`@/assets/media/streamanity/discover_desktop.mp4`),
           bg: 'streamanity_green',
         },
-        {
-          id: 2,
-          name: "LuFe",
-          tags: "Public Health | User Research, UX Design | Bootcamp Project",
-          description:
-            "Lufe is a re-imagined public toilet system that helps users to find clean and hygienic toilets easily and motivatesthem to use public toilets.",
-          extra: "",
-          to: "/lufe",
-          img: require(`@/assets/media/streamanity/discover_desktop.mp4`),
-          video: require(`@/assets/media/streamanity/discover_desktop.mp4`),
-          bg: 'lufi_blue'
-        },
+        // {
+        //   id: 2,
+        //   name: "LuFe",
+        //   tags: "Public Health | User Research, UX Design | Bootcamp Project",
+        //   description:
+        //     "Lufe is a re-imagined public toilet system that helps users to find clean and hygienic toilets easily and motivatesthem to use public toilets.",
+        //   extra: "",
+        //   to: "/lufe",
+        //   img: require(`@/assets/media/streamanity/discover_desktop.mp4`),
+        //   video: require(`@/assets/media/streamanity/discover_desktop.mp4`),
+        //   bg: 'lufi_blue'
+        // },
       ],
     };
   },
