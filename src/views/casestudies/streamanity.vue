@@ -618,8 +618,16 @@
                 want to have a platform specific to crypto
               </div>
             </v-flex>
-            <v-flex xs12 sm6>
-              image
+            <v-spacer></v-spacer>
+            <v-flex xs12 sm4>
+              <v-img
+                :src="require(`@/assets/media/streamanity/research.svg`)"
+              ></v-img>
+              <div class="text-caption grey--text text-center">
+                <a href="https://storyset.com/web"
+                  >Web illustrations by Storyset</a
+                >
+              </div>
             </v-flex>
           </v-layout>
         </v-container>
@@ -712,6 +720,28 @@
                 This graph plots brands/companies in relation to Streamanity
                 from an innovation standpoint as well as in business similarity.
               </p>
+              <p class="title font-weight-bold ">
+                Insights
+              </p>
+              <p>
+                Companies like Patreon follow a subscription model. But, the
+                conversion rate could be as low as 0.5%, which means that only
+                0.5% of the subscriber base would want to purchase a monthly
+                subscription. This doesn't benefit the creators.
+              </p>
+              <p>
+                Monthly subscriptions didn't make sense If one likes more than
+                2–3 creators, as his commitment would be more than his Netflix
+                bill.
+              </p>
+              <p>
+                Youtube released Prime to get rid of advertisements by by asking
+                users to pay monthly subscription fee. It would payout to
+                creators based on how many minutes of the video was watched with
+                a premium subscription. We thought that this would put a limit
+                on the creators who have the potential to earn more because of
+                the inability to set the price of the video by themselves.
+              </p>
             </v-flex>
             <v-flex xs12 sm6>
               <v-card class="pa-10 mx-auto">
@@ -750,17 +780,7 @@
               <p
                 class="title streamanity_green--text text--darken-1 font-weight-bold "
               >
-                The Hypothesis
-              </p>
-            </v-flex>
-            <v-flex xs12 sm8>
-              <p>
-                What if there was a way for creators to put a low cost paywall
-                for his videos and users would pay only for what they watch. We
-                wanted to take it as far as paying by the seconds watched. Since
-                the value that someone gets from an average youtube video is
-                low, we needed a payment method that can transact low-value
-                payments with very low transaction fees.
+                Hypothesis & Solution
               </p>
             </v-flex>
             <v-flex xs12 sm8>
@@ -805,8 +825,8 @@
                 creators in the Bitcoin Cash ecosystem at that time and got
                 their feedback. Since they were all bitcoiners, they wanted to
                 see new things being tried using Bitcoin. All of them said nice
-                things about the idea. We took this as the initial validation
-                of the idea.
+                things about the idea. We took this as the initial validation of
+                the idea.
               </p>
             </v-flex>
           </v-layout>
@@ -887,25 +907,29 @@
       <section>
         <v-container class="py-16">
           <v-layout class="px-10" row align-center justify-center>
-            <v-flex xs12 sm8>
+            <v-flex xs12 sm12>
               <p
                 class="title streamanity_green--text text--darken-1 font-weight-bold "
               >
                 Design Explorations
               </p>
             </v-flex>
-            <v-flex xs12 sm8>
-              <v-card class="card-shadow pa-10 mt-10">
-                
-              </v-card>
+            <v-flex xs12 sm4> 
+              <v-img
+                  width="100%"
+                  height="100%"
+                  :src="
+                    require(`@/assets/media/streamanity/iteration.png`)
+                  "
+                ></v-img>
             </v-flex>
           </v-layout>
         </v-container>
       </section>
-      <section>
+      <!-- <section>
         <v-container class="py-16">
           <v-layout class="px-10" row align-center justify-center>
-            <v-flex xs12 sm8>
+            <v-flex xs12 sm12>
               <p
                 class="title streamanity_green--text text--darken-1 font-weight-bold "
               >
@@ -914,11 +938,11 @@
             </v-flex>
           </v-layout>
         </v-container>
-      </section>
+      </section> -->
       <section>
         <v-container class="py-16">
           <v-layout class="px-10" row align-center justify-center>
-            <v-flex xs12 sm8>
+            <v-flex xs12 sm12>
               <p
                 class="title streamanity_green--text text--darken-1 font-weight-bold "
               >
@@ -933,9 +957,8 @@
                     class="streamanity_green lighten-1"
                   ></div>
                   <p class="ma-10">
-                    To bring a behavioural change in the public while using
-                    public toilets and provide clean restrooms across the
-                    country.
+                    We found that these features were really useful to the user
+                    base we tested with.
                   </p>
                 </v-card>
               </v-flex>
@@ -946,8 +969,9 @@
                     class="streamanity_green lighten-1"
                   ></div>
                   <p class="ma-10">
-                    Change the common belief that public toilets are unclean.
-                    Generate revenue to maintain toilets.
+                    While we thought we are building an MVP, We built an entire
+                    product used by consumers and this gave me immense
+                    satisfaction to see users trying our new platform.
                   </p>
                 </v-card>
               </v-flex>
@@ -958,8 +982,9 @@
                     class="streamanity_green lighten-1"
                   ></div>
                   <p class="ma-10">
-                    To make people find and use clean & safe restrooms with
-                    ease.
+                    Most importantly, I had the opportunity to work with a very
+                    different set of user base and this really expanded me as a
+                    designer to work on consumer facing applications.
                   </p>
                 </v-card>
               </v-flex>
@@ -967,7 +992,7 @@
           </v-layout>
         </v-container>
       </section>
-      <section>
+      <!-- <section>
         <v-container class="py-16">
           <v-layout class="px-10" row align-center justify-center>
             <v-flex xs12 sm8>
@@ -979,7 +1004,7 @@
             </v-flex>
           </v-layout>
         </v-container>
-      </section>
+      </section> -->
     </template>
   </div>
 </template>

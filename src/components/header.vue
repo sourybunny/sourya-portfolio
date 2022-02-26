@@ -17,7 +17,7 @@
           <span class="mr-2 text-capitalize body-1">Projects</span>
         </v-btn> -->
         <v-btn
-          href="https://github.com/vuetifyjs/vuetify/releases/latest"
+          href="https://drive.google.com/file/d/1SozZQHRDNu1TuoX2ErRiT7ryQHShubUW/view?usp=sharing"
           target="_blank"
           text
         >
