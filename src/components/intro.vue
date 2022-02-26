@@ -13,15 +13,15 @@
             </div>
             <div class="">
               <p
-                class="font-weight-medium display-4 white--text text-animatebg"
+                class="font-weight-medium display-4 white--text "
               >
                 <span style="opacity:0.4;font-family:'Playfair Display' !important;">
                   I'm
                 </span>
 
                 <span
-                  class="white--text font-weight-medium display-4 name"
-                  style="font-family:'Playfair Display' !important; stroke: #ffa5d8;stroke-width: 3;"
+                  class="white--text font-weight-medium display-4"
+                  style="font-family:'Playfair Display' !important;"
                   >Sourya.</span
                 >
               </p>
@@ -57,7 +57,7 @@
             sm5
             center-align
           >
-            <h1 class="white--text">image</h1>
+            <!-- <h1 class="white--text">image</h1> -->
           </v-flex>
           <div id="motion-demo"></div>
         </v-layout>
@@ -88,7 +88,7 @@ export default {};
   height: 40px;
   background: #2bc4a2;
   offset-rotate: auto;
-  animation: 5s move 1.5s 1 forwards ease-in-out;
+  animation: 3.5s move 1.5s 1 forwards ease-in-out;
   offset-path: path("M5,16 q20,95 360,104 q237,17 248,228");
   // clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%, 30% 50%);
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 25% 50%);

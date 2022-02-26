@@ -8,20 +8,20 @@
         </div>
         <v-spacer></v-spacer>
         <v-btn depressed to="/" text flat>
-          <span class="mr-2 text-capitalize body-1">Home</span>
+          <span class="text-capitalize body-1">Home</span>
         </v-btn>
         <v-btn depressed to="/about" text>
-          <span class="mr-2 text-capitalize body-1">About</span>
+          <span class="text-capitalize body-1">About</span>
         </v-btn>
-        <v-btn depressed to="/projects" text>
+        <!-- <v-btn depressed to="/projects" text>
           <span class="mr-2 text-capitalize body-1">Projects</span>
-        </v-btn>
+        </v-btn> -->
         <v-btn
           href="https://github.com/vuetifyjs/vuetify/releases/latest"
           target="_blank"
           text
         >
-          <span class="mr-2 text-capitalize body-1">Resume</span>
+          <span class="text-capitalize body-1">Resume</span>
         </v-btn>
         <!-- <v-btn
           href="https://github.com/vuetifyjs/vuetify/releases/latest"

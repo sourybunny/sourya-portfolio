@@ -79,7 +79,7 @@
                 <h6
                   class="grey--text text--darken-2 subtitle-1 font-weight-medium"
                 >
-                  UX Design Engineer, Developer, Interaction Design
+                  UX Design Engineer, Developer, Interaction Designer
                 </h6>
                 <p class="grey--text text--darken-2 mt-2 font-weight-medium">
                   I
@@ -88,7 +88,7 @@
                     >single-handedly designed, developed and shipped </span
                   >the web and mobile interfaces for a new product offering
                   based on the company's vision for content monetization in
-                  Bitcoin
+                  Bitcoin.
                 </p>
               </div>
               <div class="my-8">
@@ -96,7 +96,7 @@
                 <h6
                   class="grey--text text--darken-2 subtitle-1 font-weight-medium"
                 >
-                  Javascript, VueJs, Google Workbox PWA, Figma
+                  Figma, Javascript, VueJs, Google Workbox PWA
                 </h6>
               </div>
               <div>
@@ -158,7 +158,7 @@
               </h6>
               <h4 class="headline font-weight-medium my-6">
                 Design a video platform for content creators to help monetize
-                niche viedeo content and earn money in BitcoinSV.
+                niche video content and earn money in BitcoinSV.
               </h4>
               <p
                 class="mt-10 subtitle-1 font-weight-medium font-weight-medium grey--text text--darken-2"
@@ -351,7 +351,7 @@
           </v-layout>
         </v-container>
       </section>
-      <section class="streamanity">
+      <!-- <section class="streamanity">
         <v-container class="py-16">
           <v-layout class="px-10" row align-center justify-center>
             <v-flex xs12 sm8>
@@ -360,34 +360,23 @@
               >
                 Design Solution
               </p>
-              <v-flex>
-                To answer the question of taxes being boring, we came up with a
-                very new form of taxes in a form of the mobile app. More than
-                solving a problem this project was an opportunity to explore
-                another form and redefine taxes because there are very few
-                mobile apps that exist in the taxes space. The app is designed
-                keeping in focus the following things : Engage the younger
-                target audience and to motivate people to file their taxes on
-                their own. automate user journeys with APIs provided by the
-                Income Tax Department We broke down longer user journeys and we
-                show them insights after users add the information We wanted to
-                experiment with the design so we went bold and dark mode
-              </v-flex>
+              
               <p></p>
             </v-flex>
           </v-layout>
         </v-container>
-      </section>
+      </section> -->
       <section class="">
-        <v-container>
-          <p
-            class="title streamanity_green--text text--darken-1 font-weight-bold "
-          >
-            Design Outcome
-          </p>
-        </v-container>
+        <v-container> </v-container>
         <v-container class="py-16 ">
           <v-layout row align-start justify-space-between>
+            <v-flex xs12>
+              <p
+                class="title streamanity_green--text text--darken-1 font-weight-bold "
+              >
+                Design Outcome
+              </p>
+            </v-flex>
             <v-flex xs12 sm3>
               <div class="body-1">Discover Content & Creators</div>
 
@@ -397,8 +386,8 @@
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-5">
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
+                  Viewers can discover content easily by selecting from Top
+                  videos, favorite creators and Discover new creators tabs.
                 </p>
               </v-card>
               <v-card class="card-shadow d-flex my-5">
@@ -407,8 +396,17 @@
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-5">
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
+                  Powerful and seamless Search experience that shows both videos
+                  and channels by creators.
+                </p>
+              </v-card>
+              <v-card class="card-shadow d-flex my-5">
+                <div
+                  style="width:0.5rem;height='100%';"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="ma-5">
+                  Viewers can follow or unfollow creators in single click.
                 </p>
               </v-card>
             </v-flex>
@@ -452,8 +450,9 @@
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-5">
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
+                  Users can upload video and select thumbnails on the go from
+                  video or set a custom thumbnail. Faster upload process by
+                  enabling fields while video uploads.
                 </p>
               </v-card>
               <v-card class="card-shadow d-flex my-5">
@@ -462,8 +461,8 @@
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-5">
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
+                  Creators can set a price for their content before publishing
+                  and earn money by pay-per-view.
                 </p>
               </v-card>
               <v-card class="card-shadow d-flex my-5">
@@ -472,8 +471,8 @@
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-5">
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
+                  Creators can share their revenue with other co-creators by
+                  entering their paymail information.
                 </p>
               </v-card>
             </v-flex>
@@ -492,8 +491,8 @@
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-5">
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
+                  Viewers can engage with creators using comments and tagging.
+                  They can also Tip the creator as a token of appreciation.
                 </p>
               </v-card>
               <v-card class="card-shadow d-flex my-5">
@@ -502,8 +501,20 @@
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-5">
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
+                  After watching a brief preview, viewers can pay for genuine
+                  content using their Moneybutton/Relayx wallet and watch the
+                  full video.
+                </p>
+              </v-card>
+              <v-card class="card-shadow d-flex my-5">
+                <div
+                  style="width:0.5rem;height='100%';"
+                  class="streamanity_green lighten-1"
+                ></div>
+                <p class="ma-5">
+                  Fans can boost their favorite content creator's video by
+                  paying a small price to increase the reach of the video and
+                  let other users watch it for free.
                 </p>
               </v-card>
             </v-flex>
@@ -570,8 +581,6 @@
                   Streamanity could improve this experience.
                 </p>
               </section>
-
-              <p>Wireframes/early expPlayfair Displaytions</p>
             </v-flex>
           </v-layout>
         </v-container>
@@ -717,7 +726,93 @@
           </v-layout>
         </v-container>
       </section>
+
       <section>
+        <v-container class="py-16">
+          <v-layout class="px-10" row align-start justify-center>
+            <v-flex xs12 sm8>
+              <p
+                class="title streamanity_green--text text--darken-1 font-weight-bold "
+              >
+                The Problem
+              </p>
+            </v-flex>
+            <v-flex xs12 sm8>
+              <p>
+                With Streamanity, we were trying to solve the monetization
+                problem that YouTube creators face. Our hypothesis was that
+                creators on YouTube don't make much money to support themselves.
+                YouTube’s ad revenue is pathetic. Patreon was one way in which
+                creators could monetize their work.
+              </p>
+            </v-flex>
+            <v-flex xs12 sm8>
+              <p
+                class="title streamanity_green--text text--darken-1 font-weight-bold "
+              >
+                The Hypothesis
+              </p>
+            </v-flex>
+            <v-flex xs12 sm8>
+              <p>
+                What if there was a way for creators to put a low cost paywall
+                for his videos and users would pay only for what they watch. We
+                wanted to take it as far as paying by the seconds watched. Since
+                the value that someone gets from an average youtube video is
+                low, we needed a payment method that can transact low-value
+                payments with very low transaction fees.
+              </p>
+            </v-flex>
+            <v-flex xs12 sm8>
+              <p>
+                What if there was a way for creators to put a low cost paywall
+                for his videos and users would pay only for what they watch. We
+                wanted to take it as far as paying by the seconds watched. Since
+                the value that someone gets from an average youtube video is
+                low, we needed a payment method that can transact low-value
+                payments with very low transaction fees.
+              </p>
+              <p>
+                We thought with such a low cost paywall we could get to a
+                conversion of 5%. With a conversion rate of 5% and a video cost
+                of $ 0.10, a creator would make 10x the money from a single
+                video when compared to what he would make from YouTube in a
+                month.
+              </p>
+
+              <p>
+                We believed that there will be enough people who would watch the
+                video by paying since the amount involved is small and since it
+                is not a monthly commitment.
+              </p>
+              <p>
+                To incentivize conversions, we wanted the platform to be
+                ad-free. So, it was an ad-free platform, where the fans would
+                pay small amounts of money to watch videos uploaded by their
+                favorite creators.
+              </p>
+            </v-flex>
+            <v-flex xs12 sm8>
+              <p
+                class="title streamanity_green--text text--darken-1 font-weight-bold "
+              >
+                Validation
+              </p>
+            </v-flex>
+            <v-flex xs12 sm8>
+              <p>
+                We wanted to go one step further, we spoke with all the major
+                creators in the Bitcoin Cash ecosystem at that time and got
+                their feedback. Since they were all bitcoiners, they wanted to
+                see new things being tried using Bitcoin. All of them said nice
+                things about the idea. We took this as the initial validation
+                of the idea.
+              </p>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+      <section class="streamanity">
         <v-container class="py-16">
           <v-layout class="px-10" row align-center justify-space-between>
             <v-flex xs12 sm8>
@@ -801,10 +896,7 @@
             </v-flex>
             <v-flex xs12 sm8>
               <v-card class="card-shadow pa-10 mt-10">
-                <p>
-                  Autistic people have the same travel demands as everyone has.
-                  There are limited resources for Autistic people in regards to
-                </p>
+                
               </v-card>
             </v-flex>
           </v-layout>
@@ -885,12 +977,6 @@
                 Impact & Takeaways
               </p>
             </v-flex>
-            <!-- <iframe
-              width="800"
-              height="450"
-              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGQNscXSgAzfQNJkchmBT38%2Fopenscholarship%3Fpage-id%3D102%253A2%26node-id%3D291%253A2525%26viewport%3D241%252C48%252C0.19%26scaling%3Dscale-down%26starting-point-node-id%3D291%253A2525"
-              allowfullscreen
-            ></iframe> -->
           </v-layout>
         </v-container>
       </section>

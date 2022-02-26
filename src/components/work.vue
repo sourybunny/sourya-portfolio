@@ -1,16 +1,17 @@
 <template>
   <div class="black"> 
       <v-container>
-       <p class="font-weight-bold white--text  display-2 my-10 " >Selected Work.</p>
+       <p class="font-weight-bold white--text  display-2 " >Selected Work.</p>
       </v-container>
     <v-container>
       <!-- <p class="font-weight-medium display-2 mt-10">Selected Work.</p> -->
-      <v-layout class="mt-10  " row xs12 wrap no-gutters>
+      <v-layout class="mt-10" row xs12 wrap no-gutters>
         <!-- <v-flex xs12 sm6 md6 v-for="project in projects" :key="project.id">
           <WorkCard class="work-card" :item="project" />
         </v-flex> -->
-        <v-flex xs12 class="my-5 red" v-for="project in projects" :key="project.id">
-          <Project  :item="project" />
+        <v-flex xs12 class="my-5" :class="project.bg"  v-for="project in projects" :key="project.id">
+
+          <Project :item="project" />
         </v-flex>
       </v-layout>
     </v-container>
@@ -33,14 +34,14 @@ export default {
         {
           id: 1,
           name: "Streamanity",
-          tags: "Social | Product,UX Design | Developed & Shipped Product",
+          tags: "Social | Product, UX Design, Leadership | Developed & Shipped Product",
           description:
-            "Designing a video platform for Bitcoin SV users to monetize their video content and earn money",
+            "Designing a video platform for Bitcoin SV users to monetize their video content and earn money.",
           extra: "",
           to: "/streamanity",
           img: require(`@/assets/media/streamanity/discover_desktop.mp4`),
-          video: require(`@/assets/media/streamanity/discover_desktop.mp4`)
-
+          video: require(`@/assets/media/streamanity/discover_desktop.mp4`),
+          bg: 'streamanity_green',
         },
         {
           id: 2,
@@ -51,7 +52,8 @@ export default {
           extra: "",
           to: "/lufe",
           img: require(`@/assets/media/streamanity/discover_desktop.mp4`),
-          video: require(`@/assets/media/streamanity/discover_desktop.mp4`)
+          video: require(`@/assets/media/streamanity/discover_desktop.mp4`),
+          bg: 'lufi_blue'
         },
       ],
     };
