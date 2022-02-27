@@ -1,14 +1,14 @@
 <template>
-  <v-card :to="item.to" width="100%" height="100%"
+  <v-card
+    :to="item.to"
+    width="100%"
+    height="100%"
     flat
     max-width="560"
     class="my-4 transition-swing work-card__item  "
     :class="$vuetify.breakpoint.xsOnly ? 'mx-auto' : 'mx-4'"
   >
-    <img 
-      width="100%"
-      :src="item.img"
-    />
+    <img width="100%" :src="item.img" />
 
     <v-card-title class="headline font-weight-bold pl-6">
       {{ item.name }}
@@ -20,7 +20,7 @@
     <v-card-text class="title font-weight-light pl-6">
       {{ item.description }}
     </v-card-text>
-    <v-card-actions> </v-card-actions>
+    
   </v-card>
 </template>
 

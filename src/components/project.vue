@@ -18,11 +18,16 @@
         <v-card-text class="title font-weight-light pl-6">
           {{ item.description }}
         </v-card-text>
+        <v-card-actions>
+          <v-btn large class="text-capitalize ml-3 px-3" dark rounded>
+            View Project
+          </v-btn>
+        </v-card-actions>
       </v-flex>
       <v-flex xs4>
-       <v-responsive>
-          <v-img :src="item.img" ></v-img>
-       </v-responsive>
+        <v-responsive>
+          <v-img :src="item.img"></v-img>
+        </v-responsive>
       </v-flex>
     </v-layout>
   </v-card>
