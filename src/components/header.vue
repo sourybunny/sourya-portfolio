@@ -2,12 +2,12 @@
    <v-app-bar flat app color="black" dark hide-on-scroll>
       <v-container class="d-flex align-center">
         <div @click.stop="$router.push({path:'/'})"
-          class="white--text is-pointer headline font-weight-medium"
+          class="white--text is-pointer title font-weight-medium"
         >
           Sourya Varanasi
         </div>
         <v-spacer></v-spacer>
-        <v-btn depressed to="/" text flat>
+        <v-btn depressed to="/" text>
           <span class="text-capitalize body-1">Home</span>
         </v-btn>
         <v-btn depressed to="/about" text>

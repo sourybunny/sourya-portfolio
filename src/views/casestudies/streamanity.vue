@@ -8,10 +8,19 @@
             class="d-flex align-center"
             @click.stop="$router.push({ path: '/' })"
           >
-            <i
+          <span class="is-pointer mr-3 d-flex align-center">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+              />
+            </svg>
+
+          </span>
+            <!-- <i
               class="is-pointer fas fa-long-arrow-alt-left mr-3 fa-3x greybg--text text--darken-3"
-            ></i>
-            <span>Back</span>
+            ></i> -->
+            <span class="is-pointer">Back</span>
           </div>
           <v-layout row wrap class="my-5" align-start>
             <v-flex xs12 sm4>
@@ -606,27 +615,25 @@
                 policies and revenue share.
               </div>
               <div>
-                Crypto content creators face difficulty in increasing the reach
+                Crypto content creators face <strong>difficulty in increasing the reach </strong>
                 of their content.
               </div>
               <div class="my-5">
-                Creators want to engage with their fans directly and earn money
+                Creators want to <strong>engage with their fans directly and earn money</strong>
                 with their content.
               </div>
               <div>
-                Users feel Youtube is overcrowded and distracting with ads, they
+                Users feel <strong>Youtube is overcrowded </strong>and distracting with ads, they
                 want to have a platform specific to crypto
               </div>
             </v-flex>
             <v-spacer></v-spacer>
             <v-flex xs12 sm4>
               <v-img
-                :src="require(`@/assets/media/streamanity/research.svg`)"
+                :src="require(`@/assets/media/streamanity/research.jpg`)"
               ></v-img>
               <div class="text-caption grey--text text-center">
-                <a href="https://storyset.com/web"
-                  >Web illustrations by Storyset</a
-                >
+                <a href='https://www.freepik.com/vectors/frame'>Frame vector created by rawpixel.com - www.freepik.com</a>
               </div>
             </v-flex>
           </v-layout>
@@ -724,10 +731,10 @@
                 Insights
               </p>
               <p>
-                Companies like Patreon follow a subscription model. But, the
-                conversion rate could be as low as 0.5%, which means that only
+                Companies like Patreon follow a <strong>subscription model. But, the
+                conversion rate could be as low as 0.5%</strong>, which means that only
                 0.5% of the subscriber base would want to purchase a monthly
-                subscription. This doesn't benefit the creators.
+                subscription. This <strong>doesn't benefit the creators.</strong>
               </p>
               <p>
                 Monthly subscriptions didn't make sense If one likes more than
@@ -771,7 +778,7 @@
               <p>
                 With Streamanity, we were trying to solve the monetization
                 problem that YouTube creators face. Our hypothesis was that
-                creators on YouTube don't make much money to support themselves.
+                <strong>creators on YouTube don't make much money to support themselves.</strong>
                 YouTube’s ad revenue is pathetic. Patreon was one way in which
                 creators could monetize their work.
               </p>
@@ -785,8 +792,8 @@
             </v-flex>
             <v-flex xs12 sm8>
               <p>
-                What if there was a way for creators to put a low cost paywall
-                for his videos and users would pay only for what they watch. We
+                What if there was a way for creators to put a <strong>low cost paywall
+                for his videos and users would pay only for what they watch.</strong> We
                 wanted to take it as far as paying by the seconds watched. Since
                 the value that someone gets from an average youtube video is
                 low, we needed a payment method that can transact low-value
@@ -794,20 +801,20 @@
               </p>
               <p>
                 We thought with such a low cost paywall we could get to a
-                conversion of 5%. With a conversion rate of 5% and a video cost
+                conversion of 5%. <strong>With a conversion rate of 5% and a video cost
                 of $ 0.10, a creator would make 10x the money from a single
-                video when compared to what he would make from YouTube in a
+                video</strong> when compared to what he would make from YouTube in a
                 month.
               </p>
 
               <p>
                 We believed that there will be enough people who would watch the
                 video by paying since the amount involved is small and since it
-                is not a monthly commitment.
+                is <strong>not a monthly commitment.</strong>
               </p>
               <p>
-                To incentivize conversions, we wanted the platform to be
-                ad-free. So, it was an ad-free platform, where the fans would
+                <strong>To incentivize conversions, we wanted the platform to be
+                ad-free.</strong> So, it was an ad-free platform, where the fans would
                 pay small amounts of money to watch videos uploaded by their
                 favorite creators.
               </p>
@@ -849,7 +856,7 @@
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-10">
-                  As a content creator, I want to be able to earn money and
+                  As a content creator, I want to be able to <strong>earn money</strong> and
                   share my revenue with co-creators.
                 </p>
               </v-card>
@@ -861,8 +868,8 @@
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-10">
-                  As a content creator, I want to have direct control over
-                  monetization of my videos.
+                  As a content creator, I want to have <strong>direct control over
+                  monetization</strong> of my videos.
                 </p>
               </v-card>
             </v-flex>
@@ -873,8 +880,8 @@
                   class="streamanity_green lighten-1"
                 ></div>
                 <p class="ma-10">
-                  As a viewer, I want to engage with the creators and encourage
-                  by providing incentives to quality content.
+                  As a viewer, I want to engage with the creators and <strong>encourage
+                  by providing incentives </strong>to quality content.
                 </p>
               </v-card>
             </v-flex>
@@ -914,14 +921,12 @@
                 Design Explorations
               </p>
             </v-flex>
-            <v-flex xs12 sm4> 
+            <v-flex xs12 sm4>
               <v-img
-                  width="100%"
-                  height="100%"
-                  :src="
-                    require(`@/assets/media/streamanity/iteration.png`)
-                  "
-                ></v-img>
+                width="100%"
+                height="100%"
+                :src="require(`@/assets/media/streamanity/iteration.png`)"
+              ></v-img>
             </v-flex>
           </v-layout>
         </v-container>

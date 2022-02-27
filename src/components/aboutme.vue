@@ -10,10 +10,10 @@
     > -->
       <v-container>
         <p
-          class="font-weight-bold white--text  display-2 my-10"
+          class="font-weight-medium white--text  display-2 my-10"
         >
           <!-- style="font-family:'Playfair Display' !important;" -->
-          Why me.
+         About me.
         </p>
       </v-container>
       <v-container class="mt-5">

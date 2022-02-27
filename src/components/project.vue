@@ -4,27 +4,27 @@
     width="100%"
     height="100%"
     flat
-    class="my-4 transition-swing "
+    class="my-4 pa-5 streamanity transition-swing "
     :class="$vuetify.breakpoint.xsOnly ? 'mx-auto' : 'mx-4'"
   >
-    <!-- <img 
-      width="100%"
-      :src="item.img"
-    /> -->
-    
-    
-
-    <v-card-title class="headline font-weight-bold pl-6">
-      {{ item.name }}
-    </v-card-title>
-
-    <v-card-subtitle class="title font-weight-medium pl-6 pt-1">
-      {{ item.tags }}
-    </v-card-subtitle>
-    <v-card-text class="title font-weight-light pl-6">
-      {{ item.description }}
-    </v-card-text>
-    <v-card-actions> </v-card-actions>
+    <v-layout row justify-space-between>
+      <v-flex xs8>
+        <v-card-title class="headline font-weight-bold pl-6">
+          {{ item.name }}
+        </v-card-title>
+        <v-card-subtitle class="title font-weight-medium pl-6 pt-1">
+          {{ item.tags }}
+        </v-card-subtitle>
+        <v-card-text class="title font-weight-light pl-6">
+          {{ item.description }}
+        </v-card-text>
+      </v-flex>
+      <v-flex xs4>
+       <v-responsive>
+          <v-img :src="item.img" ></v-img>
+       </v-responsive>
+      </v-flex>
+    </v-layout>
   </v-card>
 </template>
 
