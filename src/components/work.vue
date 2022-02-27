@@ -1,7 +1,7 @@
 <template>
   <div class="black"> 
       <v-container>
-       <p class="font-weight-bold white--text  display-2 " >Selected Work.</p>
+       <p class="font-weight-medium white--text  display-2 " >Selected Work.</p>
       </v-container>
     <v-container>
       <!-- <p class="font-weight-medium display-2 mt-10">Selected Work.</p> -->
@@ -39,8 +39,7 @@ export default {
             "Designing a video platform for Bitcoin SV users to monetize their video content and earn money.",
           extra: "",
           to: "/streamanity",
-          img: require(`@/assets/media/streamanity/discover_desktop.mp4`),
-          video: require(`@/assets/media/streamanity/discover_desktop.mp4`),
+          img: require(`@/assets/media/streamanity/streamanity-home.png`),
           bg: 'streamanity_green',
         },
         // {

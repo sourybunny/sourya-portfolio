@@ -6,33 +6,30 @@
           <v-spacer></v-spacer>
           <v-flex xs12 sm7>
             <div
-              class="white--text mb-4 text-uppercase body-2"
+              class="white--text mb-4 text-uppercase subheading"
               style="opacity:0.6;"
             >
               Hello / Namastey
             </div>
             <div class="">
-              <p
-                class="font-weight-medium display-4 white--text "
-              >
-                <span style="opacity:0.4;font-family:'Playfair Display' !important;">
+              <p class="font-weight-medium display-4 white--text ">
+                <span>
                   I'm
                 </span>
 
-                <span
-                  class="white--text font-weight-medium display-4"
-                  style="font-family:'Playfair Display' !important;"
+                <span class="white--text font-weight-medium display-4"
                   >Sourya.</span
                 >
               </p>
+              <!-- style="font-family:'Playfair Display' !important;" -->
               <p class="my-6 slidee-up">
                 <span class="gradient text-shine display-3 font-weight-medium"
-                  >I design and < build /> products
+                  >I design and < build /> 
                 </span>
                 <span
                   style="opacity:0.6;"
                   class="white--text display-3 font-weight-medium mb-3"
-                  >that delight and inspire people.</span
+                  >products that delight and inspire people.</span
                 >
               </p>
 
@@ -59,7 +56,7 @@
           >
             <!-- <h1 class="white--text">image</h1> -->
           </v-flex>
-          <div id="motion-demo"></div>
+          <!-- <div id="motion-demo"></div> -->
         </v-layout>
         <!-- <v-divider></v-divider> -->
       </v-card>
