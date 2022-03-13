@@ -1,7 +1,7 @@
 <template>
   <div class="black"> 
       <v-container>
-       <p class="font-weight-medium white--text  display-2 " >Selected Work.</p>
+       <p class="font-weight-medium white--text  " :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'">Selected Work.</p>
       </v-container>
     <v-container>
       <!-- <p class="font-weight-medium display-2 mt-10">Selected Work.</p> -->
@@ -42,18 +42,17 @@ export default {
           img: require(`@/assets/media/streamanity/streamanity-home.png`),
           bg: 'streamanity_green',
         },
-        // {
-        //   id: 2,
-        //   name: "LuFe",
-        //   tags: "Public Health | User Research, UX Design | Bootcamp Project",
-        //   description:
-        //     "Lufe is a re-imagined public toilet system that helps users to find clean and hygienic toilets easily and motivatesthem to use public toilets.",
-        //   extra: "",
-        //   to: "/lufe",
-        //   img: require(`@/assets/media/streamanity/discover_desktop.mp4`),
-        //   video: require(`@/assets/media/streamanity/discover_desktop.mp4`),
-        //   bg: 'lufi_blue'
-        // },
+        {
+          id: 2,
+          name: "LuFe",
+          tags: "Public Health | User Research, UX Design | Bootcamp Project",
+          description:
+            "Lufe is a re-imagined public toilet system that helps users to find clean and hygienic toilets easily and motivatesthem to use public toilets.",
+          extra: "",
+          to: "/lufe",
+          img: require(`@/assets/media/streamanity/streamanity-home.png`),
+          bg: 'lufi_blue'
+        },
       ],
     };
   },

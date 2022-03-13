@@ -4,7 +4,7 @@
     width="100%"
     height="100%"
     flat
-    class="my-4 pa-5 streamanity transition-swing "
+    class="my-4 pa-5 transition-swing "
     :class="$vuetify.breakpoint.xsOnly ? 'mx-auto' : 'mx-4'"
   >
     <v-layout row justify-space-between>
