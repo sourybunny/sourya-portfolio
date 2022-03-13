@@ -2,16 +2,16 @@
    <v-app-bar flat app color="black" dark hide-on-scroll>
       <v-container class="d-flex align-center">
         <div @click.stop="$router.push({path:'/'})"
-          class="white--text is-pointer title font-weight-medium"
+          class="white--text is-pointer title font-weight-light"
         >
           Sourya Varanasi
         </div>
         <v-spacer></v-spacer>
         <v-btn depressed to="/" text>
-          <span class="text-capitalize body-1">Home</span>
+          <span class="text-capitalize body-1 font-weight-light">Home</span>
         </v-btn>
         <v-btn depressed to="/about" text>
-          <span class="text-capitalize body-1">About</span>
+          <span class="text-capitalize body-1 font-weight-light">About</span>
         </v-btn>
         <!-- <v-btn depressed to="/projects" text>
           <span class="mr-2 text-capitalize body-1">Projects</span>
@@ -21,7 +21,7 @@
           target="_blank"
           text
         >
-          <span class="text-capitalize body-1">Resume</span>
+          <span class="text-capitalize body-1 font-weight-light">Resume</span>
         </v-btn>
         <!-- <v-btn
           href="https://github.com/vuetifyjs/vuetify/releases/latest"

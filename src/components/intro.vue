@@ -5,12 +5,12 @@
         <v-layout row xs12 wrap class="mb-16 mx-auto align-center py-16">
           <v-spacer></v-spacer>
           <v-flex xs12 sm7>
-            <div
+            <!-- <div
               class="white--text mb-4 text-uppercase subheading"
               style="opacity:0.6;"
             >
               Hello / Namastey
-            </div>
+            </div> -->
             <div class="">
               <p class="font-weight-medium display-4 white--text ">
                 <span>
@@ -24,7 +24,7 @@
               <!-- style="font-family:'Playfair Display' !important;" -->
               <p class="my-6 slidee-up">
                 <span class="gradient text-shine display-3 font-weight-medium"
-                  >I design and < build /> 
+                  >I design and < build />
                 </span>
                 <span
                   style="opacity:0.6;"
@@ -45,6 +45,78 @@
                 <div class="white--text font-weight-medium title">
                   Indiana University Bloomington’s HCI program.
                 </div>
+                <div class="text-left mt-5">
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        class="mr-2 darken-3"
+                        fab
+                        dark
+                        small
+                        color="grey"
+                        v-bind="attrs"
+                        v-on="on"
+                      >
+                        <v-icon dark>
+                          mdi-linkedin
+                        </v-icon>
+                      </v-btn>
+                    </template>
+                    <span>Linkedin</span>
+                  </v-tooltip>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        class="mx-2 darken-3"
+                        fab
+                        dark
+                        small
+                        color="grey"
+                        v-bind="attrs"
+                        v-on="on"
+                      >
+                        <v-icon dark>
+                          mdi-mail
+                        </v-icon>
+                      </v-btn>
+                    </template>
+                    <span>Email</span>
+                  </v-tooltip>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        class="mx-2 darken-3"
+                        fab
+                        dark
+                        small
+                        color="grey"
+                        v-bind="attrs"
+                        v-on="on"
+                      >
+                        <i class="fab fa-2x fa-behance-square"></i>
+                      </v-btn>
+                    </template>
+                    <span>Behance</span>
+                  </v-tooltip>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        class="mx-2 darken-3"
+                        fab
+                        dark
+                        small
+                        color="grey"
+                        v-bind="attrs"
+                        v-on="on"
+                      >
+                        <v-icon dark>
+                          mdi-instagram
+                        </v-icon>
+                      </v-btn>
+                    </template>
+                    <span>Instagram</span>
+                  </v-tooltip>
+                </div>
               </div>
             </div>
           </v-flex>
@@ -54,13 +126,16 @@
             sm5
             center-align
           >
-            <!-- <h1 class="white--text">image</h1> -->
           </v-flex>
-          <!-- <div id="motion-demo"></div> -->
         </v-layout>
-        <!-- <v-divider></v-divider> -->
       </v-card>
-      <!-- <v-divider class="py-1 grey" style="opacity:0.4;"></v-divider> -->
+      <div class="text-center" >
+        <v-btn class="darken-3" style="margin-top:-10rem;" fab dark small color="transparent">
+          <v-icon dark>
+            mdi-chevron-down
+          </v-icon>
+        </v-btn>
+      </div>
     </v-container>
   </div>
 </template>
