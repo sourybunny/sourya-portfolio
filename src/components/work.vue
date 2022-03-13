@@ -1,7 +1,7 @@
 <template>
   <div class="black"> 
       <v-container>
-       <p class="font-weight-medium white--text  display-2 " >Selected Work.</p>
+       <p class="font-weight-medium white--text  " :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'">Selected Work.</p>
       </v-container>
     <v-container>
       <!-- <p class="font-weight-medium display-2 mt-10">Selected Work.</p> -->

@@ -9,12 +9,7 @@
       transition="fade-transition"
     > -->
       <v-container>
-        <p
-          class="font-weight-medium white--text  display-2 my-10"
-        >
-          <!-- style="font-family:'Playfair Display' !important;" -->
-         About me.
-        </p>
+         <p class="font-weight-medium white--text  " :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'">About me.</p>
       </v-container>
       <v-container class="mt-5">
         <!-- <p class="font-weight-bold display-2">About Me.</p> -->

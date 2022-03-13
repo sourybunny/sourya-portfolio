@@ -2,8 +2,7 @@
   <div class="mainbg">
     <v-container>
       <v-card flat class="mainbg d-flex align-center " height="100vh">
-        <v-layout row xs12 wrap class="mb-16 mx-auto align-center py-16">
-          <v-spacer></v-spacer>
+        <v-layout row xs12 wrap class=" mx-auto align-center">
           <v-flex xs12 sm7>
             <!-- <div
               class="white--text mb-4 text-uppercase subheading"
@@ -12,23 +11,23 @@
               Hello / Namastey
             </div> -->
             <div class="">
-              <p class="font-weight-medium display-4 white--text ">
+              <p class="font-weight-medium  white--text "  :class="$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2'">
                 <span>
                   I'm
                 </span>
 
-                <span class="white--text font-weight-medium display-4"
+                <span class="white--text font-weight-medium "  :class="$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2'"
                   >Sourya.</span
                 >
               </p>
               <!-- style="font-family:'Playfair Display' !important;" -->
               <p class="my-6 slidee-up">
-                <span class="gradient text-shine display-3 font-weight-medium"
+                <span class="gradient text-shine  font-weight-medium" :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-1'"
                   >I design and < build />
                 </span>
-                <span
+                <span  :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-1'"
                   style="opacity:0.6;"
-                  class="white--text display-3 font-weight-medium mb-3"
+                  class="white--text  font-weight-medium mb-3"
                   >products that delight and inspire people.</span
                 >
               </p>
@@ -36,19 +35,19 @@
               <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
               <div class="fadee-in">
                 <div
-                  class="font-weight-light mt-11 white--text title intro-left"
+                  class="font-weight-light mt-10 white--text title intro-left"
                 >
-                  <span style="opacity:0.6;"
+                  <span style="opacity:0.6;" :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
                     >Currently a master’s student at
                   </span>
                 </div>
-                <div class="white--text font-weight-medium title">
+                <div class="white--text font-weight-medium" :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'">
                   Indiana University Bloomington’s HCI program.
                 </div>
                 <div class="text-left mt-5">
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn
+                      <v-btn href="https://www.linkedin.com/in/souryav/" target="_blank"
                         class="mr-2 darken-3"
                         fab
                         dark
@@ -66,7 +65,7 @@
                   </v-tooltip>
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn
+                      <v-btn href="mailto:sovarana@iu.edu" target="_blank"
                         class="mx-2 darken-3"
                         fab
                         dark
@@ -84,7 +83,7 @@
                   </v-tooltip>
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn
+                      <v-btn href="https://www.behance.net/sourya" target="_blank"
                         class="mx-2 darken-3"
                         fab
                         dark
@@ -100,7 +99,7 @@
                   </v-tooltip>
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn
+                      <v-btn href="https://www.instagram.com/sourya_sketches/" target="_blank"
                         class="mx-2 darken-3"
                         fab
                         dark
@@ -129,7 +128,7 @@
           </v-flex>
         </v-layout>
       </v-card>
-      <div class="text-center" >
+      <div class="text-center" v-if="$vuetify.breakpoint.mdAndUp">
         <v-btn class="darken-3" style="margin-top:-10rem;" fab dark small color="transparent">
           <v-icon dark>
             mdi-chevron-down
