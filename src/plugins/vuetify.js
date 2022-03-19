@@ -16,6 +16,7 @@ export default new Vuetify({
             slate:'#818181',
             lufi: '#edf6fc',
             lufi_blue: '#009df5',
+            piggie_blue: '#009df5',
             accent: '#8c9eff',
             error: '#b71c1c',
             nav: '#fff'

@@ -1,17 +1,34 @@
 <template>
-  <div class="black"> 
-      <v-container>
-       <p class="font-weight-medium white--text  " :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'">Selected Work.</p>
-      </v-container>
+  <div class="black">
+    <v-container>
+      <div
+        class="font-weight-medium white--text text-uppercase "
+        :class="$vuetify.breakpoint.mdAndUp ? ' title' : 'subheading'"
+      >
+        Selected Work,
+      </div>
+      <div
+        class="font-weight-medium white--text mb-5"
+        :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'"
+      >
+        <!-- <v-img height="50" width="64" :src="require(`@/assets/media/home/arrow.svg`)"></v-img> -->
+        Product design.
+      </div>
+    </v-container>
     <v-container>
       <!-- <p class="font-weight-medium display-2 mt-10">Selected Work.</p> -->
-      <v-layout class="mt-10" row xs12 wrap no-gutters>
+      <v-layout row wrap justify-center>
         <!-- <v-flex xs12 sm6 md6 v-for="project in projects" :key="project.id">
           <WorkCard class="work-card" :item="project" />
         </v-flex> -->
-        <v-flex xs12 class="my-5" :class="project.bg"  v-for="project in projects" :key="project.id">
-
-          <Project :item="project" />
+        <v-flex class="my-5"
+          :class="project.bg"
+          v-for="project in projects"
+          :key="project.id"
+        >
+          <div>
+            <Project :item="project" />
+          </div>
         </v-flex>
       </v-layout>
     </v-container>
@@ -34,13 +51,28 @@ export default {
         {
           id: 1,
           name: "Streamanity",
-          tags: "Social | Product, UX Design, Leadership | Developed & Shipped Product",
+          meta: 'Content monetization in Bitcoin',
+          tags:
+            "Social | Product, UX Design, Leadership | Developed & Shipped Product",
           description:
             "Designing a video platform for Bitcoin SV users to monetize their video content and earn money.",
           extra: "",
           to: "/streamanity",
           img: require(`@/assets/media/streamanity/streamanity-home.png`),
-          bg: 'streamanity_green',
+          bg: "streamanity_green",
+        },
+        {
+          id: 2,
+          name: "Piggie",
+          meta: 'Linking student goals to their savings.',
+          tags:
+            "Fintech | UX Design",
+          description:
+            "An app that links student goals to their savings and educates them on best behaviors and budgeting.",
+          extra: "",
+          to: "https://www.behance.net/gallery/139742913/Financial-wellbeing",
+          img: require(`@/assets/media/piggie/piggie-2.png`),
+          bg: "piggie_blue",
         },
         // {
         //   id: 2,

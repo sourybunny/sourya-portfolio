@@ -1,13 +1,13 @@
 <template>
   <v-card
-    :to="item.to"
+    :href="item.to"
     width="100%"
     height="100%"
     flat
     class="my-4 pa-5 transition-swing "
     :class="$vuetify.breakpoint.xsOnly ? 'mx-auto' : 'mx-4'"
   >
-    <v-layout row justify-space-between>
+    <v-layout row justify-space-between wrap >
       <v-flex xs8>
         <v-card-title class="headline font-weight-bold pl-6">
           {{ item.name }}
@@ -19,14 +19,14 @@
           {{ item.description }}
         </v-card-text>
         <v-card-actions>
-          <v-btn large class="text-capitalize ml-3 px-3" dark rounded>
+          <v-btn large class="text-uppercase subtitle ml-3 px-5" dark rounded>
             View Project
           </v-btn>
         </v-card-actions>
       </v-flex>
       <v-flex xs4>
         <v-responsive>
-          <v-img :src="item.img"></v-img>
+          <v-img  max-width="500" :src="item.img"></v-img>
         </v-responsive>
       </v-flex>
     </v-layout>

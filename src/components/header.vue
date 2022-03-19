@@ -2,7 +2,7 @@
    <v-app-bar flat app color="black" dark hide-on-scroll>
       <v-container class="d-flex align-center">
         <div @click.stop="$router.push({path:'/'})"
-          class="white--text is-pointer title font-weight-light"
+          class="white--text is-pointer title"
         >
           Sourya Varanasi
         </div>
@@ -17,7 +17,7 @@
           <span class="mr-2 text-capitalize body-1">Projects</span>
         </v-btn> -->
         <v-btn
-          href="https://drive.google.com/file/d/1SozZQHRDNu1TuoX2ErRiT7ryQHShubUW/view?usp=sharing"
+          href="https://drive.google.com/file/d/1YRWHrWADGXh0E0OU6OXVk8-5cNmFboQa/view?usp=sharing"
           target="_blank"
           text
         >
