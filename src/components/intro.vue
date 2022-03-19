@@ -21,16 +21,16 @@
                 >
               </p>
               <!-- style="font-family:'Playfair Display' !important;" -->
-              <p class="my-6 slidee-up">
+              <div class="my-6 slidee-up">
                 <span class="gradient text-shine  font-weight-medium" :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-1'"
                   >I design and < build />
                 </span>
-                <span  :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-1'"
+                <div  :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-1'"
                   style="opacity:0.6;"
                   class="white--text  font-weight-medium mb-3"
-                  >products that delight and inspire people.</span
+                  >products that delight and inspire people.</div
                 >
-              </p>
+              </div>
 
               <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
               <div class="fadee-in">
