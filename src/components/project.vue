@@ -1,13 +1,14 @@
 <template>
   <v-card
-    :href="item.to"
+    :to="item.type === 'internal' ? { path: item.to } : null"
+    :href="item.type !== 'internal' ? item.to : null"
     width="100%"
     height="100%"
     flat
     class="my-4 pa-5 transition-swing "
     :class="$vuetify.breakpoint.xsOnly ? 'mx-auto' : 'mx-4'"
   >
-    <v-layout row justify-space-between wrap >
+    <v-layout row justify-space-between wrap>
       <v-flex xs8>
         <v-card-title class="headline font-weight-bold pl-6">
           {{ item.name }}
@@ -26,7 +27,7 @@
       </v-flex>
       <v-flex xs4>
         <v-responsive>
-          <v-img  max-width="500" :src="item.img"></v-img>
+          <v-img max-width="500" :src="item.img"></v-img>
         </v-responsive>
       </v-flex>
     </v-layout>

@@ -21,14 +21,14 @@
         <!-- <v-flex xs12 sm6 md6 v-for="project in projects" :key="project.id">
           <WorkCard class="work-card" :item="project" />
         </v-flex> -->
-        <v-flex class="my-5"
+        <v-flex
+          class="my-5"
           :class="project.bg"
           v-for="project in projects"
           :key="project.id"
         >
-          <div>
+         
             <Project :item="project" />
-          </div>
         </v-flex>
       </v-layout>
     </v-container>
@@ -51,7 +51,7 @@ export default {
         {
           id: 1,
           name: "Streamanity",
-          meta: 'Content monetization in Bitcoin',
+          meta: "Content monetization in Bitcoin",
           tags:
             "Social | Product, UX Design, Leadership | Developed & Shipped Product",
           description:
@@ -60,19 +60,20 @@ export default {
           to: "/streamanity",
           img: require(`@/assets/media/streamanity/streamanity-home.png`),
           bg: "streamanity_green",
+          type: 'internal'
         },
         {
           id: 2,
           name: "Piggie",
-          meta: 'Linking student goals to their savings.',
-          tags:
-            "Fintech | UX Design",
+          meta: "Linking student goals to their savings.",
+          tags: "Fintech | UX Design",
           description:
             "An app that links student goals to their savings and educates them on best behaviors and budgeting.",
           extra: "",
           to: "https://www.behance.net/gallery/139742913/Financial-wellbeing",
           img: require(`@/assets/media/piggie/piggie-2.png`),
           bg: "piggie_blue",
+          type:'external'
         },
         // {
         //   id: 2,

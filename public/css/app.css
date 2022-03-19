@@ -94,7 +94,10 @@ body {
 
   }
 }
-
+.v-application a {
+  color: black;
+  text-decoration: none;
+}
 .left-content {
   display: flex;
   flex-direction: column;
