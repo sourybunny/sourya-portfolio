@@ -1047,11 +1047,3 @@ export default {
   background: linear-gradient(150.03deg, #d8edd4 0.03%, #aad8d3 96.08%);
 }
 </style>
-// AEE0A5 // AAD8D3
-<style lang="scss" scoped>
-.card-shadow {
-  box-shadow: 0px 0px 362px rgba(0, 0, 0, 0.07),
-    0px 0px 80.8574px rgba(0, 0, 0, 0.0417275),
-    0px 0px 24.0734px rgba(0, 0, 0, 0.0282725) !important;
-}
-</style>

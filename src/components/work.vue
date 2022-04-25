@@ -59,10 +59,26 @@ export default {
           to: "/streamanity",
           img: require(`@/assets/media/home/stream-home.png`),
           bg: "streamanity_green",
-          type: 'internal'
+          type: 'internal',
+          client: 'Keyport Labs Pvt Ltd'
         },
         {
           id: 2,
+          name: "SOAR",
+          meta: "Student academic advising app",
+          tags:
+            "Product, UX Design, Leadership | Developed & Shipped Product",
+          description:
+            "Designing Indiana University's student academic advising app (SOAR) for a mobile-first experience",
+          extra: "",
+          to: "/soar",
+          img: require(`@/assets/media/home/soar-home.png`),
+          bg: "streamanity_green",
+          type: 'internal',
+          client: 'Indiana University: Enterprise Student Systems'
+        },
+        {
+          id: 3,
           name: "Piggie",
           meta: "Linking student goals to their savings.",
           tags: "Fintech | UX Design",
@@ -72,7 +88,9 @@ export default {
           to: "https://www.behance.net/gallery/139742913/Financial-wellbeing",
           img: require(`@/assets/media/home/piggiee-home.png`),
           bg: "piggie_blue",
-          type:'external'
+          type:'external',
+          client: 'Academic Project'
+
         },
         // {
         //   id: 2,
