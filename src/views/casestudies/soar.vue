@@ -10,7 +10,7 @@
           <v-img
             class="hero_container-image is-flex align-items-center jusitfy-center"
             style="left:0;top:0;width:100%;height:500px;object-fit:cover;z-index:1;"
-            :src="require(`@/assets/media/soar/soar-brand.jpeg`)"
+            :src="require(`@/assets/media/soar/soar-brand-min.jpeg`)"
           >
           </v-img>
           <p
@@ -141,7 +141,7 @@
               <v-img
                 height="100%"
                 style="overflow:hidden;"
-                :src="require(`@/assets/media/soar/soar-3.png`)"
+                :src="require(`@/assets/media/soar/soar-3-min.png`)"
               >
               </v-img>
             </v-responsive>
@@ -209,10 +209,11 @@
                       style="box-shadow:none;"
                       height="100%"
                       width="100%"
-                      :src="require(`@/assets/media/soar/soar-product-2.mp4`)"
+                      :src="require(`@/assets/media/soar/soar-product-min.mp4`)"
                       autoplay
                       muted
                       loop
+                      controls
                       class="soar-video-border"
                     ></video>
                   </v-responsive>
@@ -316,7 +317,7 @@
                   <v-img
                     width="100%"
                     height="100%"
-                    :src="require(`@/assets/media/soar/soar_old.png`)"
+                    :src="require(`@/assets/media/soar/soar_old-min.png`)"
                   ></v-img>
                 </v-responsive>
                 <div class="caption text-center">Current SOAR application</div>
@@ -326,7 +327,7 @@
           </v-layout>
         </v-container>
       </section>
-      <section class="">
+      <section>
         <v-container class="py-16 px-16">
           <v-layout row x12 align-start>
             <v-flex xs12>
