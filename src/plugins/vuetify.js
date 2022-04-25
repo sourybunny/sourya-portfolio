@@ -15,8 +15,11 @@ export default new Vuetify({
             greybg:'#EAEAEB',
             slate:'#818181',
             lufi: '#edf6fc',
+            soar: '#f2f7fb',
             lufi_blue: '#009df5',
             piggie_blue: '#009df5',
+            soar_blue: '#3b7ba9',
+            soar_crimson: '#990001',
             accent: '#8c9eff',
             error: '#b71c1c',
             nav: '#fff'

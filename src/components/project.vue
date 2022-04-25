@@ -26,7 +26,6 @@
           <v-btn large class=" text-capitalize" outlined rounded>
             View Project
           </v-btn>
-
         </div>
       </v-flex>
     </v-layout>
