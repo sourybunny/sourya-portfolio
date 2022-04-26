@@ -48,7 +48,7 @@
               </p>
             </v-flex>
             <v-flex xs12 sm6>
-              <h1 class="title grey--text text--darken-2 font-weight-">
+              <h1 class="subtitle-1 font-weight-medium">
                 SOAR is an IU app developed under Enterprise Student Systems
                 division of Indiana University. The app is one of the most
                 essential go-to platforms for students to view a plethora of
@@ -135,7 +135,6 @@
         </v-container>
       </section>
       <v-container fluid class="px-0 mx-0">
-        <v-lazy>
           <div class="soar-gradient" style="height:500px;overflow:hidden;">
             <v-responsive>
               <v-img
@@ -146,7 +145,6 @@
               </v-img>
             </v-responsive>
           </div>
-        </v-lazy>
       </v-container>
       <section class=" py-14">
         <v-container>
@@ -163,7 +161,7 @@
                 advisors. Moreover, there are tasks that the students can do
                 that are currently not accessible through mobile phone.
               </h4>
-              <p class="subtitle-1 font-weight-medium font-weight-medium">
+              <p class="subtitle-1 font-weight-medium">
                 My main responsibility was to ideate, create prototypes using
                 IU's Rivet design system, build a responsive app for mobile,
                 tablet and desktop using ReactJs & Javascript.
@@ -193,7 +191,6 @@
       </section>
       <section class="soar py-14 soar-product-bg">
         <v-container>
-          <v-lazy>
             <v-layout row align-start xs12>
               <v-flex xs12 offset-sm1>
                 <h6
@@ -203,36 +200,35 @@
                 </h6>
               </v-flex>
               <v-flex xs12 sm12>
-                <div style="max-width:370px;" class="mx-auto">
-                  <v-responsive>
-                    <video
-                      style="box-shadow:none;"
-                      height="100%"
-                      width="100%"
-                      :src="require(`@/assets/media/soar/soar-product-min.mp4`)"
-                      autoplay
-                      muted
-                      loop
-                      controls
-                      class="soar-video-border"
-                    ></video>
-                  </v-responsive>
+                <div style="max-width:370px;min-height:500px;"  class="soar-video-frame mx-auto text-center">
+                    <v-responsive>
+                      <video
+                        style="box-shadow:none;border-radius:1.6rem;"
+                        height="92%"
+                        width="95%"
+                        :src="require(`@/assets/media/soar/soar-product-min.mp4`)"
+                        autoplay
+                        muted
+                        loop
+                        controls
+                       class="mt-6"
+                      ></video>
+                    </v-responsive>
+
                 </div>
               </v-flex>
             </v-layout>
-          </v-lazy>
         </v-container>
       </section>
 
       <section class="py-8">
         <v-container class="py-10">
           <v-layout row align-center justify-center>
-            <v-flex xs8>
-              <h6 class="text-xs-h6 text-sm-h5 font-weight-light">
-                The mobile experience and design for students at IU
-                are very outdated. 72% of the students tried to open the site on
-                mobile and failed to access key information about their
-                academics.
+            <v-flex xs10>
+              <h6 class="text-xs-h6 text-sm-h4 font-weight-light text-center">
+                In the Indiana University Bloomington alone, there are over
+                <span class="font-weight-medium animated-text-underline">48 thousand students </span>, the majority of whom use smartphone to access
+                academic information.
               </h6>
             </v-flex>
             <v-flex xs10>
@@ -260,7 +256,7 @@
               </p>
             </v-flex>
             <v-flex xs12 sm5>
-              <p>
+              <p class="subtitle-1 font-weight-medium">
                 To begin with, the current SOAR app is outdated. We conducted a
                 survey to understand whether students are able to find
                 information they need quickly. Based on the survey, we found out
@@ -472,7 +468,6 @@ export default {
 </script>
 
 <style>
-
 .responsive-video {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 -> 9/16x100 */
@@ -509,14 +504,22 @@ export default {
 .hero_container-image {
   filter: blur(1px);
 }
-.soar-video-border {
-  border: 10px solid rgba(177, 178, 178, 0.42);
+.animated-text-underline {
+    /* position: absolute; */
+    /* z-index: -1;
+    left: 0;
+    bottom: 0.08em; */
+    height: 0.2rem;
+    background: #f2f7fb;
+}
+.soar-video-frame {
   border-radius: 2.5rem;
-  background: transparent;
+  /* background: transparent; */
   z-index: 10;
-
-  box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919,
-    0px 0px 0px 20px #111;
+/* box-shadow: 25px 25px 50px rgba(9,148,255,0.25),
+    -10px -10px 30px rgba(9,148,255,0.1),
+    inset -5px -5px 15px rgba(9,148,255,0.5); */
+    box-shadow: 0 35px 68px 0 rgba(188, 184, 191, 0.42), inset 0 -8px 16px 0 #b4b2b7;
   /* box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111; */
 }
 .soar-shadow {

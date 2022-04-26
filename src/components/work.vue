@@ -8,7 +8,7 @@
         Selected Work,
       </div>
       <div
-        class="font-weight-medium white-- mb-5"
+        class="font-weight-bold white-- mb-5"
         :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'"
       >
         Product design.

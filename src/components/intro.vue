@@ -1,7 +1,7 @@
 <template>
   <div class="mainbg">
     <v-container>
-      <v-card flat class="mainbg d-flex align-center " height="100vh">
+      <v-card flat class="mainbg d-flex align-center " height="80vh">
         <v-layout row xs12 wrap class=" mx-auto align-center">
           <v-flex xs12 sm7>
             <!-- <div
@@ -11,12 +11,12 @@
               Hello / Namastey
             </div> -->
             <div class="">
-              <p class="font-weight-medium  white--text "  :class="$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2'">
+              <p class="font-weight-medium  white--text "  :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-2'">
                 <span>
                   I'm
                 </span>
 
-                <span class="white--text font-weight-medium "  :class="$vuetify.breakpoint.mdAndUp ? 'display-4' : 'display-2'"
+                <span class="white--text font-weight-medium "  :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-2'"
                   >Sourya.</span
                 >
               </p>
@@ -128,13 +128,13 @@
           </v-flex>
         </v-layout>
       </v-card>
-      <div class="text-center" v-if="$vuetify.breakpoint.mdAndUp">
+      <!-- <div class="text-center" v-if="$vuetify.breakpoint.mdAndUp">
         <v-btn class="darken-3" style="margin-top:-10rem;" fab dark small color="transparent">
           <v-icon dark>
             mdi-chevron-down
           </v-icon>
         </v-btn>
-      </div>
+      </div> -->
     </v-container>
   </div>
 </template>
