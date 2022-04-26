@@ -17,13 +17,13 @@
       </v-flex>
       <v-flex xs12 sm6>
         <div class="pa-5">
-          <div :class="$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline'" class=" font-weight-medium grey--text mt-5 text--darken-4">
+          <div :class="$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline'" class=" font-weight-bold grey--text mt-5 text--darken-4">
             {{ item.name }} - {{ item.meta }}
           </div>
-          <p :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'" class=" my-6 font-weight-light">
+          <p :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'" class=" my-5">
             {{ item.description }}
           </p>
-          <v-btn large class=" text-capitalize" outlined rounded>
+          <v-btn large class="mt-6 text-capitalize" outlined rounded>
             View Project
           </v-btn>
         </div>
