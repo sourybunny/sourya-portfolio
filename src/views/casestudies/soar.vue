@@ -135,16 +135,16 @@
         </v-container>
       </section>
       <v-container fluid class="px-0 mx-0">
-          <div class="soar-gradient" style="height:500px;overflow:hidden;">
-            <v-responsive>
-              <v-img
-                height="100%"
-                style="overflow:hidden;"
-                :src="require(`@/assets/media/soar/soar-3-min.png`)"
-              >
-              </v-img>
-            </v-responsive>
-          </div>
+        <div class="soar-gradient" style="height:500px;overflow:hidden;">
+          <v-responsive>
+            <v-img
+              height="100%"
+              style="overflow:hidden;"
+              :src="require(`@/assets/media/soar/soar-3-min.png`)"
+            >
+            </v-img>
+          </v-responsive>
+        </div>
       </v-container>
       <section class=" py-14">
         <v-container>
@@ -191,33 +191,33 @@
       </section>
       <section class="soar py-14 soar-product-bg">
         <v-container>
-            <v-layout row align-start xs12>
-              <v-flex xs12 offset-sm1>
-                <h6
-                  class="title soar_blue--text text--darken-1 font-weight-bold"
-                >
-                  Product highlight
-                </h6>
-              </v-flex>
-              <v-flex xs12 sm12>
-                <div style="max-width:370px;min-height:500px;"  class="soar-video-frame mx-auto text-center">
-                    <v-responsive>
-                      <video
-                        style="box-shadow:none;border-radius:1.6rem;"
-                        height="92%"
-                        width="95%"
-                        :src="require(`@/assets/media/soar/soar-product-min.mp4`)"
-                        autoplay
-                        muted
-                        loop
-                        controls
-                       class="mt-6"
-                      ></video>
-                    </v-responsive>
-
-                </div>
-              </v-flex>
-            </v-layout>
+          <v-layout row align-start xs12>
+            <v-flex xs12 offset-sm1>
+              <h6 class="title soar_blue--text text--darken-1 font-weight-bold">
+                Product highlight
+              </h6>
+            </v-flex>
+            <v-flex xs12 sm12>
+              <div
+                style="max-width:370px;min-height:500px;"
+                class="soar-video-frame mx-auto text-center"
+              >
+                <v-responsive>
+                  <video
+                    style="box-shadow:none;border-radius:1.6rem;"
+                    height="92%"
+                    width="95%"
+                    :src="require(`@/assets/media/soar/soar-product-min.mp4`)"
+                    autoplay
+                    muted
+                    loop
+                    controls
+                    class="mt-6"
+                  ></video>
+                </v-responsive>
+              </div>
+            </v-flex>
+          </v-layout>
         </v-container>
       </section>
 
@@ -227,8 +227,10 @@
             <v-flex xs10>
               <h6 class="text-xs-h6 text-sm-h4 font-weight-light text-center">
                 In the Indiana University Bloomington alone, there are over
-                <span class="font-weight-medium animated-text-underline">48 thousand students </span>, the majority of whom use smartphone to access
-                academic information.
+                <span class="font-weight-medium animated-text-underline"
+                  >48 thousand students </span
+                >, the majority of whom use smartphone to access academic
+                information.
               </h6>
             </v-flex>
             <v-flex xs10>
@@ -258,7 +260,7 @@
             <v-flex xs12 sm5>
               <p class="subtitle-1 font-weight-medium">
                 To begin with, the current SOAR app is outdated. We conducted a
-                survey to understand whether students are able to find
+                survey which had over 500 respondents to understand whether students are able to find
                 information they need quickly. Based on the survey, we found out
                 students try to access their academic information on mobile more
                 than they do on desktop. With increasing consumption of the
@@ -321,6 +323,30 @@
               <div></div>
             </v-flex>
           </v-layout>
+        </v-container>
+      </section>
+      <section class="soar">
+        <v-container>
+          <v-layout row x12 align-start>
+            <v-flex xs12>
+                <div class="soar_blue--text text--darken-1">
+                  While working on the Webview version of SOAR,
+                  implementing the information architecture (IA) for mobile with
+                  infinite scrolling was essential to a good user experience. The most
+                  important challenge is the visual layout of information on smaller
+                  screen devices or how the user will assess meaning and direction
+                  given the information presented to them.
+                </div>
+            </v-flex>
+            <v-flex xs12 sm5>
+               <v-responsive>
+                  <v-img
+                    :src="require(`@/assets/media/soar/home.png`)"
+                  ></v-img>
+                </v-responsive>
+            </v-flex>
+            </v-layout>
+          
         </v-container>
       </section>
       <section>
@@ -505,21 +531,22 @@ export default {
   filter: blur(1px);
 }
 .animated-text-underline {
-    /* position: absolute; */
-    /* z-index: -1;
+  /* position: absolute; */
+  /* z-index: -1;
     left: 0;
     bottom: 0.08em; */
-    height: 0.2rem;
-    background: #f2f7fb;
+  height: 0.2rem;
+  background: #f2f7fb;
 }
 .soar-video-frame {
   border-radius: 2.5rem;
   /* background: transparent; */
   z-index: 10;
-/* box-shadow: 25px 25px 50px rgba(9,148,255,0.25),
+  /* box-shadow: 25px 25px 50px rgba(9,148,255,0.25),
     -10px -10px 30px rgba(9,148,255,0.1),
     inset -5px -5px 15px rgba(9,148,255,0.5); */
-    box-shadow: 0 35px 68px 0 rgba(188, 184, 191, 0.42), inset 0 -8px 16px 0 #b4b2b7;
+  box-shadow: 0 35px 68px 0 rgba(188, 184, 191, 0.42),
+    inset 0 -8px 16px 0 #b4b2b7;
   /* box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111; */
 }
 .soar-shadow {

@@ -15,14 +15,15 @@ body {
 .is-fixed {
   position: fixed;
 }
+
 section {
-  opacity: 0;
+  opacity: 0.3;
   animation: load_up 1s forwards;
   -webkit-animation: load_up 1s forwards;
 }
-.v-image__image,
+.v-image__image,img,
 video {
-  opacity: 0;
+  opacity: 0.3;
   animation: load_up 2s forwards;
   -webkit-animation: load_up 2s forwards;
 }

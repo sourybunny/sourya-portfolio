@@ -8,12 +8,13 @@
         Selected Work,
       </div>
       <div
-        class="font-weight-bold white-- mb-5"
+        class="font-weight-bold mb-5"
         :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'"
       >
         Product design.
       </div>
-        <!-- <v-img height="50" width="64" :src="require(`@/assets/media/home/arrow.svg`)"></v-img> -->
+      
+      <!-- <v-img height="50" width="64" :src="require(`@/assets/media/home/arrow.svg`)"></v-img> -->
     </v-container>
     <v-container>
       <!-- <p class="font-weight-medium display-2 mt-10">Selected Work.</p> -->
@@ -21,13 +22,9 @@
         <!-- <v-flex xs12 sm6 md6 v-for="project in projects" :key="project.id">
           <WorkCard class="work-card" :item="project" />
         </v-flex> -->
-          <!-- :class="project.bg" -->
-        <v-flex xs12
-          class="my-8"
-          v-for="project in projects"
-          :key="project.id"
-        >
-            <Project :item="project" />
+        <!-- :class="project.bg" -->
+        <v-flex xs12 class="my-8" v-for="project in projects" :key="project.id">
+          <Project :item="project" />
         </v-flex>
       </v-layout>
     </v-container>
@@ -37,18 +34,45 @@
 <script>
 import WorkCard from "@/components/work-card.vue";
 import Project from "@/components/project.vue";
+import { PushIn } from "pushin";
+// import 'pushin';
 
 export default {
   components: {
     WorkCard,
     Project,
   },
+
+  // mounted() {
+  //   const container = document.querySelector(".pushin");
+  //   this.pushIn = new PushIn(container);
+  //   this.pushIn.start({ debug: true });
+  // },
+  // beforeDestroy() {
+  //   this.pushIn.destroy();
+  // },
   data: function() {
     return {
       title: "rhgj",
+      pushIn: null,
       projects: [
         {
           id: 1,
+          name: "Salesforce",
+          meta: "Free trial experience design",
+          tags:
+            "Enterprise | UX design | Sponsored course project",
+          description:
+            "Redesigned the Salesforce free-trial experience to improve conversion rate.",
+          extra: "",
+          to: "/freetrial",
+          img: require(`@/assets/media/home/stream-home.png`),
+          bg: "streamanity_green",
+          type: "internal",
+          client: "Salesforce",
+        },
+        {
+          id: 2,
           name: "Streamanity",
           meta: "Content monetization in Bitcoin",
           tags:
@@ -59,26 +83,25 @@ export default {
           to: "/streamanity",
           img: require(`@/assets/media/home/stream-home.png`),
           bg: "streamanity_green",
-          type: 'internal',
-          client: 'Keyport Labs Pvt Ltd'
+          type: "internal",
+          client: "Keyport Labs Pvt Ltd",
         },
         {
-          id: 2,
+          id: 3,
           name: "SOAR",
           meta: "Student academic advising app",
-          tags:
-            "Product, UX Design, Leadership | Developed & Shipped Product",
+          tags: "Product, UX Design, Leadership | Developed & Shipped Product",
           description:
             "Designing Indiana University's student academic advising app (SOAR) for a mobile-first experience",
           extra: "",
           to: "/soar",
           img: require(`@/assets/media/home/soar-home.png`),
           bg: "streamanity_green",
-          type: 'internal',
-          client: 'Indiana University: Enterprise Student Systems'
+          type: "internal",
+          client: "Indiana University: Enterprise Student Systems",
         },
         {
-          id: 3,
+          id: 4,
           name: "Piggie",
           meta: "Linking student goals to their savings.",
           tags: "Fintech | UX Design",
@@ -88,9 +111,8 @@ export default {
           to: "https://www.behance.net/gallery/139742913/Financial-wellbeing",
           img: require(`@/assets/media/home/piggiee-home.png`),
           bg: "piggie_blue",
-          type:'external',
-          client: 'Academic Project'
-
+          type: "external",
+          client: "Academic Project",
         },
         // {
         //   id: 2,

@@ -10,6 +10,7 @@
             >
               Hello / Namastey
             </div> -->
+      
             <div class="">
               <p class="font-weight-medium  white--text "  :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-2'">
                 <span>
@@ -140,7 +141,14 @@
 </template>
 
 <script>
-export default {};
+// import 'pushin';
+
+export default {
+  mounted(){
+    // pushInStart();
+
+  }
+};
 </script>
 
 <style lang="scss">

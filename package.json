@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "pushin": "4.0.3",
     "vue": "^2.6.11",
     "vue-router": "^3.5.3",
     "vuetify": "^2.6.2"
