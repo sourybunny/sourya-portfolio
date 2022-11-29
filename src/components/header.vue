@@ -1,47 +1,28 @@
 <template>
-   <v-app-bar flat app color="black" dark hide-on-scroll>
-      <v-container class="d-flex align-center">
-        <div @click.stop="$router.push({path:'/'})"
-          class="white--text is-pointer title"
-        >
-          Sourya Varanasi
+  <div class="layout-container navbar">
+    <div class="layout-container__inner px-10 py-5 ">
+      <div class="d-flex white--text align-center justify-space-between">
+        <div class="d-flex align-center black--text ml-6 justify-center font-weight-bold display-2" style="background:#fff;width:40px;height:40px;font-family:'';">SV</div>
+        <div class="d-flex align-center">
+          <v-btn plain dark class="text-capitalize" @click.stop="$router.push({ path: '/' })">
+            Home
+          </v-btn>
+          <v-btn plain dark class="text-capitalize" @click.stop="$router.push({ path: '/about' })">
+            About
+          </v-btn>
         </div>
-        <v-spacer></v-spacer>
-        <v-btn depressed to="/" text>
-          <span class="text-capitalize body-1 font-weight-light">Home</span>
-        </v-btn>
-        <v-btn depressed to="/about" text>
-          <span class="text-capitalize body-1 font-weight-light">About</span>
-        </v-btn>
-        <!-- <v-btn depressed to="/projects" text>
-          <span class="mr-2 text-capitalize body-1">Projects</span>
-        </v-btn> -->
-        <v-btn
-          href="https://drive.google.com/file/d/1YRWHrWADGXh0E0OU6OXVk8-5cNmFboQa/view?usp=sharing"
-          target="_blank"
-          text
-        >
-          <span class="text-capitalize body-1 font-weight-light">Resume</span>
-        </v-btn>
-        <!-- <v-btn
-          href="https://github.com/vuetifyjs/vuetify/releases/latest"
-          target="_blank"
-          text
-        >
-          <span class="mr-2 text-capitalize body-1">Extras</span>
-        </v-btn> -->
-        
-        
-      </v-container>
-    </v-app-bar>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
+<style lang="scss">
+.navbar {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background: black;
+}
 </style>

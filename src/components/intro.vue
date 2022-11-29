@@ -1,35 +1,43 @@
 <template>
-  <div class="mainbg">
-    <v-container>
-      <v-card flat class="mainbg d-flex align-center " height="80vh">
-        <v-layout row xs12 wrap class=" mx-auto align-center">
-          <v-flex xs12 sm7>
-            <!-- <div
-              class="white--text mb-4 text-uppercase subheading"
-              style="opacity:0.6;"
-            >
-              Hello / Namastey
-            </div> -->
+  <div class="mainbg layout-container">
+    <div class="layout-container__inner">
+      <v-card flat class="mainbg d-flex align-center py-10">
+        <v-layout row wrap class=" mx-auto align-center">
+          <v-flex xs12 md9 lg7 sm9>
             <div class="">
-              <p class="font-weight-medium  white--text "  :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-2'">
+              <p
+                class="font-weight-medium  white--text "
+                :class="$vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'"
+              >
                 <span>
                   I'm
                 </span>
 
-                <span class="white--text font-weight-medium "  :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-2'"
+                <span
+                  class="white--text font-weight-medium "
+                  :class="
+                    $vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'
+                  "
                   >Sourya.</span
                 >
               </p>
-              <!-- style="font-family:'Playfair Display' !important;" -->
               <div class="my-6 slidee-up">
-                <span class="gradient text-shine  font-weight-medium" :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-1'"
+                <span
+                  class="gradient text-shine  font-weight-medium"
+                  :class="
+                    $vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'
+                  "
                   >I design and < build />
                 </span>
-                <div  :class="$vuetify.breakpoint.mdAndUp ? 'display-3' : 'display-1'"
+                <div
+                  :class="
+                    $vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'
+                  "
                   style="opacity:0.6;"
                   class="white--text  font-weight-medium mb-3"
-                  >products that delight and inspire people.</div
                 >
+                  products that delight and inspire people.
+                </div>
               </div>
 
               <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
@@ -37,18 +45,54 @@
                 <div
                   class="font-weight-light mt-10 white--text title intro-left"
                 >
-                  <span style="opacity:0.6;" :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
+                  <span
+                    style="opacity:0.6;"
+                    :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
                     >Currently a master’s student at
                   </span>
                 </div>
-                <div class="white--text font-weight-medium" :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'">
+                <div
+                  class="white--text font-weight-medium"
+                  :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
+                >
                   Indiana University Bloomington’s HCI program.
+                </div>
+                <div
+                  class="white--text font-weight-medium"
+                  :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
+                >
+                  <span :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'" class="font-weight-light" style="opacity:0.6;">Previously </span>
+                  <span>
+                    <a 
+                      href="https://uits.iu.edu/about/our-people/org-structure/enterprise-systems"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >@UITS IUB</a
+                    ></span
+                  >,
+                  <span>
+                    <a 
+                      href="https://www.richs.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >@Rich Products Corporation</a
+                    ></span
+                  >, <span>
+                    <a 
+                      href="https://streamanity.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >@Streamanity</a
+                    ></span
+                  >.
                 </div>
                 <div class="text-left mt-5">
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn href="https://www.linkedin.com/in/souryav/" target="_blank"
-                        class="mr-2 darken-3"
+                      <v-btn
+                        href="https://www.linkedin.com/in/souryav/"
+                        target="_blank"
+                        class="mr-2 darken-4"
                         fab
                         dark
                         small
@@ -65,8 +109,10 @@
                   </v-tooltip>
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn href="mailto:sovarana@iu.edu" target="_blank"
-                        class="mx-2 darken-3"
+                      <v-btn
+                        href="mailto:sovarana@iu.edu"
+                        target="_blank"
+                        class="mx-2 darken-4"
                         fab
                         dark
                         small
@@ -83,12 +129,14 @@
                   </v-tooltip>
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn href="https://www.behance.net/sourya" target="_blank"
-                        class="mx-2 darken-3"
+                      <v-btn
+                        href="https://www.behance.net/sourya"
+                        target="_blank"
+                        class="mx-2 darken-4 white--text "
                         fab
                         dark
                         small
-                        color="grey"
+                        color=""
                         v-bind="attrs"
                         v-on="on"
                       >
@@ -99,8 +147,10 @@
                   </v-tooltip>
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn href="https://www.instagram.com/sourya_sketches/" target="_blank"
-                        class="mx-2 darken-3"
+                      <v-btn
+                        href="https://www.instagram.com/sourya_sketches/"
+                        target="_blank"
+                        class="mx-2 darken-4"
                         fab
                         dark
                         small
@@ -122,7 +172,9 @@
           <v-flex
             :order="$vuetify.breakpoint.xsOnly ? '-1' : '13'"
             xs12
-            sm5
+            sm3
+            md3
+            lg5
             center-align
           >
           </v-flex>
@@ -135,7 +187,7 @@
           </v-icon>
         </v-btn>
       </div> -->
-    </v-container>
+    </div>
   </div>
 </template>
 
@@ -154,6 +206,9 @@ export default {};
   -webkit-text-stroke-color: black;
 }
 
+.link-text {
+  color:rgb(126, 151, 198);
+}
 #motion-demo {
   width: 40px;
   height: 40px;

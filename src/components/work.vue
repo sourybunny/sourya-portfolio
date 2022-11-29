@@ -1,48 +1,130 @@
 <template>
-  <div class="mb-10">
-    <v-container>
-      <div
-        class="font-weight-medium mt-5 text-uppercase "
-        :class="$vuetify.breakpoint.mdAndUp ? ' title' : 'subheading'"
-      >
-        Selected Work,
-      </div>
-      <div
-        class="font-weight-bold white-- mb-5"
-        :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'"
-      >
-        Product design.
-      </div>
-        <!-- <v-img height="50" width="64" :src="require(`@/assets/media/home/arrow.svg`)"></v-img> -->
-    </v-container>
-    <v-container>
-      <!-- <p class="font-weight-medium display-2 mt-10">Selected Work.</p> -->
-      <v-layout row wrap justify-center>
-        <!-- <v-flex xs12 sm6 md6 v-for="project in projects" :key="project.id">
-          <WorkCard class="work-card" :item="project" />
-        </v-flex> -->
-          <!-- :class="project.bg" -->
-        <v-flex xs12
-          class="my-8"
-          v-for="project in projects"
-          :key="project.id"
+  <div class="">
+    <section class="layout-container mainbg">
+      <div class="layout-container__inner py-10">
+        <div
+          class="white--text"
+          :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'"
         >
-            <Project :item="project" />
-        </v-flex>
-      </v-layout>
-    </v-container>
+          Streamanity 
+        </div>
+        <div
+          class="body-2 white--text "
+        >
+          <v-chip dark class="ma-2 ml-0 grey darken-4">
+            2018-2019
+          </v-chip>
+          <v-chip dark class="ma-2 grey darken-4">
+            Responsive mobile-web app
+          </v-chip>
+            <v-chip dark class="ma-2 grey darken-4">
+            Shipped product
+          </v-chip>
+        </div>
+      </div>
+    </section>
+    <section class="layout-container streamanity-container">
+      <section class="layout-container__inner">
+        <div class="content-container">
+          <v-layout row justify-space-between wrap>
+            <v-flex xs12 sm9>
+              <v-responsive>
+                <v-img
+                  :src="
+                    require(`@/assets/media/streamanity/streamanity-landing.png`)
+                  "
+                ></v-img>
+              </v-responsive>
+            </v-flex>
+            <v-flex xs12 sm3>
+              <div class="pt-10">
+                <div class="content-title white--text">
+                  Streamanity
+                </div>
+                <p class="content-body white--text my-5 ">
+                  Bitcoin based video streaming and content monetization
+                  platform for small-scale content creators to earn money
+                  directly from their followers.
+                </p>
+                <v-btn
+                  large
+                  class="mt-6 text-capitalize"
+                  @click="$router.push('/streamanity')"
+                >
+                  CASE STUDY
+                </v-btn>
+              </div>
+            </v-flex>
+          </v-layout>
+        </div>
+      </section>
+    </section>
+
+     <!-- <section class="layout-container mainbg">
+      <div class="layout-container__inner py-10">
+        <div
+          class="white--text"
+          :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'"
+        >
+          Indiana University 
+        </div>
+        <div
+          class="body-2 white--text "
+        >
+          <v-chip dark class="ma-2 ml-0 grey darken-4">
+            2021-2022
+          </v-chip>
+          <v-chip dark class="ma-2 grey darken-4">
+            Enterprise web app
+          </v-chip>
+            <v-chip dark class="ma-2 grey darken-4">
+            Shipped feature
+          </v-chip>
+        </div>
+      </div>
+    </section>
+    <section class="layout-container courseplan-container">
+      <section class="layout-container__inner">
+        <div class="content-container">
+          <v-layout row justify-space-between wrap>
+            <v-flex xs12 sm9>
+              <v-responsive>
+                <v-img
+                  :src="
+                    require(`@/assets/media/streamanity/streamanity-landing.png`)
+                  "
+                ></v-img>
+              </v-responsive>
+            </v-flex>
+            <v-flex xs12 sm3>
+              <div class="pt-10">
+                <div class="content-title white--text">
+                  Course Planner Review
+                </div>
+                <p class="content-body white--text my-5 ">
+                  Bitcoin based video streaming and content monetization
+                  platform for small-scale content creators to earn money
+                  directly from their followers.
+                </p>
+                <v-btn
+                  large
+                  class="mt-6 text-capitalize"
+                  @click="$router.to('/streamanity')"
+                >
+                  CASE STUDY
+                </v-btn>
+              </div>
+            </v-flex>
+          </v-layout>
+        </div>
+      </section>
+    </section> -->
   </div>
 </template>
 
 <script>
-import WorkCard from "@/components/work-card.vue";
-import Project from "@/components/project.vue";
-
 export default {
-  components: {
-    WorkCard,
-    Project,
-  },
+  components: {},
   data: function() {
     return {
       title: "rhgj",
@@ -59,23 +141,22 @@ export default {
           to: "/streamanity",
           img: require(`@/assets/media/home/stream-home.png`),
           bg: "streamanity_green",
-          type: 'internal',
-          client: 'Keyport Labs Pvt Ltd'
+          type: "internal",
+          client: "Keyport Labs Pvt Ltd",
         },
         {
           id: 2,
           name: "SOAR",
           meta: "Student academic advising app",
-          tags:
-            "Product, UX Design, Leadership | Developed & Shipped Product",
+          tags: "Product, UX Design, Leadership | Developed & Shipped Product",
           description:
             "Designing Indiana University's student academic advising app (SOAR) for a mobile-first experience",
           extra: "",
           to: "/soar",
           img: require(`@/assets/media/home/soar-home.png`),
           bg: "streamanity_green",
-          type: 'internal',
-          client: 'Indiana University: Enterprise Student Systems'
+          type: "internal",
+          client: "Indiana University: Enterprise Student Systems",
         },
         {
           id: 3,
@@ -88,9 +169,8 @@ export default {
           to: "https://www.behance.net/gallery/139742913/Financial-wellbeing",
           img: require(`@/assets/media/home/piggiee-home.png`),
           bg: "piggie_blue",
-          type:'external',
-          client: 'Academic Project'
-
+          type: "external",
+          client: "Academic Project",
         },
         // {
         //   id: 2,
@@ -110,9 +190,17 @@ export default {
 </script>
 
 <style lang="scss">
-.work-card {
-  box-shadow: 0px 0px 362px rgba(0, 0, 0, 0.07),
-    0px 0px 80.8574px rgba(0, 0, 0, 0.0417275),
-    0px 0px 24.0734px rgba(0, 0, 0, 0.0282725) !important;
+// .work-card {
+//   box-shadow: 0px 0px 362px rgba(0, 0, 0, 0.07),
+//     0px 0px 80.8574px rgba(0, 0, 0, 0.0417275),
+//     0px 0px 24.0734px rgba(0, 0, 0, 0.0282725) !important;
+// }
+.streamanity-container {
+  // background: #579C70;
+  background: #489b65;
+}
+
+.courseplan-container {
+  background: #da6144;
 }
 </style>

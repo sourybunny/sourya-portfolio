@@ -1,7 +1,6 @@
 <template>
-  <v-app>
+  <v-app> 
     <Header />
-    
     <v-main class="pa-0">
       <template>
         <keep-alive>
@@ -30,3 +29,21 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+.layout-container {
+  padding-left: 4rem;
+  &__inner {
+    padding: 4rem;
+    border-left: 4px solid rgba(255, 255, 255, 0.2);
+    .content-title {
+      font-family: 'Inter';
+      font-weight: 600;
+      font-size: 24px;
+    }
+    .content-body {
+      font-family: 'Inter';
+      font-size: 18px;
+    }
+  }
+}
+</style>
