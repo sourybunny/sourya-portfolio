@@ -3,9 +3,10 @@
     <section class="layout-container mainbg">
       <div class="layout-container__inner py-10">
         <div
-          class="white--text"
+          class="white--text  d-flex align-center "
           :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'"
         >
+        <div class="streamanity-dot mr-4"></div>
           Streamanity 
         </div>
         <div
@@ -202,5 +203,13 @@ export default {
 
 .courseplan-container {
   background: #da6144;
+}
+.streamanity-dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  // border-radius: 50%;
+  background: #489b65;
+  // left:-0.7%;
+  // top: 35%;
 }
 </style>
