@@ -1,5 +1,5 @@
 <template>
-  <div class="mainbg layout-container">
+  <div class="mainbg layout-container intro">
     <div class="layout-container__inner">
       <v-card flat class="mainbg d-flex align-center py-10">
         <v-layout row wrap class=" mx-auto align-center">
@@ -198,6 +198,13 @@ export default {};
 <style lang="scss">
 .intro-left {
   // max-width: 800px;
+}
+.v-application .mainbg {
+  border-color:rgba(255, 255, 255, 0.1) !important;
+}
+.intro {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
 }
 .has-stroke {
   color: black;

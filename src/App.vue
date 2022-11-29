@@ -34,7 +34,7 @@ export default {
   padding-left: 4rem;
   &__inner {
     padding: 4rem;
-    border-left: 4px solid rgba(255, 255, 255, 0.2);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
     .content-title {
       font-family: 'Inter';
       font-weight: 600;

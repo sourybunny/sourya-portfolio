@@ -22,7 +22,7 @@ export default {};
 
 <style lang="scss">
 .navbar {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   background: black;
 }
 </style>
