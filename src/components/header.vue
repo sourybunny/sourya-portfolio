@@ -2,7 +2,8 @@
   <div class="layout-container navbar">
     <div class="layout-container__inner px-10 py-5 ">
       <div class="d-flex white--text align-center justify-space-between">
-        <div class="d-flex align-center black--text ml-6 justify-center font-weight-bold display-2" style="background:#fff;width:40px;height:40px;font-family:'';">SV</div>
+        
+        <div class="d-flex align-center"><span><Logo class="mx-4" /></span><span style="font-family:'Sacramento',cursive; font-size:1.8rem;">Sv</span></div>
         <div class="d-flex align-center">
           <v-btn plain dark class="text-capitalize" @click.stop="$router.push({ path: '/' })">
             Home
@@ -17,7 +18,12 @@
 </template>
 
 <script>
-export default {};
+import Logo from './logo.vue';
+export default {
+  components:{
+    Logo
+  }
+};
 </script>
 
 <style lang="scss">
