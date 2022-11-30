@@ -206,7 +206,7 @@
                   <v-avatar size="44px" color="surface-variant">
                     <v-img
                       alt="Avatar"
-                      src="https://avatars0.githubusercontent.com/u/9064066?v=4&s=460"
+                      :src="require('../assets/headshot-min.jpeg')"
                     ></v-img>
                   </v-avatar>
                   <div class="pa-3">
