@@ -3,7 +3,7 @@
     <div class="layout-container__inner px-10 py-5 ">
       <div class="d-flex white--text align-center justify-space-between">
         
-        <div class="d-flex align-center"><span><Logo class="mx-4" /></span><span style="font-family:'Sacramento',cursive; font-size:1.8rem;">Sv</span></div>
+        <div @click.stop="$router.push({ path: '/' })" class="d-flex align-center is-pointer"><span><Logo class="mx-4" /></span><span style="font-family:'Sacramento',cursive; font-size:1.8rem;">Sv</span></div>
         <div class="d-flex align-center">
           <v-btn plain dark class="text-capitalize" @click.stop="$router.push({ path: '/' })">
             Home

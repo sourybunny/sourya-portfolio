@@ -1,63 +1,124 @@
 <template>
-  <div class="black pt-14">
-    <!-- <v-lazy
-      v-model="isActive"
-      :options="{
-        threshold: 0.6,
-      }"
-      min-height="500"
-      transition="fade-transition"
-    > -->
-      <v-container>
-         <p class="font-weight-medium white--text  " :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'">About me.</p>
-      </v-container>
-      <v-container class="mt-5">
-        <!-- <p class="font-weight-bold display-2">About Me.</p> -->
+  <div class="mainbg">
+    <div class="layout-container about">
+      <div class="layout-container__inner">
+        <v-layout row wrap class="align-start justify-space-between">
+          <v-flex xs12 sm9 md6 lg5 class="pt-4">
+            <!-- <v-btn
+              plain
+              dark
+              class="text-capitalize mt-5 title"
+              @click.stop="$router.push({ path: '/' })"
+            >
+              Home
+            </v-btn> -->
+            <p
+              class="font-weight-medium white--text my-6 "
+              :class="$vuetify.breakpoint.mdAndUp ? ' display-3' : 'display-1'"
+            >
+              About me.
+            </p>
+            <div class="grey--text text-h5 font-weight-light">
+              Yay! welcome to my space.
+              <div>
+                Here's a quick summary about me and what I've been up to lately.
+              </div>
+            </div>
+          </v-flex>
+          <v-flex
+            class="about-right"
+            :order="$vuetify.breakpoint.xsOnly ? '-1' : '13'"
+            xs12
+            sm3
+            md6
+            lg5
+          >
+            <div>
+              <TangramAbout />
+            </div>
+          </v-flex>
+        </v-layout>
+      </div>
+    </div>
+    <div class="layout-container">
+      <div class="layout-container__inner">
         <v-layout row xs12 wrap>
-          <v-flex xs12 md6>
-            <div class="pl-3 slate--text">
-              <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
-              <p class="font-weight-light mt-8 title">
-                Hello again, I’m Sourya. I am a
-                <strong class="white--text font-weight-medium"
-                  >UX Generalist</strong
-                >
-                pursiung my
-                <strong class="white--text font-weight-medium"
-                  >Masters degree in Human-Computer Interaction Design</strong
-                >
-                at Indiana University Bloomington. Having a
-                <strong class="white--text font-weight-medium"
-                  >Bachelors degree in Computer Science Engineering</strong
-                >, I learnt to convert my design solutions into functional
-                prototypes.
+          <v-flex xs12 sm9 md6 lg6>
+            <div class="grey--text">
+              <p class="font-weight-light my-6 title">
+                Hi there, I’m Sourya Varanasi. I am a UX/Product Designer graduating with
+                an Ms. HCI degree from Indiana University Bloomington in May,
+                2023.
               </p>
+              <p class="text-h5 white--text">Currently</p>
               <p class="font-weight-light mt-4 title">
-                Over the past 4 years, I’ve worked in multiple roles at
-                <strong class="white--text font-weight-medium">
-                  IBM, Keyport Labs and Sensehawk Inc</strong
-                >
-                that helped me accrue a breadth of skills in the overall
-                user-interface design of software applications.
-              </p>
-              <p class="font-weight-light mt-4 title">
-                Working with the startup industry, as a
-                <strong class="white--text font-weight-medium"
-                  >UX designer, UX Engineer & Front-end developer</strong
-                >, taught me how design processes could influence product and
-                business decisions. These insights allow me to
-                <strong class="white--text font-weight-medium"
-                  >use design as a strategy rather than being just another
-                  deliverable.</strong
-                >
+                For the last 3 years, I've been working with diverse companies
+                under many roles in digital product design. This
+                inter-disciplinary experience taught me how design processes
+                could influence product and business decisions. These insights
+                allow me to use design as a strategy rather than being just
+                another deliverable.
               </p>
             </div>
+            <v-expansion-panels dark accordion class="mt-8">
+              <!-- <v-expansion-panel>
+                <v-expansion-panel-header>
+                  What am I passionate about?
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  
+                </v-expansion-panel-content>
+              </v-expansion-panel> -->
+              <v-expansion-panel>
+                <v-expansion-panel-header>
+                  What's with the tangrams and butterflies?
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  As a child, I spent most of my play time solving puzzles and
+                  building stuff. I love transforming material to bring life to
+                  them. Over the years, these problem-solving skills shaped my
+                  design mindset to tweak pixels in the digital world to
+                  handcraft delightful experiences.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-header>
+                  Who am I as a person?
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  I have growth mindset striving to get better by learning and
+                  taking inspiration from my peers and things around me. 
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-header>
+                  How did I build this site?
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  Apart from UX Design, I love to play around with HTML and CSS
+                  to create fun interactions. My software engineering background
+                  taught me all about web and helped me build this site using
+                  Javascript and VueJs.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+               <v-expansion-panel>
+                <v-expansion-panel-header>
+                  What else can I do?
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  I'm a self-taught artist who can work with watercolor, charcoal and acrylic paintings.
+                  Occasionally, I partcipated in local exhibits in my city back in India to showcase my work. 
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
           </v-flex>
           <v-spacer></v-spacer>
           <v-flex
             :order="$vuetify.breakpoint.xsOnly ? 1 : 2"
             xs12
-            md5
+            sm3
+            md6
+            lg4
             :right-align="!$vuetify.breakpoint.mobile"
           >
             <v-card flat class="mt-8 black">
@@ -65,7 +126,7 @@
                 class=""
                 max-width="400"
                 max-height="500"
-                :src="require(`@/assets/media/me/me.jpeg`)"
+                :src="require(`@/assets/headshot-min.jpeg`)"
               ></v-img>
             </v-card>
           </v-flex>
@@ -73,24 +134,31 @@
         <v-btn medium class="my-8 text-capitalize" outlined rounded>
           see my resume
         </v-btn>
-        <v-divider></v-divider>
-      </v-container>
-    <!-- </v-lazy> -->
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import TangramAbout from "./tangram-about.vue";
 export default {
   data: function() {
     return {
       isActive: false,
     };
   },
+  components: {
+    TangramAbout,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.intro-left {
-  max-width: 500px;
+// .intro-left {
+//   max-width: 500px;
+// }
+.about {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  background: black;
 }
 </style>
