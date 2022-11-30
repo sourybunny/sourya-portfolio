@@ -2,8 +2,8 @@
   <div class="mainbg layout-container intro">
     <div class="layout-container__inner">
       <v-card flat class="mainbg d-flex align-center py-10">
-        <v-layout row wrap class=" mx-auto align-center">
-          <v-flex xs12 md9 lg7 sm9>
+        <v-layout row wrap class="align-center justify-space-between">
+          <v-flex xs12 sm9 md8 lg7>
             <div class="">
               <p
                 class="font-weight-medium  white--text "
@@ -23,6 +23,7 @@
               </p>
               <div class="my-6 slidee-up">
                 <span
+                  style="white-space:nowrap;"
                   class="gradient text-shine  font-weight-medium"
                   :class="
                     $vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'
@@ -34,9 +35,18 @@
                     $vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'
                   "
                   style="opacity:0.6;"
+                  class="white--text  font-weight-medium"
+                >
+                  products that delight
+                </div>
+                <div
+                  :class="
+                    $vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'
+                  "
+                  style="opacity:0.6;"
                   class="white--text  font-weight-medium mb-3"
                 >
-                  products that delight and inspire people.
+                  and inspire people.
                 </div>
               </div>
 
@@ -61,9 +71,14 @@
                   class="white--text font-weight-medium"
                   :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
                 >
-                  <span :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'" class="font-weight-light" style="opacity:0.6;">Previously </span>
+                  <span
+                    :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
+                    class="font-weight-light"
+                    style="opacity:0.6;"
+                    >Previously
+                  </span>
                   <span>
-                    <a 
+                    <a
                       href="https://uits.iu.edu/about/our-people/org-structure/enterprise-systems"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -71,14 +86,15 @@
                     ></span
                   >,
                   <span>
-                    <a 
+                    <a
                       href="https://www.richs.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       >@Rich Products Corporation</a
                     ></span
-                  >, <span>
-                    <a 
+                  >,
+                  <span>
+                    <a
                       href="https://streamanity.com/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -170,13 +186,63 @@
             </div>
           </v-flex>
           <v-flex
+            class="intro-right"
             :order="$vuetify.breakpoint.xsOnly ? '-1' : '13'"
             xs12
             sm3
-            md3
+            md4
             lg5
-            center-align
           >
+            <div class="is-relative">
+              <Tangram />
+              <v-card
+                dark
+                width="230"
+                class="px-3 rounded-xl is-absolute my-story"
+                elevation="12"
+                @click="$router.push('/about')"
+              >
+                <div class="d-flex align-center">
+                  <v-avatar size="44px" color="surface-variant">
+                    <v-img
+                      alt="Avatar"
+                      src="https://avatars0.githubusercontent.com/u/9064066?v=4&s=460"
+                    ></v-img>
+                  </v-avatar>
+                  <div class="pa-3">
+                    <div class="h5 font-weight-medium ">My Story</div>
+                    <div class="grey--text">Product Designer</div>
+                  </div>
+                </div>
+              </v-card>
+              <!-- <v-card
+                dark
+                max-width="120"
+                class="rounded-xl is-absolute my-work"
+                elevation="12"
+              >
+                <v-btn
+                  @click="$vuetify.goTo('#work', options)"
+                  plain
+                  rounded
+                  class="h5 text-capitalize px-4 font-weight-medium pa-2"
+                  >My Work</v-btn
+                >
+              </v-card> -->
+              <!-- <v-card
+                dark
+                max-width="140"
+                class=" rounded-xl is-absolute my-process"
+                elevation="12"
+              >
+                <v-btn
+                  rounded
+                  plain
+                  class="h5 text-capitalize font-weight-medium px-4"
+                  >My Process</v-btn
+                >
+              </v-card> -->
+            </div>
           </v-flex>
         </v-layout>
       </v-card>
@@ -192,7 +258,12 @@
 </template>
 
 <script>
-export default {};
+import Tangram from "./tangram.vue";
+export default {
+  components: {
+    Tangram,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -200,11 +271,10 @@ export default {};
   // max-width: 800px;
 }
 .v-application .mainbg {
-  border-color:rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
 .intro {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 .has-stroke {
   color: black;
@@ -214,7 +284,7 @@ export default {};
 }
 
 .link-text {
-  color:rgb(126, 151, 198);
+  color: rgb(126, 151, 198);
 }
 #motion-demo {
   width: 40px;
@@ -244,6 +314,33 @@ export default {};
   transition: all 500ms ease-in-out;
   &:hover {
     background-size: 100% 100%;
+  }
+}
+
+.intro-right {
+  .my-story {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    transition: all 1.5s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .my-work {
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    transition: all 1.5s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .my-process {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    transition: all 1.5s;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 </style>

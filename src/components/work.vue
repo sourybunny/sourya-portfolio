@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" id="work">
     <section class="layout-container mainbg">
       <div class="layout-container__inner py-10">
         <div
