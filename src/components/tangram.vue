@@ -86,29 +86,29 @@ export default {};
   transform: translate(45px, 146px) rotate(-45deg) skew(45deg);
 }
 .triangle--pink {
-  border-left: 50px solid #e4c4f5;
+  border-left: 50px solid #ffbd49;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
 }
 .triangle--purple {
-  border-left: 50px solid #c4dce2;
+  border-left: 50px solid #fb3066;
 
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
 }
 .triangle--turquoise {
-  border-left: 70px solid #93bee9;
+  border-left: 70px solid #009af4;
   border-top: 70px solid transparent;
   border-bottom: 70px solid transparent;
 }
 .triangle--yellow {
-  border-left: 100px solid #93bee9;
+  border-left: 100px solid #690ca8;
 
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
 }
 .triangle--orange {
-  border-left: 100px solid #e4c4f5;
+  border-left: 100px solid #ca028b;
 
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
@@ -119,7 +119,7 @@ export default {};
   transition: all 2s;
 }
 .square--red {
-  background-color: #dfe2dc;
+  background-color: #fe7d4c;
 
   width: 70px;
   height: 70px;
@@ -130,7 +130,7 @@ export default {};
   transition: all 2s;
 }
 .parallelogram--green {
-  background-color: #e173c4;
+  background-color: #7ac864;
 
   width: 64px;
   height: 70px;
