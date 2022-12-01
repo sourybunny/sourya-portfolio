@@ -4,14 +4,6 @@
       <div class="layout-container__inner">
         <v-layout row wrap class="align-start justify-space-between">
           <v-flex xs12 sm9 md6 lg5 class="pt-4">
-            <!-- <v-btn
-              plain
-              dark
-              class="text-capitalize mt-5 title"
-              @click.stop="$router.push({ path: '/' })"
-            >
-              Home
-            </v-btn> -->
             <p
               class="font-weight-medium white--text my-6 "
               :class="$vuetify.breakpoint.mdAndUp ? ' display-3' : 'display-1'"
@@ -24,6 +16,16 @@
                 Here's a quick summary about me and what I've been up to lately.
               </div>
             </div>
+            <v-btn large
+            href="https://www.linkedin.com/in/souryav/"
+            target="_blank"
+            
+            dark
+            class="text-capitalize mt-6"
+            >Let's Connect <v-icon dark>
+                          mdi-arrow-right
+                        </v-icon></v-btn
+          >
           </v-flex>
           <v-flex
             class="about-right"
@@ -46,7 +48,7 @@
           <v-flex xs12 sm9 md6 lg6>
             <div class="grey--text">
               <p class="font-weight-light my-6 title">
-                Hi there, I’m Sourya Varanasi. I am a UX/Product Designer graduating with
+                Hi there, I’m Sourya Varanasi. I am a data-driven UX/Product Designer graduating with
                 an Ms. HCI degree from Indiana University Bloomington in May,
                 2023.
               </p>
@@ -101,6 +103,15 @@
                   Javascript and VueJs.
                 </v-expansion-panel-content>
               </v-expansion-panel>
+              <v-expansion-panel>
+                <v-expansion-panel-header>
+                  What do I specialize in?
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  There were times I put on multiple hats while working for tech startups. This experience helped me master development and team-working skills. 
+                  I can effectively communicate my designs with product owners, developers and stakeholders at all levels and work iteratively by receiving feedback.
+                </v-expansion-panel-content>
+              </v-expansion-panel>
                <v-expansion-panel>
                 <v-expansion-panel-header>
                   What else can I do?
@@ -136,11 +147,14 @@
         </v-btn>
       </div>
     </div>
+    <Contact />
   </div>
 </template>
 
 <script>
 import TangramAbout from "./tangram-about.vue";
+import Contact from './contact.vue';
+
 export default {
   data: function() {
     return {
@@ -149,6 +163,8 @@ export default {
   },
   components: {
     TangramAbout,
+    Contact,
+    Contact
   },
 };
 </script>

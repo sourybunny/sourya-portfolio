@@ -1,6 +1,6 @@
 <template>
   <div class="mainbg">
-    <div class="layout-container">
+    <div class="layout-container" style="border-top: 2px solid rgba(255, 255, 255, 0.1);">
       <div
         class="  white--text py-16 px-10 center-align layout-container__inner"
         width="100%"
