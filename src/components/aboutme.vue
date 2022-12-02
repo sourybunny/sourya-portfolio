@@ -16,16 +16,17 @@
                 Here's a quick summary about me and what I've been up to lately.
               </div>
             </div>
-            <v-btn large
-            href="https://www.linkedin.com/in/souryav/"
-            target="_blank"
-            
-            dark
-            class="text-capitalize mt-6"
-            >Let's Connect <v-icon dark>
-                          mdi-arrow-right
-                        </v-icon></v-btn
-          >
+            <v-btn
+              large
+              href="https://www.linkedin.com/in/souryav/"
+              target="_blank"
+              dark
+              class="text-capitalize mt-6"
+              >Let's Connect
+              <v-icon dark>
+                mdi-arrow-right
+              </v-icon></v-btn
+            >
           </v-flex>
           <v-flex
             class="about-right"
@@ -48,15 +49,15 @@
           <v-flex xs12 sm9 md6 lg6>
             <div class="grey--text">
               <p class="font-weight-light my-6 title">
-                Hi there, I’m Sourya Varanasi. I am a data-driven UX/Product Designer graduating with
-                an Ms. HCI degree from Indiana University Bloomington in May,
-                2023.
+                Hi there, I’m Sourya Varanasi. I am a data-driven UX/Product
+                Designer graduating with an Ms. HCI degree from Indiana
+                University Bloomington in May, 2023.
               </p>
               <p class="text-h5 white--text">Currently</p>
               <p class="font-weight-light mt-4 title">
                 For the last 3 years, I've been working with diverse companies
                 under many roles in digital product design. This
-                inter-disciplinary experience taught me how design processes
+                interdisciplinary experience taught me how design processes
                 could influence product and business decisions. These insights
                 allow me to use design as a strategy rather than being just
                 another deliverable.
@@ -80,7 +81,8 @@
                   building stuff. I love transforming material to bring life to
                   them. Over the years, these problem-solving skills shaped my
                   design mindset to tweak pixels in the digital world to
-                  handcraft delightful experiences.
+                  handcraft delightful experiences. I love to work during the 'metamorphosis'(like a butterfly) to bring products
+                  from idea to life.
                 </v-expansion-panel-content>
               </v-expansion-panel>
               <v-expansion-panel>
@@ -88,8 +90,10 @@
                   Who am I as a person?
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
-                  I have growth mindset striving to get better by learning and
-                  taking inspiration from my peers and things around me. 
+                  I have growth mindset striving to get better by learning
+                  from my peers and things around me. I observe nature and draw
+                  inspiration from its manifold patterns to become a better
+                  designer.
                 </v-expansion-panel-content>
               </v-expansion-panel>
               <v-expansion-panel>
@@ -108,17 +112,21 @@
                   What do I specialize in?
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
-                  There were times I put on multiple hats while working for tech startups. This experience helped me master development and team-working skills. 
-                  I can effectively communicate my designs with product owners, developers and stakeholders at all levels and work iteratively by receiving feedback.
+                  There were times I put on multiple hats while working for tech
+                  startups. This experience helped me master development and
+                  team-working skills. I can effectively communicate my designs
+                  with product owners, developers and stakeholders at all levels
+                  and work iteratively by receiving feedback.
                 </v-expansion-panel-content>
               </v-expansion-panel>
-               <v-expansion-panel>
+              <v-expansion-panel>
                 <v-expansion-panel-header>
                   What else can I do?
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
-                  I'm a self-taught artist who can work with watercolor, charcoal and acrylic paintings.
-                  Occasionally, I partcipated in local exhibits in my city back in India to showcase my work. 
+                  I'm a self-taught artist who can work with watercolor,
+                  charcoal and acrylic paintings. Occasionally, I partcipated in
+                  local exhibits in my city back in India to showcase my work.
                 </v-expansion-panel-content>
               </v-expansion-panel>
             </v-expansion-panels>
@@ -153,7 +161,7 @@
 
 <script>
 import TangramAbout from "./tangram-about.vue";
-import Contact from './contact.vue';
+import Contact from "./contact.vue";
 
 export default {
   data: function() {
@@ -164,7 +172,7 @@ export default {
   components: {
     TangramAbout,
     Contact,
-    Contact
+    Contact,
   },
 };
 </script>

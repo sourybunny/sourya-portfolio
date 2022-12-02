@@ -11,7 +11,7 @@
           <p class="font-weight-bold">
             reach out to me at
             <span class="font-weight-bold gradient"
-              ><a href="mailto:sovarana@iu.edu">sovarana@iu.edu</a></span
+              ><a href="mailto:sourya0411@gmail.com">sourya0411@gmail.com</a></span
             >
           </p>
         </div>

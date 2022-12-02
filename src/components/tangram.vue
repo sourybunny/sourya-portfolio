@@ -19,7 +19,7 @@ export default {};
   // position: absolute;
   transform: translate(15%,15%);
   width: 100%;
-  height: 450px;
+  height: 380px;
   // top: 150px;
   // left: 150px;
   -moz-transition: all 1s;
@@ -136,21 +136,21 @@ export default {};
   height: 70px;
 }
 // butterfly
-.intro-right:hover  .tangram .triangle--pink {
+.intro:hover  .tangram .triangle--pink {
   -moz-transform: translate(118px, 240px) rotate(240deg);
   -o-transform: translate(118px, 240px) rotate(240deg);
   -ms-transform: translate(118px, 240px) rotate(240deg);
   -webkit-transform: translate(118px, 240px) rotate(240deg);
   transform: translate(118px, 240px) rotate(240deg);
 }
-.intro-right:hover  .tangram  .triangle--purple {
+.intro:hover  .tangram  .triangle--purple {
   -moz-transform: translate(147px, 130px) rotate(150deg);
   -o-transform: translate(147px, 130px) rotate(150deg);
   -ms-transform: translate(147px, 130px) rotate(150deg);
   -webkit-transform: translate(147px, 130px) rotate(150deg);
   transform: translate(147px, 130px) rotate(150deg);
 }
-.intro-right:hover  .tangram .square--red {
+.intro:hover  .tangram .square--red {
   -moz-transform: translate(139px, 204px) rotate(15deg);
   -o-transform: translate(139px, 204px) rotate(15deg);
   -ms-transform: translate(139px, 204px) rotate(15deg);
@@ -158,48 +158,48 @@ export default {};
   transform: translate(139px, 204px) rotate(15deg);
 }
 
-.intro-right:hover  .tangram  .triangle--turquoise {
+.intro:hover  .tangram  .triangle--turquoise {
   -moz-transform: translate(244px, 196px) rotate(160deg);
   -o-transform: translate(244px, 196px) rotate(160deg);
   -ms-transform: translate(244px, 196px) rotate(160deg);
   -webkit-transform: translate(244px, 196px) rotate(160deg);
   transform: translate(244px, 196px) rotate(160deg);
 }
-.intro-right:hover  .tangram  .triangle--yellow {
+.intro:hover  .tangram  .triangle--yellow {
   -moz-transform: translate(70px, 50px) rotate(-30deg);
   -o-transform: translate(70px, 50px) rotate(-30deg);
   -ms-transform: translate(70px, 50px) rotate(-30deg);
   -webkit-transform: translate(70px, 50px) rotate(-30deg);
   transform: translate(70px, 50px) rotate(-30deg);
 }
-.intro-right:hover  .tangram  .triangle--orange {
+.intro:hover  .tangram  .triangle--orange {
   -moz-transform: translate(263px, 42px) rotate(205deg);
   -o-transform: translate(263px, 42px) rotate(205deg);
   -ms-transform: translate(263px, 42px) rotate(205deg);
   -webkit-transform: translate(263px, 42px) rotate(205deg);
   transform: translate(263px, 42px) rotate(205deg);
 }
-.intro-right:hover  .tangram  .parallelogram--green {
+.intro:hover  .tangram  .parallelogram--green {
   -moz-transform: translate(222px, 163px) rotate(70deg) skew(45deg);
   -o-transform: translate(222px, 163px) rotate(70deg) skew(45deg);
   -ms-transform: translate(222px, 163px) rotate(70deg) skew(45deg);
   -webkit-transform: translate(222px, 163px) rotate(70deg) skew(45deg);
   transform: translate(222px, 163px) rotate(70deg) skew(45deg);
 }
-.intro-right:hover .tangram{
+.intro:hover .tangram{
   transform: rotate(-30deg);
 }
-.intro-right:hover  .my-story{
+.intro:hover  .my-story{
     visibility:visible;
     opacity: 1;
 
 }
-.intro-right:hover  .my-work{
+.intro:hover  .my-work{
     visibility:visible;
     opacity: 1;
 
 }
-.intro-right:hover  .my-process{
+.intro:hover  .my-process{
     visibility:visible;
     opacity: 1;
 

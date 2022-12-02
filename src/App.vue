@@ -1,5 +1,5 @@
 <template>
-  <v-app> 
+  <v-app dark> 
     <Header />
     <v-main class="pa-0">
       <template>

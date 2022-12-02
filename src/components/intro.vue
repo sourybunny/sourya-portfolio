@@ -1,8 +1,8 @@
 <template>
   <div class="mainbg layout-container intro">
     <div class="layout-container__inner">
-      <v-card flat class="mainbg d-flex align-center py-10">
-        <v-layout row wrap class="align-center justify-space-between">
+      <!-- <v-card flat class="mainbg d-flex align-center py-6"> -->
+        <v-layout row wrap class="align-center justify-space-between py-6">
           <v-flex xs12 sm9 md8 lg7>
             <div class="">
               <p
@@ -126,7 +126,7 @@
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn
-                        href="mailto:sovarana@iu.edu"
+                        href="mailto:sourya0411@gmail.com"
                         target="_blank"
                         class="mx-2 darken-4"
                         fab
@@ -245,7 +245,7 @@
             </div>
           </v-flex>
         </v-layout>
-      </v-card>
+      <!-- </v-card> -->
       <!-- <div class="text-center" v-if="$vuetify.breakpoint.mdAndUp">
         <v-btn class="darken-3" style="margin-top:-10rem;" fab dark small color="transparent">
           <v-icon dark>

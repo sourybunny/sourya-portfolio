@@ -13,6 +13,7 @@ export default {
 <style lang="scss">
 .cell {
 	flex-basis: 50%;
+	background:#024f9c;
 	// padding: 1.5em;
 }
 .logo, .logo:before, .logo:after {
@@ -39,9 +40,10 @@ export default {
 	transform-origin: 50% 100%;	
 	clip-path: polygon(0 0,100% 0,50% 100%);
 	-webkit-clip-path: polygon(0 0,100% 0,50% 100%);
-  background: #77A1D3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #fff;
+//   background: #77A1D3;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .logo-butterfly {

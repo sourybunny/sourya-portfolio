@@ -199,6 +199,7 @@ export default {
 .streamanity-container {
   // background: #579C70;
   background: #489b65;
+  
 }
 
 .courseplan-container {
