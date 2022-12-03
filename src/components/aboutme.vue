@@ -49,7 +49,7 @@
           <v-flex xs12 sm9 md6 lg6>
             <div class="grey--text">
               <p class="font-weight-light my-6 title">
-                Hi there, I’m Sourya Varanasi. I am a data-driven UX/Product
+                Hi there, I’m Sourya Varanasi. I am a <span class="is-relative circle-sketch-highlight">data-driven</span> UX/Product
                 Designer graduating with an Ms. HCI degree from Indiana
                 University Bloomington in May, 2023.
               </p>
@@ -184,5 +184,12 @@ export default {
 .about {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   background: black;
+}
+.highlight {
+  top:-2rem;
+  left:0rem;
+  width: 100%;
+  // height:100%;
+  padding: 0;
 }
 </style>

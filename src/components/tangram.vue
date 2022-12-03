@@ -33,6 +33,7 @@ export default {};
   height: 0;
   position: absolute;
   transition: all 2s;
+  
   // opacity: 0.8;
 }
 
