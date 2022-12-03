@@ -12,13 +12,13 @@
         <div
           class="body-2 white--text "
         >
-          <v-chip dark class="ma-2 ml-0 grey darken-4">
+          <v-chip dark class="ma-2 ml-0 cardbgdark">
             2018-2019
           </v-chip>
-          <v-chip dark class="ma-2 grey darken-4">
+          <v-chip dark class="ma-2 cardbgdark">
             Responsive mobile-web app
           </v-chip>
-            <v-chip dark class="ma-2 grey darken-4">
+            <v-chip dark class="ma-2 cardbgdark">
             Shipped product
           </v-chip>
         </div>
@@ -72,13 +72,13 @@
         <div
           class="body-2 white--text "
         >
-          <v-chip dark class="ma-2 ml-0 grey darken-4">
+          <v-chip dark class="ma-2 ml-0 cardbgdark">
             2021-2022
           </v-chip>
-          <v-chip dark class="ma-2 grey darken-4">
+          <v-chip dark class="ma-2 cardbgdark">
             Enterprise web app
           </v-chip>
-            <v-chip dark class="ma-2 grey darken-4">
+            <v-chip dark class="ma-2 cardbgdark">
             Shipped feature
           </v-chip>
         </div>

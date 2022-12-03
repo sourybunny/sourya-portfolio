@@ -108,11 +108,11 @@
                       <v-btn
                         href="https://www.linkedin.com/in/souryav/"
                         target="_blank"
-                        class="mr-2 darken-4"
+                        class="mr-2"
                         fab
                         dark
                         small
-                        color="grey"
+                        color="cardbgdark"
                         v-bind="attrs"
                         v-on="on"
                       >
@@ -128,11 +128,11 @@
                       <v-btn
                         href="mailto:sourya0411@gmail.com"
                         target="_blank"
-                        class="mx-2 darken-4"
+                        class="mx-2"
                         fab
                         dark
                         small
-                        color="grey"
+                        color="cardbgdark"
                         v-bind="attrs"
                         v-on="on"
                       >
@@ -148,11 +148,11 @@
                       <v-btn
                         href="https://www.behance.net/sourya"
                         target="_blank"
-                        class="mx-2 darken-4 white--text "
+                        class="mx-2  white--text "
                         fab
                         dark
                         small
-                        color=""
+                        color="cardbgdark"
                         v-bind="attrs"
                         v-on="on"
                       >
@@ -166,11 +166,11 @@
                       <v-btn
                         href="https://www.instagram.com/sourya_sketches/"
                         target="_blank"
-                        class="mx-2 darken-4"
+                        class="mx-2"
                         fab
                         dark
                         small
-                        color="grey"
+                        color="cardbgdark"
                         v-bind="attrs"
                         v-on="on"
                       >
@@ -179,7 +179,7 @@
                         </v-icon>
                       </v-btn>
                     </template>
-                    <span>Instagram</span>
+                    <span >Instagram</span>
                   </v-tooltip>
                 </div>
               </div>
@@ -198,7 +198,7 @@
               <v-card
                 dark
                 width="230"
-                class="px-3 rounded-xl is-absolute my-story"
+                class="px-3 rounded-xl is-absolute my-story cardbgdark"
                 elevation="12"
                 @click="$router.push('/about')"
               >
@@ -218,7 +218,7 @@
               <!-- <v-card
                 dark
                 max-width="120"
-                class="rounded-xl is-absolute my-work"
+                class="rounded-xl is-absolute my-work cardbgdark"
                 elevation="12"
               >
                 <v-btn
@@ -228,11 +228,11 @@
                   class="h5 text-capitalize px-4 font-weight-medium pa-2"
                   >My Work</v-btn
                 >
-              </v-card> -->
-              <!-- <v-card
+              </v-card>
+              <v-card
                 dark
                 max-width="140"
-                class=" rounded-xl is-absolute my-process"
+                class=" rounded-xl is-absolute my-process cardbgdark"
                 elevation="12"
               >
                 <v-btn
@@ -321,23 +321,23 @@ export default {
   .my-story {
     position: absolute;
     top: 5%;
-    left: 2%;
+    left: 10%;
     transition: all 1.5s;
     visibility: hidden;
     opacity: 0;
   }
   .my-work {
     position: absolute;
-    top: 15%;
-    left: 65%;
+    top: 40%;
+    left: 2%;
     transition: all 1.5s;
     visibility: hidden;
     opacity: 0;
   }
   .my-process {
     position: absolute;
-    top: 75%;
-    left: 0;
+    top: 28%;
+    left: 5%;
     transition: all 1.5s;
     visibility: hidden;
     opacity: 0;

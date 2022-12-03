@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!loading">
+  <div v-if="!loading" class="white">
     <template>
       <section class="streamanity-gradient py-10">
         <v-container class="py-14">

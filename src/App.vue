@@ -1,7 +1,7 @@
 <template>
-  <v-app dark> 
-    <Header />
-    <v-main class="pa-0">
+  <v-app>
+    <Header class="app-background" />
+    <v-main class="pa-0 app-background">
       <template>
         <keep-alive>
           <router-view :key="$route.fullPath"></router-view>
@@ -10,9 +10,7 @@
     </v-main>
     <template>
       <v-footer dark padless>
-        <v-card flat tile>
-         
-        </v-card>
+        <v-card flat tile> </v-card>
       </v-footer>
     </template>
   </v-app>
@@ -36,14 +34,17 @@ export default {
     padding: 4rem;
     border-left: 2px solid rgba(255, 255, 255, 0.1);
     .content-title {
-      font-family: 'Inter';
+      font-family: "Inter";
       font-weight: 600;
       font-size: 24px;
     }
     .content-body {
-      font-family: 'Inter';
+      font-family: "Inter";
       font-size: 18px;
     }
   }
+}
+.app-background {
+  background: #030012;
 }
 </style>
