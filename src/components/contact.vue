@@ -22,7 +22,7 @@
         class="layout-container__inner py-6 white--text d-flex align-center justify-space-between"
       >
         <div>
-          © Sourya Varanasi
+          © Sourya Varanasi - Design & Code
         </div>
         <div class="d-flex grey--text">
           <v-btn

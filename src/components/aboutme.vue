@@ -11,9 +11,9 @@
               About me.
             </p>
             <div class="grey--text text-h5 font-weight-light">
-              Yay! welcome to my space.
+              <!-- Yay! welcome to my space. -->
               <div>
-                Here's a quick summary about me and what I've been up to lately.
+                I'm a digital designer transforming products to humanize them.
               </div>
             </div>
             <v-btn
