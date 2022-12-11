@@ -1,7 +1,9 @@
 <template>
   <div>
     <Intro />
+    <Shorts />
     <Work />
+
     <!-- <Aboutme id="about" /> -->
     <Contact />
   </div>
@@ -12,12 +14,15 @@ import Intro from "../components/intro";
 import Aboutme from "../components/aboutme";
 import Contact from "../components/contact";
 import Work from "../components/work";
+import Shorts from "../components/shorts";
+
 export default {
   components: {
     Intro,
     Aboutme,
     Contact,
     Work,
+    Shorts
   },
 };
 </script>
