@@ -4,11 +4,11 @@
       <div class="layout-container__inner">
         <v-layout row wrap class="align-start justify-space-between">
           <v-flex xs12 sm9 md6 lg5 class="pt-4">
-            <p
+            <p 
               class="font-weight-medium white--text my-6 "
               :class="$vuetify.breakpoint.mdAndUp ? ' display-3' : 'display-1'"
             >
-              About me.
+              About <span class="tangram_blue--text text--lighten-1">Me</span>
             </p>
             <div class="grey--text text-h5 font-weight-light">
               <!-- Yay! welcome to my space. -->
@@ -21,7 +21,7 @@
               href="https://www.linkedin.com/in/souryav/"
               target="_blank"
               dark
-              class="text-capitalize mt-6 cardbgdark"
+              class="text-capitalize mt-6 tangram_blue"
               >Let's Connect
               <v-icon dark>
                 mdi-arrow-right
@@ -89,10 +89,10 @@
                 </v-expansion-panel-content>
               </v-expansion-panel> -->
               <v-expansion-panel class="cardbgdark">
-                <v-expansion-panel-header class="accordionbg1">
+                <v-expansion-panel-header class="tangram_blue">
                   What's with the tangrams and butterflies?
                 </v-expansion-panel-header>
-                <v-expansion-panel-content class="pt-4 accordionbg1 darken-1">
+                <v-expansion-panel-content class="pt-4 tangram_blue darken-1">
                   As a child, I spent most of my play time solving puzzles and
                   building stuff. I love transforming material to bring life to
                   them. Over the years, these problem-solving skills shaped my
@@ -103,10 +103,10 @@
                 </v-expansion-panel-content>
               </v-expansion-panel>
               <v-expansion-panel class="cardbgdark">
-                <v-expansion-panel-header class="accordionbg1 darken-1">
+                <v-expansion-panel-header class="tangram_blue darken-1">
                   Who am I as a person?
                 </v-expansion-panel-header>
-                <v-expansion-panel-content class="pt-4 accordionbg1 darken-2">
+                <v-expansion-panel-content class="pt-4 tangram_blue darken-2">
                   I have growth mindset striving to get better by learning from
                   my peers and things around me. I observe nature and draw
                   inspiration from its manifold patterns to become a better
@@ -114,10 +114,10 @@
                 </v-expansion-panel-content>
               </v-expansion-panel>
               <v-expansion-panel class="cardbgdark">
-                <v-expansion-panel-header class="accordionbg1 darken-2">
+                <v-expansion-panel-header class="tangram_blue darken-2">
                   How did I build this site?
                 </v-expansion-panel-header>
-                <v-expansion-panel-content class="pt-4 accordionbg1 darken-3">
+                <v-expansion-panel-content class="pt-4 tangram_blue darken-3">
                   Apart from UX Design, I love to play around with HTML and CSS
                   to create fun interactions. My software engineering background
                   taught me all about web and helped me build this site using
@@ -125,10 +125,10 @@
                 </v-expansion-panel-content>
               </v-expansion-panel>
               <v-expansion-panel class="cardbgdark">
-                <v-expansion-panel-header class="accordionbg1 darken-3">
+                <v-expansion-panel-header class="tangram_blue darken-3">
                   What do I specialize in?
                 </v-expansion-panel-header>
-                <v-expansion-panel-content class="pt-4 accordionbg1 darken-4">
+                <v-expansion-panel-content class="pt-4 tangram_blue darken-4">
                   There were times I put on multiple hats while working for tech
                   startups. This experience helped me master development and
                   team-working skills. I can effectively communicate my designs
@@ -137,7 +137,7 @@
                 </v-expansion-panel-content>
               </v-expansion-panel>
               <v-expansion-panel class="cardbgdark">
-                <v-expansion-panel-header class="accordionbg1 darken-4">
+                <v-expansion-panel-header class="tangram_blue darken-4">
                   What else can I do?
                 </v-expansion-panel-header>
                 <v-expansion-panel-content class="pt-4  accordionbg2 darken-3">
@@ -172,6 +172,7 @@
         </v-btn> -->
       </div>
     </div>
+    <!-- <Grid /> -->
     <Contact />
   </div>
 </template>
@@ -179,6 +180,8 @@
 <script>
 import TangramAbout from "./tangram-about.vue";
 import Contact from "./contact.vue";
+import Grid from "./grid.vue";
+
 
 export default {
   data: function() {
@@ -189,7 +192,7 @@ export default {
   components: {
     TangramAbout,
     Contact,
-    Contact,
+    Grid,
   },
 };
 </script>
@@ -208,4 +211,7 @@ export default {
   // height:100%;
   padding: 0;
 }
+
+
 </style>
+

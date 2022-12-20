@@ -7,7 +7,7 @@
           class="d-flex align-center is-pointer"
         >
           <span><Logo class="mx-4 mr-6"/></span
-          ><span style="font-family:'Homemade apple',cursive; font-size:1.4rem;"
+          ><span class="tangram_yellow--text" style="font-family:'Homemade apple',cursive; font-size:1.4rem;"
             >Sv</span
           >
         </div>

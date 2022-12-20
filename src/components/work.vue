@@ -3,7 +3,7 @@
     <section class="layout-container mainbg">
       <div class="layout-container__inner">
       <!-- <div class="text-h5 white--text font-weight-light mb-6">Selected Work</div> -->
-      <div class="text-h4 white--text font-weight-bold mb-8"> Selected <span class="font-weight-bold yellow--text">Work</span></div>
+      <div class="text-h4 white--text font-weight-bold mb-8"> Selected <span class="font-weight-bold tangram_yellow--text">Work</span></div>
 
       <!-- <div class="text-h3 white--text font-weight-bold mb-8"> Selected <span class="font-weight-bold yellow--text">Work</span></div> -->
 

@@ -1,8 +1,8 @@
 <template>
   <div class="layout-container shorts">
     <div class="layout-container__inner ">
-      <div class="text-h4 white--text font-weight-bold mb-8">
-        Design <span class="font-weight-bold blue--text">Bytes</span>
+      <div class="text-h4 white--text font-weight-bold mb-8" >
+        Design <span class="font-weight-bold tangram_orange--text">Bytes</span>
       </div>
       <div class="d-flex" style="overflow:scroll;">
         <template v-for="(item, i) in items">
@@ -77,6 +77,7 @@
             <!-- <iframe v-if="selected_id==3"  style="border: 1px solid rgba(0, 0, 0, 0.1);"  width="700" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fnode-id%3D20%253A260%26t%3DuSyyeGoXuy44jU32-1" allowfullscreen></iframe> -->
             <iframe v-if="selected_id==4"  style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D0%253A1%26node-id%3D1%253A179%26viewport%3D319%252C2156%252C0.19%26scaling%3Dscale-down-width"></iframe>
             <!-- <iframe v-if="selected_id==3" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FAPAYAUXAqJbP8hHGVLdFZO%2Fresume%3Fpage-id%3D141%253A2%26node-id%3D715%253A14%26viewport%3D1713%252C-876%252C0.44%26scaling%3Dscale-down-width%26starting-point-node-id%3D223%253A28" ></iframe> -->
+            <iframe v-if="selected_id==7"  style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D5%253A2%26node-id%3D83%253A241%26viewport%3D245%252C252%252C0.17%26scaling%3Dscale-down-width"></iframe>
         </v-dialog>
       <!-- <div class="d-flex" style="overflow:scroll;">
         <v-hover v-slot="{ hover }">
@@ -410,16 +411,16 @@ export default {
       //   tag: "",
       //   misc: "",
       // },
-      // {
-      //   id: 7,
-      //   overline: "User personas",
-      //   title: "Enterprise Data Platform Team Personas",
-      //   company: `@Rich Products corp`,
-      //   cardimg: require(`@/assets/bytes/personas.png`),
-      //   logo: require(`@/assets/stories/rich-logo.png`),
-      //   tag: "",
-      //   misc: "",
-      // },
+      {
+        id: 7,
+        overline: "User personas",
+        title: "Enterprise Data Platform Team Personas",
+        company: `@Rich Products corp`,
+        cardimg: require(`@/assets/bytes/personas.png`),
+        logo: require(`@/assets/stories/rich-logo.png`),
+        tag: "",
+        misc: "",
+      },
     ],
   }),
 };

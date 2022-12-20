@@ -9,6 +9,9 @@ export default new Vuetify({
           light: {
             primary: '#E5C675',
             secondary: '#b0bec5',
+            tangram_orange:'#dd6c3d',
+            tangram_blue:'#0162ac',
+            tangram_yellow:'#ffcc01',
             // mainbg: '#000',
             accordionbg1:'#024f9c',
             accordionbg2:'#0a2759',

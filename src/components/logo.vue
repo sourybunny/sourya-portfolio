@@ -13,7 +13,7 @@ export default {
 <style lang="scss">
 .cell {
 	flex-basis: 50%;
-	background:#024f9c;
+	// background:#024f9c;
 	// padding: 1.5em;
 }
 .logo, .logo:before, .logo:after {
@@ -24,8 +24,8 @@ export default {
 .logo {
 	// margin: 0 auto 1.5em auto;
 	position: relative;
-	width: 2.2em;
-	height: 2.2em;
+	width: 1.5em;
+	height: 1.5em;
   
 }
 .logo:before, .logo:after {
