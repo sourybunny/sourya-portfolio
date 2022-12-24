@@ -6,7 +6,7 @@
         width="100%"
         :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
       >
-        <div class="font-weight-bold  text-center ">
+        <div class="font-weight-bold text-center ">
           To know more about me or my work,
           <p class="font-weight-bold">
             reach out to me at
