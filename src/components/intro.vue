@@ -2,221 +2,200 @@
   <div class="mainbg layout-container intro">
     <div class="layout-container__inner">
       <!-- <v-card flat class="mainbg d-flex align-center py-6"> -->
-        <v-layout row wrap class="align-center justify-space-between py-6">
-          <v-flex xs12 sm9 md8 lg7>
-            <div class="">
-              <p
-                class="font-weight-medium  white--text "
+      <v-layout row wrap class="align-center justify-space-between py-6">
+        <v-flex xs12 sm9 md8 lg7>
+          <div class="">
+            <p
+              class="font-weight-medium  white--text "
+              :class="$vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'"
+            >
+              <span>
+                I'm
+              </span>
+
+              <span>Sourya.</span>
+            </p>
+            <div class="my-6 slidee-up">
+              <span
+                style="white-space:nowrap;"
+                class="gradient text-shine  font-weight-medium"
                 :class="$vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'"
+                >I design and < build />
+              </span>
+              <div
+                :class="$vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'"
+                style="opacity:0.6;"
+                class="white--text  font-weight-medium"
               >
-                  
-                <span>
-                  I'm
-                </span>
-
-                <span
-                  class="white--text font-weight-medium "
-                  :class="
-                    $vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'
-                  "
-                  >Sourya.</span
-                >
-              </p>
-              <div class="my-6 slidee-up">
-                <span
-                  style="white-space:nowrap;"
-                  class="gradient text-shine  font-weight-medium"
-                  :class="
-                    $vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'
-                  "
-                  >I design and < build />
-                </span>
-                <div
-                  :class="
-                    $vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'
-                  "
-                  style="opacity:0.6;"
-                  class="white--text  font-weight-medium"
-                >
-                  products that delight
-                </div>
-                <div
-                  :class="
-                    $vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'
-                  "
-                  style="opacity:0.6;"
-                  class="white--text  font-weight-medium mb-3"
-                >
-                  and inspire people.
-                </div>
-              </div>
-
-              <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
-              <div class="fadee-in">
-                <div
-                  class="font-weight-light mt-10 white--text title intro-left"
-                >
-                  <span
-                    style="opacity:0.6;"
-                    :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
-                    >Currently a master’s student at
-                  </span>
-                </div>
-                <div
-                  class="white--text font-weight-medium"
-                  :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
-                >
-                  Indiana University Bloomington’s HCI program.
-                </div>
-                <div
-                  class="white--text font-weight-medium"
-                  :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
-                >
-                  <span
-                    :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
-                    class="font-weight-light"
-                    style="opacity:0.6;"
-                    >Previously
-                  </span>
-                  <span>
-                    <a
-                      href="https://uits.iu.edu/about/our-people/org-structure/enterprise-systems"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >@UITS IUB</a
-                    ></span
-                  >,
-                  <span>
-                    <a
-                      href="https://www.richs.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >@Rich Products Corporation</a
-                    ></span
-                  >,
-                  <span>
-                    <a
-                      href="https://streamanity.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >@Streamanity</a
-                    ></span
-                  >.
-                </div>
-                <div class="text-left mt-5">
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn
-                        href="https://www.linkedin.com/in/souryav/"
-                        target="_blank"
-                        class="mr-2"
-                        fab
-                        dark
-                        small
-                        color="cardbgdark"
-                        v-bind="attrs"
-                        v-on="on"
-                      >
-                        <v-icon dark>
-                          mdi-linkedin
-                        </v-icon>
-                      </v-btn>
-                    </template>
-                    <span>Linkedin</span>
-                  </v-tooltip>
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn
-                        href="mailto:sourya0411@gmail.com"
-                        target="_blank"
-                        class="mx-2"
-                        fab
-                        dark
-                        small
-                        color="cardbgdark"
-                        v-bind="attrs"
-                        v-on="on"
-                      >
-                        <v-icon dark>
-                          mdi-mail
-                        </v-icon>
-                      </v-btn>
-                    </template>
-                    <span>Email</span>
-                  </v-tooltip>
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn
-                        href="https://www.behance.net/sourya"
-                        target="_blank"
-                        class="mx-2  white--text "
-                        fab
-                        dark
-                        small
-                        color="cardbgdark"
-                        v-bind="attrs"
-                        v-on="on"
-                      >
-                        <i class="fab fa-2x fa-behance-square"></i>
-                      </v-btn>
-                    </template>
-                    <span>Behance</span>
-                  </v-tooltip>
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn
-                        href="https://www.instagram.com/sourya_sketches/"
-                        target="_blank"
-                        class="mx-2"
-                        fab
-                        dark
-                        small
-                        color="cardbgdark"
-                        v-bind="attrs"
-                        v-on="on"
-                      >
-                        <v-icon dark>
-                          mdi-instagram
-                        </v-icon>
-                      </v-btn>
-                    </template>
-                    <span >Instagram</span>
-                  </v-tooltip>
-                </div>
+                products that delight <br />
+                and inspire people.
               </div>
             </div>
-          </v-flex>
-          <v-flex
-            class="intro-right"
-            :order="$vuetify.breakpoint.xsOnly ? '-1' : '13'"
-            xs12
-            sm3
-            md4
-            lg5
-          >
-            <div class="is-relative">
-              <Tangram />
-              <v-card
-                dark
-                width="230"
-                class="px-3 rounded-xl is-absolute my-story cardbgdark"
-                elevation="12"
-                @click="$router.push('/about')"
+
+            <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
+            <div class="fadee-in">
+              <div class="font-weight-light mt-10 white--text title intro-left">
+                <span
+                  style="opacity:0.6;"
+                  :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
+                  >Currently a master’s student at
+                </span>
+              </div>
+              <div
+                class="white--text font-weight-medium"
+                :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
               >
-                <div class="d-flex align-center">
-                  <v-avatar size="44px" color="surface-variant">
-                    <v-img
-                      alt="Avatar"
-                      :src="require('../assets/headshot-min.jpeg')"
-                    ></v-img>
-                  </v-avatar>
-                  <div class="pa-3">
-                    <div class="h5 font-weight-medium ">My Story</div>
-                    <div class="grey--text">Product Designer</div>
-                  </div>
+                Indiana University Bloomington’s HCI program.
+              </div>
+              <div
+                class="white--text font-weight-medium"
+                :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
+              >
+                <span
+                  :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
+                  class="font-weight-light"
+                  style="opacity:0.6;"
+                  >Previously
+                </span>
+                <span>
+                  <a
+                    href="https://uits.iu.edu/about/our-people/org-structure/enterprise-systems"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@UITS IUB</a
+                  ></span
+                >,
+                <span>
+                  <a
+                    href="https://www.richs.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@Rich Products Corporation</a
+                  ></span
+                >,
+                <span>
+                  <a
+                    href="https://streamanity.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@Streamanity</a
+                  ></span
+                >.
+              </div>
+              <div class="text-left mt-5">
+                <v-tooltip bottom>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn
+                      href="https://www.linkedin.com/in/souryav/"
+                      target="_blank"
+                      class="mr-2"
+                      fab
+                      dark
+                      small
+                      color="cardbgdark"
+                      v-bind="attrs"
+                      v-on="on"
+                    >
+                      <v-icon dark>
+                        mdi-linkedin
+                      </v-icon>
+                    </v-btn>
+                  </template>
+                  <span>Linkedin</span>
+                </v-tooltip>
+                <v-tooltip bottom>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn
+                      href="mailto:sourya0411@gmail.com"
+                      target="_blank"
+                      class="mx-2"
+                      fab
+                      dark
+                      small
+                      color="cardbgdark"
+                      v-bind="attrs"
+                      v-on="on"
+                    >
+                      <v-icon dark>
+                        mdi-mail
+                      </v-icon>
+                    </v-btn>
+                  </template>
+                  <span>Email</span>
+                </v-tooltip>
+                <v-tooltip bottom>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn
+                      href="https://www.behance.net/sourya"
+                      target="_blank"
+                      class="mx-2  white--text "
+                      fab
+                      dark
+                      small
+                      color="cardbgdark"
+                      v-bind="attrs"
+                      v-on="on"
+                    >
+                      <i class="fab fa-2x fa-behance-square"></i>
+                    </v-btn>
+                  </template>
+                  <span>Behance</span>
+                </v-tooltip>
+                <v-tooltip bottom>
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn
+                      href="https://www.instagram.com/sourya_sketches/"
+                      target="_blank"
+                      class="mx-2"
+                      fab
+                      dark
+                      small
+                      color="cardbgdark"
+                      v-bind="attrs"
+                      v-on="on"
+                    >
+                      <v-icon dark>
+                        mdi-instagram
+                      </v-icon>
+                    </v-btn>
+                  </template>
+                  <span>Instagram</span>
+                </v-tooltip>
+              </div>
+            </div>
+          </div>
+        </v-flex>
+        <v-flex
+          class="intro-right"
+          :order="$vuetify.breakpoint.xsOnly ? '-1' : '13'"
+          xs12
+          sm3
+          md4
+          lg5
+        >
+          <div class="is-relative">
+            <Tangram />
+            <v-card
+              dark
+              width="230"
+              class="px-3 rounded-xl is-absolute my-story cardbgdark"
+              elevation="12"
+              @click="$router.push('/about')"
+            >
+              <div class="d-flex align-center">
+                <v-avatar size="44px" color="surface-variant">
+                  <v-img
+                    alt="Avatar"
+                    :src="require('../assets/headshot-min.jpeg')"
+                  ></v-img>
+                </v-avatar>
+                <div class="pa-3">
+                  <div class="h5 font-weight-medium ">My Story</div>
+                  <div class="grey--text">Product Designer</div>
                 </div>
-              </v-card>
-              <!-- <v-card
+              </div>
+            </v-card>
+            <!-- <v-card
                 dark
                 max-width="120"
                 class="rounded-xl is-absolute my-work cardbgdark"
@@ -243,9 +222,9 @@
                   >My Process</v-btn
                 >
               </v-card> -->
-            </div>
-          </v-flex>
-        </v-layout>
+          </div>
+        </v-flex>
+      </v-layout>
       <!-- </v-card> -->
       <!-- <div class="text-center" v-if="$vuetify.breakpoint.mdAndUp">
         <v-btn class="darken-3" style="margin-top:-10rem;" fab dark small color="transparent">

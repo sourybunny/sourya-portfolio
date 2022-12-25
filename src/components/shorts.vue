@@ -19,7 +19,7 @@
               <v-img
                 :gradient="
                   !hover
-                    ? 'to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)'
+                    ? 'to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)'
                     : 'to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.2)'
                 "
                 contain

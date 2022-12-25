@@ -107,6 +107,7 @@
         </v-btn> -->
       </div>
     </div>
+    <section>
      <div class="layout-container">
           <div class="layout-container__inner">
            
@@ -197,6 +198,7 @@
               </v-card> -->
           </div>
         </div>
+        </section>
     <!-- <Grid /> -->
     <Contact />
   </div>
@@ -255,5 +257,15 @@ export default {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.about-button {
+  border: 1px solid #8fbcff;
+    // background-color: #192b27;
+    // background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(transparent));
+    // background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent);
+    // -webkit-transition: background-color 500ms cubic-bezier(.19, 1, .22, 1);
+    // transition: background-color 500ms cubic-bezier(.19, 1, .22, 1);
+    // text-decoration: none;
+    
 }
 </style>
