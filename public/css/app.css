@@ -16,6 +16,9 @@ body {
 .is-fixed {
   position: fixed;
 }
+.pointer {
+  cursor: pointer;
+}
 section {
   opacity: 0;
   animation: load_up 1s forwards;

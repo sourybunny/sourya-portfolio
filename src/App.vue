@@ -98,4 +98,11 @@ $medium: 900px;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.bottom-line {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  &--light{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  }
+}
 </style>

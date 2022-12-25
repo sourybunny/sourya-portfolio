@@ -2,7 +2,7 @@
   <div class="mainbg">
     <div class="layout-container bottom-line about">
       <div class="layout-container__inner">
-        <v-layout row wrap class="align-start justify-space-between">
+        <v-layout wrap class="align-start justify-space-between">
           <v-flex xs12 sm9 md6 lg5 class="pt-4">
             <p
               class="font-weight-bold white--text my-6 "
@@ -47,7 +47,7 @@
     </div>
     <div class="layout-container bottom-line">
       <div class="layout-container__inner">
-        <v-layout row xs12 wrap>
+        <v-layout xs12 wrap>
           <v-flex xs12 sm9 md6 lg6>
             <div class="grey--text">
               <p class="font-weight-light mb-3 title">
@@ -110,15 +110,6 @@
     <section>
      <div class="layout-container">
           <div class="layout-container__inner">
-           
-              <!-- <v-card>
-                <v-card-title>
-                  What am I passionate about?
-                </v-card-title>
-                <v-card-text>
-                  
-                </v-card-text>
-              </v-card> -->
               <v-layout row wrap>
                 <v-flex xs12 md6>
                   <v-card elevation-20 dark class="cardbgdark my-4 mx-auto" max-width="600" min-height="320">
@@ -227,13 +218,7 @@ export default {
 // .intro-left {
 //   max-width: 500px;
 // }
-.bottom-line {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  &--light{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
-  }
-}
 .green-gradient {
       background-image: linear-gradient(124deg, #5dc942, #fff);
     -webkit-background-clip: text;

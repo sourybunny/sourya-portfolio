@@ -2,68 +2,98 @@
   <div class="" id="work">
     <section class="layout-container mainbg">
       <div class="layout-container__inner">
-      <!-- <div class="text-h5 white--text font-weight-light mb-6">Selected Work</div> -->
-      <div class="text-h4 white--text font-weight-bold mb-8"> Selected <span class="font-weight-bold tangram_yellow--text selectedwork-gradient">Work</span></div>
+        <!-- <div class="text-h5 white--text font-weight-light mb-6">Selected Work</div> -->
+        <div class="text-h4 white--text font-weight-bold mb-8">
+          Selected
+          <span
+            class="font-weight-bold tangram_yellow--text selectedwork-gradient"
+            >Work</span
+          >
+        </div>
 
-      <!-- <div class="text-h3 white--text font-weight-bold mb-8"> Selected <span class="font-weight-bold yellow--text">Work</span></div> -->
-
+        <!-- <div class="text-h3 white--text font-weight-bold mb-8"> Selected <span class="font-weight-bold yellow--text">Work</span></div> -->
 
         <div
           class="white--text  d-flex align-center "
           :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'"
         >
-        <div class="streamanity-dot mr-4"></div>
-          Streamanity 
+          <div class="streamanity-dot mr-4"></div>
+          Streamanity
         </div>
-        <div
-          class="body-2 white--text "
-        >
-          <v-chip dark class="ma-2 ml-0 cardbgdark">
+        <div class="body-2 white--text ">
+          <v-chip dark class="ml-0 cardbgdark">
             2018-2019
           </v-chip>
-          <v-chip dark class="ma-2 cardbgdark">
-            Responsive mobile-web app
+          <v-chip dark class="mx-1 cardbgdark">
+            Responsive design
           </v-chip>
-            <v-chip dark class="ma-2 cardbgdark">
-            Shipped product
+          <!-- <v-chip dark class="mx-1 cardbgdark">
+            B2C
+          </v-chip> -->
+          <v-chip dark class="cardbgdark">
+            Shipped
           </v-chip>
         </div>
       </div>
     </section>
-    <section class="layout-container streamanity-container">
-        <div class="">
-          <v-layout justify-space-between  wrap class="">
-            <v-flex xs12 sm7 md9 class="streamanity-container--left layout-container__inner">
-              <v-responsive>
-                <v-img
+    <section @click.stop="$router.push('/streamanity')" class="layout-container pointer streamanity-container workcard">
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="streamanity-container--left layout-container__inner"
+          >
+            <v-responsive>
+              <v-img
+                :src="
+                  require(`@/assets/media/streamanity/streamanity-landing.png`)
+                "
+              ></v-img>
+            </v-responsive>
+          </v-flex>
+          <v-flex xs12 sm5 md4 class="streamanity-container--right workcard_right pa-10">
+            <!-- <section class="flex-column justify-end"> -->
+              <div>
+                <div style="opacity:0.5;" class="mt-2">
+                  <v-img class="mr-2" style="float:left;" contain width="24" height="24"
                   :src="
-                    require(`@/assets/media/streamanity/streamanity-landing.png`)
+                    require(`@/assets/str-logo.png`)
                   "
-                ></v-img>
-              </v-responsive>
-            </v-flex>
-            <v-flex xs12 sm5 md3 class="streamanity-container--inner  pa-6">
-              <div class="pt-10">
-                <div class="text-h4">
-                  Streamanity
+                ></v-img><div>Streamanity</div>
                 </div>
-                <p class="body-1  my-5 ">
-                  Helping bitcoin based content creators monetize their videos and earn money directy from their followers.
-                </p>
-                <v-btn 
-                  large
-                  class="mt- text-capitalize"
-                  @click="$router.push('/streamanity')"
-                >
-                  View Case Study
-                </v-btn>
+                <div class="text-h5 mt-4">
+                  Designing a video streaming and revenue sharing platform for content creators.  
+                </div>
+                <!-- <p class="body-1  my-5 ">
+                  Helping bitcoin based content creators monetize their videos and
+                  earn money directy from their followers.
+                </p> -->
+                
               </div>
-            </v-flex>
-          </v-layout>
-        </div>
+              <div class="align-end justify-end">
+                <v-btn dark plain block
+                  large
+                  class="my-4 green--text bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                  @click.stop="$router.push('/streamanity')"
+                >
+                  View Case Study <v-icon class="ml-2" dark>
+                mdi-arrow-right
+              </v-icon>
+                </v-btn>
+                <p class="body-1">
+                  Helping bitcoin based content creators monetize their videos and
+                  earn money directy from their followers.
+                </p>
+              </div>
+            <!-- </section> -->
+          </v-flex>
+        </v-layout>
+      </div>
     </section>
 
-     <!-- <section class="layout-container mainbg">
+    <!-- <section class="layout-container mainbg">
       <div class="layout-container__inner py-10">
         <div
           class="white--text"
@@ -193,25 +223,29 @@ export default {
 </script>
 
 <style lang="scss">
-// .work-card {
-//   box-shadow: 0px 0px 362px rgba(0, 0, 0, 0.07),
-//     0px 0px 80.8574px rgba(0, 0, 0, 0.0417275),
-//     0px 0px 24.0734px rgba(0, 0, 0, 0.0282725) !important;
-// }
+.workcard_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .streamanity-container {
-  background: #579C70;
+  background: #579c70;
 
   &--left {
-  background: #579C70;
+    background: #579c70;
   }
-  &--inner {
-    color: #dbdbdb;
-    background:#1e2922;
+  &--right {
+    color: #a8dbbb;
+    background: #1e2922;
     // background: rgb(0,0,0);
-background: linear-gradient(124deg, rgba(0,0,0,0.9) 0%, rgb(22, 48, 32) 100%);
-  // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
+    background: linear-gradient(
+      124deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgb(22, 48, 32) 100%
+    );
+    // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
   }
-  
 }
 
 .courseplan-container {
