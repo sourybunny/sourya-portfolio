@@ -2,7 +2,7 @@
   <div class="mainbg layout-container intro">
     <div class="layout-container__inner">
       <!-- <v-card flat class="mainbg d-flex align-center py-6"> -->
-      <v-layout row wrap class="align-center justify-space-between py-6">
+      <v-layout wrap class="align-center justify-space-between py-6">
         <v-flex xs12 sm9 md8 lg7>
           <div class="">
             <p

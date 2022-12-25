@@ -31,10 +31,9 @@
       </div>
     </section>
     <section class="layout-container streamanity-container">
-      <section class="layout-container__inner">
-        <div class="content-container">
-          <v-layout row justify-space-between wrap>
-            <v-flex xs12 sm9>
+        <div class="">
+          <v-layout justify-space-between  wrap class="">
+            <v-flex xs12 sm7 md9 class="streamanity-container--left layout-container__inner">
               <v-responsive>
                 <v-img
                   :src="
@@ -43,28 +42,25 @@
                 ></v-img>
               </v-responsive>
             </v-flex>
-            <v-flex xs12 sm3>
+            <v-flex xs12 sm5 md3 class="streamanity-container--inner  pa-6">
               <div class="pt-10">
-                <div class="content-title white--text">
+                <div class="text-h4">
                   Streamanity
                 </div>
-                <p class="content-body white--text my-5 ">
-                  Bitcoin based video streaming and content monetization
-                  platform for small-scale content creators to earn money
-                  directly from their followers.
+                <p class="body-1  my-5 ">
+                  Helping bitcoin based content creators monetize their videos and earn money directy from their followers.
                 </p>
-                <v-btn
+                <v-btn 
                   large
-                  class="mt-6 text-capitalize"
+                  class="mt- text-capitalize"
                   @click="$router.push('/streamanity')"
                 >
-                  CASE STUDY
+                  View Case Study
                 </v-btn>
               </div>
             </v-flex>
           </v-layout>
         </div>
-      </section>
     </section>
 
      <!-- <section class="layout-container mainbg">
@@ -203,8 +199,18 @@ export default {
 //     0px 0px 24.0734px rgba(0, 0, 0, 0.0282725) !important;
 // }
 .streamanity-container {
-  // background: #579C70;
-  background: #489b65;
+  background: #579C70;
+
+  &--left {
+  background: #579C70;
+  }
+  &--inner {
+    color: #dbdbdb;
+    background:#1e2922;
+    // background: rgb(0,0,0);
+background: linear-gradient(124deg, rgba(0,0,0,0.9) 0%, rgb(22, 48, 32) 100%);
+  // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
+  }
   
 }
 
