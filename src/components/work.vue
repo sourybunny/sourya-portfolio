@@ -84,7 +84,7 @@
                 </v-btn>
                 <p class="body-1">
                   Helping bitcoin based content creators monetize their videos and
-                  earn money directy from their followers.
+                  earn money directly from their followers.
                 </p>
               </div>
             <!-- </section> -->

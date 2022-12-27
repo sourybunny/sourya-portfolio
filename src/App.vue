@@ -55,7 +55,7 @@ $medium: 900px;
 }
 
 .app-background {
-  background: #030012;
+  background: #020010;
 }
 .text-highlight {
   background: -webkit-linear-gradient(120deg, #a7cfdf, #37659a);

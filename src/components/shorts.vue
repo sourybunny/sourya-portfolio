@@ -2,7 +2,10 @@
   <div class="layout-container shorts">
     <div class="layout-container__inner ">
       <div class="text-h4 white--text font-weight-bold mb-8">
-        Design <span class="font-weight-bold tangram_orange--text designbytes-gradient">Bytes</span>
+        Design
+        <span class="font-weight-bold tangram_orange--text designbytes-gradient"
+          >Bytes</span
+        >
       </div>
       <div class="d-flex slides" style="overflow:scroll;">
         <template v-for="(item, i) in items">
@@ -31,7 +34,7 @@
                     <!-- <div style="opacity:0.5" class="font-italic paragraph-gradient display-1 ">
                       {{ item.id }}.
                     </div> -->
-                    <div 
+                    <div
                       class="body-2 grey--text paragraph-gradient text--lighten-1 font-italic font-weight-light mb-1"
                     >
                       {{ item.overline }}
@@ -99,6 +102,12 @@
           width="700"
           height="800"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D5%253A2%26node-id%3D83%253A241%26viewport%3D245%252C252%252C0.17%26scaling%3Dscale-down-width"
+        ></iframe>
+        <iframe v-if="selected_id == 5"
+          style="border: 1px solid rgba(0, 0, 0, 0.1);"
+          width="700"
+          height="800"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D154%253A23%26node-id%3D156%253A2764%26viewport%3D-854%252C1370%252C0.22%26scaling%3Dscale-down-width"
         ></iframe>
       </v-dialog>
       <!-- <div class="d-flex" style="overflow:scroll;">
@@ -413,6 +422,16 @@ export default {
         tag: "",
         misc: "",
       },
+      {
+        id: 5,
+        overline: "Visual design",
+        title: "Evoking Emotions Through Design Elements",
+        company: `@Ms.HCI Project, IUB`,
+        cardimg: require(`@/assets/bytes/visual.png`),
+        logo: require(`@/assets/stories/iu-logo.jpeg`),
+        tag: "",
+        misc: "",
+      },
       // {
       //   id: 5,
       //   overline: "Design system",
@@ -462,16 +481,16 @@ export default {
 .shorts {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   .slides {
-  //   .byte {
-  //     transform: perspective(1500px) rotateY(15deg);
-  // // border-radius: 1rem;
-  // box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  // transition: transform 1s ease 0s;
+    //   .byte {
+    //     transform: perspective(1500px) rotateY(15deg);
+    // // border-radius: 1rem;
+    // box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    // transition: transform 1s ease 0s;
 
-  // &:hover {
-  //   transform: perspective(3000px) rotateY(5deg);
-  // }
-  //   }
+    // &:hover {
+    //   transform: perspective(3000px) rotateY(5deg);
+    // }
+    //   }
     .byte:hover {
       transform: scale(1.05) translateY(3px);
       transition: all 200ms ease;
@@ -486,8 +505,6 @@ export default {
   scrollbar-color: #d5ac68 #f1db9d;
   scrollbar-width: thin;
   -ms-overflow-style: none;
-  
-
 }
 
 .pseduo-track {

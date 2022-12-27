@@ -15,7 +15,7 @@ export default new Vuetify({
             // mainbg: '#000',
             accordionbg1:'#024f9c',
             accordionbg2:'#0a2759',
-            cardbgdark:'#11131c',
+            cardbgdark:'#0F111C',
             stories_cake:'#9C3D3B',
             stories_soar:'#036198',
             stories_medium:'#3B8546',
