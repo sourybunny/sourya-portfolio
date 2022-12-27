@@ -3,7 +3,7 @@
     <section class="layout-container mainbg">
       <div class="layout-container__inner">
         <!-- <div class="text-h5 white--text font-weight-light mb-6">Selected Work</div> -->
-        <div class="text-h4 white--text font-weight-bold mb-8">
+        <div class="text-h4 white--text font-weight-bold ">
           Selected
           <span
             class="font-weight-bold tangram_yellow--text selectedwork-gradient"
@@ -12,31 +12,31 @@
         </div>
 
         <!-- <div class="text-h3 white--text font-weight-bold mb-8"> Selected <span class="font-weight-bold yellow--text">Work</span></div> -->
-
-        <div
+        <!-- <div
           class="white--text  d-flex align-center "
           :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'"
         >
           <div class="streamanity-dot mr-4"></div>
           Streamanity
-        </div>
-        <div class="body-2 white--text ">
+        </div> -->
+
+        <!-- <div class="body-2 white--text ">
           <v-chip dark class="ml-0 cardbgdark">
             2018-2019
           </v-chip>
           <v-chip dark class="mx-1 cardbgdark">
             Responsive design
           </v-chip>
-          <!-- <v-chip dark class="mx-1 cardbgdark">
-            B2C
-          </v-chip> -->
           <v-chip dark class="cardbgdark">
             Shipped
           </v-chip>
-        </div>
+        </div> -->
       </div>
     </section>
-    <section @click.stop="$router.push('/streamanity')" class="layout-container pointer streamanity-container workcard">
+    <section
+      @click.stop="$router.push('/streamanity')"
+      class="layout-container pointer streamanity-container workcard"
+    >
       <div class="">
         <v-layout justify-space-between wrap>
           <v-flex
@@ -53,40 +53,53 @@
               ></v-img>
             </v-responsive>
           </v-flex>
-          <v-flex xs12 sm5 md4 class="streamanity-container--right workcard_right pa-10">
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="streamanity-container--right workcard_right pa-10"
+          >
             <!-- <section class="flex-column justify-end"> -->
-              <div>
-                <div style="opacity:0.5;" class="mt-2">
-                  <v-img class="mr-2" style="float:left;" contain width="24" height="24"
-                  :src="
-                    require(`@/assets/str-logo.png`)
-                  "
-                ></v-img><div>Streamanity</div>
-                </div>
-                <div class="text-h5 mt-4">
-                  Designing a video streaming and revenue sharing platform for content creators.  
-                </div>
-                <!-- <p class="body-1  my-5 ">
+            <div>
+              <div style="opacity:0.5;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="24"
+                  height="24"
+                  :src="require(`@/assets/str-logo.png`)"
+                ></v-img>
+                <div>Streamanity</div>
+              </div>
+              <div class="text-h5 mt-4">
+                Designing a video streaming and revenue sharing platform for
+                content creators.
+              </div>
+              <!-- <p class="body-1  my-5 ">
                   Helping bitcoin based content creators monetize their videos and
                   earn money directy from their followers.
                 </p> -->
-                
-              </div>
-              <div class="align-end justify-end">
-                <v-btn dark plain block
-                  large
-                  class="my-4 green--text bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
-                  @click.stop="$router.push('/streamanity')"
-                >
-                  View Case Study <v-icon class="ml-2" dark>
-                mdi-arrow-right
-              </v-icon>
-                </v-btn>
-                <p class="body-1">
-                  Helping bitcoin based content creators monetize their videos and
-                  earn money directly from their followers.
-                </p>
-              </div>
+            </div>
+            <div class="align-end justify-end">
+              <v-btn
+                dark
+                plain
+                block
+                large
+                class="my-4 green--text bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                @click.stop="$router.push('/streamanity')"
+              >
+                View Case Study
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1">
+                Helping bitcoin based content creators monetize their videos and
+                earn money directly from their followers.
+              </p>
+            </div>
             <!-- </section> -->
           </v-flex>
         </v-layout>
