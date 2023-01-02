@@ -1,12 +1,12 @@
 <template>
   <div class="mainbg">
-    <div class="layout-container" style="border-top: 2px solid rgba(255, 255, 255, 0.1);">
+    <div class="layout-container">
       <div
-        class="white--text py-16 px-10 center-align layout-container__inner"
-        width="100%"
+        class="white--text py-16 layout-container__inner"
         :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
       >
-        <div class="font-weight-bold text-center ">
+        <p class="py-16 font-weight-medium">Thanks for visiting <br>my portfolio</p>
+        <!-- <div class="font-weight-bold text-center ">
           To know more about me or my work,
           <p class="font-weight-bold">
             reach out to me at
@@ -14,16 +14,16 @@
               ><a href="mailto:sourya0411@gmail.com">sourya0411@gmail.com</a></span
             >
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="layout-container " style="border-top: 2px solid rgba(255, 255, 255, 0.1);">
       <div
-        class="layout-container__inner py-6 white--text d-flex align-center justify-space-between"
+        class="layout-container__inner py-6 white--text d-flex flex-wrap align-center justify-space-between"
       >
-        <div>
+        <p>
           © Sourya Varanasi - Design & Code
-        </div>
+        </p>
         <div class="d-flex grey--text">
           <v-btn
             @click.stop="$router.push({ path: '/about' })"
@@ -40,14 +40,14 @@
             class="text-capitalize"
             >Linkedin</v-btn
           >
-          <v-btn
+          <!-- <v-btn
             href="https://www.instagram.com/sourya_sketches/"
             target="_blank"
             plain
             dark
             class="text-capitalize"
             >Instagram</v-btn
-          >
+          > -->
           <v-btn
             href="https://www.behance.net/sourya"
             target="_blank"

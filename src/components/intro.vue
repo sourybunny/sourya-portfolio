@@ -7,34 +7,37 @@
           <div class="">
             <p
               class="font-weight-medium  white--text "
-              :class="$vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'"
+              :class="$vuetify.breakpoint.lgAndUp?'display-3': $vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
             >
+            <span class="font-italic">
+                Hello!
+              </span>
               <span>
                 I'm
               </span>
 
-              <span>Sourya.</span>
+              <span>Sourya,</span>
             </p>
-            <div class="my-6 slidee-up">
+            <div class="my-8 slidee-up">
               <span
                 style="white-space:nowrap;"
                 class="gradient text-shine  font-weight-medium"
-                :class="$vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'"
+                :class="$vuetify.breakpoint.lgAndUp?'display-3': $vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
                 >I design and < build />
               </span>
               <div
-                :class="$vuetify.breakpoint.lgAndUp ? 'display-3' : 'display-2'"
+                :class="$vuetify.breakpoint.lgAndUp?'display-3': $vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
                 style="opacity:0.6;"
                 class="white--text  font-weight-medium"
               >
-                products that delight <br />
+                products that delight <br v-if="$vuetify.breakpoint.smAndUp" />
                 and inspire people.
               </div>
             </div>
 
             <!-- <p>I am a developer turned designer building experiences that bring joy</p> -->
             <div class="fadee-in">
-              <div class="font-weight-light mt-10 white--text title intro-left">
+              <!-- <div class="font-weight-light mt-10 white--text title intro-left">
                 <span
                   style="opacity:0.6;"
                   :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
@@ -46,14 +49,19 @@
                 :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
               >
                 Indiana University Bloomington’s HCI program.
-              </div>
+              </div> -->
+
               <div
-                class="white--text font-weight-medium"
+                class="white--text "
                 :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
               >
-                <span
+                <span class="font-weight-light"
                   :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
-                  class="font-weight-light"
+                  style="opacity:0.6;"
+                  >Currently MS HCI
+                </span>@Indiana University Bloomington.
+                <span class="font-weight-light"
+                  :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
                   style="opacity:0.6;"
                   >Previously
                 </span>
@@ -75,6 +83,14 @@
                 >,
                 <span>
                   <a
+                    href="https://www.sensehawk.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@Sensehawk</a
+                  ></span
+                >,
+                <span>
+                  <a
                     href="https://streamanity.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -82,6 +98,12 @@
                   ></span
                 >.
               </div>
+              <!-- <div
+                class="white--text"
+                :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
+              >
+                
+              </div> -->
               <div class="text-left mt-5">
                 <v-tooltip bottom>
                   <template v-slot:activator="{ on, attrs }">

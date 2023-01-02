@@ -8,15 +8,37 @@
               class="font-weight-bold white--text my-6 "
               :class="$vuetify.breakpoint.mdAndUp ? ' display-3' : 'display-1'"
             >
-              About <span class="tangram_blue--text text--lighten-1 aboutme-gradient">Me</span>
+              About
+              <span class="tangram_blue--text text--lighten-1 aboutme-gradient"
+                >Me</span
+              >
             </p>
-            <div class="text-h5 grey--text font-weight-light">
+            <div class="headline grey--text font-weight-light text-loop">
               <!-- Yay! welcome to my space. -->
               <div>
                 I'm a digital designer
-                <span class="text-highlight">transforming</span> products to
-                <span class="text-highlight">humanize</span> them.
+                <span class="text-highlight">transforming</span> products
+                to
+                <span class="text-highlight"
+                  >humanize</span
+                > them.
               </div>
+              <!-- <div>
+                I
+                <span class="text-highlight font-italic">transform</span>
+                products to
+                <span class="text-highlight font-italic">humanize</span> them.
+              </div> -->
+              <!-- <div>
+                I value
+                <span class="text-highlight">empathy</span> and
+                <span class="text-highlight">vulnerability</span>.
+              </div>
+              <div>
+                I write about
+                <span class="text-highlight">design</span> and
+                <span class="text-highlight">people</span>.
+              </div> -->
             </div>
             <v-btn
               large
@@ -100,7 +122,6 @@
             </v-card>
           </v-flex>
         </v-layout>
-       
 
         <!-- <v-btn medium class="my-8 text-capitalize" outlined rounded>
           see my resume
@@ -108,76 +129,104 @@
       </div>
     </div>
     <section>
-     <div class="layout-container">
-          <div class="layout-container__inner">
-              <v-layout row wrap>
-                <v-flex xs12 md6>
-                  <v-card elevation-20 dark class="cardbgdark my-4 mx-auto" max-width="600" min-height="320">
-                    <v-card-title class="green-gradient bottom-line--light">
-                      Metaphors and Metamorphosis...
-                    </v-card-title>
-                    <v-card-text
-                      class="pt-4 text-h6 paragraph-gradient font-weight-light darken-1"
-                    >
-                      As a child, I spent most of my play time solving puzzles
-                      and building stuff. I love transforming material to bring
-                      life to them. These problem-solving skills
-                      shaped my design mindset to tweak pixels in the digital
-                      world to handcraft delightful experiences. I love to work
-                      during the 'metamorphosis'(like a butterfly) to bring
-                      products from idea to life.
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
-                <v-flex xs12 md6>
-                  <v-card elevation-20 dark class="cardbgdark my-4 mx-auto" max-width="600" min-height="320">
-                    <v-card-title class="purple-gradient bottom-line--light">
-                      Design and Me...
-                    </v-card-title>
-                    <v-card-text
-                      class="pt-4 text-h6 paragraph-gradient font-weight-light darken-4"
-                    >
-                      I have a growth mindset striving to get better by keeping up with everything that's happening in the design industry around the world. I observe the environment and
-                      take inspiration from it to become a
-                      better designer because <span class="font-italic">"observation leads to ideas and ideas lead to innovation".</span>- a philosophy that drives the designer in me.
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
-                <v-flex xs12 md6>
-                  <v-card elevation-20 dark class="cardbgdark my-4 mx-auto" max-width="600" min-height="320">
-                    <v-card-title class="red-gradient bottom-line--light">
-                      Collaboration and Communication...
-                    </v-card-title>
-                    <v-card-text
-                      class="pt-4 text-h6 paragraph-gradient font-weight-light darken-2"
-                    >
-                      There were times I put on multiple hats while working for
-                      tech startups. This experience helped me master
-                      collaboration skills. I believe discussions bring insights and I can effectively communicate my
-                      designs with product owners, developers and stakeholders
-                      at all levels to work iteratively by receiving feedback.
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
-                <v-flex xs12 md6>
-                  <v-card elevation-20 dark class="cardbgdark my-4 mx-auto" max-width="600" min-height="320">
-                    <v-card-title class="orange-gradient bottom-line--light">
-                      Engineering and Design...
-                    </v-card-title>
-                    <v-card-text
-                      class="pt-4 text-h6 paragraph-gradient font-weight-light darken-3"
-                    >
-                      Apart from UX Design, I love to play around with HTML and
-                      CSS to make lively interactions. My software engineering
-                      background taught me all about web and helped me build
-                      this site using Javascript and VueJs.
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
-                
-              </v-layout>
+      <div class="layout-container bottom-line">
+        <div class="layout-container__inner">
+          <v-layout row wrap>
+            <v-flex xs12 md6>
+              <v-card
+                elevation-20
+                dark
+                class="cardbgdark my-4 mx-auto"
+                max-width="600"
+                min-height="320"
+              >
+                <v-card-title class="green-gradient bottom-line--light">
+                  Metaphors and Metamorphosis...
+                </v-card-title>
+                <v-card-text
+                  class="pt-4 text-h6 paragraph-gradient font-weight-light darken-1"
+                >
+                  As a child, I spent most of my play time solving puzzles and
+                  building stuff. I love transforming material to bring life to
+                  them. These problem-solving skills shaped my design mindset to
+                  tweak pixels in the digital world to handcraft delightful
+                  experiences. I love to work during the 'metamorphosis'(like a
+                  butterfly) to bring products from idea to life.
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 md6>
+              <v-card
+                elevation-20
+                dark
+                class="cardbgdark my-4 mx-auto"
+                max-width="600"
+                min-height="320"
+              >
+                <v-card-title class="purple-gradient bottom-line--light">
+                  Design and Me...
+                </v-card-title>
+                <v-card-text
+                  class="pt-4 text-h6 paragraph-gradient font-weight-light darken-4"
+                >
+                  I have a growth mindset striving to get better by keeping up
+                  with everything that's happening in the design industry around
+                  the world. I observe the environment and take inspiration from
+                  it to become a better designer because
+                  <span class="font-italic"
+                    >"observation leads to ideas and ideas lead to
+                    innovation".</span
+                  >- a philosophy that drives the designer in me.
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 md6>
+              <v-card
+                elevation-20
+                dark
+                class="cardbgdark my-4 mx-auto"
+                max-width="600"
+                min-height="320"
+              >
+                <v-card-title class="red-gradient bottom-line--light">
+                  Collaboration and Communication...
+                </v-card-title>
+                <v-card-text
+                  class="pt-4 text-h6 paragraph-gradient font-weight-light darken-2"
+                >
+                  There were times I put on multiple hats while working for tech
+                  startups. This experience helped me master collaboration
+                  skills. I believe discussions bring insights and I can
+                  effectively communicate my designs with product owners,
+                  developers and stakeholders at all levels to work iteratively
+                  by receiving feedback.
+                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 md6>
+              <v-card
+                elevation-20
+                dark
+                class="cardbgdark my-4 mx-auto"
+                max-width="600"
+                min-height="320"
+              >
+                <v-card-title class="orange-gradient bottom-line--light">
+                  Engineering and Design...
+                </v-card-title>
+                <v-card-text
+                  class="pt-4 text-h6 paragraph-gradient font-weight-light darken-3"
+                >
+                  Apart from UX Design, I love to play around with HTML and CSS
+                  to make lively interactions. My software engineering
+                  background taught me all about web and helped me build this
+                  site using Javascript and VueJs.
+                </v-card-text>
+              </v-card>
+            </v-flex>
+          </v-layout>
 
-              <!-- <v-card class="cardbgdark">
+          <!-- <v-card class="cardbgdark">
                 <v-card-title class=" darken-4">
                   What else can I do?
                 </v-card-title>
@@ -187,9 +236,9 @@
                   local exhibits in my city back in India to showcase my work.
                 </v-card-text>
               </v-card> -->
-          </div>
         </div>
-        </section>
+      </div>
+    </section>
     <!-- <Grid /> -->
     <Contact />
   </div>
@@ -220,37 +269,37 @@ export default {
 // }
 
 .green-gradient {
-      background-image: linear-gradient(124deg, #5dc942, #fff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(124deg, #5dc942, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .orange-gradient {
-    background-image: linear-gradient(138deg, #e5a500, #fff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(138deg, #e5a500, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .red-gradient {
-    background-image: linear-gradient(128deg, #fe335e, #fff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(128deg, #fe335e, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .purple-gradient {
-    background-image: linear-gradient(140deg, #7b79ff, #fff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(140deg, #7b79ff, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .about-button {
   border: 1px solid #8fbcff;
-    // background-color: #192b27;
-    // background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(transparent));
-    // background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent);
-    // -webkit-transition: background-color 500ms cubic-bezier(.19, 1, .22, 1);
-    // transition: background-color 500ms cubic-bezier(.19, 1, .22, 1);
-    // text-decoration: none;
-    
+  // background-color: #192b27;
+  // background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(transparent));
+  // background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent);
+  // -webkit-transition: background-color 500ms cubic-bezier(.19, 1, .22, 1);
+  // transition: background-color 500ms cubic-bezier(.19, 1, .22, 1);
+  // text-decoration: none;
 }
+
 </style>

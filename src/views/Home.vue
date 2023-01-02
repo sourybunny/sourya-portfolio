@@ -1,8 +1,8 @@
 <template>
   <div>
     <Intro />
-    <Shorts />
     <Work />
+    <Shorts />
 
     <!-- <Aboutme id="about" /> -->
     <Contact />

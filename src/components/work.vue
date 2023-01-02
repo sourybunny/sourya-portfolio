@@ -3,11 +3,11 @@
     <section class="layout-container mainbg">
       <div class="layout-container__inner">
         <!-- <div class="text-h5 white--text font-weight-light mb-6">Selected Work</div> -->
-        <div class="text-h4 white--text font-weight-bold ">
-          Selected
+        <div  class="text-h4 white--text font-weight-bold ">
+          Explore my best
           <span
             class="font-weight-bold tangram_yellow--text selectedwork-gradient"
-            >Work</span
+            >work</span
           >
         </div>
 

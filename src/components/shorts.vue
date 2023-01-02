@@ -2,9 +2,9 @@
   <div class="layout-container shorts">
     <div class="layout-container__inner ">
       <div class="text-h4 white--text font-weight-bold mb-8">
-        Design
+        View my design
         <span class="font-weight-bold tangram_orange--text designbytes-gradient"
-          >Bytes</span
+          >bytes</span
         >
       </div>
       <div class="d-flex slides" style="overflow:scroll;">
