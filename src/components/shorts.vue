@@ -17,7 +17,7 @@
               "
               :elevation="hover ? 24 : 6"
               dark
-              class="mx-3 transparent byte my-6"
+              class="mx-3 transparent byte my-6 rounded-xl"
             >
               <v-img
                 :gradient="

@@ -38,7 +38,7 @@ $medium: 900px;
   &__inner {
     padding: 4rem;
     @media screen and (max-width: $small) {
-      padding: 2rem;
+      padding: 1rem;
     }
     border-left: 2px solid rgba(255, 255, 255, 0.1);
 

@@ -26,14 +26,14 @@
             <v-flex xs12 sm4>
               <p
                 class="font-weight-bold black--text display-2 pl-2"
-                style="font-family:'Playfair Display' !important;"
+                style="font-family:'Source Serif Pro' !important;"
               >
                 Streamanity
               </p>
             </v-flex>
             <v-flex xs12 sm7>
               <h1 class="title grey--text text--darken-2 font-weight-medium">
-                A ad-free mobile-web based video streaming platform to help
+                An ad-free mobile-web based video streaming platform to help
                 small video content creators upload videos and earn money from
                 every view in BitcoinSV directly from their followers.
               </h1>
@@ -62,16 +62,16 @@
         </v-container>
       </section>
       <section class="pb-10">
-        <div class=" text-center">
+        <!-- <div class=" text-center">
           <v-container>
             <p
               class="grey--text text--darken-2 font-weight-medium display-3 my-10"
-              style="font-family:'Playfair Display' !important;"
+              style="font-family:'Source Serif Pro' !important;"
             >
               A Brief Overview
             </p>
           </v-container>
-        </div>
+        </div> -->
         <v-container width="100%" class="px-16">
           <v-layout row xs12 align="start" justify="center" class="my-10">
             <v-spacer></v-spacer>
@@ -547,7 +547,7 @@
           <v-container>
             <p
               class="grey--text text--darken-2 font-weight-medium display-3 my-10"
-              style="font-family:'Playfair Display' !important;"
+              style="font-family:'Source Serif Pro' !important;"
             >
               My Design Process
             </p>
@@ -905,7 +905,7 @@
         <v-container>
           <p
             class="grey--text text--darken-2 font-weight-medium display-3 my-10"
-            style="font-family:'Playfair Display' !important;"
+            style="font-family:'Source Serif Pro' !important;"
           >
             Carving out a niche in a saturated market.
           </p>

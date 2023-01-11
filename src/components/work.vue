@@ -10,6 +10,7 @@
             >work</span
           >
         </div>
+        
 
         <!-- <div class="text-h3 white--text font-weight-bold mb-8"> Selected <span class="font-weight-bold yellow--text">Work</span></div> -->
         <!-- <div
@@ -33,9 +34,9 @@
         </div> -->
       </div>
     </section>
-    <section
+    <v-card flat
       @click.stop="$router.push('/streamanity')"
-      class="layout-container pointer streamanity-container workcard"
+      class="layout-container transparent pointer streamanity-container workcard"
     >
       <div class="">
         <v-layout justify-space-between wrap>
@@ -104,7 +105,78 @@
           </v-flex>
         </v-layout>
       </div>
-    </section>
+    </v-card>
+
+    <!-- PLANNER -->
+     <v-card flat  href='https://sourya-design.medium.com/2a771a016a3f' target="_blank"
+      class="layout-container transparent pointer plan-container workcard mt-10"
+    >
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="plan-container--left pt-10 pr-10"
+          >
+            <v-responsive>
+              <v-img
+                :src="
+                  require(`@/assets/media/plan/plan.png`)
+                "
+              ></v-img>
+            </v-responsive>
+          </v-flex>
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="plan-container--right workcard_right pa-10"
+          >
+            <!-- <section class="flex-column justify-end"> -->
+            <div>
+              <div style="opacity:0.5;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="24"
+                  height="24"
+                  :src="require(`@/assets/stories/iu-logo.jpeg`)"
+                ></v-img>
+                <div>Course Plan Review</div>
+              </div>
+              <div class="text-h5 mt-4">
+                Helping academic advisors guide their students to plan courses effectively
+              </div>
+              <!-- <p class="body-1  my-5 ">
+                  Helping bitcoin based content creators monetize their videos and
+                  earn money directy from their followers.
+                </p> -->
+            </div>
+            <div class="align-end justify-end">
+              <v-btn
+                dark
+                plain
+                block
+                large
+                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                href='https://sourya-design.medium.com/2a771a016a3f' target="_blank"
+              >
+                View Case Study
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1">
+                Designed an internal tool for students to smoothly plan courses and get review from their advisors.
+              </p>
+            </div>
+            <!-- </section> -->
+          </v-flex>
+        </v-layout>
+      </div>
+    </v-card>
 
     <!-- <section class="layout-container mainbg">
       <div class="layout-container__inner py-10">
@@ -243,27 +315,31 @@ export default {
 }
 
 .streamanity-container {
-  background: #579c70;
+  // background: #579c70;
 
   &--left {
     background: #579c70;
   }
   &--right {
     color: #a8dbbb;
-    background: #1e2922;
-    // background: rgb(0,0,0);
-    background: linear-gradient(
-      124deg,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgb(22, 48, 32) 100%
-    );
+    background: #09120e;
+  }
+}
+.plan-container {
+
+  &--left {
+    background: #00394d;
+  }
+  &--right {
+    color: #c3eaf6;
+    background: #000f1a;
+// background: rgb(0,0,0);
+
+// background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
     // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
   }
 }
 
-.courseplan-container {
-  background: #da6144;
-}
 .streamanity-dot {
   width: 1.5rem;
   height: 1.5rem;
