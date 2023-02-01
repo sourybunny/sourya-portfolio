@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="app-container">
     <Header class="app-background" />
     <v-main class="pa-0 app-background">
       <template>
@@ -30,17 +30,27 @@ export default {
 <style lang="scss">
 $small: 500px;
 $medium: 900px;
+$large: 1680px;
+$background: #020010;
 .layout-container {
   padding-left: 4rem;
+  padding-right: 4rem;
   @media screen and (max-width: $small) {
     padding-left: 0;
+    padding-right: 0;
   }
   &__inner {
     padding: 4rem;
+    // &--work {
+    //   padding-left:0;
+    //   padding-right:0;
+    // }
     @media screen and (max-width: $small) {
       padding: 1rem;
     }
     border-left: 2px solid rgba(255, 255, 255, 0.1);
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+    // border-image: linear-gradient(to right, darkblue, darkorchid) 1;
 
     .content-title {
       font-family: "Inter";
@@ -53,9 +63,15 @@ $medium: 900px;
     }
   }
 }
-
+body {
+  background-color: $background;
+}
 .app-background {
-  background: #020010;
+  background: $background;
+}
+.app-container {
+  max-width: 1500px;
+  margin:0 auto;
 }
 .text-highlight {
   background: -webkit-linear-gradient(120deg, #a7cfdf, #37659a);

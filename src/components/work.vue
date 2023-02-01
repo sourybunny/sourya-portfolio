@@ -1,42 +1,18 @@
 <template>
   <div class="" id="work">
-    <section class="layout-container mainbg">
-      <div class="layout-container__inner">
+    <section class="layout-container bottom-line">
+      <div class="layout-container__inner " style="padding:0;">
         <!-- <div class="text-h5 white--text font-weight-light mb-6">Selected Work</div> -->
-        <div  class="text-h4 white--text font-weight-bold ">
+        <div  class="text-h4 white--text font-weight-bold" style="padding:4rem;">
           Explore my best
           <span
             class="font-weight-bold tangram_yellow--text selectedwork-gradient"
             >work</span
           >
         </div>
-        
-
-        <!-- <div class="text-h3 white--text font-weight-bold mb-8"> Selected <span class="font-weight-bold yellow--text">Work</span></div> -->
-        <!-- <div
-          class="white--text  d-flex align-center "
-          :class="$vuetify.breakpoint.mdAndUp ? ' display-2' : 'display-1'"
-        >
-          <div class="streamanity-dot mr-4"></div>
-          Streamanity
-        </div> -->
-
-        <!-- <div class="body-2 white--text ">
-          <v-chip dark class="ml-0 cardbgdark">
-            2018-2019
-          </v-chip>
-          <v-chip dark class="mx-1 cardbgdark">
-            Responsive design
-          </v-chip>
-          <v-chip dark class="cardbgdark">
-            Shipped
-          </v-chip>
-        </div> -->
-      </div>
-    </section>
     <v-card flat
-      @click.stop="$router.push('/streamanity')"
-      class="layout-container transparent pointer streamanity-container workcard"
+      @click.stop="$router.push('/streamanity')" 
+      class=" transparent pointer streamanity-container workcard "
     >
       <div class="">
         <v-layout justify-space-between wrap>
@@ -44,7 +20,7 @@
             xs12
             sm7
             md8
-            class="streamanity-container--left layout-container__inner"
+            class="streamanity-container--left "
           >
             <v-responsive>
               <v-img
@@ -109,7 +85,7 @@
 
     <!-- PLANNER -->
      <v-card flat  href='https://sourya-design.medium.com/2a771a016a3f' target="_blank"
-      class="layout-container transparent pointer plan-container workcard mt-10"
+      class=" transparent pointer plan-container workcard mt-10"
     >
       <div class="">
         <v-layout justify-space-between wrap>
@@ -238,6 +214,10 @@
       </section>
     </section> -->
   </div>
+
+  </section>
+
+  </div>
 </template>
 
 <script>
@@ -314,6 +294,10 @@ export default {
   justify-content: space-between;
 }
 
+.work {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+}
 .streamanity-container {
   // background: #579c70;
 
