@@ -21,10 +21,10 @@
       <div
         class="layout-container__inner py-6 white--text d-flex flex-wrap align-center justify-space-between"
       >
-        <p>
+        <div>
           © Sourya Varanasi - Design & Code
-        </p>
-        <div class="d-flex grey--text">
+        </div>
+        <div class="d-flex align-center grey--text">
           <v-btn
             @click.stop="$router.push({ path: '/about' })"
             plain

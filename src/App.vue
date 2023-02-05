@@ -1,18 +1,13 @@
 <template>
   <v-app class="app-container">
-    <Header class="app-background" />
     <v-main class="pa-0 app-background">
+      <Header class="app-background" />
       <template>
         <keep-alive>
-          <router-view :key="$route.fullPath"></router-view>
+          <router-view  :key="$route.fullPath"></router-view>
         </keep-alive>
       </template>
     </v-main>
-    <template>
-      <v-footer dark padless>
-        <v-card flat tile> </v-card>
-      </v-footer>
-    </template>
   </v-app>
 </template>
 

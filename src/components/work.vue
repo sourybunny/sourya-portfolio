@@ -38,7 +38,7 @@
           >
             <!-- <section class="flex-column justify-end"> -->
             <div>
-              <div style="opacity:0.5;" class="mt-2">
+              <div style="opacity:0.8;" class="mt-2">
                 <v-img
                   class="mr-2"
                   style="float:left;"
@@ -50,8 +50,11 @@
                 <div>Streamanity</div>
               </div>
               <div class="text-h5 mt-4">
-                Designing a video streaming and revenue sharing platform for
-                content creators.
+                Video streaming platform for
+                bitcoin based content creators
+              </div> 
+              <div class="d-flex align-center mt-4 body-1">
+                <span>Product Design</span><span class="mx-2">&#x2022;</span> <span>Coded MVP </span><span class="mx-2">&#x2022;</span> <v-chip class="opacity-8">Shipped</v-chip>
               </div>
               <!-- <p class="body-1  my-5 ">
                   Helping bitcoin based content creators monetize their videos and
@@ -84,7 +87,7 @@
     </v-card>
 
     <!-- PLANNER -->
-     <v-card flat  href='https://sourya-design.medium.com/2a771a016a3f' target="_blank"
+     <v-card flat  href='https://medium.com/@sourya-design/course-planner-for-students-and-a-review-dashboard-for-academic-advisors-at-indiana-university-2a771a016a3f' target="_blank"
       class=" transparent pointer plan-container workcard mt-10"
     >
       <div class="">
@@ -111,7 +114,7 @@
           >
             <!-- <section class="flex-column justify-end"> -->
             <div>
-              <div style="opacity:0.5;" class="mt-2">
+              <div style="opacity:0.8;" class="mt-2">
                 <v-img
                   class="mr-2"
                   style="float:left;"
@@ -120,10 +123,13 @@
                   height="24"
                   :src="require(`@/assets/stories/iu-logo.jpeg`)"
                 ></v-img>
-                <div>Course Plan Review</div>
+                <div>Indiana University</div>
               </div>
               <div class="text-h5 mt-4">
                 Helping academic advisors guide their students to plan courses effectively
+              </div>
+              <div class="d-flex align-center mt-4 body-1">
+                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-8">Internship</v-chip>
               </div>
               <!-- <p class="body-1  my-5 ">
                   Helping bitcoin based content creators monetize their videos and
@@ -137,7 +143,7 @@
                 block
                 large
                 class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
-                href='https://sourya-design.medium.com/2a771a016a3f' target="_blank"
+                href='https://medium.com/@sourya-design/course-planner-for-students-and-a-review-dashboard-for-academic-advisors-at-indiana-university-2a771a016a3f' target="_blank"
               >
                 View Case Study
                 <v-icon class="ml-2" dark>
@@ -153,6 +159,148 @@
         </v-layout>
       </div>
     </v-card>
+    <!-- SALESFORCE -->
+    <v-card flat  href='https://medium.com/@sourya-design/designing-the-free-trial-experience-for-the-worlds-largest-crm-platform-ux-ui-case-study-7a154de74027' target="_blank"
+      class=" transparent pointer salesforce-container workcard mt-10"
+    >
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="salesforce-container--left pt-16 px-10"
+          >
+            <v-responsive>
+              <v-img
+                :src="
+                  require(`@/assets/media/salesforce/salesforce-main.png`)
+                "
+              ></v-img>
+            </v-responsive>
+          </v-flex>
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="salesforce-container--right workcard_right pa-10"
+          >
+            <!-- <section class="flex-column justify-end"> -->
+            <div>
+              <div style="opacity:0.8;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="24"
+                  height="24"
+                  :src="require(`@/assets/media/salesforce/sf-logo.png`)"
+                ></v-img>
+                <div>Salesforce</div>
+              </div>
+              <div class="text-h5 mt-4">
+                Increasing salesforce free-trial form conversion rate
+              </div>
+              <div class="d-flex align-center flex-wrap mt-4 body-1">
+                <span>Sponsored Course Work</span><span class="mx-2">&#x2022;</span> <span>UX </span><span class="mx-2">&#x2022;</span> <v-chip class="opacity-8">Externship</v-chip>
+              </div>
+              <!-- <p class="body-1  my-5 ">
+                  Helping bitcoin based content creators monetize their videos and
+                  earn money directy from their followers.
+                </p> -->
+            </div>
+            <div class="align-end justify-end">
+              <v-btn
+                dark
+                plain
+                block
+                large
+                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                href='https://medium.com/@sourya-design/designing-the-free-trial-experience-for-the-worlds-largest-crm-platform-ux-ui-case-study-7a154de74027' target="_blank"
+              >
+                View Case Study
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1">   
+                Redesigned salesforce free-trial form by converting insights from market research to actionable design elements.
+              </p>
+            </div>
+            <!-- </section> -->
+          </v-flex>
+        </v-layout>
+      </div>
+    </v-card>
+     <!-- CAPSTONE -->
+     <!-- <v-card flat  href='https://sourya-design.medium.com/2a771a016a3f' target="_blank"
+      class=" transparent pointer capstone-container workcard mt-10"
+    >
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="capstone-container--left pt-16 px-10"
+          >
+            <v-responsive>
+              <v-img
+                :src="
+                  require(`@/assets/media/salesforce/salesforce-main.png`)
+                "
+              ></v-img>
+            </v-responsive>
+          </v-flex>
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="capstone-container--right workcard_right pa-10"
+          >
+            <div>
+              <div style="opacity:0.8;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="48"
+                  height="24"
+                  :src="require(`@/assets/media/capstone/wlab.png`)"
+                ></v-img>
+                <div>WonderLab Children Museum
+                </div>
+              </div>
+              <div class="text-h5 mt-4">
+                Empathy with endangered coral species
+              </div>
+              <div class="d-flex mt-4">
+                <span>Interaction Design</span><span class="mx-2">&#x2022;</span> <span>Capstone </span>
+              </div>
+             
+            </div>
+            <div class="align-end justify-end">
+              <v-btn
+                dark
+                plain
+                block
+                large
+                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                href='https://sourya-design.medium.com/2a771a016a3f' target="_blank"
+              >
+                View Case Study
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1">   
+                Designed a museum experience for visitors to empathise with corals and bring awareness about coral bleeching and marine pollution.
+              </p>
+            </div>
+          </v-flex>
+        </v-layout>
+      </div>
+    </v-card> -->
 
     <!-- <section class="layout-container mainbg">
       <div class="layout-container__inner py-10">
@@ -322,6 +470,34 @@ export default {
 // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
     // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
   }
+}
+.salesforce-container {
+
+&--left {
+  background: #3b598a;
+}
+&--right {
+  color: #ecf6fe;
+  background: #000b1b;
+// background: rgb(0,0,0);
+
+// background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
+  // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
+}
+}
+.capstone-container {
+
+&--left {
+  background: #ad4219;
+}
+&--right {
+  color: #f7d8cc;
+  background: #140600;
+// background: rgb(0,0,0);
+
+// background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
+  // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
+}
 }
 
 .streamanity-dot {

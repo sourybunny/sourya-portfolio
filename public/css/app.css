@@ -19,6 +19,9 @@ body {
 .pointer {
   cursor: pointer;
 }
+.opacity-8{
+  opacity: 0.8;
+}
 section {
   opacity: 0;
   animation: load_up 1s forwards;
