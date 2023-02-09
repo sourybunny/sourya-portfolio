@@ -25,7 +25,7 @@
                 :class="$vuetify.breakpoint.lgAndUp?'display-3': $vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
                 >I design and < build />
               </span>
-              <div
+              <div 
                 :class="$vuetify.breakpoint.lgAndUp?'display-3': $vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
                 style="opacity:0.6;"
                 class="white--text  font-weight-medium"

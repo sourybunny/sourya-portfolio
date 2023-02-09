@@ -91,11 +91,22 @@ body {
   background-image: linear-gradient(120deg, #e6a147, #a2280a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  background-image: linear-gradient(143deg, #ff005c, #ffa95a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .selectedwork-gradient {
   background-image: linear-gradient(124deg, #edecb4, #e6c20f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  background-image: linear-gradient(143deg, #49f88c, #dcb864 58%, #ffa95a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
 }
 .aboutme-gradient {
   background-image: linear-gradient(120deg, #a7cfdf, #0e519e);
@@ -108,6 +119,12 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.portfolio-gradient {
+    background-image: linear-gradient(151deg, #ff5e00, #8400ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .bottom-line {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);

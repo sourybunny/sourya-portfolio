@@ -1,9 +1,9 @@
 <template>
-  <div class="" id="work">
+  <div >
     <section class="layout-container bottom-line">
       <div class="layout-container__inner " style="padding:0;">
         <!-- <div class="text-h5 white--text font-weight-light mb-6">Selected Work</div> -->
-        <div  class="text-h4 white--text font-weight-bold" style="padding:4rem;">
+        <div  class="text-h4 white--text font-weight-bold" style="padding:4rem;" >
           Explore my best
           <span
             class="font-weight-bold tangram_yellow--text selectedwork-gradient"
@@ -20,6 +20,7 @@
             xs12
             sm7
             md8
+            
             class="streamanity-container--left "
           >
             <v-responsive>
@@ -34,7 +35,7 @@
             xs12
             sm5
             md4
-            class="streamanity-container--right workcard_right pa-10"
+            class="streamanity-container--right workcard_right pa-8"
           >
             <!-- <section class="flex-column justify-end"> -->
             <div>
@@ -51,9 +52,9 @@
               </div>
               <div class="text-h5 mt-4">
                 Video streaming platform for
-                bitcoin based content creators
+                bitcoin content creators
               </div> 
-              <div class="d-flex align-center mt-4 body-1">
+              <div class="d-flex align-center mt-4 body-1 opacity-6">
                 <span>Product Design</span><span class="mx-2">&#x2022;</span> <span>Coded MVP </span><span class="mx-2">&#x2022;</span> <v-chip class="opacity-8">Shipped</v-chip>
               </div>
               <!-- <p class="body-1  my-5 ">
@@ -62,12 +63,12 @@
                 </p> -->
             </div>
             <div class="align-end justify-end">
-              <v-btn
+              <v-btn 
                 dark
                 plain
                 block
                 large
-                class="my-4 green--text bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                class="view--btn my-4 white--text bottom-line--light d-flex justify-space-between  title text-capitalize font-weight-medium pa-0"
                 @click.stop="$router.push('/streamanity')"
               >
                 View Case Study
@@ -75,7 +76,7 @@
                   mdi-arrow-right
                 </v-icon>
               </v-btn>
-              <p class="body-1">
+              <p class="body-1 opacity-6">
                 Helping bitcoin based content creators monetize their videos and
                 earn money directly from their followers.
               </p>
@@ -110,7 +111,7 @@
             xs12
             sm5
             md4
-            class="plan-container--right workcard_right pa-10"
+            class="plan-container--right workcard_right pa-8"
           >
             <!-- <section class="flex-column justify-end"> -->
             <div>
@@ -126,9 +127,9 @@
                 <div>Indiana University</div>
               </div>
               <div class="text-h5 mt-4">
-                Helping academic advisors guide their students to plan courses effectively
+                Helping advisors and students with a course plan review
               </div>
-              <div class="d-flex align-center mt-4 body-1">
+              <div class="d-flex align-center mt-4 body-1 opacity-6">
                 <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-8">Internship</v-chip>
               </div>
               <!-- <p class="body-1  my-5 ">
@@ -150,7 +151,7 @@
                   mdi-arrow-right
                 </v-icon>
               </v-btn>
-              <p class="body-1">
+              <p class="body-1 opacity-6">
                 Designed an internal tool for students to smoothly plan courses and get review from their advisors.
               </p>
             </div>
@@ -183,7 +184,7 @@
             xs12
             sm5
             md4
-            class="salesforce-container--right workcard_right pa-10"
+            class="salesforce-container--right workcard_right pa-8"
           >
             <!-- <section class="flex-column justify-end"> -->
             <div>
@@ -199,10 +200,10 @@
                 <div>Salesforce</div>
               </div>
               <div class="text-h5 mt-4">
-                Increasing salesforce free-trial form conversion rate
+                Designing the Salesforce free trial form experience
               </div>
-              <div class="d-flex align-center flex-wrap mt-4 body-1">
-                <span>Sponsored Course Work</span><span class="mx-2">&#x2022;</span> <span>UX </span><span class="mx-2">&#x2022;</span> <v-chip class="opacity-8">Externship</v-chip>
+              <div class="d-flex align-center flex-wrap mt-4 body-1 opacity-6">
+                <span>Sponsored Course Work</span> <span class="mx-2">&#x2022;</span> <v-chip class="opacity-8">Externship</v-chip>
               </div>
               <!-- <p class="body-1  my-5 ">
                   Helping bitcoin based content creators monetize their videos and
@@ -223,7 +224,7 @@
                   mdi-arrow-right
                 </v-icon>
               </v-btn>
-              <p class="body-1">   
+              <p class="body-1 opacity-6">   
                 Redesigned salesforce free-trial form by converting insights from market research to actionable design elements.
               </p>
             </div>
@@ -444,17 +445,25 @@ export default {
 
 .work {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-
+  
 }
 .streamanity-container {
   // background: #579c70;
 
   &--left {
     background: #579c70;
+    
   }
   &--right {
     color: #a8dbbb;
     background: #09120e;
+    
+  }
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .streamanity-container--right {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 }
 .plan-container {
@@ -463,7 +472,7 @@ export default {
     background: #00394d;
   }
   &--right {
-    color: #c3eaf6;
+    color: #8bcbdf;
     background: #000f1a;
 // background: rgb(0,0,0);
 
@@ -477,7 +486,7 @@ export default {
   background: #3b598a;
 }
 &--right {
-  color: #ecf6fe;
+  color: #9fc1dd;
   background: #000b1b;
 // background: rgb(0,0,0);
 
@@ -507,5 +516,8 @@ export default {
   background: #489b65;
   // left:-0.7%;
   // top: 35%;
+}
+.v-btn__content {
+  opacity: 1 !important;
 }
 </style>
