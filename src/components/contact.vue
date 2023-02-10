@@ -5,7 +5,7 @@
         class="white--text py-16 layout-container__inner"
         :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
       >
-        <p class="py-16 font-weight-bold">Thanks for visiting <br> my <span class="portfolio-gradient ">portfolio</span>. </p>
+        <p class="py-16 font-weight-medium">Thanks for visiting <br> my <span class="portfolio-gradient ">portfolio</span>. </p>
         <!-- <div class="font-weight-bold text-center ">
           To know more about me or my work,
           <p class="font-weight-bold">

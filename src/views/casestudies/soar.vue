@@ -26,7 +26,7 @@
         <v-container>
           <v-layout XS12 row wrap justify-center align-start class="my-10">
             <v-flex xs12 sm4>
-              <div
+              <!-- <div
                 class="d-flex align-center"
                 @click.stop="$router.push({ path: '/' })"
               >
@@ -39,7 +39,7 @@
                   </svg>
                 </span>
                 <span class="is-pointer">Back</span>
-              </div>
+              </div> -->
               <p
                 class="font-weight-bold black--text display-2 pl-2"
                 style="font-family:'Playfair Display' !important;"
@@ -68,14 +68,14 @@
                 <h6
                   class="grey--text text--darken-2 subtitle-1 font-weight-medium"
                 >
-                  UX Design Engineer, Developer, Interaction Designer
+                  UX Engineer, Developer.
                 </h6>
                 <p class="grey--text text--darken-2 mt-2 font-weight-medium">
                   I
                   <span
                     class="font-weight-bold grey--text text--darken-3 subtitle-1 font-weight-medium"
                     >developed and shipped </span
-                  >the web and mobile interfaces
+                  >the mobile interface design
                 </p>
               </div>
               <div class="my-8">
@@ -279,7 +279,7 @@
                 <div class="caption text-center ">Survey form</div>
               </div>
             </v-flex>
-            <v-flex xs12 sm5>
+            <!-- <v-flex xs12 sm5>
               <div class="d-flex align-center my-16">
                 <h4 class="mr-4 display-2 font-weight-bold soar_crimson--text">
                   72%
@@ -304,7 +304,7 @@
             <v-flex xs12 class="mt-10">
               <p class="title soar_blue--text text--darken-1 font-weight-bold">
                 Opportunities and difficulties in existing application ?
-              </p>
+              </p> -->
               <div
                 class="soar-shadow mb-15"
                 style="height:600px;overflow:scroll;"
