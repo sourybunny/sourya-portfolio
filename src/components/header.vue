@@ -1,8 +1,8 @@
 <template>
   <div class="layout-container navbar" :class="{
-    'removeBorder': $route.path == '/plan' || $route.path == '/streamanity'
+    'removeBorder': $route.path == '/plan' || $route.path == '/streamanity' || $route.path == '/therm'
   }">
-    <div class="layout-container__inner header"  :class=" $route.path == '/plan' || $route.path == '/streamanity' ? 'py-2' : 'py-5'">
+    <div class="layout-container__inner header"  :class=" $route.path == '/plan' || $route.path == '/streamanity' || $route.path == '/therm' ? 'py-2' : 'py-5'">
       <div class="d-flex white--text align-center justify-space-between">
         <div @click.stop="$router.push({ path: '/' })" class="d-flex align-center is-pointer">
           <span>

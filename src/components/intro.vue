@@ -77,7 +77,7 @@
                     href="https://www.richs.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >@Rich Products Corporation</a
+                    >@Rich's</a
                   ></span
                 >,
                 <span>
