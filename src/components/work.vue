@@ -243,8 +243,78 @@
         </v-layout>
       </div>
     </v-card>
-    <!-- SALESFORCE -->
-    <v-card flat  href='https://medium.com/@sourya-design/designing-the-free-trial-experience-for-the-worlds-largest-crm-platform-ux-ui-case-study-7a154de74027' target="_blank"
+   
+     <!-- CAPSTONE -->
+      <v-card flat @click="$router.push('/capstone')"
+      class=" transparent pointer capstone-container workcard mt-15"
+    >
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="capstone-container--left pt-15"
+          >
+            <v-responsive>
+              <v-img
+                :src="
+                  require(`@/assets/media/capstone/capstone-main.png`)
+                "
+              ></v-img>
+            </v-responsive>
+          </v-flex>
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="capstone-container--right workcard_right pa-10"
+          >
+            <div>
+              <div style="opacity:0.8;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="48"
+                  height="24"
+                  :src="require(`@/assets/media/capstone/wlab.png`)"
+                ></v-img>
+                <div>WonderLab Science Museum
+                </div>
+              </div>
+              <div class="text-h5 mt-4">
+                Empathy with endangered corals using immersive tech
+              </div>
+              <div class="d-flex mt-4">
+                <span>Interaction Design</span><span class="mx-1">&#x2022;</span> <span>Capstone</span><span class="mx-1">&#x2022;</span><v-chip class="opacity-1 body-1">AR| ML | AI</v-chip>
+              </div>
+             
+            </div>
+            <div class="align-end justify-end">
+              <v-btn @click.stop="$router.push('/capstone')"
+                dark
+                plain
+                block
+                large
+                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                
+              >
+                Project Overview
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1">   
+                Designed and prototyped a series of four interactive experiences for children to spark empathy for coral reefs.
+              </p>
+            </div>
+          </v-flex>
+        </v-layout>
+      </div>
+    </v-card> 
+ <!-- SALESFORCE -->
+ <v-card flat  href='https://medium.com/@sourya-design/designing-the-free-trial-experience-for-the-worlds-largest-crm-platform-ux-ui-case-study-7a154de74027' target="_blank"
       class=" transparent pointer salesforce-container workcard mt-15"
     >
       <div class="">
@@ -316,76 +386,6 @@
         </v-layout>
       </div>
     </v-card>
-     <!-- CAPSTONE -->
-     <!-- <v-card flat  href='https://sourya-design.medium.com/2a771a016a3f' target="_blank"
-      class=" transparent pointer capstone-container workcard mt-10"
-    >
-      <div class="">
-        <v-layout justify-space-between wrap>
-          <v-flex
-            xs12
-            sm7
-            md8
-            class="capstone-container--left pt-16 px-10"
-          >
-            <v-responsive>
-              <v-img
-                :src="
-                  require(`@/assets/media/salesforce/salesforce-main.png`)
-                "
-              ></v-img>
-            </v-responsive>
-          </v-flex>
-          <v-flex
-            xs12
-            sm5
-            md4
-            class="capstone-container--right workcard_right pa-10"
-          >
-            <div>
-              <div style="opacity:0.8;" class="mt-2">
-                <v-img
-                  class="mr-2"
-                  style="float:left;"
-                  contain
-                  width="48"
-                  height="24"
-                  :src="require(`@/assets/media/capstone/wlab.png`)"
-                ></v-img>
-                <div>WonderLab Children Museum
-                </div>
-              </div>
-              <div class="text-h5 mt-4">
-                Empathy with endangered coral species
-              </div>
-              <div class="d-flex mt-4">
-                <span>Interaction Design</span><span class="mx-2">&#x2022;</span> <span>Capstone </span>
-              </div>
-             
-            </div>
-            <div class="align-end justify-end">
-              <v-btn
-                dark
-                plain
-                block
-                large
-                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
-                href='https://sourya-design.medium.com/2a771a016a3f' target="_blank"
-              >
-                View Case Study
-                <v-icon class="ml-2" dark>
-                  mdi-arrow-right
-                </v-icon>
-              </v-btn>
-              <p class="body-1">   
-                Designed a museum experience for visitors to empathise with corals and bring awareness about coral bleeching and marine pollution.
-              </p>
-            </div>
-          </v-flex>
-        </v-layout>
-      </div>
-    </v-card> -->
-
     <!-- <section class="layout-container mainbg">
       <div class="layout-container__inner py-10">
         <div
@@ -594,11 +594,11 @@ export default {
 .capstone-container {
 
 &--left {
-  background: #ad4219;
+  background: #FFED75;
 }
 &--right {
-  color: #f7d8cc;
-  background: #140600;
+  color: #f7f4cc;
+  background: #241f10;
 // background: rgb(0,0,0);
 
 // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);

@@ -70,7 +70,7 @@ body {
   margin:0 auto;
 }
 .app-width {
-max-width:90%;
+max-width:1500px;
 }
 .text-highlight {
   background: -webkit-linear-gradient(120deg, #a7cfdf, #37659a);

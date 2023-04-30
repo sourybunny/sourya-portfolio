@@ -45,6 +45,13 @@ const routes = [
     component: () => import(/* webpackChunkName: "therm" */ '@/views/Therm.vue')
   },
   {
+    path: '/capstone',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "capstone" */ '@/views/Capstone.vue')
+  },
+  {
     path: '/soar',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
