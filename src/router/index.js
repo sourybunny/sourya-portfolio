@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 // import About from '../views/about.vue'
 
 import Streamanity from '../views/casestudies/streamanity.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,12 +22,20 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: Streamanity
   },
+
   {
     path: '/lufe',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "lufe" */ '@/views/casestudies/lufe.vue')
+  },
+  {
+    path: '/plan',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "lufe" */ '@/views/Plan.vue')
   },
   {
     path: '/soar',

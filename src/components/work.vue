@@ -10,9 +10,88 @@
             >work</span
           >
         </div>
+   
+
+    <!-- PLANNER -->
+     <v-card flat @click="$router.push('/plan')" target="_blank"
+      class=" transparent pointer plan-container workcard "
+    >
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="plan-container--left pt-10 pr-10"
+          >
+            <v-responsive>
+              <v-img
+                :src="
+                  require(`@/assets/media/plan/plan.png`)
+                "
+              ></v-img>
+            </v-responsive>
+          </v-flex>
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="plan-container--right workcard_right pa-8"
+          >
+            <!-- <section class="flex-column justify-end"> -->
+            <div>
+              <div style="opacity:0.8;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="24"
+                  height="24"
+                  :src="require(`@/assets/stories/iu-logo.jpeg`)"
+                ></v-img>
+                <div>Indiana University</div>
+              </div>
+              <div class="text-h5 mt-4">
+                Helping advisors and students with a course plan review
+              </div>
+              <div class="d-flex align-center mt-4 body-1 opacity-6">
+                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">Internship</v-chip>
+              </div>
+              <!-- <p class="body-1  my-5 ">
+                  Helping bitcoin based content creators monetize their videos and
+                  earn money directy from their followers.
+                </p> -->
+            </div>
+            <div class="align-end justify-end">
+              <v-btn
+                dark
+                plain
+                block
+                large
+                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                @click.stop="$router.push(
+                 ' /plan'
+                )"
+                target="_blank"
+              >
+                View Case Study
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1 opacity-6">
+                Designed an internal tool for students to smoothly plan courses and get review from their advisors.
+              </p>
+            </div>
+            <!-- </section> -->
+          </v-flex>
+        </v-layout>
+      </div>
+    </v-card>
+    <!-- STR -->
     <v-card flat
       @click.stop="$router.push('/streamanity')" 
-      class=" transparent pointer streamanity-container workcard "
+      class=" transparent pointer streamanity-container workcard mt-10"
     >
       <div class="">
         <v-layout justify-space-between wrap>
@@ -55,7 +134,7 @@
                 bitcoin content creators
               </div> 
               <div class="d-flex align-center mt-4 body-1 opacity-6">
-                <span>Product Design</span><span class="mx-2">&#x2022;</span> <span>Coded MVP </span><span class="mx-2">&#x2022;</span> <v-chip class="opacity-8">Shipped</v-chip>
+                <span>Product Design</span><span class="mx-2">&#x2022;</span> <span>Coded MVP </span><span class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">Shipped</v-chip>
               </div>
               <!-- <p class="body-1  my-5 ">
                   Helping bitcoin based content creators monetize their videos and
@@ -79,80 +158,6 @@
               <p class="body-1 opacity-6">
                 Helping bitcoin based content creators monetize their videos and
                 earn money directly from their followers.
-              </p>
-            </div>
-            <!-- </section> -->
-          </v-flex>
-        </v-layout>
-      </div>
-    </v-card>
-
-    <!-- PLANNER -->
-     <v-card flat  href='https://www.figma.com/proto/EaXvUe3394u2kcpQkjVTKd/case-study-ppt?page-id=102%3A19964&node-id=103-19973&viewport=1221%2C1666%2C0.5&scaling=scale-down-width' target="_blank"
-      class=" transparent pointer plan-container workcard mt-10"
-    >
-      <div class="">
-        <v-layout justify-space-between wrap>
-          <v-flex
-            xs12
-            sm7
-            md8
-            class="plan-container--left pt-10 pr-10"
-          >
-            <v-responsive>
-              <v-img
-                :src="
-                  require(`@/assets/media/plan/plan.png`)
-                "
-              ></v-img>
-            </v-responsive>
-          </v-flex>
-          <v-flex
-            xs12
-            sm5
-            md4
-            class="plan-container--right workcard_right pa-8"
-          >
-            <!-- <section class="flex-column justify-end"> -->
-            <div>
-              <div style="opacity:0.8;" class="mt-2">
-                <v-img
-                  class="mr-2"
-                  style="float:left;"
-                  contain
-                  width="24"
-                  height="24"
-                  :src="require(`@/assets/stories/iu-logo.jpeg`)"
-                ></v-img>
-                <div>Indiana University</div>
-              </div>
-              <div class="text-h5 mt-4">
-                Helping advisors and students with a course plan review
-              </div>
-              <div class="d-flex align-center mt-4 body-1 opacity-6">
-                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-8">Internship</v-chip>
-              </div>
-              <!-- <p class="body-1  my-5 ">
-                  Helping bitcoin based content creators monetize their videos and
-                  earn money directy from their followers.
-                </p> -->
-            </div>
-            <div class="align-end justify-end">
-              <v-btn
-                dark
-                plain
-                block
-                large
-                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
-                href='https://www.figma.com/proto/EaXvUe3394u2kcpQkjVTKd/case-study-ppt?page-id=102%3A19964&node-id=103-19973&viewport=1221%2C1666%2C0.5&scaling=scale-down-width' target="_blank"
-              >
-                View Case Study
-                <v-icon class="ml-2" dark>
-                  mdi-arrow-right
-                </v-icon>
-              </v-btn>
-              <p class="body-1 opacity-6">
-                Designed an internal tool for students to smoothly plan courses and get review from their advisors.
               </p>
             </div>
             <!-- </section> -->
@@ -203,7 +208,7 @@
                 Designing the Salesforce free trial form experience
               </div>
               <div class="d-flex align-center flex-wrap mt-4 body-1 opacity-6">
-                <span>Sponsored Course Work</span> <span class="mx-2">&#x2022;</span> <v-chip class="opacity-8">Externship</v-chip>
+                <span>Sponsored Course Work</span> <span class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">Externship</v-chip>
               </div>
               <!-- <p class="body-1  my-5 ">
                   Helping bitcoin based content creators monetize their videos and
@@ -469,11 +474,11 @@ export default {
 .plan-container {
 
   &--left {
-    background: #00394d;
+    background: #40717a;
   }
   &--right {
     color: #8bcbdf;
-    background: #000f1a;
+    background: #000d16;
 // background: rgb(0,0,0);
 
 // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);

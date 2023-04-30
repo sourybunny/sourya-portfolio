@@ -20,14 +20,14 @@
             </p>
             <div class="my-8 slidee-up">
               <span
-                style="white-space:nowrap;"
+                style="white-space:nowrap;line-height: 115%;"
                 class="gradient text-shine  font-weight-medium"
                 :class="$vuetify.breakpoint.lgAndUp?'display-3': $vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
                 >I design and < build />
               </span>
               <div 
                 :class="$vuetify.breakpoint.lgAndUp?'display-3': $vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
-                style="opacity:0.6;"
+                style="opacity:0.6;line-height: 115%;"
                 class="white--text  font-weight-medium"
               >
                 products that delight <br v-if="$vuetify.breakpoint.smAndUp" />
@@ -52,21 +52,20 @@
               </div> -->
 
               <div
-                class="white--text "
+                class="white--text font-weight-light"
                 :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
               >
                 <span class="font-weight-light"
                   :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
                   style="opacity:0.6;"
-                  >Currently MS HCI
+                  >MS HCI
                 </span>@Indiana University Bloomington.
-                <span class="font-weight-light"
+                <div class="font-weight-light"
                   :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
-                  style="opacity:0.6;"
-                  >Previously
-                </span>
+                  
+                  ><span style="opacity:0.6;">Previously </span>
                 <span>
-                  <a
+                  <a 
                     href="https://uits.iu.edu/about/our-people/org-structure/enterprise-systems"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -82,7 +81,7 @@
                   ></span
                 >,
                 <span>
-                  <a
+                  <a 
                     href="https://www.sensehawk.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -90,7 +89,7 @@
                   ></span
                 >,
                 <span>
-                  <a
+                  <a 
                     href="https://streamanity.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -98,6 +97,8 @@
                   ></span
                 >.
               </div>
+            </div>
+
               <!-- <div
                 class="white--text"
                 :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"

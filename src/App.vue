@@ -1,10 +1,11 @@
 <template>
-  <v-app class="app-container">
+  <v-app class="app-container" :class=" $route.path !== '/plan' || $route.path !== '/streamanity' ? 'app-width' : ''">
     <v-main class="pa-0 app-background">
-      <Header class="app-background" />
       <template>
+        <Header class="app-background"></Header>
         <keep-alive>
-          <router-view  :key="$route.fullPath"></router-view>
+          <router-view  :key="$route.fullPath">
+          </router-view>
         </keep-alive>
       </template>
     </v-main>
@@ -63,10 +64,13 @@ body {
 }
 .app-background {
   background: $background;
+
 }
 .app-container {
-  max-width: 1500px;
   margin:0 auto;
+}
+.app-width {
+max-width:90%;
 }
 .text-highlight {
   background: -webkit-linear-gradient(120deg, #a7cfdf, #37659a);
@@ -92,20 +96,20 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  background-image: linear-gradient(143deg, #ff005c, #ffa95a);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  // background-image: linear-gradient(143deg, #ff005c, #ffa95a);
+  //   -webkit-background-clip: text;
+  //   background-clip: text;
+  //   -webkit-text-fill-color: transparent;
 }
 .selectedwork-gradient {
   background-image: linear-gradient(124deg, #edecb4, #e6c20f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  background-image: linear-gradient(143deg, #49f88c, #dcb864 58%, #ffa95a);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  // background-image: linear-gradient(143deg, #49f88c, #dcb864 58%, #ffa95a);
+  //   -webkit-background-clip: text;
+  //   background-clip: text;
+  //   -webkit-text-fill-color: transparent;
   
 }
 .aboutme-gradient {

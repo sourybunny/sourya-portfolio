@@ -1,17 +1,13 @@
 <template>
-  <div class="layout-container navbar">
-    <div class="layout-container__inner py-5 ">
+  <div class="layout-container navbar" :class="{
+    'removeBorder': $route.path == '/plan' || $route.path == '/streamanity'
+  }">
+    <div class="layout-container__inner header"  :class=" $route.path == '/plan' || $route.path == '/streamanity' ? 'py-2' : 'py-5'">
       <div class="d-flex white--text align-center justify-space-between">
-        <div
-          @click.stop="$router.push({ path: '/' })"
-          class="d-flex align-center is-pointer"
-        >
-          <span><Logo class="mr-3"/></span
-          ><span
-            class="name-gradient"
-            style="font-family:'Homemade apple',cursive; font-size:1.4rem;"
-            >Sv</span
-          >
+        <div @click.stop="$router.push({ path: '/' })" class="d-flex align-center is-pointer">
+          <span>
+            <Logo class="mr-3" />
+          </span><span class="name-gradient" style="font-family:'Homemade apple',cursive; font-size:1.4rem;">Sv</span>
         </div>
         <div class="d-flex align-center">
           <!-- <v-btn
@@ -22,33 +18,15 @@
           >
             Home
           </v-btn> -->
-          <v-btn
-            plain
-            dark
-            class="text-capitalize"
-            @click.stop="$router.push({ path: '/about' })"
-          >
+          <v-btn plain dark class="text-capitalize" @click.stop="$router.push({ path: '/about' })">
             About
           </v-btn>
-          <v-btn plain
-                target="_blank"
-                :href="
-                  'https://drive.google.com/file/d/1gdGL15zRp1lD_1Qd9UXsCJb0K-VYlfin/view?usp=sharing'
-                "
-                dark
-                class="text-capitalize"
-              >
-                 Resume
-              </v-btn>
-          <v-btn
-            href="mailto:sourya0411@gmail.com"
-            target="_blank"
-            plain
-            dark
-            v-bind="attrs"
-            v-on="on"
-            class="text-lowercase"
-          >
+          <v-btn plain target="_blank" :href="'https://drive.google.com/file/d/1gdGL15zRp1lD_1Qd9UXsCJb0K-VYlfin/view?usp=sharing'
+            " dark class="text-capitalize">
+            Resume
+          </v-btn>
+          <v-btn href="mailto:sourya0411@gmail.com" target="_blank" plain dark v-bind="attrs" v-on="on"
+            class="text-lowercase">
             sourya0411@gmail.com
           </v-btn>
         </div>
@@ -69,5 +47,10 @@ export default {
 <style lang="scss">
 .navbar {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.removeBorder {
+  .layout-container__inner {
+    border: 0;
+  }
 }
 </style>
