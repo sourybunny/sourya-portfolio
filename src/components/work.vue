@@ -88,7 +88,7 @@
     </v-card>
 
     <!-- PLANNER -->
-     <v-card flat  href='https://medium.com/@sourya-design/course-planner-for-students-and-a-review-dashboard-for-academic-advisors-at-indiana-university-2a771a016a3f' target="_blank"
+     <v-card flat  href='https://www.figma.com/proto/EaXvUe3394u2kcpQkjVTKd/case-study-ppt?page-id=102%3A19964&node-id=103-19973&viewport=1221%2C1666%2C0.5&scaling=scale-down-width' target="_blank"
       class=" transparent pointer plan-container workcard mt-10"
     >
       <div class="">
@@ -144,7 +144,7 @@
                 block
                 large
                 class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
-                href='https://medium.com/@sourya-design/course-planner-for-students-and-a-review-dashboard-for-academic-advisors-at-indiana-university-2a771a016a3f' target="_blank"
+                href='https://www.figma.com/proto/EaXvUe3394u2kcpQkjVTKd/case-study-ppt?page-id=102%3A19964&node-id=103-19973&viewport=1221%2C1666%2C0.5&scaling=scale-down-width' target="_blank"
               >
                 View Case Study
                 <v-icon class="ml-2" dark>
