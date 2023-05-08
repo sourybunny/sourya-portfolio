@@ -4,7 +4,7 @@
       <div class="layout-container__inner " style="padding:0;">
         <!-- <div class="text-h5 white--text font-weight-light mb-6">Selected Work</div> -->
         <div  class="text-h4 white--text font-weight-bold" style="padding:4rem;" >
-          Explore my best
+          Explore my selected
           <span
             class="font-weight-bold tangram_yellow--text selectedwork-gradient"
             >work</span
@@ -89,6 +89,76 @@
       </div>
     </v-card>
 
+         <!-- CAPSTONE -->
+         <v-card flat @click="$router.push('/capstone')"
+      class=" transparent pointer capstone-container workcard mt-15"
+    >
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="capstone-container--left pt-15"
+          >
+            <v-responsive>
+              <v-img
+                :src="
+                  require(`@/assets/media/capstone/capstone-main.png`)
+                "
+              ></v-img>
+            </v-responsive>
+          </v-flex>
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="capstone-container--right workcard_right pa-10"
+          >
+            <div>
+              <div style="opacity:0.8;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="48"
+                  height="24"
+                  :src="require(`@/assets/media/capstone/wlab.png`)"
+                ></v-img>
+                <div>WonderLab Science Museum
+                </div>
+              </div>
+              <div class="text-h5 mt-4">
+                Empathy with endangered corals using immersive tech
+              </div>
+              <div class="d-flex mt-4 opacity-6 align-center">
+                <span>Interaction Design</span><span class="mx-1">&#x2022;</span> <span>Capstone</span><span class="mx-1">&#x2022;</span><v-chip class="opacity-1 body-1">AR| ML | AI</v-chip>
+              </div>
+             
+            </div>
+            <div class="align-end justify-end">
+              <v-btn @click.stop="$router.push('/capstone')"
+                dark
+                plain
+                block
+                large
+                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                
+              >
+                Project Overview
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1">   
+                Designed and prototyped a series of four interactive experiences for children to spark empathy for coral reefs.
+              </p>
+            </div>
+          </v-flex>
+        </v-layout>
+      </div>
+    </v-card> 
+
     <!-- STR -->
     <v-card flat
       @click.stop="$router.push('/streamanity')" 
@@ -168,7 +238,7 @@
     </v-card>
 
      <!-- SENSEHAWK -->
-     <v-card flat @click="$router.push('/therm')" target="_blank"
+     <!-- <v-card flat @click="$router.push('/therm')" target="_blank"
       class=" transparent pointer plan-container workcard mt-15"
     >
       <div class="">
@@ -193,7 +263,6 @@
             md4
             class="therm-container--right workcard_right pa-8"
           >
-            <!-- <section class="flex-column justify-end"> -->
             <div>
               <div style="opacity:0.8;" class="mt-2">
                 <v-img
@@ -212,10 +281,7 @@
               <div class="d-flex align-center mt-4 body-1 opacity-6">
                 <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
               </div>
-              <!-- <p class="body-1  my-5 ">
-                  Helping bitcoin based content creators monetize their videos and
-                  earn money directy from their followers.
-                </p> -->
+              
             </div>
             <div class="align-end justify-end">
               <v-btn
@@ -238,81 +304,12 @@
                 Designed a map based productivity tool for solar asset managers to manage, track and remediate defects in solar modules.
               </p>
             </div>
-            <!-- </section> -->
           </v-flex>
         </v-layout>
       </div>
-    </v-card>
+    </v-card> -->
    
-     <!-- CAPSTONE -->
-      <v-card flat @click="$router.push('/capstone')"
-      class=" transparent pointer capstone-container workcard mt-15"
-    >
-      <div class="">
-        <v-layout justify-space-between wrap>
-          <v-flex
-            xs12
-            sm7
-            md8
-            class="capstone-container--left pt-15"
-          >
-            <v-responsive>
-              <v-img
-                :src="
-                  require(`@/assets/media/capstone/capstone-main.png`)
-                "
-              ></v-img>
-            </v-responsive>
-          </v-flex>
-          <v-flex
-            xs12
-            sm5
-            md4
-            class="capstone-container--right workcard_right pa-10"
-          >
-            <div>
-              <div style="opacity:0.8;" class="mt-2">
-                <v-img
-                  class="mr-2"
-                  style="float:left;"
-                  contain
-                  width="48"
-                  height="24"
-                  :src="require(`@/assets/media/capstone/wlab.png`)"
-                ></v-img>
-                <div>WonderLab Science Museum
-                </div>
-              </div>
-              <div class="text-h5 mt-4">
-                Empathy with endangered corals using immersive tech
-              </div>
-              <div class="d-flex mt-4">
-                <span>Interaction Design</span><span class="mx-1">&#x2022;</span> <span>Capstone</span><span class="mx-1">&#x2022;</span><v-chip class="opacity-1 body-1">AR| ML | AI</v-chip>
-              </div>
-             
-            </div>
-            <div class="align-end justify-end">
-              <v-btn @click.stop="$router.push('/capstone')"
-                dark
-                plain
-                block
-                large
-                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
-                
-              >
-                Project Overview
-                <v-icon class="ml-2" dark>
-                  mdi-arrow-right
-                </v-icon>
-              </v-btn>
-              <p class="body-1">   
-                Designed and prototyped a series of four interactive experiences for children to spark empathy for coral reefs.
-              </p>
-            </div>
-          </v-flex>
-        </v-layout>
-      </div>
-    </v-card> 
+
  <!-- SALESFORCE -->
  <v-card flat  href='https://medium.com/@sourya-design/designing-the-free-trial-experience-for-the-worlds-largest-crm-platform-ux-ui-case-study-7a154de74027' target="_blank"
       class=" transparent pointer salesforce-container workcard mt-15"
