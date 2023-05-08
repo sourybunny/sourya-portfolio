@@ -89,7 +89,7 @@
             <a
               class="waves-effect  waves-light btn-large z-depth-4"
               target="_blank"
-              href="https://drive.google.com/file/d/1G5DYEYGUK-cTU5CE511401vASl233563/view?usp=sharing"
+              href="https://drive.google.com/file/d/15ih-oSaDkdIcmyBXW0vj3T19kpisF4Qx/view?usp=sharing"
               >Resume</a
             >
           </div>

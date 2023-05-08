@@ -150,7 +150,7 @@
                   mdi-arrow-right
                 </v-icon>
               </v-btn>
-              <p class="body-1">   
+              <p class="body-1 opacity-6">   
                 Designed and prototyped a series of four interactive experiences for children to spark empathy for coral reefs.
               </p>
             </div>
