@@ -3,40 +3,26 @@
     <div class="layout-container__inner ">
       <div class="text-h4 white--text font-weight-bold mb-8">
         View my design
-        <span class="font-weight-bold tangram_orange--text designbytes-gradient"
-          >bytes</span
-        >
+        <span class="font-weight-bold tangram_orange--text designbytes-gradient">bytes</span>
       </div>
       <div class="d-flex slides" style="overflow:scroll;">
         <template v-for="(item, i) in items">
           <v-hover v-slot="{ hover }" :key="i">
-            <v-card
-              @click.stop="
-                dialog = item.id;
-                selected_id = item.id;
-              "
-              :elevation="hover ? 24 : 6"
-              dark
-              class="mx-3 transparent byte my-6 rounded-xl"
-            >
-              <v-img
-                :gradient="
-                  !hover
-                    ? 'to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)'
-                    : 'to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.2)'
-                "
-                contain
-                class="align-end"
-                :src="item.cardimg"
-              >
+            <v-card @click.stop="
+              dialog = item.id;
+            selected_id = item.id;
+                                          " :elevation="hover ? 24 : 6" dark class="mx-3 transparent byte my-6 rounded-xl">
+              <v-img :gradient="
+                !hover
+                  ? 'to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)'
+                  : 'to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.2)'
+              " contain class="align-end" :src="item.cardimg">
                 <div class="white--text mx-6 mb-4">
                   <div>
                     <!-- <div style="opacity:0.5" class="font-italic paragraph-gradient display-1 ">
                       {{ item.id }}.
                     </div> -->
-                    <div
-                      class="body-2 grey--text paragraph-gradient text--lighten-1 font-italic font-weight-light mb-1"
-                    >
+                    <div class="body-2 grey--text paragraph-gradient text--lighten-1 font-italic font-weight-light mb-1">
                       {{ item.overline }}
                     </div>
                     <p class="subheading mt-2">
@@ -45,16 +31,10 @@
                   </div>
                   <div class="d-flex align-center">
                     <v-avatar size="32" class="">
-                      <img
-                        contain
-                        style="border:2px solid blue;padding: 2px; background:white;"
-                        :alt="item.company"
-                        :src="item.logo"
-                      />
+                      <img contain style="border:2px solid blue;padding: 2px; background:white;" :alt="item.company"
+                        :src="item.logo" />
                     </v-avatar>
-                    <div
-                      class="ml-2 caption grey--text text--lighten-1 font-weight-medium"
-                    >
+                    <div class="ml-2 caption grey--text text--lighten-1 font-weight-medium">
                       {{ item.company }}
                     </div>
                   </div>
@@ -80,36 +60,20 @@
         <v-card class="pa-0" v-if="selected_id == 2">
           <Soar class="white" />
         </v-card>
-        <iframe
-          v-if="selected_id == 3"
-          style="border: 1px solid rgba(0, 0, 0, 0.1);"
-          width="700"
-          height="800"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D20%253A259%26node-id%3D20%253A260%26viewport%3D488%252C1523%252C0.31%26scaling%3Dscale-down-width"
-        ></iframe>
+        <iframe v-if="selected_id == 3" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="800"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D20%253A259%26node-id%3D20%253A260%26viewport%3D488%252C1523%252C0.31%26scaling%3Dscale-down-width"></iframe>
         <!-- <iframe v-if="selected_id==3"  style="border: 1px solid rgba(0, 0, 0, 0.1);"  width="700" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fnode-id%3D20%253A260%26t%3DuSyyeGoXuy44jU32-1" allowfullscreen></iframe> -->
-        <iframe
-          v-if="selected_id == 4"
-          style="border: 1px solid rgba(0, 0, 0, 0.1);"
-          width="700"
-          height="800"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D0%253A1%26node-id%3D1%253A179%26viewport%3D319%252C2156%252C0.19%26scaling%3Dscale-down-width"
-        ></iframe>
+        <iframe v-if="selected_id == 4" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="800"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D0%253A1%26node-id%3D1%253A179%26viewport%3D319%252C2156%252C0.19%26scaling%3Dscale-down-width"></iframe>
         <!-- <iframe v-if="selected_id==3" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FAPAYAUXAqJbP8hHGVLdFZO%2Fresume%3Fpage-id%3D141%253A2%26node-id%3D715%253A14%26viewport%3D1713%252C-876%252C0.44%26scaling%3Dscale-down-width%26starting-point-node-id%3D223%253A28" ></iframe> -->
-        <iframe
-          v-if="selected_id == 7"
-          style="border: 1px solid rgba(0, 0, 0, 0.1);"
-          width="700"
-          height="800"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D5%253A2%26node-id%3D83%253A241%26viewport%3D245%252C252%252C0.17%26scaling%3Dscale-down-width"
-        ></iframe>
-        <iframe v-if="selected_id == 5"
-          style="border: 1px solid rgba(0, 0, 0, 0.1);"
-          width="700"
-          height="800"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D154%253A23%26node-id%3D156%253A2764%26viewport%3D-854%252C1370%252C0.22%26scaling%3Dscale-down-width"
-        ></iframe>
+        <iframe v-if="selected_id == 7" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="800"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D5%253A2%26node-id%3D83%253A241%26viewport%3D245%252C252%252C0.17%26scaling%3Dscale-down-width"></iframe>
+        <iframe v-if="selected_id == 5" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="800"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D154%253A23%26node-id%3D156%253A2764%26viewport%3D-854%252C1370%252C0.22%26scaling%3Dscale-down-width"></iframe>
+        <iframe v-if="selected_id == 6" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="700" height="800"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBrtaJQv7NuEFxnlX5h71Qt%2Fux-bytes%3Fpage-id%3D83%253A299%26type%3Ddesign%26node-id%3D101-2%26viewport%3D378%252C218%252C0.23%26scaling%3Dscale-down-width&hide-ui=1"></iframe>
       </v-dialog>
+
       <!-- <div class="d-flex" style="overflow:scroll;">
         <v-hover v-slot="{ hover }">
           <v-card dark class="elevation-12 mx-2 transparent">
@@ -442,16 +406,16 @@ export default {
       //   tag: "",
       //   misc: "",
       // },
-      // {
-      //   id: 6,
-      //   overline: "UX research",
-      //   title: "STAR - Sales Trend Analysis Report",
-      //   company: `@Rich Products corp`,
-      //   cardimg: require(`@/assets/bytes/uxresearch.png`),
-      //   logo: require(`@/assets/stories/rich-logo.png`),
-      //   tag: "",
-      //   misc: "",
-      // },
+      {
+        id: 6,
+        overline: "UX research",
+        title: "STAR - Sales Trend Analysis Report",
+        company: `@Rich Products corp`,
+        cardimg: require(`@/assets/bytes/uxresearch.png`),
+        logo: require(`@/assets/stories/rich-logo.png`),
+        tag: "",
+        misc: "",
+      },
       {
         id: 7,
         overline: "User personas",
@@ -480,6 +444,7 @@ export default {
 <style lang="scss">
 .shorts {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
   .slides {
     //   .byte {
     //     transform: perspective(1500px) rotateY(15deg);
