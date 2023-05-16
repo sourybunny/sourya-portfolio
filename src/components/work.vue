@@ -70,7 +70,7 @@
                 large
                 class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
                 @click.stop="$router.push(
-                 ' /plan'
+                 '/plan'
                 )"
                 target="_blank"
               >
