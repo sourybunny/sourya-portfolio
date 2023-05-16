@@ -488,7 +488,7 @@ export default {
 }
 
 .slides::-webkit-scrollbar {
-  height: 2px;
+  height: 10px;
 }
 
 .slides::-webkit-scrollbar-track {
@@ -498,6 +498,7 @@ export default {
 .slides::-webkit-scrollbar-thumb {
   height: 2px;
   background-color: #242424;
+  
 }
 
 .slides::-webkit-scrollbar-thumb:hover {
