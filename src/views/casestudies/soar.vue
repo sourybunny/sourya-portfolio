@@ -498,7 +498,7 @@ export default {
 }
 @keyframes reveal {
   100% {
-    left: -100%;
+    left: -120%;
   }
 }
 .hero_container-image {

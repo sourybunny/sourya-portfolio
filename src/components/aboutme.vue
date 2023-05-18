@@ -86,7 +86,7 @@
           <v-spacer></v-spacer>
           <v-flex :order="$vuetify.breakpoint.xsOnly ? 1 : 2" xs12 sm3 md6 lg4 :right-align="!$vuetify.breakpoint.mobile">
             <v-card flat class="mt-2 black">
-              <v-img class="" max-width="400" max-height="500" :src="require(`@/assets/headshot-min.jpeg`)"></v-img>
+              <v-img class=""  :src="require(`@/assets/blue.png`)"></v-img>
             </v-card>
           </v-flex>
         </v-layout>
