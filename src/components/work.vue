@@ -2,7 +2,6 @@
   <div >
     <section class="layout-container bottom-line">
       <div class="layout-container__inner " style="padding:0;">
-        <!-- <div class="text-h5 white--text font-weight-light mb-6">Selected Work</div> -->
         <div  class="text-h4 white--text font-weight-bold" style="padding:4rem;" >
           Explore my selected
           <span
@@ -159,8 +158,81 @@
       </div>
     </v-card> 
 
-    <!-- STR -->
-    <v-card flat
+
+
+     <!-- SENSEHAWK -->
+    <v-card flat @click.stop="$router.push('/therm')" target="_blank"
+      class=" transparent pointer plan-container workcard mt-15"
+    >
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="therm-container--left pt-15"
+          >
+            <v-responsive>
+              <v-img
+                :src="
+                  require(`@/assets/media/therm/therm-main.png`)
+                "
+              ></v-img>
+            </v-responsive>
+          </v-flex>
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="therm-container--right workcard_right pa-8"
+          >
+            <div>
+              <div style="opacity:0.8;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="24"
+                  height="24"
+                  :src="require(`@/assets/sensehawk logo.jpg`)"
+                ></v-img>
+                <div>Sensehawk</div>
+              </div>
+              <div class="text-h5 mt-4">
+               Defect management for solar asset construction managers
+              </div>
+              <div class="d-flex align-center mt-4 body-1 opacity-6">
+                <span>Coded MVP</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
+              </div>
+              
+            </div>
+            <div class="align-end justify-end">
+              <v-btn
+                dark
+                plain
+                block
+                large
+                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                @click.stop="$router.push(
+                 '/therm'
+                )"
+                target="_blank"
+              >
+                View Case Study
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1 opacity-6">
+                Improved user engagement and usability of web interafce for managers to track and assign defects to field technicians.
+              </p>
+            </div>
+          </v-flex>
+        </v-layout>
+      </div>
+    </v-card>
+       <!-- STR -->
+       <v-card flat
       @click.stop="$router.push('/streamanity')" 
       class=" transparent pointer streamanity-container workcard mt-15"
     >
@@ -207,10 +279,7 @@
               <div class="d-flex align-center mt-4 body-1 opacity-6">
                 <span>Product Design</span><span class="mx-2">&#x2022;</span> <span>Coded MVP </span><span class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">Shipped</v-chip>
               </div>
-              <!-- <p class="body-1  my-5 ">
-                  Helping bitcoin based content creators monetize their videos and
-                  earn money directy from their followers.
-                </p> -->
+              
             </div>
             <div class="align-end justify-end">
               <v-btn 
@@ -237,81 +306,8 @@
       </div>
     </v-card>
 
-     <!-- SENSEHAWK -->
-     <!-- <v-card flat @click="$router.push('/therm')" target="_blank"
-      class=" transparent pointer plan-container workcard mt-15"
-    >
-      <div class="">
-        <v-layout justify-space-between wrap>
-          <v-flex
-            xs12
-            sm7
-            md8
-            class="therm-container--left pt-15 pl-15"
-          >
-            <v-responsive>
-              <v-img
-                :src="
-                  require(`@/assets/media/therm/therm-main.png`)
-                "
-              ></v-img>
-            </v-responsive>
-          </v-flex>
-          <v-flex
-            xs12
-            sm5
-            md4
-            class="therm-container--right workcard_right pa-8"
-          >
-            <div>
-              <div style="opacity:0.8;" class="mt-2">
-                <v-img
-                  class="mr-2"
-                  style="float:left;"
-                  contain
-                  width="24"
-                  height="24"
-                  :src="require(`@/assets/sensehawk logo.jpg`)"
-                ></v-img>
-                <div>Sensehawk</div>
-              </div>
-              <div class="text-h5 mt-4">
-                GIS jobsite defect management app for solar assets
-              </div>
-              <div class="d-flex align-center mt-4 body-1 opacity-6">
-                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
-              </div>
-              
-            </div>
-            <div class="align-end justify-end">
-              <v-btn
-                dark
-                plain
-                block
-                large
-                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
-                @click.stop="$router.push(
-                 ' /therm'
-                )"
-                target="_blank"
-              >
-                View Case Study
-                <v-icon class="ml-2" dark>
-                  mdi-arrow-right
-                </v-icon>
-              </v-btn>
-              <p class="body-1 opacity-6">
-                Designed a map based productivity tool for solar asset managers to manage, track and remediate defects in solar modules.
-              </p>
-            </div>
-          </v-flex>
-        </v-layout>
-      </div>
-    </v-card> -->
-   
-
  <!-- SALESFORCE -->
- <v-card flat  href='https://medium.com/@sourya-design/designing-the-free-trial-experience-for-the-worlds-largest-crm-platform-ux-ui-case-study-7a154de74027' target="_blank"
+ <!-- <v-card flat  href='https://medium.com/@sourya-design/designing-the-free-trial-experience-for-the-worlds-largest-crm-platform-ux-ui-case-study-7a154de74027' target="_blank"
       class=" transparent pointer salesforce-container workcard mt-15"
     >
       <div class="">
@@ -336,7 +332,6 @@
             md4
             class="salesforce-container--right workcard_right pa-8"
           >
-            <!-- <section class="flex-column justify-end"> -->
             <div>
               <div style="opacity:0.8;" class="mt-2">
                 <v-img
@@ -355,10 +350,7 @@
               <div class="d-flex align-center flex-wrap mt-4 body-1 opacity-6">
                 <span>Sponsored Course Work</span> <span class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">Externship</v-chip>
               </div>
-              <!-- <p class="body-1  my-5 ">
-                  Helping bitcoin based content creators monetize their videos and
-                  earn money directy from their followers.
-                </p> -->
+             
             </div>
             <div class="align-end justify-end">
               <v-btn
@@ -378,11 +370,10 @@
                 Redesigned salesforce free-trial form by converting insights from market research to actionable design elements.
               </p>
             </div>
-            <!-- </section> -->
           </v-flex>
         </v-layout>
       </div>
-    </v-card>
+    </v-card> -->
     <!-- <section class="layout-container mainbg">
       <div class="layout-container__inner py-10">
         <div
@@ -563,7 +554,7 @@ export default {
 .therm-container {
 
 &--left {
-  background: #1288D4;
+  background: #1576b7;
 }
 &--right {
   color: #8DBDDA;
