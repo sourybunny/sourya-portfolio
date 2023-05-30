@@ -258,7 +258,7 @@
           >
             <v-flex xs12 sm5>
               <div class="d-flex align-center">
-                <h4 class="mr-4 font-weight-bold">1000+</h4>
+                <h4 class="mr-4 font-weight-bold">10000+</h4>
                 <div class="title font-weight-medium">
                   <div>Signups in first</div>
                   <div>6 months</div>

@@ -224,7 +224,7 @@
                 </v-icon>
               </v-btn>
               <p class="body-1 opacity-6">
-                Improved user engagement and usability of web interafce for managers to track and assign defects to field technicians.
+                Improved user engagement and usability of web interface for managers to track and assign defects to field technicians.
               </p>
             </div>
           </v-flex>
