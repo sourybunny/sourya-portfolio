@@ -53,17 +53,33 @@
         <v-layout xs12 wrap>
           <v-flex xs12 sm9 md6 lg6>
             <div class="grey--text">
-              <p class="font-weight-light mb-3 title">
+              <p class="font-weight-light mb-3 body-1">
                 Hi there, I’m Sourya Varanasi. I am a
                 <span class="is-relative text-highlight circle-sketch-highlight">data-driven UX/Product Designer
                 </span>graduated with an MS. HCI degree from Indiana University
                 Bloomington in May, 2023.
               </p>
-              <p class="font-weight-light mb-3 title">
-                My fascination with the potential of AR, AI and ML in the realm of interaction design fuels my desire to
-                work
-                on projects that push the boundaries of what is possible. I am driven by the challenge of translating
-                complex data into meaningful and delightful experiences for users
+              
+              <p class="font-weight-light mb-3 body-1">
+                I help businesses turn their ideas into great products and strive to innovate at the intersection of
+                creativity, technology, and user experience. Drawing from my engineering roots, my passion for
+                cutting-edge technology empowers me to create designs that resonate with users and push the boundaries of
+                digital experiences. I am driven by the challenge of translating
+                complex data into meaningful and delightful experiences for users.
+              </p>
+              
+              <p class="text-h5 mt-5 title-gradient white--text">Currently</p>
+              <p class="font-weight-light mt-4 body-1">
+                I'm interning at Ushur, a no code AI powered workflow automation startup.
+                For the last 4 years, I've been working with diverse companies
+                under many roles in digital product design. This
+                interdisciplinary experience taught me how design processes
+                could influence product and business decisions. These insights
+                allow me to use design as a strategy rather than being just
+                another deliverable.
+              </p>
+              <p class="font-weight-light mt-4 body-1">I love experimenting with AR, AI and ML to come up with user-centered design solutions in the realm of interaction design.
+
               </p>
               <v-btn target="_blank" :href="'https://drive.google.com/file/d/1qQjhMxtrAo8mgWzIXkj-DOw2fQPmVvia/view?usp=sharing'
                 " dark class="text-capitalize cardbgdark font-weight-light my-2">
@@ -72,21 +88,12 @@
                   mdi-file-document-outline
                 </v-icon>
               </v-btn>
-              <p class="text-h5 mt-10 title-gradient white--text">Currently</p>
-              <p class="font-weight-light mt-4 title">
-                For the last 4 years, I've been working with diverse companies
-                under many roles in digital product design. This
-                interdisciplinary experience taught me how design processes
-                could influence product and business decisions. These insights
-                allow me to use design as a strategy rather than being just
-                another deliverable.
-              </p>
             </div>
           </v-flex>
           <v-spacer></v-spacer>
-          <v-flex :order="$vuetify.breakpoint.xsOnly ? 1 : 2" xs12 sm3 md6 lg4 :right-align="!$vuetify.breakpoint.mobile">
+          <v-flex :order="$vuetify.breakpoint.xsOnly ? 1 : 2" xs12 sm3 md7 lg4 :right-align="!$vuetify.breakpoint.mobile">
             <v-card flat class="mt-2 black">
-              <v-img class=""  :src="require(`@/assets/blue.png`)"></v-img>
+              <v-img class="" :src="require(`@/assets/blue.png`)"></v-img>
             </v-card>
           </v-flex>
         </v-layout>
@@ -122,7 +129,7 @@
                   As a designer, I embrace a growth mindset and strive to continuously improve by staying abreast of the
                   latest developments in the design industry worldwide. I approach design with a keen sense of
                   observation, drawing inspiration from my surroundings to fuel my creative process. I firmly believe that
-                  observation leads to ideas, and ideas lead to innovation—a philosophy that drives my passion for design.
+                  observation leads to ideas, and ideas lead to innovation—a philosophy that drives the designer in me.
 
                 </v-card-text>
               </v-card>
@@ -149,7 +156,7 @@
                   My approach is rooted in the fusion of creativity and technical expertise, where I strive to craft
                   innovative and user-centered solutions that seamlessly integrate form and function. Drawing from my
                   background in engineering, I bring a unique perspective to my design process, leveraging my
-                  understanding of technical constraints and possibilities to inform my creative decisions
+                  understanding of technical constraints and possibilities to inform my creative decisions.
                 </v-card-text>
               </v-card>
             </v-flex>

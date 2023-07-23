@@ -21,7 +21,7 @@
           <v-btn plain dark class="text-capitalize" @click.stop="$router.push({ path: '/about' })">
             About
           </v-btn>
-          <v-btn plain target="_blank" :href="'https://drive.google.com/file/d/15ih-oSaDkdIcmyBXW0vj3T19kpisF4Qx/view?usp=sharing'
+          <v-btn plain target="_blank" :href="'https://drive.google.com/file/d/1qQjhMxtrAo8mgWzIXkj-DOw2fQPmVvia/view?usp=sharing'
             " dark class="text-capitalize">
             Resume
           </v-btn>
