@@ -65,7 +65,7 @@
                 on projects that push the boundaries of what is possible. I am driven by the challenge of translating
                 complex data into meaningful and delightful experiences for users
               </p>
-              <v-btn target="_blank" :href="'https://drive.google.com/file/d/15ih-oSaDkdIcmyBXW0vj3T19kpisF4Qx/view?usp=sharing'
+              <v-btn target="_blank" :href="'https://drive.google.com/file/d/1qQjhMxtrAo8mgWzIXkj-DOw2fQPmVvia/view?usp=sharing'
                 " dark class="text-capitalize cardbgdark font-weight-light my-2">
                 View Resume
                 <v-icon dark small class="ml-1">
