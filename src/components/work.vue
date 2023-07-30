@@ -11,9 +11,80 @@
         </div>
    
 
+ <!-- SENSEHAWK -->
+    <v-card flat @click.stop="$router.push('/therm')" target="_blank"
+      class=" transparent pointer plan-container workcard "
+    >
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="therm-container--left pt-15"
+          >
+            <v-responsive>
+              <v-img
+                :src="
+                  require(`@/assets/media/therm/therm-main.png`)
+                "
+              ></v-img>
+            </v-responsive>
+          </v-flex>
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="therm-container--right workcard_right pa-8"
+          >
+            <div>
+              <div style="opacity:0.8;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="24"
+                  height="24"
+                  :src="require(`@/assets/sensehawk logo.jpg`)"
+                ></v-img>
+                <div>Sensehawk</div>
+              </div>
+              <div class="text-h5 mt-4">
+               Defect management for solar asset construction managers
+              </div>
+              <div class="d-flex align-center mt-4 body-1 opacity-6">
+                <span>Coded MVP</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
+              </div>
+              
+            </div>
+            <div class="align-end justify-end">
+              <v-btn
+                dark
+                plain
+                block
+                large
+                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                @click.stop="$router.push(
+                 '/therm'
+                )"
+                target="_blank"
+              >
+                View Case Study
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1 opacity-6">
+                Improved user engagement and usability of web interface for managers to track and assign defects to field technicians.
+              </p>
+            </div>
+          </v-flex>
+        </v-layout>
+      </div>
+    </v-card>
     <!-- PLANNER -->
      <v-card flat @click="$router.push('/plan')" target="_blank"
-      class=" transparent pointer plan-container workcard "
+      class=" transparent pointer plan-container workcard mt-15"
     >
       <div class="">
         <v-layout justify-space-between wrap>
@@ -160,77 +231,7 @@
 
 
 
-     <!-- SENSEHAWK -->
-    <v-card flat @click.stop="$router.push('/therm')" target="_blank"
-      class=" transparent pointer plan-container workcard mt-15"
-    >
-      <div class="">
-        <v-layout justify-space-between wrap>
-          <v-flex
-            xs12
-            sm7
-            md8
-            class="therm-container--left pt-15"
-          >
-            <v-responsive>
-              <v-img
-                :src="
-                  require(`@/assets/media/therm/therm-main.png`)
-                "
-              ></v-img>
-            </v-responsive>
-          </v-flex>
-          <v-flex
-            xs12
-            sm5
-            md4
-            class="therm-container--right workcard_right pa-8"
-          >
-            <div>
-              <div style="opacity:0.8;" class="mt-2">
-                <v-img
-                  class="mr-2"
-                  style="float:left;"
-                  contain
-                  width="24"
-                  height="24"
-                  :src="require(`@/assets/sensehawk logo.jpg`)"
-                ></v-img>
-                <div>Sensehawk</div>
-              </div>
-              <div class="text-h5 mt-4">
-               Defect management for solar asset construction managers
-              </div>
-              <div class="d-flex align-center mt-4 body-1 opacity-6">
-                <span>Coded MVP</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
-              </div>
-              
-            </div>
-            <div class="align-end justify-end">
-              <v-btn
-                dark
-                plain
-                block
-                large
-                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
-                @click.stop="$router.push(
-                 '/therm'
-                )"
-                target="_blank"
-              >
-                View Case Study
-                <v-icon class="ml-2" dark>
-                  mdi-arrow-right
-                </v-icon>
-              </v-btn>
-              <p class="body-1 opacity-6">
-                Improved user engagement and usability of web interface for managers to track and assign defects to field technicians.
-              </p>
-            </div>
-          </v-flex>
-        </v-layout>
-      </div>
-    </v-card>
+    
        <!-- STR -->
        <v-card flat
       @click.stop="$router.push('/streamanity')" 
