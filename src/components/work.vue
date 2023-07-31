@@ -21,12 +21,12 @@
             xs12
             sm7
             md8
-            class="therm-container--left pt-15"
+            class="therm-container--left pt-16 px-16"
           >
             <v-responsive>
               <v-img
                 :src="
-                  require(`@/assets/media/therm/therm-main.png`)
+                  require(`@/assets/media/sensehawk/hero.png`)
                 "
               ></v-img>
             </v-responsive>
@@ -540,11 +540,11 @@ export default {
 }
 .plan-container {
   &--left {
-    background: #6d2c42;
+    background: #97395a;
   }
   &--right {
     color: #ffd5ea;
-    background: #070005;
+    background: #1c0115;
 // background: rgb(0,0,0);
 
 // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
@@ -559,7 +559,7 @@ export default {
 }
 &--right {
   color: #8DBDDA;
-  background: #0a101a;
+  background: #0d1724;
 // background: rgb(0,0,0);
 
 // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
