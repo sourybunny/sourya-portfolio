@@ -75,7 +75,7 @@
                 </v-icon>
               </v-btn>
               <p class="body-1 opacity-6">
-                Improved user engagement and usability of web interface for managers to track and assign defects to field technicians.
+                Reduced technical complexity and improved usability of ML powered app.
               </p>
             </div>
           </v-flex>
@@ -150,7 +150,7 @@
                 </v-icon>
               </v-btn>
               <p class="body-1 opacity-6">
-                Designed an internal tool for students to smoothly plan courses and get review from their advisors.
+                Designed an internal tool for 40k+ students and 150+ advisors to reduce manual effort.
               </p>
             </div>
             <!-- </section> -->
@@ -221,7 +221,7 @@
                 </v-icon>
               </v-btn>
               <p class="body-1 opacity-6">   
-                Designed and prototyped a series of four interactive experiences for children to spark empathy for coral reefs.
+                Prototyped three interactive games for children to spark empathy for coral reefs.
               </p>
             </div>
           </v-flex>
@@ -297,8 +297,7 @@
                 </v-icon>
               </v-btn>
               <p class="body-1 opacity-6">
-                Helping bitcoin based content creators monetize their videos and
-                earn money directly from their followers.
+                Helping 1000+ content creators monetize their videos and earn with micropayments.
               </p>
             </div>
             <!-- </section> -->
