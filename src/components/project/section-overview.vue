@@ -37,6 +37,7 @@ export default {
         font-size: 18px;
         line-height: 27px;
         font-weight: 300;
+        opacity:80%;
     }
 }
 </style>

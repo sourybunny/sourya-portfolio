@@ -53,7 +53,7 @@
                Defect management for solar asset construction managers
               </div>
               <div class="d-flex align-center mt-4 body-1 opacity-6">
-                <span>Coded MVP</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
+                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
               </div>
               
             </div>

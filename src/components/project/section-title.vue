@@ -21,6 +21,6 @@ export default {
   font-size: 16px;
   line-height: 21px;
   font-weight: 600;
-  margin-bottom: .5rem;
+  // margin-bottom: .5rem;
 }
 </style>

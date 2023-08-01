@@ -94,8 +94,8 @@
                 </section-content>
                 <sectionTitle :title="'Therm: My design outcome'"></sectionTitle>
             </section>
-                <Therm/>
-                <!-- <v-img width="100%" :src="require(`@/assets/media/sensehawk/sensehawk-hero.png`)"></v-img> -->
+            <Therm />
+            <!-- <v-img width="100%" :src="require(`@/assets/media/sensehawk/sensehawk-hero.png`)"></v-img> -->
         </article>
         <article class="white">
             <section class="inner-section">
@@ -305,7 +305,8 @@
                         assignee’ to reduce drop off and increase task completion rate.
                     </div>
                 </section-overview>
-                <img class="mb-10" width="100%" height="100%" :src="require(`@/assets/media/sensehawk/selectedfilters.png`)" />
+                <img class="mb-10" width="100%" height="100%"
+                    :src="require(`@/assets/media/sensehawk/selectedfilters.png`)" />
                 <sectionTitle :title="'Solution to Problem 3: Visually bulky'"></sectionTitle>
                 <section-overview :title="'Minimal list for better readability'">
                     <div>
@@ -400,13 +401,16 @@
         <article class="white--text">
             <section class="inner-section">
                 <sectionTitle :title="'From my team'"></sectionTitle>
-                <project-testimonials :title="'Kuldeep Yadav'">
+                <!-- <project-testimonials :title="'Kuldeep Yadav'">
                     “Sourya took the UX lead role in her final project with us and we couldn’t be more pleased with her
                     collaborative nature and her UX research and design skills.”
-                </project-testimonials>
+                </project-testimonials> -->
                 <project-testimonials :title="'Prajwal Bharadwaj'">
-                    Sourya's technical knowledge bridged the gap between design and implementation, ensuring pixel-perfect
-                    execution of designs for both mobile and web apps. .
+                    Sourya's passion for design and her attention to detail are truly inspiring. She is a true problem
+                    solver and a key asset to any team. 
+                    <!-- Her contributions at
+                    Sensehawk have left a lasting impact, and I have no doubt that she will continue to make a
+                    significant difference in the field of UX design wherever she goes. -->
                 </project-testimonials>
             </section>
         </article>
@@ -479,4 +483,5 @@ export default {
 
 article {
     padding: 4rem 0;
-}</style>
+}
+</style>
