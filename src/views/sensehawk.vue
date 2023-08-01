@@ -9,14 +9,15 @@
                 <v-layout wrap class="align-start justify-space-between">
                     <v-flex xs10 sm9>
                         <sectionTitle :title="'Project'"></sectionTitle>
-                        <projectHeader :title="'Therm: GIS jobsite management'" :description="project_desc"></projectHeader>
+                        <projectHeader :title="'Therm'" :description="project_desc"></projectHeader>
                         <sectionContent>
                             <div>Therm viewer is the web interface that
                                 helps maintenance teams and managers to track, fix defects, claim warranty on solar PV
                                 modules to save costs and energy loss.
                                 <!-- <br> -->
-                                My job was to understand Therm Viewer, establish
-                                ground zero of existing usability, Identify focus areas, design a solution, and test it with
+                                I established
+                                ground zero of existing usability, identified focus areas, designed a solution, and tested
+                                it with
                                 users.
                             </div>
                         </sectionContent>
@@ -34,9 +35,8 @@
                             <v-flex xs12 sm5>
                                 <section-content :title="'Outcome'">
                                     <div>
-                                        I improved the usability and user engagement by redesigning and simplifying the
-                                        defect
-                                        management process.
+                                        I improved the usability and reduced drop-off rate by redesigning the interface to
+                                        reduce technical complexity
                                     </div>
                                 </section-content>
                             </v-flex>
@@ -407,7 +407,7 @@
                 </project-testimonials> -->
                 <project-testimonials :title="'Prajwal Bharadwaj'">
                     Sourya's passion for design and her attention to detail are truly inspiring. She is a true problem
-                    solver and a key asset to any team. 
+                    solver and a key asset to any team.
                     <!-- Her contributions at
                     Sensehawk have left a lasting impact, and I have no doubt that she will continue to make a
                     significant difference in the field of UX design wherever she goes. -->
@@ -453,7 +453,7 @@ export default {
         return (
 
             {
-                project_desc: 'A map based tool that simplifies defect management for supervisors of solar assets',
+                project_desc: 'Designed and developed a user-friendly ML powered app for solar asset construction managers',
             }
         )
 
