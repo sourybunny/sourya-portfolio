@@ -5,7 +5,7 @@
                 <p class="section-overview--title">{{ title }}</p>
             </v-flex>
             <v-flex xs12 sm6>
-                <p class="section-overview--description">
+                <p class="section-overview-body">
                 <slot></slot>
             </p>
             </v-flex>
@@ -33,7 +33,7 @@ export default {
         max-width: 85%;
     }
 
-    &--description {
+    &-body {
         font-size: 18px;
         line-height: 27px;
         font-weight: 300;
