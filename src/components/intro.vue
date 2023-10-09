@@ -5,30 +5,35 @@
       <v-layout wrap class="align-center justify-space-between py-6">
         <v-flex xs12 sm9 md8 lg7>
           <div class="">
-            <p
-              class="font-weight-medium  white--text "
-              :class="$vuetify.breakpoint.lgAndUp?'display-3': $vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
-            >
-            <span class="font-italic">
-                Hello!
-              </span>
-              <span>
-                I'm
-              </span>
+            <div class="font-weight-medium white--text text-h3" >
+                <span class="font-italic"> Hello! </span>
+                <span> I'm </span>
 
-              <span>Sourya,</span>
-            </p>
+                <span>Sourya,</span>
+              </div>
             <div class="my-8 slidee-up">
               <span
-                style="white-space:nowrap;line-height: 115%;"
-                class="gradient text-shine  font-weight-medium"
-                :class="$vuetify.breakpoint.lgAndUp?'display-3': $vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
+                style="white-space: nowrap; line-height: 115%"
+                class="gradient text-shine font-weight-medium"
+                :class="
+                  $vuetify.breakpoint.lgAndUp
+                    ? 'display-3'
+                    : $vuetify.breakpoint.mdAndUp
+                    ? 'display-2'
+                    : 'display-1'
+                "
                 >I design and < build />
               </span>
-              <div 
-                :class="$vuetify.breakpoint.lgAndUp?'display-3': $vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
-                style="opacity:0.6;line-height: 115%;"
-                class="white--text  font-weight-medium"
+              <div
+                :class="
+                  $vuetify.breakpoint.lgAndUp
+                    ? 'display-3'
+                    : $vuetify.breakpoint.mdAndUp
+                    ? 'display-2'
+                    : 'display-1'
+                "
+                style="opacity: 0.6; line-height: 115%"
+                class="white--text font-weight-medium"
               >
                 products that delight <br v-if="$vuetify.breakpoint.smAndUp" />
                 and inspire people.
@@ -50,17 +55,33 @@
               >
                 Indiana University Bloomington’s HCI program.
               </div> -->
-
+              
+              <div class="font-weight-light title white--text" style="opacity: 0.6">
+                Passionate about visual craft and AI/ML interaction design.
+              </div>
               <div
                 class="white--text font-weight-light"
                 :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
               >
-                <span class="font-weight-light"
+                <span style="opacity: 0.6">Currently </span> UX Designer
+                <a
+                  href="https://ushur.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >@Ushur - AI SaaS</a
+                >
+              </div>
+              <div
+                class="white--text font-weight-light"
+                :class="$vuetify.breakpoint.mdAndUp ? 'title' : 'body-1'"
+              >
+                <span
+                  class="font-weight-light"
                   :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
-                  style="opacity:0.6;"
-                  >MS HCI
-                </span>@Indiana University Bloomington.
-                <div class="font-weight-light"
+                  style="opacity: 0.6"
+                  >MS HCI </span
+                >@Indiana University Bloomington.
+                <!-- <div class="font-weight-light"
                   :class="$vuetify.breakpoint.mdAndUp ? '' : 'body-1'"
                   
                   ><span style="opacity:0.6;">Previously </span>
@@ -96,8 +117,8 @@
                     >@Streamanity</a
                   ></span
                 >.
+              </div> -->
               </div>
-            </div>
 
               <!-- <div
                 class="white--text"
@@ -119,9 +140,7 @@
                       v-bind="attrs"
                       v-on="on"
                     >
-                      <v-icon dark>
-                        mdi-linkedin
-                      </v-icon>
+                      <v-icon dark> mdi-linkedin </v-icon>
                     </v-btn>
                   </template>
                   <span>Linkedin</span>
@@ -139,9 +158,7 @@
                       v-bind="attrs"
                       v-on="on"
                     >
-                      <v-icon dark>
-                        mdi-mail
-                      </v-icon>
+                      <v-icon dark> mdi-mail </v-icon>
                     </v-btn>
                   </template>
                   <span>Email</span>
@@ -151,7 +168,7 @@
                     <v-btn
                       href="https://www.behance.net/sourya"
                       target="_blank"
-                      class="mx-2  white--text "
+                      class="mx-2 white--text"
                       fab
                       dark
                       small
@@ -177,9 +194,7 @@
                       v-bind="attrs"
                       v-on="on"
                     >
-                      <v-icon dark>
-                        mdi-instagram
-                      </v-icon>
+                      <v-icon dark> mdi-instagram </v-icon>
                     </v-btn>
                   </template>
                   <span>Instagram</span>
@@ -213,7 +228,7 @@
                   ></v-img>
                 </v-avatar>
                 <div class="pa-3">
-                  <div class="h5 font-weight-medium ">My Story</div>
+                  <div class="h5 font-weight-medium">My Story</div>
                   <div class="grey--text">Product Designer</div>
                 </div>
               </div>
