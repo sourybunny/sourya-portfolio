@@ -16,12 +16,12 @@
   
 <style lang="scss" scoped>
 .project-header {
-
 }
   .project-title {
     font-size: 40px;
     line-height: 60px;
     font-weight: 500;
+    margin-top: 1rem;
   }
   .project-description {
     font-size: 40px;

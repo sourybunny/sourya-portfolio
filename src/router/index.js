@@ -45,6 +45,13 @@ const routes = [
     component: () => import(/* webpackChunkName: "therm" */ '@/views/sensehawk.vue')
   },
   {
+    path: '/aisuggest',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "aisuggest" */ '@/views/ushur/aisuggest.vue')
+  },
+  {
     path: '/capstone',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

@@ -435,14 +435,14 @@
 </template>
 
 <script>
-import projectHeader from '../components/project/project-header.vue';
-import projectTestimonials from '../components/project/project-testimonials.vue';
-import sectionTitle from '../components/project/section-title.vue';
-import sectionOverview from '../components/project/section-overview.vue';
-import sectionContent from '../components/project/section-content.vue';
-import sectionHighlight from '../components/project/section-highlight.vue';
-import Contact from "../components/contact.vue";
-import Therm from "./Therm.vue";
+import projectHeader from '@/components/project/project-header.vue';
+import projectTestimonials from '@/components/project/project-testimonials.vue';
+import sectionTitle from '@/components/project/section-title.vue';
+import sectionOverview from '@/components/project/section-overview.vue';
+import sectionContent from '@/components/project/section-content.vue';
+import sectionHighlight from '@/components/project/section-highlight.vue';
+import Contact from "@/components/contact.vue";
+import Therm from '@/views/Therm.vue';
 
 
 export default {

@@ -3,7 +3,7 @@
     <section class="layout-container bottom-line">
       <div class="layout-container__inner " style="padding:0;">
         <div  class="text-h4 white--text font-weight-bold" style="padding:4rem;" >
-          Explore my selected
+          Explore my best
           <span
             class="font-weight-bold tangram_yellow--text selectedwork-gradient"
             >work</span

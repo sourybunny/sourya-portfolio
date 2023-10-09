@@ -19,8 +19,8 @@ props: {
 </script>
 <style lang="scss" scoped>
 .section-highlight {
-    padding: 5rem;
-    width: 75%;
+    padding: 4rem;
+    width: 90%;
     margin: auto;
     &--title {
         font-size: 18px;
