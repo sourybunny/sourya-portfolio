@@ -32,8 +32,8 @@
                 <section-content :title="'Opportunity'">
                   <div>
                     Citizen developers (users) struggle with language as they
-                    build customer facing forms using Ushur drag and drop
-                    modules such as SMS, email and form builder modules.
+                    build customer facing text using Ushur drag and drop modules
+                    such as SMS, email and form modules.
                   </div>
                 </section-content>
               </v-flex>
@@ -45,8 +45,24 @@
                   </div>
                 </section-content>
               </v-flex>
+              <v-flex xs12>
+                <sectionTitle :title="'Scope and Constraints'"></sectionTitle>
+                <sectionContent>
+                  <div>
+                    In the exciting landscape of enterprise SaaS companies,
+                    there's a growing trend of integrating AI into products to
+                    enhance user experiences. However, a significant constraint
+                    for us is that the API is still in its early stages of
+                    development. While we're open to creative ideas during
+                    ideation, the initial MVP will have limited capabilities.
+                    Having a set launch date for the feature demo meant meant I
+                    needed to get the experience right in the 1 week.
+                  </div>
+                </sectionContent>
+              </v-flex>
             </v-layout>
           </v-flex>
+
           <v-flex xs3>
             <sectionTitle :title="'Info'"></sectionTitle>
             <sectionContent :title="'Role'">
@@ -73,19 +89,30 @@
           </v-flex>
         </v-layout>
       </section>
-    </article>
-    <!-- <article class="white--text">
-    </article> -->
-    <article class="white">
-      <section class="inner-section">
+      <!-- </article> -->
+      <!-- <article class="white"> -->
+        <section class="inner-section">
+        <section-highlight :is_underline="true" :is_quote="true">
+          "The combination of fixed deadline and the absence of sufficient user
+          research created an intense environment with time constraints and
+          assumptions."
+          <template v-slot:description>
+            <!-- <sectionContent style="width: 65%; margin: 2rem auto 0rem">
+              Adhering to a set launch date required us to prioritize engineering
+              over design. Key milestones were determined by engineering estimates,
+              and the time allocated for design was essentially 5 days. 
+            </sectionContent> -->
+          </template>
+        </section-highlight>
         <sectionTitle :title="'Empathizing with users'"></sectionTitle>
         <section-overview :title="'Who is it for?'">
           <div>
-            The users are citizen developers. A day in life of the user involves
-            building app (step by step workflow) by drag and drop of modules
-            like email, SMS and form elements for different use cases like
-            insurance claim submission etc. People need help in 2 areas:
-            Consistency & Reducing effort to write.
+            Based on previous research, I tried to determine how this feature
+            can bring valuable benefits to our users, who are citizen
+            developers. A typical day in the life of a user involves creating
+            apps through a step-by-step workflow, achieved by dragging and
+            dropping modules such as email, SMS, and form elements. These apps
+            serve various purposes, such as insurance claim submission.
           </div>
         </section-overview>
         <v-img
@@ -101,21 +128,33 @@
         <sectionTitle :title="'Identifying design opportunity'"></sectionTitle>
         <section-overview :title="'Value for user'">
           <div>
-            The main goal of this project was to figure out what our users need
-            and how we can help them. The more time it takes for these tasks,
-            the more an AI assistant makes sense to have. But they still want to
-            be in charge; they just want the assistant to make their work easier
-            and faster.
+            Their role primarily revolves around applying logic to construct
+            apps and crafting customer-facing text. Users commonly seek
+            assistance in two key areas: <span class="font-weight-medium"><em>ensuring consistency and reducing the
+            effort </em></span> in the writing process. 
           </div>
         </section-overview>
+        <section-highlight :is_underline="true" :is_quote="true">
+          "The more time it takes for
+            these tasks, the more an AI assistant makes sense to have. But they
+            still want to be in charge; they just want the assistant to make
+            their work easier and faster."
+          <template v-slot:description>
+            <!-- <sectionContent style="width: 65%; margin: 2rem auto 0rem">
+              Adhering to a set launch date required us to prioritize engineering
+              over design. Key milestones were determined by engineering estimates,
+              and the time allocated for design was essentially 5 days. 
+            </sectionContent> -->
+          </template>
+        </section-highlight>
         <div class="greybg pa-6">
           <section-highlight class="py-2">
             What opportunities exist for us?
             <p class="text-center body-1 mt-2">
-              There are 4 primary use cases we believe writing assistance is well
-              suited for:
+              There are 4 primary use cases we believe writing assistance is
+              well suited for:
             </p>
-        </section-highlight>
+          </section-highlight>
           <v-layout wrap class="my-3 py-3 mx-4 justify-space-between">
             <v-flex xs3 class="mx-auto text-center">
               <img
@@ -124,37 +163,45 @@
               />
               <div>
                 <div class="font-weight-medium">Changing tone</div>
-                <span class="font-italic font-weight-light">“Make it sound formal”</span>
+                <span class="font-italic font-weight-light"
+                  >“Make it sound formal”</span
+                >
               </div>
             </v-flex>
             <v-flex xs3 class="mx-auto text-center">
               <img
-              width="50%"
+                width="50%"
                 :src="require(`@/assets/media/aisuggest/verbosity.png`)"
               />
               <div>
                 <div class="font-weight-medium">Changing Verbosity</div>
-                <span class="font-italic font-weight-light">“Make it short”</span>
+                <span class="font-italic font-weight-light"
+                  >“Make it short”</span
+                >
               </div>
             </v-flex>
             <v-flex xs3 class="mx-auto text-center">
               <img
-              width="50%"
+                width="50%"
                 :src="require(`@/assets/media/aisuggest/prompt.png`)"
               />
               <div>
                 <div class="font-weight-medium">Ask to write</div>
-                <span class="font-italic font-weight-light">“Write a welcome message to customer”</span>
+                <span class="font-italic font-weight-light"
+                  >“Write a welcome message to customer”</span
+                >
               </div>
             </v-flex>
             <v-flex xs3 class="mx-auto text-center">
               <img
-              width="50%"
+                width="50%"
                 :src="require(`@/assets/media/aisuggest/continue.png`)"
               />
               <div>
                 <div class="font-weight-medium">Complete sentence</div>
-                <span class="font-italic font-weight-light">“Continue writing”</span>
+                <span class="font-italic font-weight-light"
+                  >“Continue writing”</span
+                >
               </div>
             </v-flex>
           </v-layout>
@@ -175,52 +222,66 @@
             <div>
               I did an initial market research and analyzed 10+ apps to
               understand what patterns are followed by AI writing assistants.
-              This helped in brainstorming ways we could use ai assistant in the
-              app.
+              This helped in brainstorming ways we could use ai assistant and
+              drive our planning phase. These are the key insights that defined
+              the launch version of the product:
             </div>
           </section-overview>
-          <Accordion :title="'Show value upfront'">
-            <template v-slot:main>
-              <div>
-                Give best recommendation upfront and later ask for custom input
-              </div>
-            </template>
-          </Accordion>
-          <Accordion :title="'Default style'">
-            <template v-slot:main>
-              <div>
-                Have a default style and allow the user to set or change later.
-              </div>
-            </template>
-          </Accordion>
-          <Accordion :title="'Customize'">
-            <template v-slot:main>
-              <div>Optional to provide custom instructions</div>
-            </template>
-          </Accordion>
-          <Accordion :title="'Advanced options'">
-            <template v-slot:main>
-              <div>Custom word count or length</div>
-            </template>
-          </Accordion>
-          <Accordion :title="'Ask context'">
-            <template v-slot:main>
-              <div>Examples can be insurance, marketing etc..</div>
-            </template>
-          </Accordion>
-          <Accordion :title="'Quick Categories'">
-            <template v-slot:main>
-              <div>
-                Shorter, easy, simple, longer, formal , professional, empathetic
-                (good for healthcare), humorous, friendly, casual, polite
-              </div>
-            </template>
-          </Accordion>
-          <Accordion :title="'Tell what to expect'">
-            <template v-slot:main>
-              <div>Nudges to inform what value to expect.</div>
-            </template>
-          </Accordion>
+          <v-layout row wrap align-start justify-space-between>
+            <v-flex xs12 sm4>
+              <section-card class="ma-2" :title="'Show value upfront'">
+                <div>
+                  Give best recommendation upfront and customize later.
+                </div>
+              </section-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <section-card class="ma-2" :title="'Default tone'">
+                <div>
+                  Have a default tone and allow the user to set or change
+                  later.
+                </div>
+              </section-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <section-card class="ma-2" :title="'Prompt Input'">
+                <template v-slot>
+                  <div>Optional to provide custom prompt based instructions</div>
+                </template>
+              </section-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <section-card class="ma-2" :title="'Advanced options'">
+                <template v-slot>
+                  <div>Customize word count or length of sentences.</div>
+                </template>
+              </section-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <section-card class="ma-2" :title="'Ask/get context'">
+                <template v-slot>
+                  <div>Examples can be insurance, marketing etc..</div>
+                </template>
+              </section-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <section-card class="ma-2" :title="'Quick Categories'">
+                <template v-slot>
+                  <div>
+                    Provide a quick way to change tone or customize suggestions.
+                  </div>
+                </template>
+              </section-card>
+            </v-flex>
+
+            <!-- <v-flex xs12 sm4>
+              <section-card :title="'Tell what to expect'">
+                <template v-slot>
+                  <div>Nudges to inform what value to expect.</div>
+                </template>
+              </section-card>
+            </v-flex> -->
+          </v-layout>
         </section>
         <!-- </article> -->
 
@@ -231,7 +292,7 @@
             :src="require(`@/assets/media/aisuggest/arrow2.png`)"
           />
         </div>
-        <section class="inner-section">
+        <section class="inner-section mt-12">
           <sectionTitle
             :title="'Brainstorming and Affinity mapping'"
           ></sectionTitle>
@@ -313,9 +374,18 @@
         </section>
       </div>
       <div v-else>
-        <v-btn class="mx-auto is-center" @click.stop="show_process=!show_process">Show Process</v-btn>
+        <v-btn
+          class="mx-auto is-center"
+          @click.stop="show_process = !show_process"
+          >Show Process</v-btn
+        >
       </div>
-      <v-btn v-if="show_process" class="mx-auto is-center" @click.stop="show_process=!show_process">Hide Process</v-btn>
+      <v-btn
+        v-if="show_process"
+        class="mx-auto is-center"
+        @click.stop="show_process = !show_process"
+        >Hide Process</v-btn
+      >
     </article>
 
     <div class="is-relative">
@@ -337,25 +407,54 @@
             the job done.
           </div>
         </section-overview>
-        <!-- <v-layout wrap class="my-6">
-          <v-flex xs12 sm6>
-            <section-content
-              is_number="true"
-              :number="'01'"
-              :title="'Light & Simple'"
-            >
-              The citizen developers are not tech savvy which meant the feature
-              should obscure any technicality and make it friendly and easy to
-              use.
-            </section-content>
-          </v-flex>
-          <v-flex xs12 sm6>
-            <section-content is_number="true" :number="'02'" :title="'Control'">
-              Losing map context, time taking ticket creation because of too
-              many options
-            </section-content>
-          </v-flex>
-        </v-layout> -->
+        <v-layout row wrap align-start justify-space-between mb-12>
+            <v-flex xs12 sm6>
+              <section-card class="ma-2" :title="'Less is more'" :has_icon="true" :icon="`tone`" :is_light="true">
+                <div>
+                  Our value should always be faster and more lightweight.
+                </div>
+              </section-card>
+            </v-flex>
+            <v-flex xs12 sm6>
+              <section-card class="ma-2" :title="'Tailor to context'" :has_icon="true" :icon="`verbosity`" :is_light="true">
+                <div>
+                  Understand where people are, what they're doing, and their level of trust in us.
+                </div>
+              </section-card>
+            </v-flex>
+          </v-layout>
+        <sectionTitle :title="'Challenging Assumptions'"></sectionTitle>
+        <section-overview :title="'Concepts & Interaction models'">
+          <div>
+            One of the most important crossroads we faced in this process was
+            determining the ideal interaction model for how we presented
+            in-context suggestions. We specifically had 2 key questions we
+            wanted to answer in testing:
+            <li>Is the design unobtrusive, yet noticeable?</li>
+            <li>Does the user understand why they were getting suggestions?</li>
+          </div>
+        </section-overview>
+        <div class="text-center grey--text font-weight-medium">3 design options for presenting suggestions to the user</div>
+        <v-layout wrap class="my-3 py-3 mx-4 justify-space-between">
+            <v-flex xs3 class="mx-auto text-center">
+              <img
+                width="100%"
+                :src="require(`@/assets/media/aisuggest/quick.png`)"
+              />
+            </v-flex>
+            <v-flex xs3 class="mx-auto text-center">
+              <img
+                width="100%"
+                :src="require(`@/assets/media/aisuggest/under.png`)"
+              />
+            </v-flex>
+            <v-flex xs5 class="mx-auto text-center">
+              <img
+                width="100%"
+                :src="require(`@/assets/media/aisuggest/fly.png`)"
+              />
+            </v-flex>
+          </v-layout>
       </section>
 
       <section class="inner-section">
@@ -512,6 +611,7 @@ import sectionHighlight from "@/components/project/section-highlight.vue";
 import Contact from "@/components/contact.vue";
 import Accordion from "@/components/project/accordion.vue";
 import Callout from "@/components/project/callout.vue";
+import SectionCard from "@/components/project/section-card.vue";
 
 export default {
   components: {
@@ -524,11 +624,12 @@ export default {
     Contact,
     Accordion,
     Callout,
+    SectionCard,
   },
   data: () => {
     return {
       project_desc: "An ai assistant to help users build workflows faster.",
-      show_process: false
+      show_process: false,
     };
   },
 };

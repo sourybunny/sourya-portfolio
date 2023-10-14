@@ -23,7 +23,6 @@ export default {
   
 <style lang="scss" scoped>
 .section-content{
-
 }
 .content-title {
         font-size: 18px;
