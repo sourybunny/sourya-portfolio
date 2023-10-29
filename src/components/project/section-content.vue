@@ -1,5 +1,5 @@
 <template>
-    <div class="section-content ">
+    <div class="section-content">
         <span class="content-number" v-if="is_number">{{ number }}</span>
         <div class="content-title">{{ title }}</div>
         <p class="content-body">
@@ -23,6 +23,7 @@ export default {
   
 <style lang="scss" scoped>
 .section-content{
+    margin-top: 2rem;
 }
 .content-title {
         font-size: 18px;

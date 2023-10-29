@@ -1,6 +1,6 @@
 <template>
-    <div class="section-overview my-6">
-        <v-layout>
+    <div class="section-overview">
+        <v-layout wrap>
             <v-flex xs12 sm6>
                 <p class="section-overview--title">{{ title }}</p>
             </v-flex>
@@ -25,12 +25,14 @@ export default {
 
 <style lang="scss" scoped>
 .section-overview {
-
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     &--title {
         font-size: 40px;
-        line-height: 54px;
-        font-weight: 300;
+        line-height: 52px;
+        font-weight: 200;
         max-width: 85%;
+        font-family: Georgia, "Times New Roman", Times, serif;
     }
 
     &-body {
@@ -39,5 +41,14 @@ export default {
         font-weight: 300;
         // opacity:80%;
     }
+}
+@media screen and (max-width: 475px) and (orientation: portrait) {
+  .section-overview {
+    &--title {
+    font-size: 32px;
+    line-height: 42px;
+    }
+    
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="my-2 section-title">
+  <div class="section-title">
     <p class="">{{ title }}</p>
     <hr  v-if="is_underline">
   </div>
@@ -21,6 +21,7 @@ export default {
   font-size: 16px;
   line-height: 21px;
   font-weight: 600;
+  margin-top: 3rem;
   // margin-bottom: .5rem;
 }
 </style>

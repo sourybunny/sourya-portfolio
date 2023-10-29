@@ -11,14 +11,14 @@
     <article class="white">
       <section class="inner-section" style="width: 70%; margin-left: 17.5%">
         <v-layout wrap class="align-start justify-space-between">
-          <v-flex xs8>
+          <v-flex xs12 sm8>
             <sectionTitle :title="'Ushur /'"></sectionTitle>
             <projectHeader
               :title="'AI Smart Suggest'"
               :description="project_desc"
             ></projectHeader>
             <sectionContent>
-              <div style="margin-bottom: 2rem; width: 85%">
+              <div>
                 Ushur helps citizen developers (users) create workflows using
                 no-code drag and drop modules and deploy them to customers in
                 insurance, healthcare and financial companies.
@@ -31,17 +31,17 @@
               <v-flex xs12 sm6>
                 <section-content :title="'Opportunity'">
                   <div>
-                    Citizen developers (users) struggle with language as they
-                    build customer facing text using Ushur drag and drop modules
-                    such as SMS, email and form modules.
+                    How can we use generative AI to make it easier for users who
+                    struggle with language while building apps using the no-code
+                    platform.
                   </div>
                 </section-content>
               </v-flex>
               <v-flex xs12 sm5>
                 <section-content :title="'Outcome'">
                   <div>
-                    I designed a gen AI writing assistant that helps developers
-                    build workflows faster by eliminating the language barrier.
+                    I designed a smart writing assistant that helps developers
+                    (users) build workflows faster.
                   </div>
                 </section-content>
               </v-flex>
@@ -49,21 +49,22 @@
                 <sectionTitle :title="'Scope and Constraints'"></sectionTitle>
                 <sectionContent>
                   <div>
-                    In the exciting landscape of enterprise SaaS companies,
-                    there's a growing trend of integrating AI into products to
-                    enhance user experiences. However, a significant constraint
-                    for us is that the API is still in its early stages of
-                    development. While we're open to creative ideas during
-                    ideation, the initial MVP will have limited capabilities.
-                    Having a set launch date for the feature demo meant meant I
-                    needed to get the experience right in the 1 week.
+                    In the landscape of enterprise SaaS companies, there's a
+                    growing trend of integrating AI into products to enhance
+                    user experiences. <span class="font-weight-medium">I'm proud of this project because we were
+                    able to explore a new field and design within a week.</span>
+                      A significant constraint for us is that the API
+                      is still in its early stages of development. While we're
+                      open to creative ideas during ideation, the initial MVP
+                      will have limited capabilities. Having a set launch date
+                      for the feature demo made it challenging to keep up with the tight deadline.
                   </div>
                 </sectionContent>
               </v-flex>
             </v-layout>
           </v-flex>
 
-          <v-flex xs3>
+          <v-flex xs12 sm3>
             <sectionTitle :title="'Info'"></sectionTitle>
             <sectionContent :title="'Role'">
               <div>
@@ -91,11 +92,11 @@
       </section>
       <!-- </article> -->
       <!-- <article class="white"> -->
-        <section class="inner-section">
+      <section class="inner-section">
         <section-highlight :is_underline="true" :is_quote="true">
-          "The combination of fixed deadline and the absence of sufficient user
+          “  The combination of fixed deadline and the absence of sufficient user
           research created an intense environment with time constraints and
-          assumptions."
+          assumptions. ”
           <template v-slot:description>
             <!-- <sectionContent style="width: 65%; margin: 2rem auto 0rem">
               Adhering to a set launch date required us to prioritize engineering
@@ -107,14 +108,34 @@
         <sectionTitle :title="'Empathizing with users'"></sectionTitle>
         <section-overview :title="'Who is it for?'">
           <div>
-            Based on previous research, I tried to determine how this feature
-            can bring valuable benefits to our users, who are citizen
-            developers. A typical day in the life of a user involves creating
-            apps through a step-by-step workflow, achieved by dragging and
-            dropping modules such as email, SMS, and form elements. These apps
-            serve various purposes, such as insurance claim submission.
+            Based on past user research, I tried to determine how this feature
+            can bring valuable benefits to our users, who are
+            <span class="font-weight-medium font-italic"
+              >citizen developers.
+            </span>
           </div>
         </section-overview>
+        <section-highlight>
+          A rapid shift towards AI has changed people's expectation of how they
+          work.
+          <template v-slot:description>
+            <sectionContent style="width: 75%; margin: 2rem auto 0rem">
+              Users waste so much time in perfecting their writing style as they
+              write customer facing text. While there are many AI writing tools,
+              there isn't an enterprise tailored contextual writing assistant
+              for Ushur platform.
+            </sectionContent>
+          </template>
+        </section-highlight>
+        <section-content>
+          <div class="text-center">
+            <em>
+              A citizen developer is an employee with no/low coding knowledge
+              who creates software applications. These apps serve various
+              purposes, ex: insurance claim submission.</em
+            >
+          </div>
+        </section-content>
         <v-img
           class="mx-auto mt-4"
           :src="require(`@/assets/media/aisuggest/user.png`)"
@@ -129,16 +150,18 @@
         <section-overview :title="'Value for user'">
           <div>
             Their role primarily revolves around applying logic to construct
-            apps and crafting customer-facing text. Users commonly seek
-            assistance in two key areas: <span class="font-weight-medium"><em>ensuring consistency and reducing the
-            effort </em></span> in the writing process. 
+            apps and crafting customer-facing text. Users want assistance in two
+            key areas:
+            <span class="font-weight-medium"
+              ><em>ensuring consistency and reducing the effort </em></span
+            >
+            in the writing process.
           </div>
         </section-overview>
         <section-highlight :is_underline="true" :is_quote="true">
-          "The more time it takes for
-            these tasks, the more an AI assistant makes sense to have. But they
-            still want to be in charge; they just want the assistant to make
-            their work easier and faster."
+          "The more time it takes for these tasks, the more an AI assistant
+          makes sense to have. But they still want to be in charge; they just
+          want the assistant to make their work easier and faster."
           <template v-slot:description>
             <!-- <sectionContent style="width: 65%; margin: 2rem auto 0rem">
               Adhering to a set launch date required us to prioritize engineering
@@ -156,7 +179,7 @@
             </p>
           </section-highlight>
           <v-layout wrap class="my-3 py-3 mx-4 justify-space-between">
-            <v-flex xs3 class="mx-auto text-center">
+            <v-flex xs6 sm3 class="mx-auto text-center">
               <img
                 width="50%"
                 :src="require(`@/assets/media/aisuggest/tone.png`)"
@@ -168,7 +191,7 @@
                 >
               </div>
             </v-flex>
-            <v-flex xs3 class="mx-auto text-center">
+            <v-flex xs6 sm3 class="mx-auto text-center">
               <img
                 width="50%"
                 :src="require(`@/assets/media/aisuggest/verbosity.png`)"
@@ -180,7 +203,7 @@
                 >
               </div>
             </v-flex>
-            <v-flex xs3 class="mx-auto text-center">
+            <v-flex xs6 sm3 class="mx-auto text-center">
               <img
                 width="50%"
                 :src="require(`@/assets/media/aisuggest/prompt.png`)"
@@ -192,7 +215,7 @@
                 >
               </div>
             </v-flex>
-            <v-flex xs3 class="mx-auto text-center">
+            <v-flex xs6 sm3 class="mx-auto text-center">
               <img
                 width="50%"
                 :src="require(`@/assets/media/aisuggest/continue.png`)"
@@ -222,31 +245,34 @@
             <div>
               I did an initial market research and analyzed 10+ apps to
               understand what patterns are followed by AI writing assistants.
-              This helped in brainstorming ways we could use ai assistant and
-              drive our planning phase. These are the key insights that defined
-              the launch version of the product:
+              This
+              <span class="font-weight-medium"
+                >helped in brainstorming how we could use ai assistant and drive
+                our planning phase.</span
+              >
+              These are the key insights that defined the launch version of the
+              product:
             </div>
           </section-overview>
           <v-layout row wrap align-start justify-space-between>
             <v-flex xs12 sm4>
               <section-card class="ma-2" :title="'Show value upfront'">
-                <div>
-                  Give best recommendation upfront and customize later.
-                </div>
+                <div>Give best recommendation upfront and customize later.</div>
               </section-card>
             </v-flex>
             <v-flex xs12 sm4>
               <section-card class="ma-2" :title="'Default tone'">
                 <div>
-                  Have a default tone and allow the user to set or change
-                  later.
+                  Have a default tone and allow the user to set or change later.
                 </div>
               </section-card>
             </v-flex>
             <v-flex xs12 sm4>
               <section-card class="ma-2" :title="'Prompt Input'">
                 <template v-slot>
-                  <div>Optional to provide custom prompt based instructions</div>
+                  <div>
+                    Optional to provide custom prompt based instructions
+                  </div>
                 </template>
               </section-card>
             </v-flex>
@@ -299,9 +325,12 @@
           <section-overview :title="'Brainstorming ideas'">
             <div>
               I dived into a brainstorming session with my co-designer who
-              helped me familiarize with the product and various text fields of
-              the app. Together we grouped all the ideas into text manipulation
-              and interactions.
+              helped me familiarize with the product and high impact areas of
+              the app. Together we
+              <span class="font-weight-medium"
+                >grouped all the ideas and prioritized those with high value add
+                and feasible for demo launch phase.</span
+              >
             </div>
           </section-overview>
         </section>
@@ -312,9 +341,8 @@
                 width="100%"
                 :src="require(`@/assets/media/aisuggest/1.png`)"
               />
-              <section-content :title="'Final design'">
-                I used an outline button to indicate selected state which is
-                visually light
+              <section-content :title="'#1. Manipulation'">
+                Manipulating tone and sentence structure
               </section-content>
             </v-flex>
             <v-flex xs12 sm4>
@@ -322,9 +350,8 @@
                 width="100%"
                 :src="require(`@/assets/media/aisuggest/3.png`)"
               />
-              <section-content :title="'Final design'">
-                I used an outline button to indicate selected state which is
-                visually light
+              <section-content :title="'#2. Enterprise defaults'">
+                Brand and Persona based configuration
               </section-content>
             </v-flex>
             <v-flex xs12 sm4>
@@ -332,9 +359,8 @@
                 width="100%"
                 :src="require(`@/assets/media/aisuggest/2.png`)"
               />
-              <section-content :title="'Final design'">
-                I used an outline button to indicate selected state which is
-                visually light
+              <section-content :title="'#3. Interaction'">
+                Control and ease of use
               </section-content>
             </v-flex>
           </v-layout>
@@ -351,10 +377,13 @@
           <section-overview :title="'The where, what and how?'">
             <div>
               While there was no limitation to identify use cases and explore
-              divergent ideas, the initial scope from the product managers was
-              set to prioritize delivering a poc that can be made functional by
-              the engineering team in 2 weeks, which gave us time of a couple
-              days to design.
+              divergent ideas, the
+              <span class="font-weight-medium"
+                >initial scope from the product managers was set to prioritize
+                delivering a poc</span
+              >
+              that can be made functional by the engineering team in 2 weeks,
+              which gave us time of a couple days to design.
             </div>
           </section-overview>
         </section>
@@ -375,14 +404,16 @@
       </div>
       <div v-else>
         <v-btn
-          class="mx-auto is-center"
+          dark
+          class="mx-auto is-center text-lowercase"
           @click.stop="show_process = !show_process"
-          >Show Process</v-btn
+          >👀 I want to see Process ❤️</v-btn
         >
       </div>
       <v-btn
+        dark
         v-if="show_process"
-        class="mx-auto is-center"
+        class="mx-auto is-center text-lowercase"
         @click.stop="show_process = !show_process"
         >Hide Process</v-btn
       >
@@ -394,7 +425,7 @@
         :src="require(`@/assets/media/aisuggest/arrow4.png`)"
       />
     </div>
-    <article class="paleorange">
+    <article class="white">
       <section class="inner-section">
         <sectionTitle :title="'Key considerations'"></sectionTitle>
         <section-overview :title="'Design Principles'">
@@ -402,27 +433,45 @@
             I set some design principles to guide the concept design. The
             citizen developers are not tech savvy which meant the feature should
             obscure any technicality and make it
-            <strong>quick, friendly and easy to use.</strong>
+            <span class="font-weight-medium"
+              >quick, friendly and easy to use.</span
+            >
             Our goal was to have the user use the feature effortlessly and get
             the job done.
           </div>
         </section-overview>
         <v-layout row wrap align-start justify-space-between mb-12>
-            <v-flex xs12 sm6>
-              <section-card class="ma-2" :title="'Less is more'" :has_icon="true" :icon="`tone`" :is_light="true">
-                <div>
-                  Our value should always be faster and more lightweight.
-                </div>
-              </section-card>
-            </v-flex>
-            <v-flex xs12 sm6>
-              <section-card class="ma-2" :title="'Tailor to context'" :has_icon="true" :icon="`verbosity`" :is_light="true">
-                <div>
-                  Understand where people are, what they're doing, and their level of trust in us.
-                </div>
-              </section-card>
-            </v-flex>
-          </v-layout>
+          <v-flex xs12 sm6>
+            <section-card
+              class="ma-2"
+              :title="'Less is more'"
+              :has_icon="true"
+              :icon="`lessismore`"
+              :is_light="true"
+            >
+              <div>Our value should always be faster and more lightweight.</div>
+            </section-card>
+          </v-flex>
+          <v-flex xs12 sm6>
+            <section-card
+              class="ma-2"
+              :title="'Tailor to context'"
+              :has_icon="true"
+              :icon="`tailor`"
+              :is_light="true"
+            >
+              <div>
+                Understand where people are, what they're doing, and their level
+                of trust in us.
+              </div>
+            </section-card>
+          </v-flex>
+        </v-layout>
+      </section>
+
+      </article>
+      <article class="greybg">
+        <section class="inner-section">
         <sectionTitle :title="'Challenging Assumptions'"></sectionTitle>
         <section-overview :title="'Concepts & Interaction models'">
           <div>
@@ -434,34 +483,36 @@
             <li>Does the user understand why they were getting suggestions?</li>
           </div>
         </section-overview>
-        <div class="text-center grey--text font-weight-medium">3 design options for presenting suggestions to the user</div>
+        <div class="text-center grey--text font-weight-medium">
+          3 design options for presenting suggestions to the user
+        </div>
         <v-layout wrap class="my-3 py-3 mx-4 justify-space-between">
-            <v-flex xs3 class="mx-auto text-center">
-              <img
-                width="100%"
-                :src="require(`@/assets/media/aisuggest/quick.png`)"
-              />
-            </v-flex>
-            <v-flex xs3 class="mx-auto text-center">
-              <img
-                width="100%"
-                :src="require(`@/assets/media/aisuggest/under.png`)"
-              />
-            </v-flex>
-            <v-flex xs5 class="mx-auto text-center">
-              <img
-                width="100%"
-                :src="require(`@/assets/media/aisuggest/fly.png`)"
-              />
-            </v-flex>
-          </v-layout>
+          <v-flex xs3 class="mx-auto text-center">
+            <img
+              width="100%"
+              :src="require(`@/assets/media/aisuggest/quick.png`)"
+            />
+          </v-flex>
+          <v-flex xs3 class="mx-auto text-center">
+            <img
+              width="100%"
+              :src="require(`@/assets/media/aisuggest/under.png`)"
+            />
+          </v-flex>
+          <v-flex xs5 class="mx-auto text-center">
+            <img
+              width="100%"
+              :src="require(`@/assets/media/aisuggest/fly.png`)"
+            />
+          </v-flex>
+        </v-layout>
       </section>
-
       <section class="inner-section">
         <sectionTitle :title="'Concept #1'"></sectionTitle>
         <section-overview :title="'Inline suggestion on the fly.'">
           <div>
-            For the key groups, we ideated solutions taking a divergent approach
+            Quick actions to prompt user to improve their text. Actions are dynamically chosen based on the context. Ex; If it's lengthy, an action could be to make it short.
+            Original text is replaced automatically as the user chooses an action.
           </div>
         </section-overview>
       </section>
@@ -472,14 +523,19 @@
             While this is a quick and easy way for the user to improve their
             text with least effort, it’s risky if the user’s text is
             automatically replaced by ai suggested text that doesn’t meet the
-            user’s needs.
+            user’s expectation which diminishes trust.
+          </div>
+        </callout>
+        <callout class=" mx-auto">
+          <div>
+            Technical constraint: After reviewing with PMs, we realized current capacity of API. It's expensive for the API to be contextually present and detect if there's enough content and context to suggest improvements.
           </div>
         </callout>
       </section>
       <section class="inner-section mt-10">
         <sectionTitle :title="'Concept #2'"></sectionTitle>
         <section-overview :title="'Multi-suggest dropdown'">
-          <div>Modify recommended suggestion</div>
+          <div>Multiple suggestions that the user can choose from giving more control to user. A prompt based customization for advanced text enhancement while keeping the quick actions for least effort.</div>
         </section-overview>
       </section>
       <v-img
@@ -498,8 +554,8 @@
       </section>
       <section class="inner-section mt-10">
         <sectionTitle :title="'Concept #3'"></sectionTitle>
-        <section-overview :title="'Single suggestion as flyout panel'">
-          <div>Modify recommended suggestion</div>
+        <section-overview :title="'Suggestions in a flyout panel'">
+          <div>A flyout panel to show suggestions while having a history of quick actions applied by user. </div>
         </section-overview>
       </section>
       <section>
@@ -530,19 +586,21 @@
       />
     </div>
     <article class="white">
-      <section class="inner-section">
-        <sectionTitle :title="'Technical constraints'"></sectionTitle>
-        <section-overview :title="'Challenges'">
-          <div>
-            After presenting the concept with product managers, although we
-            collectively chose concept #3 as the right direction to go forward,
-            the API was still at an early stage and had a limitation of being
-            able to generate only 3 recommendations at a time based off of
-            original text. This led us to choose a different design direction
-            and scoping the concept #3 one to future.
-          </div>
-        </section-overview>
-      </section>
+    <section class="inner-section">
+      <sectionTitle :title="'Technical constraints'"></sectionTitle>
+      <section-overview :title="'Challenges'">
+        <div>
+          After presenting the concept with product managers, although we
+          collectively chose concept #3 as the right direction to go forward,
+          the API was still at an early stage and had a limitation of being
+          able to generate only 3 recommendations at a time based off of
+          original text. This led us to choose a different design direction
+          and scoping the concept #3 one to future.
+        </div>
+      </section-overview>
+    </section>
+    </article>
+    <article >
       <section class="inner-section">
         <sectionTitle :title="'Design'"></sectionTitle>
         <section-overview :title="'Design Proposal'">
@@ -569,7 +627,7 @@
         </section-overview>
         <v-layout row wrap class="my-6">
           <v-flex xs12 sm6>
-            <section-content
+            <section-content class="mr-12"
               is_number="true"
               :number="'01'"
               :title="'Working under constraints'"

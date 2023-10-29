@@ -39,18 +39,18 @@ export default {
 
 }
 .content-title {
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 27px;
   font-weight: 500;
   margin-bottom: 0.5rem;
   opacity: 0.9;
 }
 
 .content-body {
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 15px;
+  line-height: 22px;
   font-weight: 300;
-  opacity: 0.5;
+  opacity: 0.7;
   // color:#545454;
 }
 </style>

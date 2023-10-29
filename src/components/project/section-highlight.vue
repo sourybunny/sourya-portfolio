@@ -2,6 +2,7 @@
   <div class="section-highlight d-flex flex-column align-center justify-center">
     <div v-if="!is_quote" class="section-highlight--content text-center">
       <slot></slot>
+      <slot name="description"></slot>
     </div>
     <div v-else class="text-center">
       <!-- <hr v-if="is_underline" /> -->
@@ -27,7 +28,7 @@ export default {
 .section-highlight {
   // padding: 4rem;
   // width: 80%;
-  margin: 2rem auto;
+  margin: 4rem auto;
   hr {
     width: 6rem;
     margin: 1rem auto;
@@ -47,6 +48,20 @@ export default {
     color: #F4511E;
     // width: 65%;
     background: #fafafa;
+  }
+}
+
+@media screen and (max-width: 475px) and (orientation: portrait) {
+  .section-highlight {
+    &--content {
+    font-size: 32px;
+    line-height: 40px;
+    }
+    &--quote {
+    font-size: 18px;
+    line-height: 27px;
+    }
+    
   }
 }
 </style>
