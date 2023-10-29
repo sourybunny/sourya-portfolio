@@ -708,12 +708,5 @@ export default {
   justify-content: end;
 }
 
-.inner-section {
-  width: 65%;
-  margin: 0 auto 1rem;
-}
 
-article {
-  padding: 4rem 0;
-}
 </style>

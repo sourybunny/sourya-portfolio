@@ -1,11 +1,17 @@
 <template>
-  <v-app class="app-container" :class=" $route.path !== '/plan' || $route.path !== '/streamanity' ? 'app-width' : ''">
+  <v-app
+    class="app-container"
+    :class="
+      $route.path !== '/plan' || $route.path !== '/streamanity'
+        ? 'app-width'
+        : ''
+    "
+  >
     <v-main class="pa-0 app-background">
       <template>
         <Header class="app-background"></Header>
         <keep-alive>
-          <router-view  :key="$route.fullPath">
-          </router-view>
+          <router-view :key="$route.fullPath"> </router-view>
         </keep-alive>
       </template>
     </v-main>
@@ -64,13 +70,12 @@ body {
 }
 .app-background {
   background: $background;
-
 }
 .app-container {
-  margin:0 auto;
+  margin: 0 auto;
 }
 .app-width {
-max-width:1500px;
+  max-width: 1500px;
 }
 .text-highlight {
   background: -webkit-linear-gradient(120deg, #a7cfdf, #37659a);
@@ -110,7 +115,6 @@ max-width:1500px;
   //   -webkit-background-clip: text;
   //   background-clip: text;
   //   -webkit-text-fill-color: transparent;
-  
 }
 .aboutme-gradient {
   background-image: linear-gradient(120deg, #a7cfdf, #0e519e);
@@ -125,16 +129,31 @@ max-width:1500px;
   -webkit-text-fill-color: transparent;
 }
 .portfolio-gradient {
-    background-image: linear-gradient(151deg, #ff5e00, #8400ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(151deg, #ff5e00, #8400ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bottom-line {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  &--light{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  &--light {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
 
+.inner-section {
+  width: 65%;
+  margin: 0 auto 1rem;
+}
+
+article {
+  padding: 4rem 0;
+}
+
+@media screen and (max-width: $small) and (orientation: portrait) {
+  .inner-section {
+    width: 85%;
+    margin: 0 auto 1rem;
   }
 }
 </style>

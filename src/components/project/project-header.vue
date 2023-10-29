@@ -28,4 +28,14 @@
     line-height: 54px;
     font-weight: 300;
   }
+  @media screen and (max-width: 500px) and (orientation: portrait) {
+  .project-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .project-description {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
   </style>

@@ -42,7 +42,7 @@ export default {
         // opacity:80%;
     }
 }
-@media screen and (max-width: 475px) and (orientation: portrait) {
+@media screen and (max-width: 500px) and (orientation: portrait) {
   .section-overview {
     &--title {
     font-size: 32px;
