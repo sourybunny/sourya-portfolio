@@ -1,5 +1,5 @@
 <template>
-    <div class="section-content">
+    <div class="section-content"     :class="is_dark ? 'section-content--dark' : ''">
         <span class="content-number" v-if="is_number">{{ number }}</span>
         <div class="content-title">{{ title }}</div>
         <p class="content-body">
@@ -16,7 +16,8 @@ export default {
         number: '',
         is_number: {
             default: false
-        }
+        },
+        is_dark: false
     }
 }
 </script>
@@ -24,6 +25,9 @@ export default {
 <style lang="scss" scoped>
 .section-content{
     margin-top: 2rem;
+    &--dark {
+    color: white;
+  }
 }
 .content-title {
         font-size: 18px;

@@ -1,19 +1,20 @@
 <template>
-  <div class="section-title">
+  <div class="section-title" :class="is_dark ? 'section-title--dark' : ''">
     <p class="">{{ title }}</p>
-    <hr  v-if="is_underline">
+    <hr v-if="is_underline" />
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    title: '',
+    title: "",
     is_underline: {
-      default: true
-    }
-  }
-}
+      default: true,
+    },
+    is_dark: false,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -22,6 +23,9 @@ export default {
   line-height: 21px;
   font-weight: 600;
   margin-top: 3rem;
+  &--dark {
+    color: white;
+  }
   // margin-bottom: .5rem;
 }
 </style>

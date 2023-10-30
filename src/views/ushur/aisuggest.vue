@@ -9,7 +9,22 @@
       ></v-img>
     </div>
     <article class="white">
-      <section class="inner-section" style="width: 70%; margin-left: 17.5%">
+      <div class="stickynav">
+        <div class="subnavigation">
+          <a href="#overview">Overview</a>
+          <a href="#users">Users</a>
+          <a href="#process">Process</a>
+          <a href="#principles">Design Principles</a>
+          <a href="#concepts">Concepts</a>
+          <a href="#design">Design</a>
+          <a href="#reflection">Reflection</a>
+        </div>
+      </div>
+      <section
+        id="overview"
+        class="inner-section"
+        style="width: 70%; margin-left: 17.5%"
+      >
         <v-layout wrap class="align-start justify-space-between">
           <v-flex xs12 sm8>
             <sectionTitle :title="'Ushur /'"></sectionTitle>
@@ -51,13 +66,17 @@
                   <div>
                     In the landscape of enterprise SaaS companies, there's a
                     growing trend of integrating AI into products to enhance
-                    user experiences. <span class="font-weight-medium">I'm proud of this project because we were
-                    able to explore a new field and design within a week.</span>
-                      A significant constraint for us is that the API
-                      is still in its early stages of development. While we're
-                      open to creative ideas during ideation, the initial MVP
-                      will have limited capabilities. Having a set launch date
-                      for the feature demo made it challenging to keep up with the tight deadline.
+                    user experiences.
+                    <span class="font-weight-medium"
+                      >I'm proud of this project because we were able to explore
+                      a new field and design within a week.</span
+                    >
+                    A significant constraint for us is that the API is still in
+                    its early stages of development. While we're open to
+                    creative ideas during ideation, the initial MVP will have
+                    limited capabilities. Having a set launch date for the
+                    feature demo made it challenging to keep up with the tight
+                    deadline.
                   </div>
                 </sectionContent>
               </v-flex>
@@ -94,7 +113,7 @@
       <!-- <article class="white"> -->
       <section class="inner-section">
         <section-highlight :is_underline="true" :is_quote="true">
-          “  The combination of fixed deadline and the absence of sufficient user
+          “ The combination of fixed deadline and the absence of sufficient user
           research created an intense environment with time constraints and
           assumptions. ”
           <template v-slot:description>
@@ -105,7 +124,10 @@
             </sectionContent> -->
           </template>
         </section-highlight>
-        <sectionTitle :title="'Empathizing with users'"></sectionTitle>
+        <sectionTitle
+          id="users"
+          :title="'Empathizing with users'"
+        ></sectionTitle>
         <section-overview :title="'Who is it for?'">
           <div>
             Based on past user research, I tried to determine how this feature
@@ -237,7 +259,7 @@
         :src="require(`@/assets/media/aisuggest/arrow5.png`)"
       />
     </div>
-    <article class="greybg">
+    <article id="process" class="greybg">
       <div v-if="show_process">
         <section class="inner-section">
           <sectionTitle :title="'Market Study'"></sectionTitle>
@@ -425,7 +447,7 @@
         :src="require(`@/assets/media/aisuggest/arrow4.png`)"
       />
     </div>
-    <article class="white">
+    <article id="principles" class="white">
       <section class="inner-section">
         <sectionTitle :title="'Key considerations'"></sectionTitle>
         <section-overview :title="'Design Principles'">
@@ -436,8 +458,7 @@
             <span class="font-weight-medium"
               >quick, friendly and easy to use.</span
             >
-            Our goal was to have the user use the feature effortlessly and get
-            the job done.
+            
           </div>
         </section-overview>
         <v-layout row wrap align-start justify-space-between mb-12>
@@ -468,10 +489,9 @@
           </v-flex>
         </v-layout>
       </section>
-
-      </article>
-      <article class="greybg">
-        <section class="inner-section">
+    </article>
+    <article id="concepts" class="greybg">
+      <section class="inner-section">
         <sectionTitle :title="'Challenging Assumptions'"></sectionTitle>
         <section-overview :title="'Concepts & Interaction models'">
           <div>
@@ -511,8 +531,10 @@
         <sectionTitle :title="'Concept #1'"></sectionTitle>
         <section-overview :title="'Inline suggestion on the fly.'">
           <div>
-            Quick actions to prompt user to improve their text. Actions are dynamically chosen based on the context. Ex; If it's lengthy, an action could be to make it short.
-            Original text is replaced automatically as the user chooses an action.
+            Quick actions to prompt user to improve their text. Actions are
+            dynamically chosen based on the context. Ex; If it's lengthy, an
+            action could be to make it short. Original text is replaced
+            automatically as the user chooses an action.
           </div>
         </section-overview>
       </section>
@@ -526,16 +548,23 @@
             user’s expectation which diminishes trust.
           </div>
         </callout>
-        <callout class=" mx-auto">
+        <callout class="mx-auto">
           <div>
-            Technical constraint: After reviewing with PMs, we realized current capacity of API. It's expensive for the API to be contextually present and detect if there's enough content and context to suggest improvements.
+            Technical constraint: After reviewing with PMs, we realized current
+            capacity of API. It's expensive for the API to be contextually
+            present and detect if there's enough content and context to suggest
+            improvements.
           </div>
         </callout>
       </section>
       <section class="inner-section mt-10">
         <sectionTitle :title="'Concept #2'"></sectionTitle>
         <section-overview :title="'Multi-suggest dropdown'">
-          <div>Multiple suggestions that the user can choose from giving more control to user. A prompt based customization for advanced text enhancement while keeping the quick actions for least effort.</div>
+          <div>
+            Multiple suggestions that the user can choose from giving more
+            control to user. A prompt based customization for advanced text
+            enhancement while keeping the quick actions for least effort.
+          </div>
         </section-overview>
       </section>
       <v-img
@@ -555,7 +584,10 @@
       <section class="inner-section mt-10">
         <sectionTitle :title="'Concept #3'"></sectionTitle>
         <section-overview :title="'Suggestions in a flyout panel'">
-          <div>A flyout panel to show suggestions while having a history of quick actions applied by user. </div>
+          <div>
+            A flyout panel to show suggestions while having a history of quick
+            actions applied by user.
+          </div>
         </section-overview>
       </section>
       <section>
@@ -585,71 +617,126 @@
         :src="require(`@/assets/media/aisuggest/arrow5.png`)"
       />
     </div>
-    <article class="white">
-    <section class="inner-section">
-      <sectionTitle :title="'Technical constraints'"></sectionTitle>
-      <section-overview :title="'Challenges'">
-        <div>
-          After presenting the concept with product managers, although we
-          collectively chose concept #3 as the right direction to go forward,
-          the API was still at an early stage and had a limitation of being
-          able to generate only 3 recommendations at a time based off of
-          original text. This led us to choose a different design direction
-          and scoping the concept #3 one to future.
-        </div>
-      </section-overview>
-    </section>
-    </article>
-    <article >
+    <!-- <article class="white">
       <section class="inner-section">
-        <sectionTitle :title="'Design'"></sectionTitle>
-        <section-overview :title="'Design Proposal'">
+        <sectionTitle :title="'Technical constraints'"></sectionTitle>
+        <section-overview :title="'Challenges'">
           <div>
-            Since we had limited time to implement, it was essential to
-            prioritize and de-scope the design to deliver a functional proof of
-            concept.
+            After presenting the concept with product managers, although we
+            collectively chose concept #3 as the right direction to go forward,
+            the API was still at an early stage and had a limitation of being
+            able to generate only 3 recommendations at a time based off of
+            original text. This led us to choose a different design direction
+            and scoping the concept #3 one to future.
           </div>
         </section-overview>
       </section>
+    </article> -->
+    <article>
+      <section id="design" class="inner-section">
+        <sectionTitle :title="'Design'" :is_dark="true"></sectionTitle>
+        <section-overview :title="'Design Proposal'" :is_dark="true">
+          <div>
+            Since we had limited time to implement, it was essential to
+            prioritize and de-scope the design to deliver a functional proof of
+            concept. Our goal was to have the user use the feature effortlessly and get
+            the job done.
+          </div>
+        </section-overview>
+        <div class="white--text pa-4">
+          <section-highlight>
+            User Journeys
+            <p class="text-center body-1 mt-2">
+              We narrowed our scope down to serve 2 scenarios
+            </p>
+          </section-highlight>
+          <v-layout wrap class="my-6 mx-4 justify-space-between">
+            <v-flex xs6 sm5 class="mx-auto text-center">
+              <img
+                width="20%"
+                :src="require(`@/assets/media/aisuggest/label.png`)"
+              />
+              <div>
+                <div class="font-weight-medium">Short field labels</div>
+                <span class="font-italic font-weight-light"
+                  >Short text such as form title, field labels for input,
+                  checkbox and radio fields.</span
+                >
+              </div>
+            </v-flex>
+            <v-flex xs6 sm5 class="mx-auto text-center">
+              <img
+                width="20%"
+                :src="require(`@/assets/media/aisuggest/email.png`)"
+              />
+              <div>
+                <div class="font-weight-medium">Long text fields</div>
+                <span class="font-italic font-weight-light"
+                  >Long text fields such as display text, wysiwyg editor, email
+                  modules</span
+                >
+              </div>
+            </v-flex>
+          </v-layout>
+        </div>
+        <div class="greybg pa-4 my-4">
+          <section-highlight>
+            Scenario 1
+            <p class="text-center body-1 mt-2">
+              Improving sentence structure and consistency
+            </p>
+          </section-highlight>
+          <div class="my-6 mx-4 px-12 justify-center d-flex justify-center">
+            <img
+              width="30%"
+              :src="require(`@/assets/media/aisuggest/avatar1.png`)"
+            />
+            <div class="ml-6">
+              <div class="font-weight-medium text-h5">Meet John</div>
+              <div class="font-weight-light mt-2">
+                John is a citizen developer who likes to feel in control of his
+                work.
+              </div>
+              <div class="font-weight-light mt-4">
+                While he is building a form, he struggles to write customer
+                facing text and needs help...
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </article>
-    <article class="white">
+    <article id="reflection" class="white">
       <section class="inner-section">
         <sectionTitle :title="'What I learned'"></sectionTitle>
         <section-overview :title="'Reflecting on project outcomes'">
-          <div>
-            Working in a startup can sometimes be daunting but I loved solving
-            the challenges I came across. The new product addresses different
-            skills levels of users due to functionality that mirrors users’
-            mental models. The startup was acquired by Reliance Industries after
-            the launch of Therm viewer 2.0 which also led to 20% increase in new
-            customers managing large and multiple solar assets
-          </div>
+          
+            Making the experience seamless and integrated in the user's work
+            while also giving enough visibility to the feature was difficult.
         </section-overview>
         <v-layout row wrap class="my-6">
           <v-flex xs12 sm6>
-            <section-content class="mr-12"
+            <section-content
+              class="mr-12"
               is_number="true"
               :number="'01'"
-              :title="'Working under constraints'"
+              :title="'Working under time-constraints'"
             >
-              Due to the COVID lockdown, my research process had limitations but
-              I addressed this by leading the testing sessions with our internal
-              team members and using prior work to fill in the missing parts. As
-              a sole designer and component developer, I used my time
-              effectively to contribute to both design and code.
+              I learned to de-scope and identify what can be pushed to later
+              phases. While we had many great ideas, trying to not do all at
+              once was essential.
             </section-content>
           </v-flex>
           <v-flex xs12 sm6>
             <section-content
               is_number="true"
               :number="'02'"
-              :title="'Putting the developer hat on'"
+              :title="'Communication is the key'"
             >
-              Being a designer not only meant I empathize with the users but
-              also with the developer in my team. I had to understand the
-              challenges they are facing and consider their perspectives. This
-              helped me collaborate better and translate my designs exactly the
-              way I wanted.
+              Although we had only a week's time for the project, sharing the
+              design direction often with stakeholders helped us to stay
+              anchored to the MVP and realize the technical capabilities early
+              on.
             </section-content>
           </v-flex>
         </v-layout>
@@ -698,8 +785,32 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
-
+.stickynav {
+  position: absolute;
+}
+.subnavigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+  z-index: 100;
+  margin-top: 4rem;
+  top: 1rem;
+  right: 0.5rem;
+  position: fixed;
+  a {
+    color: #6f6f6f;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0.3rem;
+    text-align: right;
+    &:hover {
+      color: #474747;
+    }
+  }
+}
 .sensehawk-bg {
   background: linear-gradient(148deg, #31ba99 0%, #1187d3 87.72%);
   display: flex;
@@ -707,6 +818,4 @@ export default {
   align-content: center;
   justify-content: end;
 }
-
-
 </style>
