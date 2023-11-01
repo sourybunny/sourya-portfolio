@@ -91,6 +91,7 @@
           <!-- <div class="text-center font-weight-medium text-h4 mx-auto my-6" style="width: 70%">
             What if the user had an assistant that wrote stuff for them?
           </div> -->
+          
           <section-highlight>
             What if the user had an assistant that wrote stuff for them?
           </section-highlight>
@@ -104,6 +105,7 @@
               and faster.
             </div>
           </section-overview>
+          
           <div class="greybg pa-6">
             <section-highlight class="py-2">
               What opportunities exist for us?

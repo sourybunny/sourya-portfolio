@@ -9,8 +9,8 @@
       ></v-img>
     </div>
     <article class="white">
-      <div class="stickynav">
-        <div class="subnavigation">
+      <div class="stickynav ">
+        <div class="subnavigation glass-header">
           <a href="#overview">Overview</a>
           <a href="#users">Users</a>
           <a href="#process">Process</a>
@@ -124,6 +124,8 @@
             </sectionContent> -->
           </template>
         </section-highlight>
+
+
         <sectionTitle
           id="users"
           :title="'Empathizing with users'"
@@ -137,6 +139,51 @@
             </span>
           </div>
         </section-overview>
+        <div  class="my-3 py-3 mx-4 justify-space-between align-center d-flex">
+              <div  class="mx-auto text-center ">
+                <img
+                  width="40%"
+                  :src="require(`@/assets/media/aisuggest/idea1.png`)"
+                />
+                <div>
+                  <div class="font-weight-medium">Business problem</div>
+                  <span class="font-italic font-weight-light">“Customer wants to claim Insurance easily”</span>
+                </div>
+              </div>
+              <img
+                  width="40" height="20"
+                  :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
+                />
+              <div  class="mx-auto text-center">
+                <img
+                width="40%"
+                  :src="require(`@/assets/media/aisuggest/dev.png`)"
+                />
+                <div>
+                  <div class="font-weight-medium">Citizen developer</div>
+                  <span class="font-italic font-weight-light">“Build solution (workflow) using Ushur No-code app”</span>
+                </div>
+              </div>
+              <img
+              width="40" height="20"
+                  :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
+                />
+              <div  class="mx-auto text-center">
+                <img
+                width="40%"
+                  :src="require(`@/assets/media/aisuggest/phone.png`)"
+                />
+                <div>
+                  <div class="font-weight-medium">Launch to customer</div>
+                  <span class="font-italic font-weight-light">“Customer receives app link to smartphone”</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              A citizen developer is an employee with no/low coding knowledge
+              who creates software applications. These apps serve various
+              purposes, ex: insurance claim submission.
+          </div>
         <section-highlight>
           A rapid shift towards AI has changed people's expectation of how they
           work.
@@ -150,13 +197,7 @@
           </template>
         </section-highlight>
         <section-content>
-          <div class="text-center">
-            <em>
-              A citizen developer is an employee with no/low coding knowledge
-              who creates software applications. These apps serve various
-              purposes, ex: insurance claim submission.</em
-            >
-          </div>
+          
         </section-content>
         <v-img
           class="mx-auto mt-4"
@@ -679,7 +720,7 @@
             </v-flex>
           </v-layout>
         </div>
-        <div class="greybg pa-4 my-4">
+        <div class="greybg pa-4 my-4 mx-auto rounded" style="width:90%;">
           <section-highlight>
             Scenario 1
             <p class="text-center body-1 mt-2">
@@ -790,16 +831,27 @@ export default {
 .stickynav {
   position: absolute;
 }
+.glass-header {
+    background: rgba(255, 255, 255, 0.176);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease; /* Add a transition for hover effect */
+    
+}
+
 .subnavigation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem;
   z-index: 100;
-  margin-top: 4rem;
+  margin-top: 8rem;
   top: 1rem;
   right: 0.5rem;
   position: fixed;
+
   a {
     color: #6f6f6f;
     font-weight: 500;
