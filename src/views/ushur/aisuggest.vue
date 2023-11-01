@@ -1,15 +1,28 @@
 <template>
   <main class="project-section">
-    <div class="sensehawk-bg">
-      <v-img
+    <div class="genai-bg">
+      <!-- <v-img
         height="50%"
         width="50%"
         class="mx-auto mt-16"
         :src="require(`@/assets/media/aisuggest/main.png`)"
-      ></v-img>
+      ></v-img> -->
+
+      <video
+        width="65% "
+        class="mx-auto mt-16 elevation-4 rounded"
+        controls
+        autoplay
+      >
+        <source
+          :src="require(`@/assets/media/aisuggest/genAIdemo2.mp4`)"
+          type="video/mp4"
+        />
+        Your browser does not support HTML video.
+      </video>
     </div>
     <article class="white">
-      <div class="stickynav ">
+      <div class="stickynav">
         <div class="subnavigation glass-header">
           <a href="#overview">Overview</a>
           <a href="#users">Users</a>
@@ -125,7 +138,6 @@
           </template>
         </section-highlight>
 
-
         <sectionTitle
           id="users"
           :title="'Empathizing with users'"
@@ -139,51 +151,61 @@
             </span>
           </div>
         </section-overview>
-        <div  class="my-3 py-3 mx-4 justify-space-between align-center d-flex">
-              <div  class="mx-auto text-center ">
-                <img
-                  width="40%"
-                  :src="require(`@/assets/media/aisuggest/idea1.png`)"
-                />
-                <div>
-                  <div class="font-weight-medium">Business problem</div>
-                  <span class="font-italic font-weight-light">“Customer wants to claim Insurance easily”</span>
-                </div>
-              </div>
-              <img
-                  width="40" height="20"
-                  :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
-                />
-              <div  class="mx-auto text-center">
-                <img
-                width="40%"
-                  :src="require(`@/assets/media/aisuggest/dev.png`)"
-                />
-                <div>
-                  <div class="font-weight-medium">Citizen developer</div>
-                  <span class="font-italic font-weight-light">“Build solution (workflow) using Ushur No-code app”</span>
-                </div>
-              </div>
-              <img
-              width="40" height="20"
-                  :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
-                />
-              <div  class="mx-auto text-center">
-                <img
-                width="40%"
-                  :src="require(`@/assets/media/aisuggest/phone.png`)"
-                />
-                <div>
-                  <div class="font-weight-medium">Launch to customer</div>
-                  <span class="font-italic font-weight-light">“Customer receives app link to smartphone”</span>
-                </div>
-              </div>
+        <div class="my-3 py-3 mx-4 justify-space-between align-center d-flex">
+          <div class="mx-auto text-center">
+            <img
+              width="40%"
+              :src="require(`@/assets/media/aisuggest/idea1.png`)"
+            />
+            <div>
+              <div class="font-weight-medium">Business problem</div>
+              <span class="font-italic font-weight-light"
+                >“Customer wants to claim Insurance easily”</span
+              >
             </div>
-            <div class="text-center">
-              A citizen developer is an employee with no/low coding knowledge
-              who creates software applications. These apps serve various
-              purposes, ex: insurance claim submission.
           </div>
+          <img
+            class="mx-4"
+            width="40"
+            height="20"
+            :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
+          />
+          <div class="mx-auto text-center elevation-6 pa-8 rounded-xl">
+            <img
+              width="40%"
+              :src="require(`@/assets/media/aisuggest/dev.png`)"
+            />
+            <div>
+              <div class="font-weight-medium">Citizen developer - User</div>
+              <span class="font-italic font-weight-light"
+                >“Build solution (workflow) using Ushur No-code app”</span
+              >
+            </div>
+          </div>
+          <img
+            class="mx-4"
+            width="40"
+            height="20"
+            :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
+          />
+          <div class="mx-auto text-center">
+            <img
+              width="40%"
+              :src="require(`@/assets/media/aisuggest/phone.png`)"
+            />
+            <div>
+              <div class="font-weight-medium">Launch to customer</div>
+              <span class="font-italic font-weight-light"
+                >“Customer receives app link to smartphone”</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          A citizen developer is an employee with no/low coding knowledge who
+          creates software applications. These apps serve various purposes, ex:
+          insurance claim submission.
+        </div>
         <section-highlight>
           A rapid shift towards AI has changed people's expectation of how they
           work.
@@ -196,9 +218,14 @@
             </sectionContent>
           </template>
         </section-highlight>
-        <section-content>
-          
-        </section-content>
+        <div class="my-6 mx-auto justify-space-between align-center d-flex">
+          <img
+            width="100%"
+            height="100%"
+            :src="require(`@/assets/media/aisuggest/context.png`)"
+          />
+        </div>
+        <section-content> </section-content>
         <v-img
           class="mx-auto mt-4"
           :src="require(`@/assets/media/aisuggest/user.png`)"
@@ -499,7 +526,6 @@
             <span class="font-weight-medium"
               >quick, friendly and easy to use.</span
             >
-            
           </div>
         </section-overview>
         <v-layout row wrap align-start justify-space-between mb-12>
@@ -680,10 +706,17 @@
           <div>
             Since we had limited time to implement, it was essential to
             prioritize and de-scope the design to deliver a functional proof of
-            concept. Our goal was to have the user use the feature effortlessly and get
-            the job done.
+            concept. Our goal was to have the user use the feature effortlessly
+            and get the job done.
           </div>
         </section-overview>
+        <video width="100%" class="mx-auto elevation-4 rounded" controls>
+          <source
+            :src="require(`@/assets/media/aisuggest/genAIdemo.mp4`)"
+            type="video/mp4"
+          />
+          Your browser does not support HTML video.
+        </video>
         <div class="white--text pa-4">
           <section-highlight>
             User Journeys
@@ -720,7 +753,7 @@
             </v-flex>
           </v-layout>
         </div>
-        <div class="greybg pa-4 my-4 mx-auto rounded" style="width:90%;">
+        <div class="greybg pa-4 my-4 mx-auto rounded" style="width: 90%">
           <section-highlight>
             Scenario 1
             <p class="text-center body-1 mt-2">
@@ -751,9 +784,8 @@
       <section class="inner-section">
         <sectionTitle :title="'What I learned'"></sectionTitle>
         <section-overview :title="'Reflecting on project outcomes'">
-          
-            Making the experience seamless and integrated in the user's work
-            while also giving enough visibility to the feature was difficult.
+          Making the experience seamless and integrated in the user's work while
+          also giving enough visibility to the feature was difficult.
         </section-overview>
         <v-layout row wrap class="my-6">
           <v-flex xs12 sm6>
@@ -832,13 +864,12 @@ export default {
   position: absolute;
 }
 .glass-header {
-    background: rgba(255, 255, 255, 0.176);
-    backdrop-filter: blur(6px);
-    border-radius: 10px;
-    // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.2s ease; /* Add a transition for hover effect */
-    
+  background: rgba(255, 255, 255, 0.176);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease; /* Add a transition for hover effect */
 }
 
 .subnavigation {
@@ -863,8 +894,8 @@ export default {
     }
   }
 }
-.sensehawk-bg {
-  background: linear-gradient(148deg, #31ba99 0%, #1187d3 87.72%);
+.genai-bg {
+  background: linear-gradient(148deg, #ff9c85 0%, #d66c54 87.72%);
   display: flex;
   flex-direction: column;
   align-content: center;
