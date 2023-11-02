@@ -83,13 +83,8 @@
                     <span class="font-weight-medium"
                       >I'm proud of this project because we were able to explore
                       a new field and design within a week.</span
-                    >
-                    A significant constraint for us is that the API is still in
-                    its early stages of development. While we're open to
-                    creative ideas during ideation, the initial MVP will have
-                    limited capabilities. Having a set launch date for the
-                    feature demo made it challenging to keep up with the tight
-                    deadline.
+                    > And, having a set launch date for the
+                    feature demo coupled with technical limitations created a challenging environment.
                   </div>
                 </sectionContent>
               </v-flex>
@@ -203,8 +198,7 @@
         </div>
         <div class="text-center">
           A citizen developer is an employee with no/low coding knowledge who
-          creates software applications. These apps serve various purposes, ex:
-          insurance claim submission.
+          creates software applications.
         </div>
         <section-highlight>
           A rapid shift towards AI has changed people's expectation of how they
@@ -213,17 +207,20 @@
             <sectionContent style="width: 75%; margin: 2rem auto 0rem">
               Users waste so much time in perfecting their writing style as they
               write customer facing text. While there are many AI writing tools,
-              there isn't an enterprise tailored contextual writing assistant
+              there isn't an <strong class="font-weight-medium">enterprise tailored contextual writing assistant</strong>
               for Ushur platform.
             </sectionContent>
           </template>
         </section-highlight>
-        <div class="my-6 mx-auto justify-space-between align-center d-flex">
+        <div class=" mx-auto justify-space-between align-center d-flex">
           <img
             width="100%"
             height="100%"
             :src="require(`@/assets/media/aisuggest/context.png`)"
           />
+        </div>
+        <div class="text-center my-4">
+          Users drag and drop elements such as text input fields, automated email, prompts, checkbox fields etc to build a solution (app) for customers of Fortune100 enterprise companies in Healthcare, Banking and Insurance.
         </div>
         <section-content> </section-content>
         <v-img
@@ -804,7 +801,7 @@
             <section-content
               is_number="true"
               :number="'02'"
-              :title="'Communication is the key'"
+              :title="'Communication with stakeholders is the key'"
             >
               Although we had only a week's time for the project, sharing the
               design direction often with stakeholders helped us to stay

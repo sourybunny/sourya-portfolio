@@ -81,7 +81,7 @@
               <p class="font-weight-light mt-4 body-1">I love experimenting with AR, AI and ML to come up with user-centered design solutions in the realm of interaction design.
 
               </p>
-              <v-btn target="_blank" :href="'https://drive.google.com/file/d/18zDrrcFxmzruNBzg_0XkWUvCMENon9D6/view?usp=sharing'
+              <v-btn target="_blank" :href="'https://drive.google.com/file/d/1jHMl659Nz0ijDHgk1lbjpCal7TgA_Btd/view?usp=sharing'
                 " dark class="text-capitalize cardbgdark font-weight-light my-2">
                 View Resume
                 <v-icon dark small class="ml-1">
