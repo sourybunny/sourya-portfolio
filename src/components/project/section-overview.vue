@@ -32,7 +32,10 @@ export default {
   margin-bottom: 3rem;
   &--dark {
     color: white;
-  }
+    .section-overview-body {
+    opacity: 0.7;
+    }
+    }
   &--title {
     font-size: 40px;
     line-height: 52px;

@@ -83,8 +83,10 @@
                     <span class="font-weight-medium"
                       >I'm proud of this project because we were able to explore
                       a new field and design within a week.</span
-                    > And, having a set launch date for the
-                    feature demo coupled with technical limitations created a challenging environment.
+                    >
+                    And, having a set launch date for the feature demo coupled
+                    with technical limitations created a challenging
+                    environment.
                   </div>
                 </sectionContent>
               </v-flex>
@@ -207,12 +209,15 @@
             <sectionContent style="width: 75%; margin: 2rem auto 0rem">
               Users waste so much time in perfecting their writing style as they
               write customer facing text. While there are many AI writing tools,
-              there isn't an <strong class="font-weight-medium">enterprise tailored contextual writing assistant</strong>
+              there isn't an
+              <strong class="font-weight-medium"
+                >enterprise tailored contextual writing assistant</strong
+              >
               for Ushur platform.
             </sectionContent>
           </template>
         </section-highlight>
-        <div class=" mx-auto justify-space-between align-center d-flex">
+        <div class="mx-auto justify-space-between align-center d-flex">
           <img
             width="100%"
             height="100%"
@@ -220,7 +225,10 @@
           />
         </div>
         <div class="text-center my-4">
-          Users drag and drop elements such as text input fields, automated email, prompts, checkbox fields etc to build a solution (app) for customers of Fortune100 enterprise companies in Healthcare, Banking and Insurance.
+          Users drag and drop elements such as text input fields, automated
+          email, prompts, checkbox fields etc to build a solution (app) for
+          customers of Fortune100 enterprise companies in Healthcare, Banking
+          and Insurance.
         </div>
         <section-content> </section-content>
         <v-img
@@ -790,11 +798,14 @@
               class="mr-12"
               is_number="true"
               :number="'01'"
-              :title="'Working under time-constraints'"
+              :title="'Learn to navigate the project with limited research and embrace ambiguity'"
             >
-              I learned to de-scope and identify what can be pushed to later
-              phases. While we had many great ideas, trying to not do all at
-              once was essential.
+              However, some projects might have a smaller scope and due to the
+              strict timeline and research team bandwidth, we probably won't
+              have research reports or resources directly related to our
+              project. We can do our own research such as competitive analysis,
+              dogfooding, flow analysis, and then list Jobs-to-be-done (JTBDs)
+              and validate them with stakeholders.
             </section-content>
           </v-flex>
           <v-flex xs12 sm6>
@@ -806,7 +817,12 @@
               Although we had only a week's time for the project, sharing the
               design direction often with stakeholders helped us to stay
               anchored to the MVP and realize the technical capabilities early
-              on.
+              on. Communicating frequently (yes over communication is
+              appreciated 😁) with your cross-function team members can help us
+              gather more context and insights in the project problem space, and
+              having regular syncs with them is the key step to achieve
+              alignments, especially if we want to tackle problems on a system
+              level.
             </section-content>
           </v-flex>
         </v-layout>
