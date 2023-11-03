@@ -33,7 +33,7 @@ export default {
   &--dark {
     color: white;
     .section-overview-body {
-    opacity: 0.7;
+    color: #a0a0a0;
     }
     }
   &--title {
