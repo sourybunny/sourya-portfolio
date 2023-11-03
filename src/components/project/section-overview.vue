@@ -5,7 +5,7 @@
   >
     <v-layout wrap>
       <v-flex xs12 sm6>
-        <p class="section-overview--title">{{ title }}</p>
+        <p class="section-overview--title"> <span v-if="left" class="emphasize-title">{{emphasize}}</span> {{ title }} <span v-if="right" class="emphasize-title">{{emphasize}}</span></p>
       </v-flex>
       <v-flex xs12 sm6>
         <p class="section-overview-body">
@@ -22,6 +22,9 @@ export default {
     title: "",
     description: "",
     is_dark: false,
+    left: false,
+    right: false,
+    emphasize: '',
   },
 };
 </script>
@@ -39,11 +42,13 @@ export default {
   &--title {
     font-size: 40px;
     line-height: 52px;
-    font-weight: 200;
     max-width: 85%;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    // font-family: Georgia, "Times New Roman", Times, serif;
   }
-
+.emphasize-title {
+  font-family: 'Tiempos-text','Georgia', "Times New Roman", Times, serif;
+  font-style: italic;
+}
   &-body {
     font-size: 18px;
     line-height: 27px;

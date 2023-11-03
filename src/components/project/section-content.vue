@@ -32,7 +32,7 @@ export default {
 .content-title {
         font-size: 18px;
         line-height: 24px;
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: .5rem;
         
     }

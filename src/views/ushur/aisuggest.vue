@@ -139,7 +139,7 @@
           id="users"
           :title="'Empathizing with users'"
         ></sectionTitle>
-        <section-overview :title="'Who is it for?'">
+        <section-overview :title="'is it for?'" :emphasize="'Who —'" :left="true">
           <div>
             Based on past user research, I tried to determine how this feature
             can bring valuable benefits to our users, who are
@@ -242,7 +242,7 @@
           What if the user had an assistant that wrote stuff for them?
         </section-highlight>
         <sectionTitle :title="'Identifying design opportunity'"></sectionTitle>
-        <section-overview :title="'Value for user'">
+        <section-overview :title="'for user'" :emphasize="'Value'" :left="true" >
           <div>
             Their role primarily revolves around applying logic to construct
             apps and crafting customer-facing text. Users want assistance in two
@@ -336,7 +336,7 @@
       <div v-if="show_process">
         <section class="inner-section">
           <sectionTitle :title="'Market Study'"></sectionTitle>
-          <section-overview :title="'Understanding  — industry patterns'">
+          <section-overview :title="'Understanding —'" :emphasize="'Industry Patterns'" :right="true">
             <div>
               I did an initial market research and analyzed 10+ apps to
               understand what patterns are followed by AI writing assistants.
@@ -417,7 +417,7 @@
           <sectionTitle
             :title="'Brainstorming and Affinity mapping'"
           ></sectionTitle>
-          <section-overview :title="'Brainstorming ideas'">
+          <section-overview :title="'Ideas'" :emphasize="'Brainstorming'" :left="true">
             <div>
               I dived into a brainstorming session with my co-designer who
               helped me familiarize with the product and high impact areas of
@@ -469,7 +469,7 @@
         </div>
         <section class="inner-section">
           <sectionTitle :title="'Scoping'"></sectionTitle>
-          <section-overview :title="'The where, what and how?'">
+          <section-overview :title="'The —'" :emphasize="'Where, what & how'" :right="true">
             <div>
               While there was no limitation to identify use cases and explore
               divergent ideas, the
@@ -523,7 +523,7 @@
     <article id="principles" class="white">
       <section class="inner-section">
         <sectionTitle :title="'Key considerations'"></sectionTitle>
-        <section-overview :title="'Design Principles'">
+        <section-overview :title="'Design'" :emphasize="'Principles'" :right="true">
           <div>
             I set some design principles to guide the concept design. The
             citizen developers are not tech savvy which meant the feature should
@@ -565,7 +565,7 @@
     <article id="concepts" class="greybg">
       <section class="inner-section">
         <sectionTitle :title="'Challenging Assumptions'"></sectionTitle>
-        <section-overview :title="'Concepts & Interaction models'">
+        <section-overview :title="'& Interaction models'" :emphasize="'Concepts'" :left="true">
           <div>
             One of the most important crossroads we faced in this process was
             determining the ideal interaction model for how we presented
@@ -601,7 +601,7 @@
       </section>
       <section class="inner-section">
         <sectionTitle :title="'Concept #1'"></sectionTitle>
-        <section-overview :title="'Inline suggestion on the fly.'">
+        <section-overview :title="'suggestions on the fly'" :emphasize="'Inline'" :left="true">
           <div>
             Quick actions to prompt user to improve their text. Actions are
             dynamically chosen based on the context. Ex; If it's lengthy, an
@@ -631,7 +631,7 @@
       </section>
       <section class="inner-section mt-10">
         <sectionTitle :title="'Concept #2'"></sectionTitle>
-        <section-overview :title="'Multi-suggest dropdown'">
+        <section-overview :title="'Suggestions in a'" :emphasize="'dropdown'" :right="true">
           <div>
             Multiple suggestions that the user can choose from giving more
             control to user. A prompt based customization for advanced text
@@ -655,7 +655,7 @@
       </section>
       <section class="inner-section mt-10">
         <sectionTitle :title="'Concept #3'"></sectionTitle>
-        <section-overview :title="'Suggestions in a flyout panel'">
+        <section-overview :title="'Suggestions in a'" :emphasize="'flyout panel'" :right="true">
           <div>
             A flyout panel to show suggestions while having a history of quick
             actions applied by user.
@@ -707,7 +707,7 @@
     <article>
       <section id="design" class="inner-section">
         <sectionTitle :title="'Design'" :is_dark="true"></sectionTitle>
-        <section-overview :title="'Design Proposal'" :is_dark="true">
+        <section-overview :title="'proposal'" :emphasize="'Final design —'" :left="true" :is_dark="true">
           <div>
             Since we had limited time to implement, it was essential to
             prioritize and de-scope the design to deliver a functional proof of
