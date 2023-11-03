@@ -39,7 +39,7 @@ export default {
     font-weight: 500;
   }
   &--quote {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Tiempos-Text', Georgia, "Times New Roman", Times, serif;
     font-style: italic;
     font-size: 28px;
     line-height: 42px;

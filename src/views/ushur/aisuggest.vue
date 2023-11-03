@@ -1,6 +1,6 @@
 <template>
-  <main class="project-section">
-    <div class="genai-bg">
+  <main class="project-section ">
+    <div class="genai-bg mt-4 px-12 py-12">
       <!-- <v-img
         height="50%"
         width="50%"
@@ -9,10 +9,10 @@
       ></v-img> -->
 
       <video
-        width="65% "
-        class="mx-auto mt-16 elevation-4 rounded"
+        width="90% "
+        class="mx-auto elevation-0 rounded"
         controls
-        autoplay
+        autoplay loop muted
       >
         <source
           :src="require(`@/assets/media/aisuggest/genAIdemo2.mp4`)"
@@ -20,6 +20,7 @@
         />
         Your browser does not support HTML video.
       </video>
+      <div class="white--text body-2 mt-2 px-14 text-center font-weight-medium">From Ushur website - Marketing feature launch</div>
     </div>
     <article class="white">
       <div class="stickynav">
@@ -47,9 +48,9 @@
             ></projectHeader>
             <sectionContent>
               <div>
-                Ushur helps citizen developers (users) create workflows using
-                no-code drag and drop modules and deploy them to customers in
-                insurance, healthcare and financial companies.
+                Citizen developers (users) create business solutions using
+                Ushur's no-code drag and drop platform and launch them to customers in
+                insurance, healthcare and financial companies. The developers gather business requirements to build solutions (app like engagements) for end users.
 
                 <!-- <br> -->
               </div>
@@ -68,8 +69,8 @@
               <v-flex xs12 sm5>
                 <section-content :title="'Outcome'">
                   <div>
-                    I designed a smart writing assistant that helps developers
-                    (users) build workflows faster.
+                    I designed a smart writing assistant for non-technical developers (users)
+                    making their job easier and 2x faster.
                   </div>
                 </section-content>
               </v-flex>
@@ -77,7 +78,7 @@
                 <sectionTitle :title="'Scope and Constraints'"></sectionTitle>
                 <sectionContent>
                   <div>
-                    In the landscape of enterprise SaaS companies, there's a
+                    In the landscape of enterprise SaaS products, there's a
                     growing trend of integrating AI into products to enhance
                     user experiences.
                     <span class="font-weight-medium"
@@ -123,9 +124,8 @@
       <!-- <article class="white"> -->
       <section class="inner-section">
         <section-highlight :is_underline="true" :is_quote="true">
-          “ The combination of fixed deadline and the absence of sufficient user
-          research created an intense environment with time constraints and
-          assumptions. ”
+          “ A fixed deadline with the absence of sufficient user
+          research created an intense environment with time constraints. ”
           <template v-slot:description>
             <!-- <sectionContent style="width: 65%; margin: 2rem auto 0rem">
               Adhering to a set launch date required us to prioritize engineering
@@ -225,10 +225,7 @@
           />
         </div>
         <div class="text-center my-4">
-          Users drag and drop elements such as text input fields, automated
-          email, prompts, checkbox fields etc to build a solution (app) for
-          customers of Fortune100 enterprise companies in Healthcare, Banking
-          and Insurance.
+          Users drag and drop text input fields, email fields etc and write agreements, policies, ask questions to take input from end user who uses this solution on their smartphone.
         </div>
         <section-content> </section-content>
         <v-img
@@ -254,9 +251,8 @@
           </div>
         </section-overview>
         <section-highlight :is_underline="true" :is_quote="true">
-          "The more time it takes for these tasks, the more an AI assistant
-          makes sense to have. But they still want to be in charge; they just
-          want the assistant to make their work easier and faster."
+          “ We know users wanted help. But they still want to be in charge;”
+           they just want an assistant to make their work easier and faster."
           <template v-slot:description>
             <!-- <sectionContent style="width: 65%; margin: 2rem auto 0rem">
               Adhering to a set launch date required us to prioritize engineering
@@ -715,13 +711,15 @@
             and get the job done.
           </div>
         </section-overview>
-        <video width="100%" class="mx-auto elevation-4 rounded" controls>
+        <video width="100%" class="mx-auto elevation-4 rounded" controls autoplay muted>
           <source
             :src="require(`@/assets/media/aisuggest/genAIdemo.mp4`)"
             type="video/mp4"
           />
           Your browser does not support HTML video.
         </video>
+        <div class="white--text body-2 text-center">Final design in context, feature launched 🚀</div>
+        <div class="white--text body-2 mt-3 text-center opacity-7">Credits to Hayuk (Motion designer) for promoting the feature.</div>
         <div class="white--text pa-4">
           <section-highlight>
             User Journeys
@@ -792,7 +790,7 @@
           Making the experience seamless and integrated in the user's work while
           also giving enough visibility to the feature was difficult.
         </section-overview>
-        <v-layout row wrap class="my-6">
+        <v-layout wrap class="my-6">
           <v-flex xs12 sm6>
             <section-content
               class="mr-12"
@@ -859,7 +857,7 @@ export default {
   },
   data: () => {
     return {
-      project_desc: "An ai assistant to help users build workflows faster.",
+      project_desc: "An assistant to help solution developers build workflows faster.",
       show_process: false,
     };
   },
@@ -913,5 +911,7 @@ export default {
   flex-direction: column;
   align-content: center;
   justify-content: end;
+  max-width: 80%;
+  margin: auto;
 }
 </style>

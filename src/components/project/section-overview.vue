@@ -46,7 +46,7 @@ export default {
     // font-family: Georgia, "Times New Roman", Times, serif;
   }
 .emphasize-title {
-  font-family: 'Tiempos-text','Georgia', "Times New Roman", Times, serif;
+  font-family: 'Tiempos-Text','Georgia', "Times New Roman", Times, serif;
   font-style: italic;
 }
   &-body {

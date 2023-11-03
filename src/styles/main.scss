@@ -2,3 +2,129 @@
 //     font-family: 'Satoshi';
 //     src: url('~@/assets/fonts/Satoshi-Regular.ttf') format('truetype');
 //   }
+
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * Â© 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/
+
+
+  
+  
+  @font-face {
+    font-family: 'Tiempos-Text';
+    src: url('~@/assets/fonts/test-tiempos-text-regular.woff2') format('woff2');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Tiempos-Text-Italic';
+    src: url('~@/assets/fonts/test-tiempos-text-regular-italic.woff2') format('woff2');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Tiempos-Text-BoldItalic';
+    src: url('~@/assets/fonts/test-tiempos-text-bold-italic.woff2') format('woff2');
+         font-weight: 800;
+         font-display: swap;
+         font-style: italic;
+  }
+  @font-face {
+    font-family: 'Tiempos-Text-Bold';
+    src: url('~@/assets/fonts/test-tiempos-text-bold.woff2') format('woff2');
+         font-weight: 800;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Tiempos-Text';
+    src: url('~@/assets/fonts/test-tiempos-text-medium-italic.woff2') format('woff2');
+         font-weight: 500;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Tiempos-Text';
+    src: url('~@/assets/fonts/test-tiempos-text-medium.woff2') format('woff2');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+//   
+
+@font-face {
+    font-family: 'Tiempos-Headline';
+    src: url('~@/assets/fonts/test-tiempos-headline-regular.woff2') format('woff2');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Tiempos-Headline-Italic';
+    src: url('~@/assets/fonts/test-tiempos-headline-regular-italic.woff2') format('woff2');
+         font-weight: 400;
+         font-display: swap;
+         font-style: italic;
+  }
+  @font-face {
+    font-family: 'Tiempos-Headline-Bold';
+    src: url('~@/assets/fonts/test-tiempos-headline-bold.woff2') format('woff2');
+         font-weight: 800;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Tiempos-Headline-BoldItalic';
+    src: url('~@/assets/fonts/test-tiempos-headline-bold-italic.woff2') format('woff2');
+         font-weight: 800;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Tiempos-Headline-MediumItalic';
+    src: url('~@/assets/fonts/test-tiempos-headline-medium-italic.woff2') format('woff2');
+         font-weight: 500;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Tiempos-Headline-Medium';
+    src: url('~@/assets/fonts/test-tiempos-headline-medium.woff2') format('woff2');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
