@@ -119,8 +119,6 @@
           </v-flex>
         </v-layout>
       </section>
-      <!-- </article> -->
-      <!-- <article class="white"> -->
       <section class="inner-section">
         <section-highlight :is_underline="true" :is_quote="true">
           “ A fixed deadline with the absence of sufficient user
@@ -133,9 +131,12 @@
             </sectionContent> -->
           </template>
         </section-highlight>
-
-        <sectionTitle
-          id="users"
+      </section>
+    </article>
+    <article class="greybg" id="users">
+      <section class="inner-section">
+        <sectionTitle 
+          
           :title="'Empathizing with users'"
         ></sectionTitle>
         <section-overview :title="'is it for?'" :emphasize="'Who —'" :left="true">
@@ -166,7 +167,7 @@
             height="20"
             :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
           />
-          <div class="mx-auto text-center elevation-6 pa-8 rounded-xl">
+          <div class="mx-auto white text-center elevation-6 pa-8 rounded-xl">
             <img
               width="40%"
               :src="require(`@/assets/media/aisuggest/dev.png`)"
@@ -226,7 +227,6 @@
         <div class="text-center my-4">
           Users drag and drop text input fields, email fields etc and write agreements, policies, ask questions to take input from end user who uses this solution on their smartphone.
         </div>
-        <section-content> </section-content>
         <v-img
           class="mx-auto mt-4"
           :src="require(`@/assets/media/aisuggest/user.png`)"
@@ -237,6 +237,10 @@
         <section-highlight>
           What if the user had an assistant that wrote stuff for them?
         </section-highlight>
+      </section>
+      </article>
+      <article class="white">
+        <section class="inner-section">
         <sectionTitle :title="'Identifying design opportunity'"></sectionTitle>
         <section-overview :title="'for user'" :emphasize="'Value'" :left="true" >
           <div>
@@ -785,7 +789,7 @@
     <article id="reflection" class="white">
       <section class="inner-section">
         <sectionTitle :title="'What I learned'"></sectionTitle>
-        <section-overview :title="'Reflecting on project outcomes'">
+        <section-overview :title="'on project outcomes'" :emphasize="'Reflecting'" :left="true">
           Making the experience seamless and integrated in the user's work while
           also giving enough visibility to the feature was difficult.
         </section-overview>

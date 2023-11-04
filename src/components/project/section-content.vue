@@ -27,6 +27,9 @@ export default {
     margin-top: 2rem;
     &--dark {
     color: white;
+    .content-body {
+    color: #a0a0a0;
+    }
   }
 }
 .content-title {
