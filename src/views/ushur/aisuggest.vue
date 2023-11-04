@@ -11,7 +11,6 @@
       <video
         width="90% "
         class="mx-auto elevation-0 rounded"
-        controls
         autoplay loop muted
       >
         <source
@@ -20,7 +19,7 @@
         />
         Your browser does not support HTML video.
       </video>
-      <div class="white--text body-2 mt-2 px-14 text-center font-weight-medium">From Ushur website - Marketing feature launch</div>
+      <div class="white--text body-2 mt-2 px-14 text-center font-weight-medium">From Ushur website - Marketing the feature launch</div>
     </div>
     <article class="white">
       <div class="stickynav">

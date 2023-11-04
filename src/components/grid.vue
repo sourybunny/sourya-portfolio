@@ -9,6 +9,7 @@
         width="100%"
       >
         <div class="grid">
+          
           <v-img
             style="cursor: zoom-in; width: 100%; height: 100%"
             class="grid-item w-3"
@@ -39,6 +40,25 @@
             class="grid-item w-2"
             :src="require(`@/assets/media/visuals/bootcamp.png`)"
           ></v-img>
+          <div class="grid-item w-3 pa-16" :style="'background:#002626;'">
+            <video
+              class="elevation-0 rounded grid-item"
+              autoplay
+              loop
+              muted
+            >
+              <source
+                :src="require(`@/assets/media/visuals/onb.mp4`)"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+          </div>
+          <v-img
+            style="cursor: zoom-in; width: 100%; height: 100%"
+            class="grid-item w-1"
+            :src="require(`@/assets/media/visuals/notification.png`)"
+          ></v-img>
           <v-img
             style="cursor: zoom-in; width: 100%; height: 100%"
             class="grid-item w-1"
@@ -49,7 +69,7 @@
             class="grid-item w-3"
             :src="require(`@/assets/media/visuals/coralconversations.gif`)"
           ></v-img>
-          
+
           <v-img
             class="grid-item w-2"
             :src="require(`@/assets/media/visuals/gestures.png`)"
@@ -59,7 +79,6 @@
             class="grid-item w-2"
             :src="require(`@/assets/media/visuals/augmented.png`)"
           ></v-img>
-          
 
           <v-img
             style="cursor: zoom-in; width: 100%; height: 100%"
