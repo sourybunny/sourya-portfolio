@@ -13,19 +13,19 @@
             selected_id = item.val;
                                           " :elevation="hover ? 24 : 6" dark class="mx-3 transparent byte my-6 rounded-xl">
               <v-img :gradient="
-                !hover
+                hover
                   ? 'to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)'
                   : 'to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.2)'
               " contain class="align-end" :src="item.cardimg">
-                <div class="white--text mx-6 mb-4">
+                <div class="white--text mx-6 mb-4 d-flex flex-column">
                   <div>
                     <!-- <div style="opacity:0.5" class="font-italic paragraph-gradient display-1 ">
                       {{ item.id }}.
                     </div> -->
-                    <div class="body-2 grey--text paragraph-gradient text--lighten-1 font-italic font-weight-light mb-1">
+                    <div class="body-2 grey--text  text--lighten-1 font-italic font-weight-light mb-1">
                       {{ item.overline }}
                     </div>
-                    <p class="subheading mt-2">
+                    <p class="subheading">
                       {{ item.title }}
                     </p>
                   </div>

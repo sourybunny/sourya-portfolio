@@ -11,6 +11,36 @@
         <div class="grid">
           <v-img
             style="cursor: zoom-in; width: 100%; height: 100%"
+            class="grid-item w-3"
+            :src="require(`@/assets/media/visuals/sf.png`)"
+          ></v-img>
+          <v-img
+            style="cursor: zoom-in; width: 100%; height: 100%"
+            class="grid-item w-1"
+            :src="require(`@/assets/media/visuals/sensehawk.png`)"
+          ></v-img>
+          <v-img
+            style="cursor: zoom-in; width: 100%; height: 100%"
+            class="grid-item w-1"
+            :src="require(`@/assets/media/visuals/iub.png`)"
+          ></v-img>
+          <v-img
+            style="cursor: zoom-in; width: 100%; height: 100%"
+            class="grid-item w-3"
+            :src="require(`@/assets/media/visuals/str.png`)"
+          ></v-img>
+          <v-img
+            style="cursor: zoom-in; width: 100%; height: 100%"
+            class="grid-item w-2"
+            :src="require(`@/assets/media/visuals/iu.png`)"
+          ></v-img>
+          <v-img
+            style="cursor: zoom-in; width: 100%; height: 100%"
+            class="grid-item w-2"
+            :src="require(`@/assets/media/visuals/bootcamp.png`)"
+          ></v-img>
+          <v-img
+            style="cursor: zoom-in; width: 100%; height: 100%"
             class="grid-item w-1"
             :src="require(`@/assets/media/visuals/dice.png`)"
           ></v-img>
@@ -19,6 +49,18 @@
             class="grid-item w-3"
             :src="require(`@/assets/media/visuals/coralconversations.gif`)"
           ></v-img>
+          
+          <v-img
+            class="grid-item w-2"
+            :src="require(`@/assets/media/visuals/gestures.png`)"
+          ></v-img>
+          <v-img
+            style="cursor: zoom-in; width: 100%; height: 100%"
+            class="grid-item w-2"
+            :src="require(`@/assets/media/visuals/augmented.png`)"
+          ></v-img>
+          
+
           <v-img
             style="cursor: zoom-in; width: 100%; height: 100%"
             class="grid-item w-3"
@@ -29,46 +71,16 @@
             class="grid-item w-1"
             :src="require(`@/assets/media/visuals/cake.png`)"
           ></v-img>
-          <v-img
-            style="cursor: zoom-in; width: 100%; height: 100%"
-            class="grid-item w-2"
-            :src="require(`@/assets/media/visuals/str.png`)"
-          ></v-img>
-          <v-img
-            style="cursor: zoom-in; width: 100%; height: 100%"
-            class="grid-item w-2"
-            :src="require(`@/assets/media/visuals/bootcamp.png`)"
-          ></v-img>
 
-          
-          <v-img
-            style="cursor: zoom-in; width: 100%; height: 100%"
-            class="grid-item w-3"
-            :src="require(`@/assets/media/visuals/iu.png`)"
-          ></v-img>
           <v-img
             style="cursor: zoom-in; width: 100%; height: 100%"
             class="grid-item w-1"
-            :src="require(`@/assets/media/visuals/augmented.png`)"
-          ></v-img>
-          <v-img
-            class="grid-item w-2"
-            :src="require(`@/assets/media/visuals/gestures.png`)"
-          ></v-img>
-          <v-img
-            style="cursor: zoom-in; width: 100%; height: 100%"
-            class="grid-item w-2"
-            :src="require(`@/assets/media/visuals/augmented.png`)"
+            :src="require(`@/assets/media/js-calculator.png`)"
           ></v-img>
           <v-img
             style="cursor: zoom-in; width: 100%; height: 100%"
             class="grid-item w-3"
             :src="require(`@/assets/media/visuals/sh.png`)"
-          ></v-img>
-          <v-img
-            style="cursor: zoom-in; width: 100%; height: 100%"
-            class="grid-item w-1"
-            :src="require(`@/assets/media/js-calculator.png`)"
           ></v-img>
           <v-img
             style="cursor: zoom-in; width: 100%; height: 100%"
@@ -130,10 +142,6 @@
           <v-img
             class="grid-item w-1"
             :src="require(`@/assets/media/art6.jpg`)"
-          ></v-img>
-          <v-img
-            class="grid-item w-1"
-            :src="require(`@/assets/media/art7.jpg`)"
           ></v-img>
         </div>
       </div>

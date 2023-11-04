@@ -33,7 +33,7 @@ export default {
 $small: 500px;
 $medium: 900px;
 $large: 1680px;
-$background: #020010;
+$background: #1B1B1B;
 .layout-container {
   padding-left: 4rem;
   padding-right: 4rem;

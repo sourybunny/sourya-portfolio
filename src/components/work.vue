@@ -3,16 +3,15 @@
     <section class="layout-container bottom-line">
       <div class="layout-container__inner " style="padding:0;">
         <div  class="text-h4 white--text font-weight-bold" style="padding:4rem;" >
-          Explore my best
+          Explore my
           <span
             class="font-weight-bold tangram_yellow--text selectedwork-gradient"
             >work</span
           >
         </div>
    
-
- <!-- SENSEHAWK -->
-    <v-card flat @click.stop="$router.push('/therm')" target="_blank"
+<!-- AISUGGEST -->
+<v-card flat @click.stop="$router.push('/aisuggest')" target="_blank"
       class=" transparent pointer plan-container workcard "
     >
       <div class="">
@@ -21,12 +20,12 @@
             xs12
             sm7
             md8
-            class="therm-container--left pt-16 px-16"
+            class="ai-container--left pt-16 px-16"
           >
             <v-responsive>
               <v-img
                 :src="
-                  require(`@/assets/media/sensehawk/hero.png`)
+                  require(`@/assets/media/aisuggest/ai-hero.png`)
                 "
               ></v-img>
             </v-responsive>
@@ -35,7 +34,7 @@
             xs12
             sm5
             md4
-            class="therm-container--right workcard_right pa-8"
+            class="ai-container--right workcard_right pa-8"
           >
             <div>
               <div style="opacity:0.8;" class="mt-2">
@@ -45,15 +44,15 @@
                   contain
                   width="24"
                   height="24"
-                  :src="require(`@/assets/sensehawk logo.jpg`)"
+                  :src="require(`@/assets/media/aisuggest/ushur-logo.jpeg`)"
                 ></v-img>
-                <div>Sensehawk</div>
+                <div>Ushur</div>
               </div>
               <div class="text-h5 mt-4">
-               Defect management for solar asset construction managers
+               Generative AI writing assistant for solution developers
               </div>
               <div class="d-flex align-center mt-4 body-1 opacity-6">
-                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
+                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Launched</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
               </div>
               
             </div>
@@ -65,7 +64,7 @@
                 large
                 class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
                 @click.stop="$router.push(
-                 '/therm'
+                 '/aisuggest'
                 )"
                 target="_blank"
               >
@@ -75,7 +74,7 @@
                 </v-icon>
               </v-btn>
               <p class="body-1 opacity-6">
-                Reduced technical complexity and improved usability of ML powered app.
+                Made writing customer facing content easier & helped build workflows faster.
               </p>
             </div>
           </v-flex>
@@ -83,8 +82,8 @@
       </div>
     </v-card>
     <!-- PLANNER -->
-     <v-card flat @click="$router.push('/plan')" target="_blank"
-      class=" transparent pointer plan-container workcard mt-15"
+    <v-card flat @click="$router.push('/plan')" target="_blank"
+      class=" transparent pointer plan-container workcard mt-8"
     >
       <div class="">
         <v-layout justify-space-between wrap>
@@ -125,7 +124,7 @@
                 Helping advisors and students with a course plan review
               </div>
               <div class="d-flex align-center mt-4 body-1 opacity-6">
-                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2C</v-chip>
+                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Launched</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2C</v-chip>
               </div>
               <!-- <p class="body-1  my-5 ">
                   Helping bitcoin based content creators monetize their videos and
@@ -158,9 +157,81 @@
         </v-layout>
       </div>
     </v-card>
+ <!-- SENSEHAWK -->
+    <v-card flat @click.stop="$router.push('/therm')" target="_blank"
+      class=" transparent pointer plan-container workcard mt-8"
+    >
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="therm-container--left pt-16 px-16"
+          >
+            <v-responsive>
+              <v-img
+                :src="
+                  require(`@/assets/media/sensehawk/hero.png`)
+                "
+              ></v-img>
+            </v-responsive>
+          </v-flex>
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="therm-container--right workcard_right pa-8"
+          >
+            <div>
+              <div style="opacity:0.8;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="24"
+                  height="24"
+                  :src="require(`@/assets/sensehawk logo.jpg`)"
+                ></v-img>
+                <div>Sensehawk</div>
+              </div>
+              <div class="text-h5 mt-4">
+               Defect management for solar asset construction managers
+              </div>
+              <div class="d-flex align-center mt-4 body-1 opacity-6">
+                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Launched</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
+              </div>
+              
+            </div>
+            <div class="align-end justify-end">
+              <v-btn
+                dark
+                plain
+                block
+                large
+                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                @click.stop="$router.push(
+                 '/therm'
+                )"
+                target="_blank"
+              >
+                View Case Study
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1 opacity-6">
+                Reduced technical complexity and improved usability of ML powered app.
+              </p>
+            </div>
+          </v-flex>
+        </v-layout>
+      </div>
+    </v-card>
+    
 
          <!-- CAPSTONE -->
-         <v-card flat @click="$router.push('/capstone')"
+         <!-- <v-card flat @click="$router.push('/capstone')"
       class=" transparent pointer capstone-container workcard mt-15"
     >
       <div class="">
@@ -227,13 +298,13 @@
           </v-flex>
         </v-layout>
       </div>
-    </v-card> 
+    </v-card>  -->
 
 
 
     
        <!-- STR -->
-       <v-card flat
+       <!-- <v-card flat
       @click.stop="$router.push('/streamanity')" 
       class=" transparent pointer streamanity-container workcard mt-15"
     >
@@ -260,7 +331,6 @@
             md4
             class="streamanity-container--right workcard_right pa-8"
           >
-            <!-- <section class="flex-column justify-end"> -->
             <div>
               <div style="opacity:0.8;" class="mt-2">
                 <v-img
@@ -300,11 +370,10 @@
                 Helping 1000+ content creators monetize their videos and earn with micropayments.
               </p>
             </div>
-            <!-- </section> -->
           </v-flex>
         </v-layout>
       </div>
-    </v-card>
+    </v-card> -->
 
  <!-- SALESFORCE -->
  <!-- <v-card flat  href='https://medium.com/@sourya-design/designing-the-free-trial-experience-for-the-worlds-largest-crm-platform-ux-ui-case-study-7a154de74027' target="_blank"
@@ -537,6 +606,7 @@ export default {
     backdrop-filter: blur(10px);
   }
 }
+
 .plan-container {
   &--left {
     background: #97395a;
@@ -544,6 +614,19 @@ export default {
   &--right {
     color: #ffd5ea;
     background: #1c0115;
+// background: rgb(0,0,0);
+
+// background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
+    // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
+  }
+}
+.ai-container {
+  &--left {
+    background: #8671E3;
+  }
+  &--right {
+    color: #d6d1ec;
+    background: #120d2b;
 // background: rgb(0,0,0);
 
 // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);

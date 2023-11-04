@@ -907,6 +907,7 @@ export default {
 }
 .genai-bg {
   background: linear-gradient(148deg, #ff9c85 0%, #d66c54 87.72%);
+  background: linear-gradient(148deg, #9b85ff 0%, #48328b 87.72%);
   display: flex;
   flex-direction: column;
   align-content: center;
