@@ -28,10 +28,10 @@
             " dark class="text-capitalize">
             Resume
           </v-btn>
-          <v-btn href="mailto:sourya0411@gmail.com" target="_blank" plain dark v-bind="attrs" v-on="on"
+          <!-- <v-btn href="mailto:sourya0411@gmail.com" target="_blank" plain dark v-bind="attrs" v-on="on"
             class="text-lowercase">
             sourya0411@gmail.com
-          </v-btn>
+          </v-btn> -->
         </div>
       </div>
     </div>

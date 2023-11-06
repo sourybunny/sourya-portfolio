@@ -9,10 +9,10 @@
             >work</span
           >
         </div>
-   
+
 <!-- AISUGGEST -->
 <v-card flat @click.stop="$router.push('/aisuggest')" target="_blank"
-      class=" transparent pointer plan-container workcard "
+      class=" transparent pointer plan-container workcard"
     >
       <div class="">
         <v-layout justify-space-between wrap>
@@ -83,7 +83,7 @@
     </v-card>
     <!-- PLANNER -->
     <v-card flat @click="$router.push('/plan')" target="_blank"
-      class=" transparent pointer plan-container workcard mt-8"
+      class=" transparent pointer plan-container workcard mt-8 flex-1-0"
     >
       <div class="">
         <v-layout justify-space-between wrap>
@@ -157,6 +157,7 @@
         </v-layout>
       </div>
     </v-card>
+
  <!-- SENSEHAWK -->
     <v-card flat @click.stop="$router.push('/therm')" target="_blank"
       class=" transparent pointer plan-container workcard mt-8"
@@ -514,69 +515,14 @@ export default {
   components: {},
   data: function() {
     return {
-      title: "rhgj",
-      projects: [
-        {
-          id: 1,
-          name: "Streamanity",
-          meta: "Content monetization in Bitcoin",
-          tags:
-            "Social | Product, UX Design, Leadership | Developed & Shipped Product",
-          description:
-            "Designing a video platform for Bitcoin SV users to monetize their video content and earn money.",
-          extra: "",
-          to: "/streamanity",
-          img: require(`@/assets/media/home/stream-home.png`),
-          bg: "streamanity_green",
-          type: "internal",
-          client: "Keyport Labs Pvt Ltd",
-        },
-        {
-          id: 2,
-          name: "SOAR",
-          meta: "Student academic advising app",
-          tags: "Product, UX Design, Leadership | Developed & Shipped Product",
-          description:
-            "Designing Indiana University's student academic advising app (SOAR) for a mobile-first experience",
-          extra: "",
-          to: "/soar",
-          img: require(`@/assets/media/home/soar-home.png`),
-          bg: "streamanity_green",
-          type: "internal",
-          client: "Indiana University: Enterprise Student Systems",
-        },
-        {
-          id: 3,
-          name: "Piggie",
-          meta: "Linking student goals to their savings.",
-          tags: "Fintech | UX Design",
-          description:
-            "An app that links student goals to their savings and educates them on best behaviors and budgeting.",
-          extra: "",
-          to: "https://www.behance.net/gallery/139742913/Financial-wellbeing",
-          img: require(`@/assets/media/home/piggiee-home.png`),
-          bg: "piggie_blue",
-          type: "external",
-          client: "Academic Project",
-        },
-        // {
-        //   id: 2,
-        //   name: "LuFe",
-        //   tags: "Public Health | User Research, UX Design | Bootcamp Project",
-        //   description:
-        //     "Lufe is a re-imagined public toilet system that helps users to find clean and hygienic toilets easily and motivatesthem to use public toilets.",
-        //   extra: "",
-        //   to: "/lufe",
-        //   img: require(`@/assets/media/streamanity/streamanity-home.png`),
-        //   bg: 'lufi_blue'
-        // },
-      ],
+      
     };
   },
 };
 </script>
 
 <style lang="scss">
+
 .workcard_right {
   display: flex;
   flex-direction: column;

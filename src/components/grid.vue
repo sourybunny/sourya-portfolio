@@ -115,6 +115,10 @@
             class="grid-item w-1"
             :src="require(`@/assets/media/visuals/simon.gif`)"
           ></v-img>
+          <!-- <v-img
+            class="grid-item w-1"
+            :src="require(`@/assets/media/visuals/poster.png`)"
+          ></v-img> -->
           <v-img
             style="cursor: zoom-in; width: 100%; height: 100%"
             class="grid-item w-1"

@@ -416,7 +416,7 @@
           <sectionTitle
             :title="'Brainstorming and Affinity mapping'"
           ></sectionTitle>
-          <section-overview :title="'Ideas'" :emphasize="'Brainstorming'" :left="true">
+          <section-overview :title="'— Generate ideas'" :emphasize="'Brainstorming'" :left="true">
             <div>
               I dived into a brainstorming session with my co-designer who
               helped me familiarize with the product and high impact areas of

@@ -24,6 +24,8 @@ export default new Vuetify({
             streamanity: '#d6f5ec',
             streamanity_green:'#21ce98',
             greybg:'#F8F9FA',
+            darkbg:'#1b1b1b',
+            light:'#a0a0a0',
             paleorange:'#F4EEEE',
             slate:'#818181',
             lufi: '#edf6fc',

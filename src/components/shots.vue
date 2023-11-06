@@ -2,7 +2,7 @@
     <div class="mainbg">
       <div class="layout-container about">
         <div class="layout-container__inner">
-          <section-overview :is_dark="true" :title="'Collection of my personal work, art, coded prototypes & visual design.'">
+          <section-overview :is_dark="true" :title="'Collection of my work, art, coded prototypes & visual design.'">
             <div>
               I'm an engineer turned designer who is driven by passion and intentionality to make things better. I love making things interactive. You can find below the craft from my mind.
             </div>

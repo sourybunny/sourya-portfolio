@@ -61,6 +61,7 @@ export default {
     &--title {
       font-size: 32px;
       line-height: 42px;
+      max-width: 90%;
     }
   }
 }
