@@ -9,10 +9,9 @@
             >work</span
           >
         </div>
-
-<!-- AISUGGEST -->
-<v-card flat @click.stop="$router.push('/aisuggest')" target="_blank"
-      class=" transparent pointer plan-container workcard"
+<!-- NOTIFICATIONS -->
+<v-card flat @click.stop="$router.push('/notifications')" target="_blank"
+      class=" transparent pointer notifications-container workcard"
     >
       <div class="">
         <v-layout justify-space-between wrap>
@@ -20,15 +19,92 @@
             xs12
             sm7
             md8
-            class="ai-container--left pt-16 px-16"
+            class="notifications-container--left pa-12"
           >
+          <div class="darkbg">
             <v-responsive>
-              <v-img
+                <v-img 
+                  :src="
+                    require(`@/assets/media/notifications/hero.png`)
+                  "
+                ></v-img>
+              </v-responsive>
+
+          </div>
+          </v-flex>
+          <v-flex
+            xs12
+            sm5
+            md4
+            class="notifications-container--right workcard_right pa-8"
+          >
+            <div>
+              <div style="opacity:0.8;" class="mt-2">
+                <v-img
+                  class="mr-2"
+                  style="float:left;"
+                  contain
+                  width="24"
+                  height="24"
+                  :src="require(`@/assets/media/aisuggest/ushur-logo.jpeg`)"
+                ></v-img>
+                <div>Ushur</div>
+              </div>
+              <div class="text-h5 mt-4">
+               Notification center for Ushur's no-code workflow builder
+              </div>
+              <div class="d-flex align-center mt-4 body-1 opacity-6">
+                <span>UX/UI Design</span><span class="mx-2">&#x2022;</span> <span>Shipped</span><span  class="mx-2">&#x2022;</span> <v-chip class="opacity-1 body-1">B2B SaaS</v-chip>
+              </div>
+              
+            </div>
+            <div class="align-end justify-end">
+              <v-btn
+                dark
+                plain
+                block
+                large
+                class="my-4  bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                @click.stop="$router.push(
+                 '/notifications'
+                )"
+                target="_blank"
+              >
+                View Case Study
+                <v-icon class="ml-2" dark>
+                  mdi-arrow-right
+                </v-icon>
+              </v-btn>
+              <p class="body-1 opacity-6">
+                Crafted a real-time update system for developers to be aware of critical events impacting customers.
+              </p>
+            </div>
+          </v-flex>
+        </v-layout>
+      </div>
+    </v-card>
+<!-- AISUGGEST -->
+<v-card flat @click.stop="$router.push('/aisuggest')" target="_blank"
+      class=" transparent pointer ai-container mt-8 workcard"
+    >
+      <div class="">
+        <v-layout justify-space-between wrap>
+          <v-flex
+            xs12
+            sm7
+            md8
+            class="ai-container--left pa-12"
+          >
+          <div class="frame-border"> 
+            <v-responsive>
+              <v-img class="rounded-lg"
                 :src="
-                  require(`@/assets/media/aisuggest/ai-hero.png`)
+                  require(`@/assets/media/aisuggest/aicropped.gif`)
                 "
               ></v-img>
             </v-responsive>
+
+          </div>
           </v-flex>
           <v-flex
             xs12
@@ -533,6 +609,11 @@ export default {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   
 }
+.frame-border {
+  border: 8px solid #54449cc8;
+  border-radius: 16px;
+
+}
 .streamanity-container {
   // background: #579c70;
 
@@ -579,6 +660,21 @@ export default {
     // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
   }
 }
+
+.notifications-container {
+  &--left {
+    background: #FDF188;
+  }
+  &--right {
+    color: #fff9c5;
+    background: #1b190b;
+// background: rgb(0,0,0);
+
+// background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
+    // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
+  }
+}
+
 
 .therm-container {
 

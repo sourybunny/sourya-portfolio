@@ -1,26 +1,11 @@
 <template>
   <main class="project-section">
-    <div class="notifications-bg mt-4 px-12 py-12">
-      <!-- <v-img
-          height="50%"
-          width="50%"
-          class="mx-auto mt-16"
-          :src="require(`@/assets/media/aisuggest/main.png`)"
-        ></v-img> -->
-
-      <video
-        width="90% "
-        class="mx-auto elevation-0 rounded"
-        autoplay
-        loop
-        muted
-      >
-        <source
-          :src="require(`@/assets/media/aisuggest/genAIdemo2.mp4`)"
-          type="video/mp4"
-        />
-        Your browser does not support HTML video.
-      </video>
+    <div class="notifications-bg mx-16 mt-4">
+      <v-img
+        height="100%"
+        width="100%"
+        :src="require(`@/assets/media/notifications/banner3.png`)"
+      ></v-img>
     </div>
     <article class="white">
       <div class="stickynav">
@@ -43,14 +28,33 @@
           <v-flex xs12 sm8>
             <sectionTitle :title="'Ushur /'"></sectionTitle>
             <projectHeader
-              :title="'Notification center'"
+              :title="'🔔 Notification center '"
               :description="project_desc"
             ></projectHeader>
             <sectionContent>
               <div>
-                The Ushur platform helps solution developers gather business
-                requirements from insurance, banking and healthcare companies to
-                build solutions (app like engagements) for end users.
+                Ushur is a
+                <span class="font-weight-medium"
+                  >no-code 💻 platform for solution developers </span
+                >who create and lauch apps to Fortune100 customers,
+                solutions that
+                <span class="font-weight-medium"
+                  >impacts millions of end users.</span
+                >
+                Any discrepancy in the launched apps would frustrate the
+                customers and cause drop-offs, meaning developers needed to be
+                updated on performance of launched campaigns (apps).
+
+                <div class="mt-4">
+                  I collaborated closely with internal product teams and was
+                  under the guidance of a Senior UX Designer and Design Manager.
+                  I was the sole designer responsible for producing wireframes,
+                  hi-fi mockups, dev handoff specs and ofcourse adding
+                  <span class="font-weight-medium"
+                    >delight 🤩 to a highly technical tool.</span
+                  >
+                </div>
+
                 <!-- <br> -->
               </div>
             </sectionContent>
@@ -59,18 +63,22 @@
               <v-flex xs12 sm6>
                 <section-content :title="'Problem'">
                   <div>
-                    Currently, the platform supports only email communication
-                    without real-time updates. Users aren't aware of critical
-                    updates from launched campaigns and customer engagements
-                    which impact customer retention and risk of losing revenue.
+                    Currently, users (solution devs) aren't aware of how a
+                    launched campaign performs and at what point there is a drop
+                    off. Having these <span class="font-weight-medium"
+                  >issues unaddressed </span> impacts customer
+                    experience.
                   </div>
                 </section-content>
               </v-flex>
               <v-flex xs12 sm5>
                 <section-content :title="'Outcome'">
                   <div>
-                    I designed the notification center from scratch by
-                    collaborating with the product team.
+                    To bridge the gap, I designed a notification center for
+                    users to be <span class="font-weight-medium"
+                  >aware of customer engagement
+                    metrics 📈</span> and critical events to <span class="font-weight-medium"
+                  >take action ✔️ </span>with  quantitative data.
                   </div>
                 </section-content>
               </v-flex>
@@ -81,8 +89,7 @@
                     Due to the high criticality of the feature, we needed an
                     immediate solution to address the problem. After talking
                     with the product manager and stakeholders, we as a team,
-                    roadmapped the project and decided to start with quick view
-                    in the first release and have a dedicated page later.
+                    roadmapped the project.
                     <span class="font-weight-medium"
                       >PM helped me roughly understand what needs to be built
                       although there's a certain ambiguity at this point.</span
@@ -115,7 +122,7 @@
           </v-flex>
         </v-layout>
       </section>
-      
+
       <section class="inner-section">
         <section-highlight :is_underline="true" :is_quote="true">
           “ Limited data and ambiguity on what kind of events the user should be
@@ -146,7 +153,9 @@
             </span>
           </div>
         </section-overview>
-        <div class="my-3 py-3 mx-4 justify-space-between align-center d-flex flex-wrap flex-sm-nowrap">
+        <div
+          class="my-3 py-3 mx-4 justify-space-between align-center d-flex flex-wrap flex-sm-nowrap"
+        >
           <div class="mx-auto text-center">
             <img
               width="40%"
@@ -219,7 +228,9 @@
             critical events that risk customer drop off.
           </span>
         </section-overview>
-        <div class="pa-8 mb-8 d-flex justify-space-between align-start darkbg flex-wrap flex-sm-nowrap">
+        <div
+          class="pa-8 mb-8 d-flex justify-space-between align-start darkbg flex-wrap flex-sm-nowrap"
+        >
           <div class="my-4 pa-8 light--text">
             Users drag and drop text input fields, email fields etc and write
             agreements, policies, ask questions to take input from end user who
@@ -401,7 +412,6 @@
 
         <!-- </article> -->
 
-       
         <section class="inner-section mt-12">
           <sectionTitle :title="'Design review 1-2'"></sectionTitle>
           <section-overview
@@ -429,8 +439,7 @@
             />
           </div>
         </section>
-        
-        
+
         <section class="inner-section">
           <sectionTitle :title="'Design review 3-4'"></sectionTitle>
           <section-overview
@@ -463,7 +472,7 @@
               </v-flex>
               <v-flex xs12 sm4>
                 <img
-                  width="90%" 
+                  width="90%"
                   :src="require(`@/assets/media/notifications/drawer.png`)"
                 />
                 <div class="light--text text-center">Drawer</div>
@@ -539,21 +548,41 @@
           </div>
         </section>
         <div class="darkbg text-center pa-8">
-          <v-layout row wrap align-end justify-space-between mt-4>
-            <v-flex xs12 sm6> </v-flex>
-            <v-flex xs12 sm6>
-              <img
-                width="50%"
-                class="px-4"
+          <v-layout row wrap align-start justify-center mt-4>
+            <v-flex xs12 sm3>
+              <v-img
                 :src="require(`@/assets/media/notifications/dot3.png`)"
-              />
-              <video width="50%" autoplay muted loop class="px-3">
+              ></v-img>
+              <div class="light--text">Iteration 1</div>
+            </v-flex>
+            <v-img
+              class="mx-2"
+              width="20"
+              height="40"
+              :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
+            ></v-img>
+            <v-flex xs12 sm3>
+              <v-img
+                class="px-4"
+                :src="require(`@/assets/media/notifications/colorhover.gif`)"
+              ></v-img>
+              <div class="light--text">Iteration 2</div>
+            </v-flex>
+            <v-img
+              class="mx-2"
+              width="20"
+              height="40"
+              :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
+            ></v-img>
+            <v-flex xs12 sm4>
+              <video width="80%" autoplay muted loop>
                 <source
                   :src="require(`@/assets/media/notifications/dot1.mp4`)"
                   type="video/mp4"
                 />
                 Your browser does not support HTML video.
               </video>
+              <div class="light--text">Iteration 3</div>
             </v-flex>
           </v-layout>
         </div>
@@ -566,11 +595,12 @@
                   require(`@/assets/media/notifications/bell conditions.png`)
                 "
               />
-              <div class="light--text text-center">Conditions </div>
+              <div class="light--text text-center">Conditions</div>
             </v-flex>
             <v-flex xs12 sm4>
               <img
-                width="100%" class="px-4"
+                width="100%"
+                class="px-4"
                 :src="require(`@/assets/media/notifications/states.png`)"
               />
               <div class="light--text text-center">Transition flow</div>
@@ -590,12 +620,17 @@
       <div v-else>
         <v-btn
           dark
-          class="mx-auto is-center text-lowercase " rounded raised x-large 
+          class="mx-auto is-center text-lowercase"
+          rounded
+          raised
+          x-large
           @click.stop="show_process = !show_process"
           >👀 I want to see Process ❤️</v-btn
         >
       </div>
-      <v-btn rounded raised
+      <v-btn
+        rounded
+        raised
         dark
         v-if="show_process"
         class="mx-auto is-center text-lowercase"
@@ -610,7 +645,7 @@
         :src="require(`@/assets/media/aisuggest/arrow4.png`)"
       />
     </div>
-    
+
     <!-- <article class="white">
         <section class="inner-section">
           <sectionTitle :title="'Technical constraints'"></sectionTitle>
@@ -736,7 +771,7 @@ export default {
   data: () => {
     return {
       project_desc:
-        "Real-time updates to help users be aware of critical events.",
+        "Real-time updates to address critical events impacting customer engagement.",
       show_process: false,
     };
   },
@@ -785,12 +820,12 @@ export default {
   }
 }
 .notifications-bg {
-  background: linear-gradient(148deg, #ff9c85 0%, #d66c54 87.72%);
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: end;
-  max-width: 80%;
-  margin: auto;
+  background: linear-gradient(148deg, #fdf188 0%, #f8eb77 87.72%);
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-content: center;
+  //   justify-content: end;
+  //   max-width: 80%;
+  //   margin: auto;
 }
 </style>
