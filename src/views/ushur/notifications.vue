@@ -35,21 +35,22 @@
               <div>
                 Ushur is a
                 <span class="font-weight-medium"
-                  >no-code 💻 platform for solution developers </span
-                >who create and lauch apps to Fortune100 customers,
-                solutions that
+                  >no-code 💻 conversational-AI platform where solution
+                  developers
+                </span>
+                create and lauch apps to Fortune100 customers, solutions that
                 <span class="font-weight-medium"
-                  >impacts millions of end users.</span
+                  >impact millions of end users.</span
                 >
                 Any discrepancy in the launched apps would frustrate the
                 customers and cause drop-offs, meaning developers needed to be
                 updated on performance of launched campaigns (apps).
 
                 <div class="mt-4">
-                  I collaborated closely with internal product teams and was
-                  under the guidance of a Senior UX Designer and Design Manager.
-                  I was the sole designer responsible for producing wireframes,
-                  hi-fi mockups, dev handoff specs and ofcourse adding
+                  I collaborated closely with product teams and was under the
+                  guidance of a Senior UX Designer and Design Manager. I was the
+                  sole designer responsible for producing wireframes, hi-fi
+                  mockups, dev handoff specs and ofcourse adding
                   <span class="font-weight-medium"
                     >delight 🤩 to a highly technical tool.</span
                   >
@@ -65,9 +66,9 @@
                   <div>
                     Currently, users (solution devs) aren't aware of how a
                     launched campaign performs and at what point there is a drop
-                    off. Having these <span class="font-weight-medium"
-                  >issues unaddressed </span> impacts customer
-                    experience.
+                    off. Having these
+                    <span class="font-weight-medium">issues unaddressed </span>
+                    impacts customer experience.
                   </div>
                 </section-content>
               </v-flex>
@@ -75,10 +76,13 @@
                 <section-content :title="'Outcome'">
                   <div>
                     To bridge the gap, I designed a notification center for
-                    users to be <span class="font-weight-medium"
-                  >aware of customer engagement
-                    metrics 📈</span> and critical events to <span class="font-weight-medium"
-                  >take action ✔️ </span>with  quantitative data.
+                    users to be
+                    <span class="font-weight-medium"
+                      >aware of customer engagement metrics 📈</span
+                    >
+                    and critical events to
+                    <span class="font-weight-medium">take action ✔️ </span>with
+                    quantitative data.
                   </div>
                 </section-content>
               </v-flex>
@@ -92,7 +96,8 @@
                     roadmapped the project.
                     <span class="font-weight-medium"
                       >PM helped me roughly understand what needs to be built
-                      although there's a certain ambiguity at this point.</span
+                      although there's a certain ambiguity at this point
+                      🤷🏻‍♀️.</span
                     >
                   </div>
                 </sectionContent>
@@ -146,10 +151,11 @@
           :left="true"
         >
           <div>
-            Based on past user research, I tried to determine how this feature
-            can bring valuable benefits to our users, who are
+            The users are non-technical developers who want a simpler and faster
+            way to create applications tailored to various business needs.
             <span class="font-weight-medium font-italic"
-              >citizen developers.
+              >Typical examples include onboarding a new customer, adjudicate a
+              quote request, handling an Invoice, process a new claim, etc.
             </span>
           </div>
         </section-overview>
@@ -222,19 +228,18 @@
         >
           Users can’t always open each campaign on screen checking the issues
           and making changes, which is why we believe it’s important to set up a
-          notification system that automatically updates<span
+          notification system that notifies<span
             class="font-weight-medium white--text"
           >
-            critical events that risk customer drop off.
+            critical events that risk customer drop off .
           </span>
         </section-overview>
         <div
           class="pa-8 mb-8 d-flex justify-space-between align-start darkbg flex-wrap flex-sm-nowrap"
         >
           <div class="my-4 pa-8 light--text">
-            Users drag and drop text input fields, email fields etc and write
-            agreements, policies, ask questions to take input from end user who
-            uses this solution on their smartphone.
+            Users build app like engagements by using the drag and drop
+            interface, test and launch the campaign.
           </div>
           <img
             width="50%"
