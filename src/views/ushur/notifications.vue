@@ -466,9 +466,10 @@
             :left="true"
           >
             <div>
-              While grouping events by source made most sense for the user, there's a risk of missing a critical event
-              when it's stacked to bottom. Adhering to the goal to keep it easy
-              to use, we chose to categorize them into
+              While grouping events by source made most sense for the user,
+              there's a risk of missing a critical event when it's stacked to
+              bottom. Adhering to the goal to keep it easy to use, we chose to
+              categorize them into
               <span class="font-weight-medium"
                 >primary and informational tabs.
               </span>
@@ -544,12 +545,14 @@
             :right="true"
           >
             <div>
-               After discussing, we believed
-              it would be meaningful to allow the user to mark a notification as
-              read or unread for refering it back. I prototyped different motion designs to our team to get feedback
-              on a read/unread visual indicator. As a team, we came up with 
+              After discussing, we believed it would be meaningful to allow the
+              user to mark a notification as read or unread for refering it
+              back. I prototyped different motion designs to our team to get
+              feedback on a read/unread visual indicator. As a team, we came up
+              with
               <span class="font-weight-medium"
-                >decisions on when & how a notification will be marked as read or unread.</span
+                >decisions on when & how a notification will be marked as read
+                or unread.</span
               >
             </div>
           </section-overview>
@@ -710,8 +713,9 @@
           :emphasize="'Reflecting'"
           :left="true"
         >
-          Making the experience seamless and integrated in the user's work while
-          also giving enough visibility to the feature was difficult.
+          The feature was loved by everyone as it brought a new layer of delight
+          to a technical product and influenced how other features should follow
+          similar patterns going forward.
         </section-overview>
         <v-layout wrap class="my-6">
           <v-flex xs12 sm6>
@@ -719,31 +723,31 @@
               class="mr-12"
               is_number="true"
               :number="'01'"
-              :title="'Learn to navigate the project with limited research and embrace ambiguity'"
+              :title="'Pushing boundaries with limited data'"
             >
-              However, some projects might have a smaller scope and due to the
-              strict timeline and research team bandwidth, we probably won't
-              have research reports or resources directly related to our
-              project. We can do our own research such as competitive analysis,
-              dogfooding, flow analysis, and then list Jobs-to-be-done (JTBDs)
-              and validate them with stakeholders.
+              As the product was still in early stage, it was essential to work
+              with limited data and understanding of target audience by making
+              assumptions and taking feedback early on.
             </section-content>
           </v-flex>
           <v-flex xs12 sm6>
             <section-content
               is_number="true"
               :number="'02'"
-              :title="'Communication with stakeholders is the key'"
+              :title="'Ask questions'"
             >
-              Although we had only a week's time for the project, sharing the
-              design direction often with stakeholders helped us to stay
-              anchored to the MVP and realize the technical capabilities early
-              on. Communicating frequently (yes over communication is
-              appreciated 😁) with your cross-function team members can help us
-              gather more context and insights in the project problem space, and
-              having regular syncs with them is the key step to achieve
-              alignments, especially if we want to tackle problems on a system
-              level.
+              Speaking up and asking clarifying questions to familiarize myself with
+              product played a pivotal role in avoiding design
+              pitfalls later on.
+            </section-content>
+          </v-flex>
+          <v-flex xs12 sm6>
+            <section-content
+              is_number="true"
+              :number="'02'"
+              :title="'Ambiguity is good'"
+            >
+              Not having a clear and direct direction allowed me to be creative and make the design scalable. 
             </section-content>
           </v-flex>
         </v-layout>
