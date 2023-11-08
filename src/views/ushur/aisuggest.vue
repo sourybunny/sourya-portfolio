@@ -1,5 +1,5 @@
 <template>
-  <main class="project-section ">
+  <main class="project-section">
     <div class="genai-bg mt-4 px-12 py-12">
       <!-- <v-img
         height="50%"
@@ -11,7 +11,9 @@
       <video
         width="90% "
         class="mx-auto elevation-0 rounded"
-        autoplay loop muted
+        autoplay
+        loop
+        muted
       >
         <source
           :src="require(`@/assets/media/aisuggest/genAIdemo2.mp4`)"
@@ -19,7 +21,9 @@
         />
         Your browser does not support HTML video.
       </video>
-      <div class="white--text body-2 mt-2 px-14 text-center font-weight-medium">From Ushur website - Marketing the feature launch</div>
+      <div class="white--text body-2 mt-2 px-14 text-center font-weight-medium">
+        From Ushur website - Marketing the feature launch
+      </div>
     </div>
     <article class="white">
       <div class="stickynav">
@@ -48,8 +52,10 @@
             <sectionContent>
               <div>
                 Citizen developers (users) create business solutions using
-                Ushur's no-code drag and drop platform and launch them to customers in
-                insurance, healthcare and financial companies. The developers gather business requirements to build solutions (app like engagements) for end users.
+                Ushur's no-code drag and drop platform and launch them to
+                customers in insurance, healthcare and financial companies. The
+                developers gather business requirements to build solutions (app
+                like engagements) for end users.
 
                 <!-- <br> -->
               </div>
@@ -68,8 +74,8 @@
               <v-flex xs12 sm5>
                 <section-content :title="'Outcome'">
                   <div>
-                    I designed a smart writing assistant for non-technical developers (users)
-                    making their job easier and 2x faster.
+                    I designed a smart writing assistant for non-technical
+                    developers (users) making their job easier and 2x faster.
                   </div>
                 </section-content>
               </v-flex>
@@ -116,13 +122,29 @@
               <div>2 Product managers,</div>
               <div>AI & Engg. team</div>
             </sectionContent>
+            <sectionContent :title="'Press release'">
+              <div class="border-1 greybg pa-2">
+                <a class="d-flex align-center "
+                  style="color: black"
+                  href="https://ushur.com/company/news-press/ushur-launches-studio-to-bring-customer-experience-automation-to-business-users/"
+                  target="_blank"
+                  >View feature launch <img
+                  :src="require(`@/assets/media/aisuggest/link.svg`)"
+                  alt="arrow"
+                /></a
+                >
+                <!-- <v-img :src="require(`@/assets/media/aisuggest/link.svg`)">
+                </v-img> -->
+                
+              </div>
+            </sectionContent>
           </v-flex>
         </v-layout>
       </section>
       <section class="inner-section">
         <section-highlight :is_underline="true" :is_quote="true">
-          “ A fixed deadline with the absence of sufficient user
-          research created an intense environment with time constraints. ”
+          “ A fixed deadline with the absence of sufficient user research
+          created an intense environment with time constraints. ”
           <template v-slot:description>
             <!-- <sectionContent style="width: 65%; margin: 2rem auto 0rem">
               Adhering to a set launch date required us to prioritize engineering
@@ -135,11 +157,12 @@
     </article>
     <article class="greybg" id="users">
       <section class="inner-section">
-        <sectionTitle 
-          
-          :title="'Empathizing with users'"
-        ></sectionTitle>
-        <section-overview :title="'is it for?'" :emphasize="'Who —'" :left="true">
+        <sectionTitle :title="'Empathizing with users'"></sectionTitle>
+        <section-overview
+          :title="'is it for?'"
+          :emphasize="'Who —'"
+          :left="true"
+        >
           <div>
             Based on past user research, I tried to determine how this feature
             can bring valuable benefits to our users, who are
@@ -167,7 +190,7 @@
             height="20"
             :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
           />
-          <div class="mx-auto white text-center elevation-6 pa-8 rounded-xl">
+          <div class="mx-auto white text-center smooth-shadow pa-8 rounded-xl">
             <img
               width="40%"
               :src="require(`@/assets/media/aisuggest/dev.png`)"
@@ -221,11 +244,13 @@
           <img
             width="100%"
             height="100%"
-            :src="require(`@/assets/media/aisuggest/context.png`)"
+            :src="require(`@/assets/media/aisuggest/context2.png`)"
           />
         </div>
         <div class="text-center my-4">
-          Users drag and drop text input fields, email fields etc and write agreements, policies, ask questions to take input from end user who uses this solution on their smartphone.
+          Users drag and drop text input fields, email fields etc and write
+          agreements, policies, ask questions to take input from end user who
+          uses this solution on their smartphone.
         </div>
         <v-img
           class="mx-auto mt-4"
@@ -238,11 +263,11 @@
           What if the user had an assistant that wrote stuff for them?
         </section-highlight>
       </section>
-      </article>
-      <article class="white">
-        <section class="inner-section">
+    </article>
+    <article class="white">
+      <section class="inner-section">
         <sectionTitle :title="'Identifying design opportunity'"></sectionTitle>
-        <section-overview :title="'for user'" :emphasize="'Value'" :left="true" >
+        <section-overview :title="'for user'" :emphasize="'Value'" :left="true">
           <div>
             Their role primarily revolves around applying logic to construct
             apps and crafting customer-facing text. Users want assistance in two
@@ -255,7 +280,7 @@
         </section-overview>
         <section-highlight :is_underline="true" :is_quote="true">
           “ We know users wanted help. But they still want to be in charge;”
-           they just want an assistant to make their work easier and faster."
+          they just want an assistant to make their work easier and faster."
           <template v-slot:description>
             <!-- <sectionContent style="width: 65%; margin: 2rem auto 0rem">
               Adhering to a set launch date required us to prioritize engineering
@@ -335,7 +360,11 @@
       <div v-if="show_process">
         <section class="inner-section">
           <sectionTitle :title="'Market Study'"></sectionTitle>
-          <section-overview :title="'Understanding —'" :emphasize="'Industry Patterns'" :right="true">
+          <section-overview
+            :title="'Understanding —'"
+            :emphasize="'Industry Patterns'"
+            :right="true"
+          >
             <div>
               I did an initial market research and analyzed 10+ apps to
               understand what patterns are followed by AI writing assistants.
@@ -416,7 +445,11 @@
           <sectionTitle
             :title="'Brainstorming and Affinity mapping'"
           ></sectionTitle>
-          <section-overview :title="'— Generate ideas'" :emphasize="'Brainstorming'" :left="true">
+          <section-overview
+            :title="'— Generate ideas'"
+            :emphasize="'Brainstorming'"
+            :left="true"
+          >
             <div>
               I dived into a brainstorming session with my co-designer who
               helped me familiarize with the product and high impact areas of
@@ -468,7 +501,11 @@
         </div>
         <section class="inner-section">
           <sectionTitle :title="'Scoping'"></sectionTitle>
-          <section-overview :title="'The —'" :emphasize="'Where, what & how'" :right="true">
+          <section-overview
+            :title="'The —'"
+            :emphasize="'Where, what & how'"
+            :right="true"
+          >
             <div>
               While there was no limitation to identify use cases and explore
               divergent ideas, the
@@ -498,7 +535,7 @@
       </div>
       <div v-else>
         <v-btn
-          dark
+          dark x-large rounded
           class="mx-auto is-center text-lowercase"
           @click.stop="show_process = !show_process"
           >👀 I want to see Process ❤️</v-btn
@@ -522,7 +559,11 @@
     <article id="principles" class="white">
       <section class="inner-section">
         <sectionTitle :title="'Key considerations'"></sectionTitle>
-        <section-overview :title="'Design'" :emphasize="'Principles'" :right="true">
+        <section-overview
+          :title="'Design'"
+          :emphasize="'Principles'"
+          :right="true"
+        >
           <div>
             I set some design principles to guide the concept design. The
             citizen developers are not tech savvy which meant the feature should
@@ -564,7 +605,11 @@
     <article id="concepts" class="greybg">
       <section class="inner-section">
         <sectionTitle :title="'Challenging Assumptions'"></sectionTitle>
-        <section-overview :title="'& Interaction models'" :emphasize="'Concepts'" :left="true">
+        <section-overview
+          :title="'& Interaction models'"
+          :emphasize="'Concepts'"
+          :left="true"
+        >
           <div>
             One of the most important crossroads we faced in this process was
             determining the ideal interaction model for how we presented
@@ -600,7 +645,11 @@
       </section>
       <section class="inner-section">
         <sectionTitle :title="'Concept #1'"></sectionTitle>
-        <section-overview :title="'suggestions on the fly'" :emphasize="'Inline'" :left="true">
+        <section-overview
+          :title="'suggestions on the fly'"
+          :emphasize="'Inline'"
+          :left="true"
+        >
           <div>
             Quick actions to prompt user to improve their text. Actions are
             dynamically chosen based on the context. Ex; If it's lengthy, an
@@ -630,7 +679,11 @@
       </section>
       <section class="inner-section mt-10">
         <sectionTitle :title="'Concept #2'"></sectionTitle>
-        <section-overview :title="'Suggestions in a'" :emphasize="'dropdown'" :right="true">
+        <section-overview
+          :title="'Suggestions in a'"
+          :emphasize="'dropdown'"
+          :right="true"
+        >
           <div>
             Multiple suggestions that the user can choose from giving more
             control to user. A prompt based customization for advanced text
@@ -654,7 +707,11 @@
       </section>
       <section class="inner-section mt-10">
         <sectionTitle :title="'Concept #3'"></sectionTitle>
-        <section-overview :title="'Suggestions in a'" :emphasize="'flyout panel'" :right="true">
+        <section-overview
+          :title="'Suggestions in a'"
+          :emphasize="'flyout panel'"
+          :right="true"
+        >
           <div>
             A flyout panel to show suggestions while having a history of quick
             actions applied by user.
@@ -706,7 +763,12 @@
     <article>
       <section id="design" class="inner-section">
         <sectionTitle :title="'Design'" :is_dark="true"></sectionTitle>
-        <section-overview :title="'proposal'" :emphasize="'Final design —'" :left="true" :is_dark="true">
+        <section-overview
+          :title="'proposal'"
+          :emphasize="'Final design —'"
+          :left="true"
+          :is_dark="true"
+        >
           <div>
             Since we had limited time to implement, it was essential to
             prioritize and de-scope the design to deliver a functional proof of
@@ -714,15 +776,25 @@
             and get the job done.
           </div>
         </section-overview>
-        <video width="100%" class="mx-auto elevation-4 rounded" controls autoplay muted>
+        <video
+          width="100%"
+          class="mx-auto elevation-4 rounded"
+          controls
+          autoplay
+          muted
+        >
           <source
             :src="require(`@/assets/media/aisuggest/genAIdemo.mp4`)"
             type="video/mp4"
           />
           Your browser does not support HTML video.
         </video>
-        <div class="white--text body-2 text-center">Final design in context, feature launched 🚀</div>
-        <div class="white--text body-2 mt-3 text-center opacity-7">Credits to Hayuk (Motion designer) for promoting the feature.</div>
+        <div class="white--text body-2 text-center">
+          Final design in context, feature launched 🚀
+        </div>
+        <div class="white--text body-2 mt-3 text-center opacity-7">
+          Credits to Hayuk (Motion designer) for promoting the feature.
+        </div>
         <div class="white--text pa-4">
           <section-highlight>
             User Journeys
@@ -789,10 +861,17 @@
     <article id="reflection" class="white">
       <section class="inner-section">
         <sectionTitle :title="'What I learned'"></sectionTitle>
-        <section-overview :title="'on project outcomes'" :emphasize="'Reflecting'" :left="true">
+        <section-overview
+          :title="'on project outcomes'"
+          :emphasize="'Reflecting'"
+          :left="true"
+        >
           Making the experience seamless and integrated in the user's work while
-          also giving enough visibility to the feature was difficult.
+          also giving enough visibility to the feature was difficult. This is
+          one of the projects that's driven by technical team & development
+          constraints.
         </section-overview>
+
         <v-layout wrap class="my-6">
           <v-flex xs12 sm6>
             <section-content
@@ -801,12 +880,11 @@
               :number="'01'"
               :title="'Learn to navigate the project with limited research and embrace ambiguity'"
             >
-              However, some projects might have a smaller scope and due to the
-              strict timeline and research team bandwidth, we probably won't
-              have research reports or resources directly related to our
-              project. We can do our own research such as competitive analysis,
-              dogfooding, flow analysis, and then list Jobs-to-be-done (JTBDs)
-              and validate them with stakeholders.
+              Some projects might have a smaller scope and due to the tight
+              deadline and limited research or none at all. Doing my own
+              research such as market study, and then listing Jobs-to-be-done
+              (JTBDs) and validating them with stakeholders helped navigate the
+              project even in ambiguity.
             </section-content>
           </v-flex>
           <v-flex xs12 sm6>
@@ -818,12 +896,7 @@
               Although we had only a week's time for the project, sharing the
               design direction often with stakeholders helped us to stay
               anchored to the MVP and realize the technical capabilities early
-              on. Communicating frequently (yes over communication is
-              appreciated 😁) with your cross-function team members can help us
-              gather more context and insights in the project problem space, and
-              having regular syncs with them is the key step to achieve
-              alignments, especially if we want to tackle problems on a system
-              level.
+              on.
             </section-content>
           </v-flex>
         </v-layout>
@@ -860,7 +933,8 @@ export default {
   },
   data: () => {
     return {
-      project_desc: "An assistant to help solution developers build workflows faster.",
+      project_desc:
+        "An assistant to help solution developers build workflows faster.",
       show_process: false,
     };
   },
@@ -917,5 +991,12 @@ export default {
   justify-content: end;
   max-width: 80%;
   margin: auto;
+}
+.smooth-shadow {
+  box-shadow: 1.1px 0.8px 12.8px -33px rgba(0, 0, 0, 0.035),
+    9px 6px 102px -33px rgba(0, 0, 0, 0.07);
+}
+.border-1 {
+  border: 1px solid grey;
 }
 </style>

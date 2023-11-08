@@ -180,7 +180,7 @@
             height="20"
             :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
           />
-          <div class="mx-auto white text-center elevation-6 pa-8 rounded-xl">
+          <div class="mx-auto white text-center smooth-shadow pa-8 rounded-xl">
             <img
               width="40%"
               :src="require(`@/assets/media/aisuggest/dev.png`)"
@@ -841,5 +841,11 @@ export default {
   //   justify-content: end;
   //   max-width: 80%;
   //   margin: auto;
+}
+.smooth-shadow {
+    box-shadow:
+  1.1px 0.8px 12.8px -21px rgba(0, 0, 0, 0.035),
+  9px 6px 102px -21px rgba(0, 0, 0, 0.07)
+;
 }
 </style>

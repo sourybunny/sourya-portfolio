@@ -6,7 +6,7 @@
     </div>
     <div v-else class="text-center">
       <!-- <hr v-if="is_underline" /> -->
-      <div class="section-highlight--quote text-center">
+      <div class="section-highlight--quote smooth-shadow text-center">
       <slot></slot>
     </div>
         <slot name="description"></slot>
@@ -28,7 +28,7 @@ export default {
 .section-highlight {
   // padding: 4rem;
   // width: 80%;
-  margin: 4rem auto;
+  margin: 2rem auto;
   hr {
     width: 6rem;
     margin: 1rem auto;
@@ -40,12 +40,12 @@ export default {
   }
   &--quote {
     font-family: 'Tiempos-Text', Georgia, "Times New Roman", Times, serif;
-    font-style: italic;
+    // font-style: italic;
     font-size: 28px;
     line-height: 42px;
     font-weight: 400;
     padding: 2rem;
-    color: #F4511E;
+    color: #8A68FE;
     // width: 65%;
     background: #fafafa;
   }
@@ -63,5 +63,11 @@ export default {
     }
     
   }
+}
+.smooth-shadow {
+  box-shadow:
+  1.3px 6.8px 7.3px -75px rgba(0, 0, 0, 0.105),
+  10px 54px 58px -75px rgba(0, 0, 0, 0.21)
+;
 }
 </style>
