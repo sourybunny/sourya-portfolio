@@ -52,7 +52,7 @@
                   sole designer responsible for producing wireframes, hi-fi
                   mockups, dev handoff specs and ofcourse adding
                   <span class="font-weight-medium"
-                    >delight 🤩 to a highly technical tool.</span
+                    >delight 🤩 to the highly technical tool.</span
                   >
                 </div>
 
@@ -153,9 +153,9 @@
           <div>
             The users are non-technical developers who want a simpler and faster
             way to create applications tailored to various business needs.
-            <span class="font-weight-medium font-italic"
+            <span class="font-weight-medium"
               >Typical examples include onboarding a new customer, adjudicate a
-              quote request, handling an Invoice, process a new claim, etc.
+              quote request, handling an invoice, process a new claim, etc.
             </span>
           </div>
         </section-overview>
@@ -221,7 +221,7 @@
       <section class="inner-section">
         <sectionTitle :title="'Context & needs'" :is_dark="true"></sectionTitle>
         <section-overview
-          :title="'for user - Manage & track'"
+          :title="'for user - to manage & track workflows'"
           :emphasize="'Value'"
           :left="true"
           :is_dark="true"
@@ -237,13 +237,26 @@
         <div
           class="pa-8 mb-8 d-flex justify-space-between align-start darkbg flex-wrap flex-sm-nowrap"
         >
-          <div class="my-4 pa-8 light--text">
-            Users build app like engagements by using the drag and drop
-            interface, test and launch the campaign.
-          </div>
+          <sectionContent>
+            <div class="light--text">
+              Users
+              <span class="font-weight-medium white--text">build</span> app like
+              engagements by using the drag and drop interface,
+              <span class="font-weight-medium white--text">test</span> and
+              <span class="font-weight-medium white--text">launch</span> the
+              campaign to end customers.
+              <div class="mt-4">
+                Having a notification center would help them track and
+                <span class="font-weight-medium white--text">manage</span>
+                the performance of launched campaigns and address critical
+                failures, a feature currently missing in the app.
+              </div>
+            </div>
+          </sectionContent>
           <img
             width="50%"
             height="100%"
+            class="px-6"
             :src="require(`@/assets/media/notifications/campaign.png`)"
           />
         </div>
@@ -254,9 +267,9 @@
             :src="require(`@/assets/media/notifications/context.png`)"
           />
           <div class="text-center light--text my-4">
-            Users drag and drop text input fields, email fields etc and write
-            agreements, policies, ask questions to take input from end user who
-            uses this solution on their smartphone.
+            User builds and tests app using no-code Ushur platform. Any issue in
+            the workflow will impact the experience of end customer who uses the
+            conversational-AI based solution on the smartphone.
           </div>
         </div>
         <section-highlight
@@ -448,19 +461,17 @@
         <section class="inner-section">
           <sectionTitle :title="'Design review 3-4'"></sectionTitle>
           <section-overview
-            :title="'The —'"
-            :emphasize="'Where, what & how'"
-            :right="true"
+            :title="'critical events'"
+            :emphasize="'Prioritizing'"
+            :left="true"
           >
             <div>
-              While grouping events by source made most sense for the user to
-              quickly scan content, there's a risk of missing a critical event
+              While grouping events by source made most sense for the user, there's a risk of missing a critical event
               when it's stacked to bottom. Adhering to the goal to keep it easy
               to use, we chose to categorize them into
               <span class="font-weight-medium"
-                >critical and informational
+                >primary and informational tabs.
               </span>
-              tabs.
             </div>
           </section-overview>
           <div class="text-center my-2 grey--text font-weight-medium">
@@ -504,19 +515,15 @@
         <section class="inner-section">
           <sectionTitle :title="'Design review 5-6'"></sectionTitle>
           <section-overview
-            :title="'The —'"
-            :emphasize="'Where, what & how'"
+            :title="'Information'"
+            :emphasize="'hierarchy'"
             :right="true"
           >
             <div>
-              While grouping events by source made most sense for the user to
-              quickly scan content, there's a risk of missing a critical event
-              when it's stacked to bottom. Adhering to the goal to keep it easy
-              to use, we chose to categorize them into
-              <span class="font-weight-medium"
-                >critical and informational
-              </span>
-              tabs.
+              While I did not have relevant examples of what information to
+              display for campaign related activities, I took references based
+              on other events in the spreadsheet to design the information so
+              it's easy to scan quickly.
             </div>
           </section-overview>
           <div class="text-center my-2 grey--text font-weight-medium">
@@ -532,20 +539,18 @@
         <section class="inner-section">
           <sectionTitle :title="'Design review 7-8'"></sectionTitle>
           <section-overview
-            :title="'The —'"
-            :emphasize="'Where, what & how'"
+            :title="'Providing user with'"
+            :emphasize="'control and delightful animations'"
             :right="true"
           >
             <div>
-              I prototyped different motion designs to our team to get feedback
-              on a read/unread visual indicator. After discussing, we believed
+               After discussing, we believed
               it would be meaningful to allow the user to mark a notification as
-              read or unread for refering it back. As a team, we came up with a
+              read or unread for refering it back. I prototyped different motion designs to our team to get feedback
+              on a read/unread visual indicator. As a team, we came up with 
               <span class="font-weight-medium"
-                >framework on when a notification will be marked as read.</span
+                >decisions on when & how a notification will be marked as read or unread.</span
               >
-
-              This is the most challenging part of the project.
             </div>
           </section-overview>
           <div class="text-center my-2 grey--text font-weight-medium">
