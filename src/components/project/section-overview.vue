@@ -5,7 +5,11 @@
   >
     <v-layout wrap v-if="!vertical">
       <v-flex xs12 sm6>
-        <p class="section-overview--title"> <span v-if="left" class="emphasize-title">{{emphasize}}</span> {{ title }} <span v-if="right" class="emphasize-title">{{emphasize}}</span></p>
+        <p class="section-overview--title">
+          <span v-if="left" class="emphasize-title">{{ emphasize }}</span>
+          {{ title }}
+          <span v-if="right" class="emphasize-title">{{ emphasize }}</span>
+        </p>
       </v-flex>
       <v-flex xs12 sm6>
         <p class="section-overview-body">
@@ -15,7 +19,11 @@
     </v-layout>
     <v-layout wrap v-else>
       <v-flex xs12>
-        <p class="section-overview--title"> <span v-if="left" class="emphasize-title">{{emphasize}}</span> {{ title }} <span v-if="right" class="emphasize-title">{{emphasize}}</span></p>
+        <p class="section-overview--title">
+          <span v-if="left" class="emphasize-title">{{ emphasize }}</span>
+          {{ title }}
+          <span v-if="right" class="emphasize-title">{{ emphasize }}</span>
+        </p>
       </v-flex>
       <v-flex xs12>
         <p class="section-overview-body">
@@ -34,8 +42,8 @@ export default {
     is_dark: false,
     left: false,
     right: false,
-    emphasize: '',
-    vertical: false
+    emphasize: "",
+    vertical: false,
   },
 };
 </script>
@@ -47,19 +55,19 @@ export default {
   &--dark {
     color: white;
     .section-overview-body {
-    color: #a0a0a0;
+      color: #a0a0a0;
     }
-    }
+  }
   &--title {
     font-size: 40px;
     line-height: 52px;
     max-width: 85%;
     // font-family: Georgia, "Times New Roman", Times, serif;
   }
-.emphasize-title {
-  font-family: 'Tiempos-Text','Georgia', "Times New Roman", Times, serif;
-  font-style: italic;
-}
+  .emphasize-title {
+    font-family: "Tiempos-Text", "Georgia", "Times New Roman", Times, serif;
+    font-style: italic;
+  }
   &-body {
     font-size: 18px;
     line-height: 27px;
