@@ -4,13 +4,13 @@
       <slot></slot>
       <slot name="description"></slot>
     </div>
-    <div v-else class="text-center">
+    <div v-else >
       <!-- <hr v-if="is_underline" /> -->
-      <img
+      <img data-aos="slide-left" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-duration="500" 
         v-if="sticker"
         width="100"
         height="100%"
-        class="sticker"
+        class="sticker displayBox"
         :src="require(`@/assets/media/stickers/${sticker}.png`)"
       />
       <div class="section-highlight--quote smooth-shadow text-center">
