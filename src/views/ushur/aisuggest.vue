@@ -611,12 +611,11 @@
           :left="true"
         >
           <div>
-            One of the most important crossroads we faced in this process was
-            determining the ideal interaction model for how we presented
-            in-context suggestions. We specifically had 2 key questions we
-            wanted to answer in testing:
-            <li>Is the design unobtrusive, yet noticeable?</li>
-            <li>Does the user understand why they were getting suggestions?</li>
+            One of the challenges we faced in this process was
+            choosing the interaction model for feature discoverability and presenting suggestions in context.
+            These were the questions we had in mind.
+            <li>Is the design unintrusive, yet noticeable?</li>
+            <li>Does the user understand how to view the suggestions and expectation of what the feature is going to do.</li>
           </div>
         </section-overview>
         <div class="text-center grey--text font-weight-medium">
