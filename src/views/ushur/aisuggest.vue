@@ -142,7 +142,7 @@
         </v-layout>
       </section>
       <section class="inner-section">
-        <section-highlight :is_underline="true" :is_quote="true">
+        <section-highlight :is_underline="true" :is_quote="true" :sticker="'serious'">
           “ A fixed deadline with the absence of sufficient user research
           created an intense environment with time constraints. ”
           <template v-slot:description>
@@ -278,7 +278,7 @@
             in the writing process.
           </div>
         </section-overview>
-        <section-highlight :is_underline="true" :is_quote="true">
+        <section-highlight :is_underline="true" :is_quote="true" :sticker="'secret'">
           “ We know users wanted help. But they still want to be in charge;”
           they just want an assistant to make their work easier and faster."
           <template v-slot:description>

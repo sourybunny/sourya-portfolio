@@ -5,7 +5,16 @@
         class="white--text py-16 layout-container__inner"
         :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
       >
-        <p class="py-16 font-weight-medium">Thanks for visiting <br> my <span class="portfolio-gradient ">portfolio</span>. </p>
+        <img
+          width="100"
+          height="100%"
+          class="sticker"
+          :src="require(`@/assets/media/stickers/thanks.png`)"
+        />
+        <p class="pb-16 font-weight-medium">
+          Thanks for visiting <br />
+          my <span class="portfolio-gradient">portfolio</span>.
+        </p>
         <!-- <div class="font-weight-bold text-center ">
           To know more about me or my work,
           <p class="font-weight-bold">
@@ -17,13 +26,14 @@
         </div> -->
       </div>
     </div>
-    <div class="layout-container " style="border-top: 2px solid rgba(255, 255, 255, 0.1);">
+    <div
+      class="layout-container"
+      style="border-top: 2px solid rgba(255, 255, 255, 0.1)"
+    >
       <div
         class="layout-container__inner py-6 white--text d-flex flex-wrap align-center justify-space-between"
       >
-        <div>
-          © Sourya Varanasi - Design & Code
-        </div>
+        <div>© Sourya Varanasi - Design & Code</div>
         <div class="d-flex align-center grey--text">
           <v-btn
             @click.stop="$router.push({ path: '/about' })"
@@ -56,8 +66,14 @@
             class="text-capitalize"
             >Behance</v-btn
           >
-          <v-btn  href="https://www.github.com/sourybunny"
-            target="_blank" plain dark class="text-capitalize">Github</v-btn>
+          <v-btn
+            href="https://www.github.com/sourybunny"
+            target="_blank"
+            plain
+            dark
+            class="text-capitalize"
+            >Github</v-btn
+          >
         </div>
       </div>
     </div>

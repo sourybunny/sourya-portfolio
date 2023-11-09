@@ -129,7 +129,7 @@
       </section>
 
       <section class="inner-section">
-        <section-highlight :is_underline="true" :is_quote="true">
+        <section-highlight :is_underline="true" :is_quote="true" :sticker="'dontknow'">
           “ Limited data and ambiguity on what kind of events the user should be
           notified on led to making some assumptions. ”
           <template v-slot:description>
@@ -276,6 +276,7 @@
           :is_underline="true"
           :is_quote="true"
           :is_dark="true"
+          :sticker="'righthand'"
         >
           “ The most important thing for citizen developers is being aware of
           launched campaigns and performance, critical workflow failures that
