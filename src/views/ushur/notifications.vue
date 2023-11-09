@@ -129,7 +129,11 @@
       </section>
 
       <section class="inner-section">
-        <section-highlight :is_underline="true" :is_quote="true" :sticker="'dontknow'">
+        <section-highlight
+          :is_underline="true"
+          :is_quote="true"
+          :sticker="'dontknow'"
+        >
           “ Limited data and ambiguity on what kind of events the user should be
           notified on led to making some assumptions. ”
           <template v-slot:description>
@@ -685,25 +689,118 @@
           :is_dark="true"
         >
           <div>
-            Since we had limited time to implement, it was essential to
-            prioritize and de-scope the design to deliver a functional proof of
-            concept. Our goal was to have the user use the feature effortlessly
-            and get the job done.
+            In just three weeks, faced with the challenge of creating a
+            <span class="font-weight-medium white--text">scalable</span> and
+            efficient solution for handling hundreds of notifications, I
+            embraced an
+            <span class="font-weight-medium white--text"
+              >iterative design
+            </span>
+            approach. Every step of the way, I prioritized the user experience,
+            ensuring the design remained both
+            <span class="font-weight-medium white--text"
+              >lightweight and delightful.</span
+            >
+            Incorporating subtle motion elements added a touch of cheer for
+            users navigating through their daily task overload.
           </div>
         </section-overview>
         <video
           width="100%"
           class="mx-auto elevation-4 rounded"
-          controls
+          loop
           autoplay
           muted
+          controls
         >
           <source
-            :src="require(`@/assets/media/aisuggest/genAIdemo.mp4`)"
+            :src="require(`@/assets/media/notifications/notification.mp4`)"
             type="video/mp4"
           />
           Your browser does not support HTML video.
         </video>
+        <!-- <v-img
+                class="mt-3"
+                width="100%"
+                :src="require(`@/assets/media/notifications/anim1.gif`)"
+              ></v-img> -->
+      </section>
+      <section class="pa-16 mt-16">
+        <v-layout wrap align-end>
+          <v-flex xs12 sm4>
+            <section-overview
+              class="mr-10"
+              :title="'Mark a notification as'"
+              :emphasize="'Read/Unread'"
+              :right="true"
+              :is_dark="true"
+              :vertical="true"
+            >
+              <div>
+                An interactive visual indicator to mark a notification as read
+                or unread for referencing back.
+              </div>
+            </section-overview>
+          </v-flex>
+          <v-flex xs12 sm8>
+            <video
+              width="100%"
+              class="mx-auto elevation-4 rounded"
+              loop
+              autoplay
+              muted
+              controls
+            >
+              <source
+                :src="require(`@/assets/media/notifications/collapse.mp4`)"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+          </v-flex>
+        </v-layout>
+      </section>
+      <section class="pa-16">
+        <v-layout wrap align-end>
+          <v-flex xs12 sm8>
+            <video
+              width="100%"
+              class="mx-auto elevation-4 rounded"
+              loop
+              autoplay
+              muted
+              controls
+            >
+              <source
+                :src="require(`@/assets/media/notifications/anim1.mp4`)"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+            <!-- <v-img
+                class="mt-3"
+                width="100%"
+                :src="require(`@/assets/media/notifications/anim1.gif`)"
+              ></v-img> -->
+          </v-flex>
+          <v-flex xs12 sm4>
+            <section-overview
+              class="ml-10"
+              :title="'Mark all notifications as'"
+              :emphasize="'Read'"
+              :right="true"
+              :is_dark="true"
+              :vertical="true"
+            >
+              <div>
+                <!-- Since we had limited time to implement, it was essential to
+                prioritize and de-scope the design to deliver a functional proof
+                of concept. Our goal was to have the user use the feature
+                effortlessly and get the job done. -->
+              </div>
+            </section-overview>
+          </v-flex>
+        </v-layout>
       </section>
     </article>
     <article id="reflection" class="white">
@@ -737,9 +834,9 @@
               :number="'02'"
               :title="'Ask questions'"
             >
-              Speaking up and asking clarifying questions to familiarize myself with
-              product played a pivotal role in avoiding design
-              pitfalls later on.
+              Speaking up and asking clarifying questions to familiarize myself
+              with product played a pivotal role in avoiding design pitfalls
+              later on.
             </section-content>
           </v-flex>
           <v-flex xs12 sm6>
@@ -748,7 +845,8 @@
               :number="'02'"
               :title="'Ambiguity is good'"
             >
-              Not having a clear and direct direction allowed me to be creative and make the design scalable. 
+              Not having a clear and direct direction allowed me to be creative
+              and make the design scalable.
             </section-content>
           </v-flex>
         </v-layout>
@@ -844,9 +942,12 @@ export default {
   //   margin: auto;
 }
 .smooth-shadow {
-    box-shadow:
-  1.1px 0.8px 12.8px -21px rgba(0, 0, 0, 0.035),
-  9px 6px 102px -21px rgba(0, 0, 0, 0.07)
-;
+  box-shadow: 1.1px 0.8px 12.8px -21px rgba(0, 0, 0, 0.035),
+    9px 6px 102px -21px rgba(0, 0, 0, 0.07);
+}
+@media screen and (max-width: 500px) {
+  .stickynav {
+    display: none;
+  }
 }
 </style>

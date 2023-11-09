@@ -5,7 +5,7 @@
         class="white--text py-16 layout-container__inner"
         :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
       >
-        <img
+        <img data-aos="slide-down"  data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-duration="500" 
           width="100"
           height="100%"
           class="sticker"

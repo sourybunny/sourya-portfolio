@@ -3,11 +3,21 @@
     class="section-overview"
     :class="is_dark ? 'section-overview--dark' : ''"
   >
-    <v-layout wrap>
+    <v-layout wrap v-if="!vertical">
       <v-flex xs12 sm6>
         <p class="section-overview--title"> <span v-if="left" class="emphasize-title">{{emphasize}}</span> {{ title }} <span v-if="right" class="emphasize-title">{{emphasize}}</span></p>
       </v-flex>
       <v-flex xs12 sm6>
+        <p class="section-overview-body">
+          <slot></slot>
+        </p>
+      </v-flex>
+    </v-layout>
+    <v-layout wrap v-else>
+      <v-flex xs12>
+        <p class="section-overview--title"> <span v-if="left" class="emphasize-title">{{emphasize}}</span> {{ title }} <span v-if="right" class="emphasize-title">{{emphasize}}</span></p>
+      </v-flex>
+      <v-flex xs12>
         <p class="section-overview-body">
           <slot></slot>
         </p>
@@ -25,6 +35,7 @@ export default {
     left: false,
     right: false,
     emphasize: '',
+    vertical: false
   },
 };
 </script>

@@ -999,4 +999,9 @@ export default {
 .border-1 {
   border: 1px solid grey;
 }
+@media screen and (max-width: 500px) {
+  .stickynav {
+    display: none;
+  }
+}
 </style>
