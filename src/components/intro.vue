@@ -129,7 +129,7 @@
               <v-btn
                       href="https://www.linkedin.com/in/souryav/"
                       target="_blank"
-                      class="mr-2 mt-5 text-left text-capitalize"
+                      class="mt-5 text-left text-capitalize"
                       outlined
                       rounded
                       dark

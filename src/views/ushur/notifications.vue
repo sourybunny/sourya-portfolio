@@ -637,21 +637,24 @@
 
       <div v-else>
         <v-btn
-          dark
-          class="mx-auto is-center text-lowercase"
+          class="mx-auto is-center text-capitalize"
           rounded
           raised
           x-large
+          outlined
           @click.stop="show_process = !show_process"
-          >👀 I want to see Process ❤️</v-btn
+          > ❤️ I want to see 👀  Process<img
+                  :src="require(`@/assets/media/me/right-down.svg`)"
+                  alt="arrow"
+                /></v-btn
         >
       </div>
       <v-btn
         rounded
         raised
-        dark
+        outlined
         v-if="show_process"
-        class="mx-auto is-center text-lowercase"
+        class="mx-auto is-center text-capitalize"
         @click.stop="show_process = !show_process"
         >Hide Process</v-btn
       >
