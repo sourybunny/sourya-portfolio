@@ -26,7 +26,10 @@
           </v-btn>
           <v-btn plain target="_blank" :href="'https://drive.google.com/file/d/1jHMl659Nz0ijDHgk1lbjpCal7TgA_Btd/view?usp=sharing'
             " dark class="text-capitalize">
-            Resume
+            Resume <img
+                  :src="require(`@/assets/media/me/linkwhite.svg`)"
+                  alt="arrow"
+                />
           </v-btn>
           <!-- <v-btn href="mailto:sourya0411@gmail.com" target="_blank" plain dark v-bind="attrs" v-on="on"
             class="text-lowercase">

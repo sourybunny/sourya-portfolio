@@ -126,7 +126,24 @@
               >
                 
               </div> -->
-              <div class="text-left mt-5">
+              <v-btn
+                      href="https://www.linkedin.com/in/souryav/"
+                      target="_blank"
+                      class="mr-2 mt-5 text-left text-capitalize"
+                      outlined
+                      rounded
+                      dark
+                      large
+                      color="white"
+                      v-bind="attrs"
+                      v-on="on"
+                    >
+                      Linkedin <img
+                  :src="require(`@/assets/media/me/linkwhite.svg`)"
+                  alt="arrow"
+                />
+                    </v-btn>
+              <!-- <div class="text-left mt-5">
                 <v-tooltip bottom>
                   <template v-slot:activator="{ on, attrs }">
                     <v-btn
@@ -199,7 +216,7 @@
                   </template>
                   <span>Instagram</span>
                 </v-tooltip>
-              </div>
+              </div> -->
             </div>
           </div>
         </v-flex>

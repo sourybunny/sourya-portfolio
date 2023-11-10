@@ -1,7 +1,7 @@
 <template>
   <div class="section-title" :class="is_dark ? 'section-title--dark' : ''">
-    <span class="maintitle">{{ title }}</span>
-    <div class="linebar" v-if="is_underline"></div>
+    <span class="maintitle" data-aos="fade-right"  data-aos-easing="ease-in-out" data-aos-delay="200" data-aos-duration="500" >{{ title }}</span>
+    <div class="linebar" data-aos="fade-right"  data-aos-easing="ease-in-out" data-aos-delay="200" data-aos-duration="200" v-if="is_underline"></div>
     <!-- <hr v-if="is_underline" /> -->
   </div>
 </template>

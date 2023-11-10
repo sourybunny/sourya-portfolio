@@ -56,6 +56,8 @@ export default {
     color: #8a68fe;
     // width: 65%;
     background: #fafafa;
+    // border: 2px solid #e9e3ff;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   }
 }
 

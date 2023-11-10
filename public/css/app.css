@@ -41,8 +41,8 @@ body {
 }
 section {
   opacity: 0;
-  animation: load_up 1s forwards;
-  -webkit-animation: load_up 1s forwards;
+  animation: load_up 2s forwards;
+  -webkit-animation: load_up 2s forwards;
 }
 .v-image__image,
 video {

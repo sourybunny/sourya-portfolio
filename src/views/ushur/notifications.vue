@@ -842,7 +842,7 @@
           <v-flex xs12 sm6>
             <section-content
               is_number="true"
-              :number="'02'"
+              :number="'03'"
               :title="'Ambiguity is good'"
             >
               Not having a clear and direct direction allowed me to be creative
