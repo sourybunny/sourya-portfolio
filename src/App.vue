@@ -34,6 +34,10 @@ $small: 500px;
 $medium: 900px;
 $large: 1680px;
 $background: #050505;
+.smooth-shadow {
+  box-shadow: 1.3px 6.8px 7.3px -75px rgba(0, 0, 0, 0.105),
+    10px 54px 58px -75px rgba(0, 0, 0, 0.21);
+}
 .layout-container {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -50,8 +54,8 @@ $background: #050505;
     @media screen and (max-width: $small) {
       padding: 1rem;
     }
-    border-left: 2px solid rgba(255, 255, 255, 0.1);
-    border-right: 2px solid rgba(255, 255, 255, 0.1);
+    // border-left: 2px solid rgba(255, 255, 255, 0.1);
+    // border-right: 2px solid rgba(255, 255, 255, 0.1);
     // border-image: linear-gradient(to right, darkblue, darkorchid) 1;
 
     .content-title {

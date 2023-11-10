@@ -80,8 +80,5 @@ export default {
     }
   }
 }
-.smooth-shadow {
-  box-shadow: 1.3px 6.8px 7.3px -75px rgba(0, 0, 0, 0.105),
-    10px 54px 58px -75px rgba(0, 0, 0, 0.21);
-}
+
 </style>

@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss">
 .navbar {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 .removeBorder {
   .layout-container__inner {

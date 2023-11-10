@@ -1,305 +1,245 @@
 <template>
-  <div>
-    <section class="layout-container bottom-line">
-      <div class="layout-container__inner">
-        <div class="text-h4 white--text font-weight-bold">
-          Explore my
-          <span
-            class="font-weight-bold tangram_yellow--text selectedwork-gradient"
-            >work</span
-          >
-          <!-- NOTIFICATIONS -->
-          <v-card
-            flat
-            @click.stop="$router.push('/notifications')"
-            target="_blank"
-            class="transparent pointer notifications-container workcard mt-12"
-          >
-            <div class="">
-              <v-layout justify-space-between wrap>
-                <v-flex
-                  xs12
-                  sm7
-                  md7
-                  class="notifications-container--left pa-8"
-                >
-                  <div class="darkbg">
+  
+  <section class="layout-container bottom-line" style="background: #EFF2F5;">
+    <div class="layout-container__inner">
+      <div class="font-weight-bold">
+        <!-- Explore my
+        <span
+          class="font-weight-bold tangram_yellow--text selectedwork-gradient"
+          >work</span
+        > -->
+        <section-title :title="'work'" ></section-title>
+        <!-- <p class="font-weight-medium text-uppercase title" >Work</p> -->
+      </div>
+      <div class="projectlist mt-10">
+        <v-row wrap>
+          <v-col cols="12" md="6">
+            <!-- NOTIFICATIONS -->
+            <v-sheet
+              @click.stop="$router.push('/notifications')"
+              target="_blank"
+              class=" pointer  workcard ma-2 fill-height smooth-shadow"
+            >
+              <div class="">
+                <div class="px-6 pt-6">
+                  <div class="body-1 font-italic font-weight-light mb-1"><span class="streamanity-dot"></span> Ushur</div>
+                  <div class=" font-weight-medium text-h5 mb-4" >
+                    Notification Center
+                  </div>
+                  <div class="darkbg lighten-1">
                     <v-responsive>
-                      <v-img
+                      <v-img 
                         :src="require(`@/assets/media/notifications/hero.png`)"
                       ></v-img>
                     </v-responsive>
                   </div>
-                </v-flex>
-                <v-flex
-                  xs12
-                  sm5
-                  md5
-                  class="notifications-container--right workcard_right pa-8"
+                </div>
+                <div
+                  class="workcard_right px-6 pt-4  "
                 >
                   <div>
-                    <div style="opacity: 0.8" class="mt-2">
-                      <v-img
-                        class="mr-2"
-                        style="float: left"
-                        contain
-                        width="24"
-                        height="24"
-                        :src="
-                          require(`@/assets/media/aisuggest/ushur-logo.jpeg`)
-                        "
-                      ></v-img>
-                      <div class="body-1">Ushur</div>
-                    </div>
-                    <div class="font-weight-light mt-4">
-                      Notification center for no-code AI product
-                    </div>
-                    <div class="d-flex align-center mt-4 body-1 opacity-6 ">
+                    
+                    <div class="d-flex align-center body-1 caption text-uppercase mt-2">
                       <span>UX/UI Design</span
                       ><span class="mx-2">&#x2022;</span> <span>Shipped</span
                       ><span class="mx-2">&#x2022;</span>
-                      <v-chip small class="opacity-1 body-1">B2B SaaS</v-chip>
+                      <v-chip small class="white body-1 caption greybg">B2B SaaS</v-chip>
                     </div>
                   </div>
-                  <div class="align-end justify-end">
+                  <div class="align-end justify-end mt-4">
+                    <p class="body-1 light--text">
+                      Real-time updates for users of no-code app to address critical events impacting customers.
+                    </p>
                     <v-btn
-                      dark
                       plain
-                      block
                       large
-                      class="my-4 bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                      class="bottom-line--light  text-uppercase font-weight-medium pa-0 "
                       @click.stop="$router.push('/notifications')"
                       target="_blank"
                     >
-                      View Case Study
+                      read more
                       <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
                     </v-btn>
-                    <p class="body-1 opacity-6 ">
-                      Real-time updates for users of no-code app to address critical events impacting customers.
-                    </p>
+                    
                   </div>
-                </v-flex>
-              </v-layout>
-            </div>
-          </v-card>
-          <!-- AISUGGEST -->
-          <v-card
-            flat
-            @click.stop="$router.push('/aisuggest')"
-            target="_blank"
-            class="transparent pointer ai-container mt-8 workcard"
-          >
-            <div class="">
-              <v-layout justify-space-between wrap>
-                <v-flex xs12 sm7 md7 class="ai-container--left pa-8">
-                  <div class="frame-border">
+                </div> 
+              </div>
+            </v-sheet>
+          </v-col>
+          <v-col cols="12" md="6">
+            <!-- NOTIFICATIONS -->
+            <v-sheet
+              @click.stop="$router.push('/aisuggest')"
+              target="_blank"
+              class=" pointer  workcard ma-2 fill-height smooth-shadow"
+            >
+              <div class="">
+                <div class="px-6 pt-6 ">
+                  <div class="body-1 font-italic font-weight-light mb-1">Ushur</div>
+                  <div class=" font-weight-medium text-h5 mb-4" >
+                    AI Smart Suggest
+
+                  </div>
+                  <div class=" frame-border">
                     <v-responsive>
-                      <v-img
-                        class="rounded-lg"
+                      <v-img 
                         :src="require(`@/assets/media/aisuggest/aicropped.gif`)"
                       ></v-img>
                     </v-responsive>
                   </div>
-                </v-flex>
-                <v-flex
-                  xs12
-                  sm5
-                  md5
-                  class="ai-container--right workcard_right pa-8"
+                </div>
+                <div
+                  class="workcard_right px-6 pt-4  "
                 >
                   <div>
-                    <div style="opacity: 0.8" class="mt-2">
-                      <v-img
-                        class="mr-2"
-                        style="float: left"
-                        contain
-                        width="24"
-                        height="24"
-                        :src="
-                          require(`@/assets/media/aisuggest/ushur-logo.jpeg`)
-                        "
-                      ></v-img>
-                      <div class="body-1">Ushur</div>
-
-                    </div>
-                    <div class="font-weight-light mt-4">
-                      Generative AI smart writing assistant
-                    </div>
-                    <div class="d-flex align-center mt-4 body-1 opacity-6">
+                    
+                    <div class="d-flex align-center body-1 caption text-uppercase mt-2">
                       <span>UX/UI Design</span
-                      ><span class="mx-2">&#x2022;</span> <span>Launched</span
+                      ><span class="mx-2">&#x2022;</span> <span>Shipped</span
                       ><span class="mx-2">&#x2022;</span>
-                      <v-chip small class="opacity-1 body-1">B2B SaaS</v-chip>
+                      <v-chip small class="white body-1 caption greybg">B2B SaaS</v-chip>
                     </div>
                   </div>
-                  <div class="align-end justify-end">
-                    <v-btn
-                      dark
-                      plain
-                      block
-                      large
-                      class="my-4 bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
-                      @click.stop="$router.push('/aisuggest')"
-                      target="_blank"
-                    >
-                      View Case Study
-                      <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
-                    </v-btn>
-                    <p class="body-1 opacity-6">
+                  <div class="align-end justify-end mt-4">
+                    <p class="body-1 light--text">
                       Made writing customer facing content easier & helped build
                       workflows faster.
                     </p>
+                    <v-btn
+                      plain
+                      large
+                      class="bottom-line--light  text-uppercase font-weight-medium pa-0"
+                      @click.stop="$router.push('/aisuggest')"
+                      target="_blank"
+                    >
+                      read more
+                      <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
+                    </v-btn>
+                    
                   </div>
-                </v-flex>
-              </v-layout>
-            </div>
-          </v-card>
-          <!-- PLANNER -->
-          <v-card
-            flat
-            @click="$router.push('/plan')"
-            target="_blank"
-            class="transparent pointer plan-container workcard mt-8 flex-1-0"
-          >
-            <div class="">
-              <v-layout justify-space-between wrap>
-                <v-flex xs12 sm7 md7 class="plan-container--left pt-8 pr-8">
-                  <v-responsive>
-                    <v-img
-                      :src="require(`@/assets/media/plan/plan.png`)"
-                    ></v-img>
-                  </v-responsive>
-                </v-flex>
-                <v-flex
-                  xs12
-                  sm5
-                  md5
-                  class="plan-container--right workcard_right pa-8"
-                >
-                  <!-- <section class="flex-column justify-end"> -->
-                  <div>
-                    <div style="opacity: 0.8" class="mt-2">
-                      <v-img
-                        class="mr-2"
-                        style="float: left"
-                        contain
-                        width="24"
-                        height="24"
-                        :src="require(`@/assets/stories/iu-logo.jpeg`)"
+                </div> 
+              </div>
+            </v-sheet>
+          </v-col>
+          <v-col cols="12" md="6">
+            <!-- Planner -->
+            <v-sheet
+              @click.stop="$router.push('/plan')"
+              target="_blank"
+              class=" pointer  workcard ma-2 fill-height smooth-shadow"
+            >
+              <div class="">
+                <div class="px-6 pt-6 ">
+                  <div class="body-1 font-italic font-weight-light mb-1">Indiana University</div>
+                  <div class=" font-weight-medium text-h5 mb-4" >
+                    Course Planner
+
+                  </div>
+                  <div class="">
+                    <v-responsive>
+                      <v-img 
+                        :src="require(`@/assets/media/plan/plan.png`)"
                       ></v-img>
-                      <div class="body-1">Indiana University</div>
-                    </div>
-                    <div class="font-weight-light mt-4">
-                      Course planner review for students & advisors
-                    </div>
-                    <div class="d-flex align-center mt-4 body-1 opacity-6">
+                    </v-responsive>
+                  </div>
+                </div>
+                <div
+                  class="workcard_right px-6 pt-4  "
+                >
+                  <div>
+                    
+                    <div class="d-flex align-center body-1 caption text-uppercase mt-2">
                       <span>UX/UI Design</span
                       ><span class="mx-2">&#x2022;</span> <span>Launched</span
                       ><span class="mx-2">&#x2022;</span>
-                      <v-chip small class="opacity-1 body-1">B2C</v-chip>
+                      <v-chip small class="white body-1 caption greybg">B2C</v-chip>
                     </div>
-                    <!-- <p class="body-1  my-5 ">
-                  Helping bitcoin based content creators monetize their videos and
-                  earn money directy from their followers.
-                </p> -->
                   </div>
-                  <div class="align-end justify-end">
-                    <v-btn
-                      dark
-                      plain
-                      block
-                      large
-                      class="my-4 bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
-                      @click.stop="$router.push('/plan')"
-                      target="_blank"
-                    >
-                      View Case Study
-                      <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
-                    </v-btn>
-                    <p class="body-1 opacity-6">
+                  <div class="align-end justify-end mt-4">
+                    <p class="body-1 light--text">
                       Designed an internal tool for 40k+ students and 150+
                       advisors to reduce manual effort.
                     </p>
+                    <v-btn
+                      plain
+                      large
+                      class="bottom-line--light  text-uppercase font-weight-medium pa-0"
+                      @click.stop="$router.push('/plan')"
+                      target="_blank"
+                    >
+                      read more
+                      <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
+                    </v-btn>
+                    
                   </div>
-                  <!-- </section> -->
-                </v-flex>
-              </v-layout>
-            </div>
-          </v-card>
+                </div> 
+              </div>
+            </v-sheet>
+          </v-col>
+          <v-col cols="12" md="6">
+            <!-- Planner -->
+            <v-sheet
+              @click.stop="$router.push('/therm')"
+              target="_blank"
+              class=" pointer  workcard ma-2 fill-height smooth-shadow"
+            >
+              <div class="">
+                <div class="px-6 pt-6 ">
+                  <div class="body-1 font-italic font-weight-light mb-1">Sensehawk</div>
+                  <div class=" font-weight-medium text-h5 mb-4" >
+                    Solar Defect Management
 
-          <!-- SENSEHAWK -->
-          <v-card
-            flat
-            @click.stop="$router.push('/therm')"
-            target="_blank"
-            class="transparent pointer plan-container workcard mt-8"
-          >
-            <div class="">
-              <v-layout justify-space-between wrap>
-                <v-flex xs12 sm7 md7 class="therm-container--left pt-8 px-8">
-                  <v-responsive>
-                    <v-img
-                      :src="require(`@/assets/media/sensehawk/hero.png`)"
-                    ></v-img>
-                  </v-responsive>
-                </v-flex>
-                <v-flex
-                  xs12
-                  sm5
-                  md5
-                  class="therm-container--right workcard_right pa-8"
+                  </div>
+                  <div class="">
+                    <v-responsive>
+                      <v-img 
+                        :src="require(`@/assets/media/sensehawk/hero.png`)"
+                      ></v-img>
+                    </v-responsive>
+                  </div>
+                </div>
+                <div
+                  class="workcard_right px-6 pt-4  "
                 >
                   <div>
-                    <div style="opacity: 0.8" class="mt-2">
-                      <v-img
-                        class="mr-2"
-                        style="float: left"
-                        contain
-                        width="24"
-                        height="24"
-                        :src="require(`@/assets/sensehawk logo.jpg`)"
-                      ></v-img>
-                      <div class="body-1">Sensehawk</div>
-                    </div>
-                    <div class="font-weight-light mt-4">
-                      ML powered app for solar asset mangers
-                    </div>
-                    <div class="d-flex align-center mt-4 body-1 opacity-6">
+                    
+                    <div class="d-flex align-center body-1 caption text-uppercase mt-2">
                       <span>UX/UI Design</span
                       ><span class="mx-2">&#x2022;</span> <span>Launched</span
                       ><span class="mx-2">&#x2022;</span>
-                      <v-chip small class="opacity-1 body-1">B2B SaaS</v-chip>
+                      <v-chip small class="white body-1 caption greybg">B2B SAAS</v-chip>
                     </div>
                   </div>
-                  <div class="align-end justify-end">
+                  <div class="align-end justify-end mt-4">
+                    <p class="body-1 light--text">
+                      Designed an internal tool for 40k+ students and 150+
+                      advisors to reduce manual effort.
+                    </p>
                     <v-btn
-                      dark
                       plain
-                      block
                       large
-                      class="my-4 bottom-line--light d-flex justify-space-between text--lighten-4 title text-capitalize font-weight-medium pa-0"
+                      class="bottom-line--light  text-uppercase font-weight-medium pa-0"
                       @click.stop="$router.push('/therm')"
                       target="_blank"
                     >
-                      View Case Study
+                      read more
                       <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
                     </v-btn>
-                    <p class="body-1 opacity-6">
-                      Defect management app for solar asset construction managers that raised $30M
-                    </p>
+                    
                   </div>
-                </v-flex>
-              </v-layout>
-            </div>
-          </v-card>
+                </div> 
+              </div>
+            </v-sheet>
+          </v-col>
+        </v-row>
 
-          <!-- CAPSTONE -->
-          <!-- <v-card flat @click="$router.push('/capstone')"
+        <!-- CAPSTONE -->
+        <!-- <v-sheet flat @click="$router.push('/capstone')"
       class=" transparent pointer capstone-container workcard mt-15"
     >
       <div class="">
-        <v-layout justify-space-between wrap>
-          <v-flex
+        <v-row justify-space-between wrap>
+          <v-col
             xs12
             sm7
             md8
@@ -312,8 +252,8 @@
                 "
               ></v-img>
             </v-responsive>
-          </v-flex>
-          <v-flex
+          </v-col>
+          <v-col
             xs12
             sm5
             md4
@@ -358,19 +298,19 @@
                 Prototyped three interactive games for children to spark empathy for coral reefs.
               </p>
             </div>
-          </v-flex>
-        </v-layout>
+          </v-col>
+        </v-row>
       </div>
-    </v-card>  -->
+    </v-sheet>  -->
 
-          <!-- STR -->
-          <!-- <v-card flat
+        <!-- STR -->
+        <!-- <v-sheet flat
       @click.stop="$router.push('/streamanity')" 
       class=" transparent pointer streamanity-container workcard mt-15"
     >
       <div class="">
-        <v-layout justify-space-between wrap>
-          <v-flex
+        <v-row justify-space-between wrap>
+          <v-col
             xs12
             sm7
             md8
@@ -384,8 +324,8 @@
                 "
               ></v-img>
             </v-responsive>
-          </v-flex>
-          <v-flex
+          </v-col>
+          <v-col
             xs12
             sm5
             md4
@@ -430,18 +370,18 @@
                 Helping 1000+ content creators monetize their videos and earn with micropayments.
               </p>
             </div>
-          </v-flex>
-        </v-layout>
+          </v-col>
+        </v-row>
       </div>
-    </v-card> -->
+    </v-sheet> -->
 
-          <!-- SALESFORCE -->
-          <!-- <v-card flat  href='https://medium.com/@sourya-design/designing-the-free-trial-experience-for-the-worlds-largest-crm-platform-ux-ui-case-study-7a154de74027' target="_blank"
+        <!-- SALESFORCE -->
+        <!-- <v-sheet flat  href='https://medium.com/@sourya-design/designing-the-free-trial-experience-for-the-worlds-largest-crm-platform-ux-ui-case-study-7a154de74027' target="_blank"
       class=" transparent pointer salesforce-container workcard mt-15"
     >
       <div class="">
-        <v-layout justify-space-between wrap>
-          <v-flex
+        <v-row justify-space-between wrap>
+          <v-col
             xs12
             sm7
             md8
@@ -454,8 +394,8 @@
                 "
               ></v-img>
             </v-responsive>
-          </v-flex>
-          <v-flex
+          </v-col>
+          <v-col
             xs12
             sm5
             md4
@@ -499,11 +439,11 @@
                 Redesigned salesforce free-trial form by converting insights from market research to actionable design elements.
               </p>
             </div>
-          </v-flex>
-        </v-layout>
+          </v-col>
+        </v-row>
       </div>
-    </v-card> -->
-          <!-- <section class="layout-container mainbg">
+    </v-sheet> -->
+        <!-- <section class="layout-container mainbg">
       <div class="layout-container__inner py-10">
         <div
           class="white--text"
@@ -529,8 +469,8 @@
     <section class="layout-container courseplan-container">
       <section class="layout-container__inner">
         <div class="content-container">
-          <v-layout row justify-space-between wrap>
-            <v-flex xs12 sm9>
+          <v-row row justify-space-between wrap>
+            <v-col xs12 sm9>
               <v-responsive>
                 <v-img
                   :src="
@@ -538,8 +478,8 @@
                   "
                 ></v-img>
               </v-responsive>
-            </v-flex>
-            <v-flex xs12 sm3>
+            </v-col>
+            <v-col xs12 sm3>
               <div class="pt-10">
                 <div class="content-title white--text">
                   Course Planner Review
@@ -557,20 +497,20 @@
                   CASE STUDY
                 </v-btn>
               </div>
-            </v-flex>
-          </v-layout>
+            </v-col>
+          </v-row>
         </div>
       </section>
     </section> -->
-        </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
+import SectionTitle from  '@/components/project/section-title'
 export default {
-  components: {},
+  components: {SectionTitle},
   data: function () {
     return {};
   },
@@ -578,30 +518,42 @@ export default {
 </script>
 
 <style lang="scss">
-.workcard_right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+// .workcard_right {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// }
+
+.projectlist {
+  // display: grid;
+  // grid-gap: 20px;
+  // transition: all 0.3s ease;
+  // padding: 0 20px;
+  // grid-template-columns: repeat(2, 1fr) !important;
+  // .workcard {
+  //   width:500px;
+  //   height: 500px;
+  // }
+  .workcard {
+    min-height: 420px;
+    cursor: pointer;
+    // color:white;
+    // background: rgb(26, 26, 27);
+    background: #fff;
+    color: black;
+    // border-radius: 16px;
+    
+  }
 }
 
 .work {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 .frame-border {
-  border: 8px solid #54449cc8;
+  border: 4px solid #8574d3c8;
   border-radius: 16px;
 }
-.streamanity-container {
-  // background: #579c70;
 
-  &--left {
-    background: #579c70;
-  }
-  &--right {
-    color: #a8dbbb;
-    background: #09120e;
-  }
-}
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .streamanity-container--right {
     -webkit-backdrop-filter: blur(10px);
@@ -609,60 +561,79 @@ export default {
   }
 }
 
-.plan-container {
-  &--left {
-    background: #97395a;
-  }
-  &--right {
-    color: #ffd5ea;
-    background: #1c0115;
-    // background: rgb(0,0,0);
+// .plan-container {
+//   &--left {
+//     background: #97395a;
+//   }
+//   &--right {
+//     color: #ffd5ea;
+//     background: #1c0115;
+//     // background: rgb(0,0,0);
 
-    // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
-    // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
-  }
-}
-.ai-container {
-  &--left {
-    background: #8671e3;
-  }
-  &--right {
-    color: #d6d1ec;
-    background: #120d2b;
-    // background: rgb(0,0,0);
+//     // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
+//     // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
+//   }
+// }
+// .ai-container {
+//   &--left {
+//     background: #b2a1ff;
+//   }
+//   &--right {
+//     background: #120d2b;
+//     background: rgb(255, 255, 255);
+//     color: #d6d1ec;
+    
+//     // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
+//     // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
+//   }
+//   transition: all 300ms;
+//   // transform: rotate(1deg);
+  
+//   &:hover {
+//     // border: 2px solid white;
+//     // transform: rotate(0deg);
+//   }
+// }
 
-    // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
-    // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
-  }
-}
+// .notifications-container {
+//   // background: white;
+//   &--left {
+//     // background: #fbf2a2;
+//     background: black;
+//     color: white;
+//   }
+//   &--right {
+//     color: #fff9c5;
+//     background: black;
+//     // background: #1b190b;
+//   }
+//   // border-top-left-radius: 250px 15px;
+//   //   border-bottom-left-radius: 20px 115px;
+//   //   border-bottom-right-radius: 105px 15px;
+//   // background: #fff;
+//   transition: all 300ms;
+//   // transform: rotate(1deg);
+  
+//   &:hover {
+//     // background:#fbf2a2;
+//     // border: 2px solid white;
+//     // transform: rotate(0deg);
+//   }
+// }
 
-.notifications-container {
-  &--left {
-    background: #fdf188;
-  }
-  &--right {
-    color: #fff9c5;
-    background: #1b190b;
-    // background: rgb(0,0,0);
+// .therm-container {
+//   &--left {
+//     background: #1576b7;
+//   }
+//   &--right {
+//     color: #8dbdda;
+//     background: #0d1724;
+//     // background: rgb(0,0,0);
 
-    // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
-    // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
-  }
-}
-
-.therm-container {
-  &--left {
-    background: #1576b7;
-  }
-  &--right {
-    color: #8dbdda;
-    background: #0d1724;
-    // background: rgb(0,0,0);
-
-    // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
-    // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
-  }
-}
+//     // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
+//     // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
+//   }
+// }
 .salesforce-container {
   &--left {
     background: #3b598a;
@@ -701,4 +672,5 @@ export default {
 .v-btn__content {
   opacity: 1 !important;
 }
+
 </style>

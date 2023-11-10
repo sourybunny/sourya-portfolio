@@ -2,7 +2,7 @@
   <div>
     <Intro />
     <Work />
-    <Shorts />
+    <!-- <Shorts /> -->
 
     <!-- <Aboutme id="about" /> -->
     <Contact />
