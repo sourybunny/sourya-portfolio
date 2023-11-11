@@ -17,9 +17,10 @@ export default {};
 <style lang="scss">
 .tangram {
   // position: absolute;
-  transform: translate(15%,15%);
+  transform: translate(15%,15%) scale(0.6);
   width: 100%;
   height: 380px;
+  
   // top: 150px;
   // left: 150px;
   -moz-transition: all 1s;
@@ -188,7 +189,7 @@ export default {};
   transform: translate(222px, 163px) rotate(70deg) skew(45deg);
 }
 .intro:hover .tangram{
-  transform: rotate(-30deg);
+  transform: rotate(-30deg) scale(.7);
 }
 .intro:hover  .my-story{
     visibility:visible;

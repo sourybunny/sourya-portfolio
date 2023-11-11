@@ -1,6 +1,5 @@
 <template>
-  
-  <section class="layout-container bottom-line" style="background: #EFF2F5;">
+  <section class="layout-container bottom-line" style="background: #f9f9fb">
     <div class="layout-container__inner">
       <div class="font-weight-bold">
         <!-- Explore my
@@ -8,7 +7,7 @@
           class="font-weight-bold tangram_yellow--text selectedwork-gradient"
           >work</span
         > -->
-        <section-title :title="'work'" ></section-title>
+        <section-title :title="'work'"></section-title>
         <!-- <p class="font-weight-medium text-uppercase title" >Work</p> -->
       </div>
       <div class="projectlist mt-10">
@@ -18,51 +17,59 @@
             <v-sheet
               @click.stop="$router.push('/notifications')"
               target="_blank"
-              class=" pointer  workcard ma-2 fill-height smooth-shadow"
+              class="pointer workcard ma-2 fill-height smooth-shadow"
             >
               <div class="">
                 <div class="px-6 pt-6">
-                  <div class="body-1 font-italic font-weight-light mb-1"><span class="streamanity-dot"></span> Ushur</div>
-                  <div class=" font-weight-medium text-h5 mb-4" >
+                  <div class="d-flex align-center">
+                    <div class="body-1 font-italic font-weight-light mb-1">
+                      Ushur
+                    </div>
+                    <div class="ml-2"
+                      :style="'background:black;height: 2px; width:2rem;opacity:0.5;'"
+                    ></div>
+                  </div>
+                  <div class="font-weight-medium text-h5 mb-4">
                     Notification Center
                   </div>
                   <div class="darkbg lighten-1">
                     <v-responsive>
-                      <v-img 
+                      <v-img
                         :src="require(`@/assets/media/notifications/hero.png`)"
                       ></v-img>
                     </v-responsive>
                   </div>
                 </div>
-                <div
-                  class="workcard_right px-6 pt-4  "
-                >
+                <div class="workcard_right px-6 pt-4">
                   <div>
-                    
-                    <div class="d-flex align-center body-1 caption text-uppercase mt-2">
+                    <div
+                      class="d-flex align-center body-1 caption text-uppercase mt-2"
+                    >
                       <span>UX/UI Design</span
                       ><span class="mx-2">&#x2022;</span> <span>Shipped</span
                       ><span class="mx-2">&#x2022;</span>
-                      <v-chip small class="white body-1 caption greybg">B2B SaaS</v-chip>
+                      <v-chip small class="white body-1 caption greybg"
+                        >B2B SaaS</v-chip
+                      >
                     </div>
                   </div>
                   <div class="align-end justify-end mt-4">
-                    <p class="body-1 light--text">
-                      Real-time updates for users of no-code app to address critical events impacting customers.
+                    <p class="body-1">
+                      Real-time updates for solution developers of no-code app to address
+                      critical events impacting customers.
                     </p>
                     <v-btn
                       plain
                       large
-                      class="bottom-line--light  text-uppercase font-weight-medium pa-0 "
+                      class="bottom-line--light text-uppercase font-weight-medium pa-0"
                       @click.stop="$router.push('/notifications')"
                       target="_blank"
                     >
                       read more
                       <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
                     </v-btn>
-                    
                   </div>
-                </div> 
+                </div>
               </div>
             </v-sheet>
           </v-col>
@@ -71,53 +78,59 @@
             <v-sheet
               @click.stop="$router.push('/aisuggest')"
               target="_blank"
-              class=" pointer  workcard ma-2 fill-height smooth-shadow"
+              class="pointer workcard ma-2 fill-height smooth-shadow"
             >
               <div class="">
-                <div class="px-6 pt-6 ">
-                  <div class="body-1 font-italic font-weight-light mb-1">Ushur</div>
-                  <div class=" font-weight-medium text-h5 mb-4" >
-                    AI Smart Suggest
-
+                <div class="px-6 pt-6">
+                  <div class="d-flex align-center">
+                    <div class="body-1 font-italic font-weight-light mb-1">
+                      Ushur
+                    </div>
+                    <div class="ml-2"
+                      :style="'background:black;height: 2px; width:2rem;opacity:0.5;'"
+                    ></div>
                   </div>
-                  <div class=" frame-border">
+                  <div class="font-weight-medium text-h5 mb-4">
+                    AI Smart Suggest
+                  </div>
+                  <div class="frame-border">
                     <v-responsive>
-                      <v-img 
+                      <v-img
                         :src="require(`@/assets/media/aisuggest/aicropped.gif`)"
                       ></v-img>
                     </v-responsive>
                   </div>
                 </div>
-                <div
-                  class="workcard_right px-6 pt-4  "
-                >
+                <div class="workcard_right px-6 pt-4">
                   <div>
-                    
-                    <div class="d-flex align-center body-1 caption text-uppercase mt-2">
+                    <div
+                      class="d-flex align-center body-1 caption text-uppercase mt-2"
+                    >
                       <span>UX/UI Design</span
-                      ><span class="mx-2">&#x2022;</span> <span>Shipped</span
+                      ><span class="mx-2">&#x2022;</span> <span>Launched</span
                       ><span class="mx-2">&#x2022;</span>
-                      <v-chip small class="white body-1 caption greybg">B2B SaaS</v-chip>
+                      <v-chip small class="white body-1 caption greybg"
+                        >B2B SaaS</v-chip
+                      >
                     </div>
                   </div>
                   <div class="align-end justify-end mt-4">
-                    <p class="body-1 light--text">
-                      Made writing customer facing content easier & helped build
+                    <p class="body-1">
+                      Generative AI writing assistant to help users write engaging customer facing content & build
                       workflows faster.
                     </p>
                     <v-btn
                       plain
                       large
-                      class="bottom-line--light  text-uppercase font-weight-medium pa-0"
+                      class="bottom-line--light text-uppercase font-weight-medium pa-0"
                       @click.stop="$router.push('/aisuggest')"
                       target="_blank"
                     >
                       read more
                       <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
                     </v-btn>
-                    
                   </div>
-                </div> 
+                </div>
               </div>
             </v-sheet>
           </v-col>
@@ -126,53 +139,62 @@
             <v-sheet
               @click.stop="$router.push('/plan')"
               target="_blank"
-              class=" pointer  workcard ma-2 fill-height smooth-shadow"
+              class="pointer workcard ma-2 fill-height smooth-shadow"
             >
               <div class="">
-                <div class="px-6 pt-6 ">
-                  <div class="body-1 font-italic font-weight-light mb-1">Indiana University</div>
-                  <div class=" font-weight-medium text-h5 mb-4" >
+                <div class="px-6 pt-6">
+                  <div class="d-flex align-center">
+                    <div class="body-1 font-italic font-weight-light mb-1">
+                      Indiana University
+                    </div>
+                    <div class="ml-2"
+                      :style="'background:black;height: 2px; width:2rem;opacity:0.5;'"
+                    ></div>
+                  </div>
+                  <!-- <div class="body-1 font-italic font-weight-light mb-1">
+                    Indiana University
+                  </div> -->
+                  <div class="font-weight-medium text-h5 mb-4">
                     Course Planner
-
                   </div>
                   <div class="">
                     <v-responsive>
-                      <v-img 
+                      <v-img
                         :src="require(`@/assets/media/plan/plan.png`)"
                       ></v-img>
                     </v-responsive>
                   </div>
                 </div>
-                <div
-                  class="workcard_right px-6 pt-4  "
-                >
+                <div class="workcard_right px-6 pt-4">
                   <div>
-                    
-                    <div class="d-flex align-center body-1 caption text-uppercase mt-2">
+                    <div
+                      class="d-flex align-center body-1 caption text-uppercase mt-2"
+                    >
                       <span>UX/UI Design</span
                       ><span class="mx-2">&#x2022;</span> <span>Launched</span
                       ><span class="mx-2">&#x2022;</span>
-                      <v-chip small class="white body-1 caption greybg">B2C</v-chip>
+                      <v-chip small class="white body-1 caption greybg"
+                        >B2C</v-chip
+                      >
                     </div>
                   </div>
                   <div class="align-end justify-end mt-4">
-                    <p class="body-1 light--text">
+                    <p class="body-1">
                       Designed an internal tool for 40k+ students and 150+
-                      advisors to reduce manual effort.
+                      advisors reducing 100's of hours of manual effort.
                     </p>
                     <v-btn
                       plain
                       large
-                      class="bottom-line--light  text-uppercase font-weight-medium pa-0"
+                      class="bottom-line--light text-uppercase font-weight-medium pa-0"
                       @click.stop="$router.push('/plan')"
                       target="_blank"
                     >
                       read more
                       <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
                     </v-btn>
-                    
                   </div>
-                </div> 
+                </div>
               </div>
             </v-sheet>
           </v-col>
@@ -181,53 +203,62 @@
             <v-sheet
               @click.stop="$router.push('/therm')"
               target="_blank"
-              class=" pointer  workcard ma-2 fill-height smooth-shadow"
+              class="pointer workcard ma-2 fill-height smooth-shadow"
             >
               <div class="">
-                <div class="px-6 pt-6 ">
-                  <div class="body-1 font-italic font-weight-light mb-1">Sensehawk</div>
-                  <div class=" font-weight-medium text-h5 mb-4" >
+                <div class="px-6 pt-6">
+                  <div class="d-flex align-center">
+                    <div class="body-1 font-italic font-weight-light mb-1">
+                      Sensehawk
+                    </div>
+                    <div class="ml-2"
+                      :style="'background:black;height: 2px; width:2rem;opacity:0.5;'"
+                    ></div>
+                  </div>
+                  <!-- <div class="body-1 font-italic font-weight-light mb-1">
+                    Sensehawk
+                  </div> -->
+                  <div class="font-weight-medium text-h5 mb-4">
                     Solar Defect Management
-
                   </div>
                   <div class="">
                     <v-responsive>
-                      <v-img 
+                      <v-img
                         :src="require(`@/assets/media/sensehawk/hero.png`)"
                       ></v-img>
                     </v-responsive>
                   </div>
                 </div>
-                <div
-                  class="workcard_right px-6 pt-4  "
-                >
+                <div class="workcard_right px-6 pt-4">
                   <div>
-                    
-                    <div class="d-flex align-center body-1 caption text-uppercase mt-2">
+                    <div
+                      class="d-flex align-center body-1 caption text-uppercase mt-2"
+                    >
                       <span>UX/UI Design</span
                       ><span class="mx-2">&#x2022;</span> <span>Launched</span
                       ><span class="mx-2">&#x2022;</span>
-                      <v-chip small class="white body-1 caption greybg">B2B SAAS</v-chip>
+                      <v-chip small class="white body-1 caption greybg"
+                        >B2B SAAS</v-chip
+                      >
                     </div>
                   </div>
                   <div class="align-end justify-end mt-4">
-                    <p class="body-1 light--text">
-                      Designed an internal tool for 40k+ students and 150+
-                      advisors to reduce manual effort.
+                    <p class="body-1">
+                      Simplified a defect management tool for solar asset construction
+                      managers that raised $30M.
                     </p>
                     <v-btn
                       plain
                       large
-                      class="bottom-line--light  text-uppercase font-weight-medium pa-0"
+                      class="bottom-line--light text-uppercase font-weight-medium pa-0"
                       @click.stop="$router.push('/therm')"
                       target="_blank"
                     >
                       read more
                       <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
                     </v-btn>
-                    
                   </div>
-                </div> 
+                </div>
               </div>
             </v-sheet>
           </v-col>
@@ -508,9 +539,9 @@
 </template>
 
 <script>
-import SectionTitle from  '@/components/project/section-title'
+import SectionTitle from "@/components/project/section-title";
 export default {
-  components: {SectionTitle},
+  components: { SectionTitle },
   data: function () {
     return {};
   },
@@ -539,10 +570,9 @@ export default {
     cursor: pointer;
     // color:white;
     // background: rgb(26, 26, 27);
-    background: #fff;
+    background: white;
     color: black;
     // border-radius: 16px;
-    
   }
 }
 
@@ -582,13 +612,13 @@ export default {
 //     background: #120d2b;
 //     background: rgb(255, 255, 255);
 //     color: #d6d1ec;
-    
+
 //     // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
 //     // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
 //   }
 //   transition: all 300ms;
 //   // transform: rotate(1deg);
-  
+
 //   &:hover {
 //     // border: 2px solid white;
 //     // transform: rotate(0deg);
@@ -613,7 +643,7 @@ export default {
 //   // background: #fff;
 //   transition: all 300ms;
 //   // transform: rotate(1deg);
-  
+
 //   &:hover {
 //     // background:#fbf2a2;
 //     // border: 2px solid white;
@@ -661,16 +691,7 @@ export default {
   }
 }
 
-.streamanity-dot {
-  width: 1.5rem;
-  height: 1.5rem;
-  // border-radius: 50%;
-  background: #489b65;
-  // left:-0.7%;
-  // top: 35%;
-}
 .v-btn__content {
   opacity: 1 !important;
 }
-
 </style>
