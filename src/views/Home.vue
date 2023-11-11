@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Intro from "../components/intro";
+import Intro from "../components/intro2";
 import Aboutme from "../components/aboutme";
 import Contact from "../components/contact";
 import Work from "../components/work";

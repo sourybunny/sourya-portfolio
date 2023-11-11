@@ -1,18 +1,10 @@
 <template>
-  <section class="layout-container bottom-line" style="background: #f9f9fb">
-    <div class="layout-container__inner">
-      <div class="font-weight-bold">
-        <!-- Explore my
-        <span
-          class="font-weight-bold tangram_yellow--text selectedwork-gradient"
-          >work</span
-        > -->
-        <section-title :title="'work'"></section-title>
-        <!-- <p class="font-weight-medium text-uppercase title" >Work</p> -->
-      </div>
+  <section class="layout-container black bottom-line" style="background: #f9f9fb">
+    <div class="layout-container__inner py-0">
+      <!-- style="margin-top:-3rem;" -->
       <div class="projectlist mt-10">
         <v-row wrap>
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" >
             <!-- NOTIFICATIONS -->
             <v-sheet
               @click.stop="$router.push('/notifications')"
@@ -263,7 +255,6 @@
             </v-sheet>
           </v-col>
         </v-row>
-
         <!-- CAPSTONE -->
         <!-- <v-sheet flat @click="$router.push('/capstone')"
       class=" transparent pointer capstone-container workcard mt-15"

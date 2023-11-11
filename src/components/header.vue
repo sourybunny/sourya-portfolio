@@ -1,13 +1,12 @@
 <template>
-  <div class="layout-container navbar" :class="{
-    'removeBorder': $route.path == '/plan' || $route.path == '/streamanity' || $route.path == '/therm'
-  }">
-    <div class="layout-container__inner header"  :class=" $route.path == '/plan' || $route.path == '/streamanity' || $route.path == '/therm' ? 'py-2' : 'py-5'">
-      <div class="d-flex white--text align-center justify-space-between">
-        <div @click.stop="$router.push({ path: '/' })" class="d-flex align-center is-pointer">
-          <span>
-            <Logo class="mr-3" />
-          </span><span class="name-gradient" style="font-family:'Homemade apple',cursive; font-size:1.4rem;">Sv</span>
+  <div class="layout-container navbar">
+    <div class="px-16">
+      <div class="d-flex align-center justify-space-between">
+        <div
+          @click.stop="$router.push({ path: '/' })"
+          class="d-flex align-center is-pointer"
+        >
+          <img width="44" class="ma-2" :src="require(`@/assets/media/intro/logo.svg`)" />
         </div>
         <div class="d-flex align-center">
           <!-- <v-btn
@@ -18,18 +17,34 @@
           >
             Home
           </v-btn> -->
-          <v-btn plain dark class="text-capitalize" @click.stop="$router.push({ path: '/about' })">
+          <v-btn
+            plain
+            dark
+            class="text-capitalize"
+            @click.stop="$router.push({ path: '/about' })"
+          >
             About
           </v-btn>
-          <v-btn plain dark class="text-capitalize" @click.stop="$router.push({ path: '/shots' })">
+          <v-btn
+            plain
+            dark
+            class="text-capitalize"
+            @click.stop="$router.push({ path: '/shots' })"
+          >
             Visuals
           </v-btn>
-          <v-btn plain target="_blank" :href="'https://drive.google.com/file/d/1jHMl659Nz0ijDHgk1lbjpCal7TgA_Btd/view?usp=sharing'
-            " dark class="text-capitalize">
-            Resume <img
-                  :src="require(`@/assets/media/me/linkwhite.svg`)"
-                  alt="arrow"
-                />
+          <v-btn
+            plain
+            target="_blank"
+            :href="'https://drive.google.com/file/d/1jHMl659Nz0ijDHgk1lbjpCal7TgA_Btd/view?usp=sharing'"
+            dark
+            class="text-capitalize"
+          >
+            Resume
+            <img
+              :src="require(`@/assets/media/me/linkwhite.svg`)"
+              alt="arrow"
+            />
           </v-btn>
           <!-- <v-btn href="mailto:sourya0411@gmail.com" target="_blank" plain dark v-bind="attrs" v-on="on"
             class="text-lowercase">
@@ -52,7 +67,7 @@ export default {
 
 <style lang="scss">
 .navbar {
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .removeBorder {
   .layout-container__inner {
