@@ -1,14 +1,18 @@
 <template>
-  <div class="  white is-relative">
-    <img style="width:100%;"
+  <div class="white is-relative">
+    <img
+      style="width: 100%"
       class="is-absolute fill-height"
       :src="require(`@/assets/media/intro/lines.svg`)"
     />
-    <div class="d-flex align-start justify-space-between pt-16" :style="'margin:0;'">
-      <div class="leftside is-relative mt-12" :style="'margin-left:18rem;'">
+    <div
+      class="d-flex align-start justify-space-between pt-16"
+      :style="'margin:0;'"
+    >
+      <div class="leftside is-relative mt-12">
         <div class="headline black--text" style="max-width: 250px">
           Hi,
-          <br>
+          <br />
           I'm Sourya.
         </div>
         <img
@@ -17,7 +21,8 @@
           :src="require(`@/assets/media/intro/curve-arrow.svg`)"
         />
         <div class="mt-14 ml-8 text-h4">
-          I design modern,<br> thoughtful and <br>functional <br>products.
+          I design modern,<br />
+          thoughtful and <br />functional <br />products.
         </div>
       </div>
       <div class="rightside">
@@ -26,7 +31,6 @@
           data-aos-easing="ease-in-out"
           data-aos-delay="500"
           data-aos-duration="500"
-          width="600"
           class=""
           :src="require(`@/assets/media/intro/me.png`)"
         />
@@ -45,6 +49,23 @@ export default {
 </script>
   
   <style lang="scss">
+.leftside {
+  margin-left: 18rem;
+}
+.rightside {
+  img {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .leftside {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .rightside {
+    display:none;
+  }
+}
 .intro-left {
   // max-width: 800px;
 }
