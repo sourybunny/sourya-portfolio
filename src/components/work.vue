@@ -9,7 +9,7 @@
             <v-sheet
               @click.stop="$router.push('/notifications')"
               target="_blank"
-              class="pointer workcard ma-2 fill-height smooth-shadow"
+              class="pointer workcard notifications-card ma-2 fill-height smooth-shadow rounded-lg"
             >
               <div class="">
                 <div class="px-6 pt-6">
@@ -70,7 +70,7 @@
             <v-sheet
               @click.stop="$router.push('/aisuggest')"
               target="_blank"
-              class="pointer workcard ma-2 fill-height smooth-shadow"
+              class="pointer workcard ai-card ma-2 fill-height smooth-shadow rounded-lg"
             >
               <div class="">
                 <div class="px-6 pt-6">
@@ -131,7 +131,7 @@
             <v-sheet
               @click.stop="$router.push('/plan')"
               target="_blank"
-              class="pointer workcard ma-2 fill-height smooth-shadow"
+              class="pointer workcard plan-card ma-2 fill-height smooth-shadow rounded-lg"
             >
               <div class="">
                 <div class="px-6 pt-6">
@@ -195,7 +195,7 @@
             <v-sheet
               @click.stop="$router.push('/therm')"
               target="_blank"
-              class="pointer workcard ma-2 fill-height smooth-shadow"
+              class="pointer workcard sh-card ma-2 fill-height smooth-shadow rounded-lg"
             >
               <div class="">
                 <div class="px-6 pt-6">
@@ -540,6 +540,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 // .workcard_right {
 //   display: flex;
 //   flex-direction: column;
@@ -561,7 +562,7 @@ export default {
     cursor: pointer;
     // color:white;
     // background: rgb(26, 26, 27);
-    background: white;
+    // background: white;
     color: black;
     // border-radius: 16px;
   }
@@ -581,6 +582,17 @@ export default {
     backdrop-filter: blur(10px);
   }
 }
+
+
+// NEW
+
+.notifications-card {
+  background:#ffed75;
+}
+.ai-card {
+  background:#3b598a;
+}
+
 
 // .plan-container {
 //   &--left {

@@ -8,7 +8,7 @@
       ></v-img>
     </div>
     <article class="white">
-      <div class="stickynav">
+      <!-- <div class="stickynav">
         <div class="subnavigation glass-header">
           <a href="#overview">Overview</a>
           <a href="#users">Users</a>
@@ -18,7 +18,7 @@
           <a href="#design">Design</a>
           <a href="#reflection">Reflection</a>
         </div>
-      </div>
+      </div> -->
       <section
         id="overview"
         class="inner-section"
