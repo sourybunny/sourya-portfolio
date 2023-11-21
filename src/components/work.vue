@@ -15,14 +15,12 @@
               class="pointer workcard"
             >
               <div class="notifications-card smooth-shadow">
-                <div class="px-10 pt-10">
-                  <div class="darkbg lighten-1">
-                    <v-responsive>
-                      <v-img
-                        class="image-shadow"
-                        :src="require(`@/assets/media/notifications/hero.png`)"
-                      ></v-img>
-                    </v-responsive>
+                <div>
+                  <div class="darkbg lighten-1 card-image">
+                    <img
+                      width="100%"
+                      :src="require(`@/assets/media/notifications/hero.png`)"
+                    />
                   </div>
                 </div>
                 <!-- <div class="workcard_right px-6 pt-4">
@@ -78,13 +76,13 @@
               class="pointer workcard"
             >
               <div class="ai-card smooth-shadow fill-height">
-                <div class="px-10 pt-10">
-                  <div class="frame-border">
-                    <v-responsive>
-                      <v-img
+                <div>
+                  <div class=" card-image">
+                      <img
+                      width="100%"
+
                         :src="require(`@/assets/media/aisuggest/aicropped.gif`)"
-                      ></v-img>
-                    </v-responsive>
+                      />
                   </div>
                 </div>
                 <!-- <div class="workcard_right px-6 pt-4">
@@ -140,13 +138,11 @@
               class="pointer workcard"
             >
               <div class="plan-card smooth-shadow">
-                <div class="px-10 pt-10">
-                  <div>
-                    <v-responsive>
-                      <v-img
+                <div>
+                  <div class="card-image">
+                      <img width="100%"
                         :src="require(`@/assets/media/plan/plan.png`)"
-                      ></v-img>
-                    </v-responsive>
+                      />
                   </div>
                 </div>
                 <!-- <div class="workcard_right px-6 pt-4">
@@ -200,13 +196,11 @@
               class="pointer workcard"
             >
               <div class="sh-card smooth-shadow">
-                <div class="px-10 pt-10">
-                  <div>
-                    <v-responsive>
-                      <v-img
+                <div>
+                  <div class="card-image">
+                      <img width="100%"
                         :src="require(`@/assets/media/sensehawk/hero.png`)"
-                      ></v-img>
-                    </v-responsive>
+                      />
                   </div>
                 </div>
                 <!-- <div class="workcard_right px-6 pt-4">
@@ -667,7 +661,7 @@ export default {
   .workcard {
     background: black;
     // min-height: 440px;
-    height:max-content;
+    height: max-content;
     cursor: pointer;
     color: white;
   }
@@ -692,19 +686,42 @@ export default {
 
 .notifications-card {
   background: linear-gradient(262deg, #f68479 13.08%, #fee382 95.82%);
+  border-radius: 1rem;
 }
 .ai-card {
-  background: linear-gradient(295deg, #8877df 25.41%, #6bbac1 97.08%);
-  background: linear-gradient(280deg, #2a2a2c 17.03%, #292a32 90.28%);
-
+  background: linear-gradient(280deg, #3a3535 17.03%, #3e3243 90.28%);
+  border-radius: 1rem;
 }
 .plan-card {
-  background: linear-gradient(280deg, #6f7178 17.03%, #4b4d57 90.28%);
+  background: linear-gradient(280deg, #323337 17.03%, #31343f 90.28%);
+  border-radius: 1rem;
 }
 .sh-card {
-  background: linear-gradient(295deg, #1c4235 25.41%, #57bf9b 97.08%);
   background: linear-gradient(295deg, #8877df 25.41%, #6bbac1 97.08%);
-
+  border-radius: 1rem;
+}
+.workcard {
+  .card-image {
+    // padding: 2rem 0 2rem;
+    transform-origin: 50% 100%;
+    transition: border-radius 0.2s, transform 0.2s, box-shadow 0.5s;
+  
+    transform: scale(0.9);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+  }
+  &:hover {
+    .card-image {
+      transform: scale(1);
+      border-radius: 1rem;
+      box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.12);
+    }
+  }
 }
 .v-btn__content {
   opacity: 1 !important;
