@@ -1,38 +1,31 @@
 <template>
-  <section class="layout-container black bottom-line" style="background: #f9f9fb">
+  <section
+    class="layout-container black bottom-line"
+    style="background: #f9f9fb"
+  >
     <div class="layout-container__inner py-0">
       <!-- style="margin-top:-3rem;" -->
-      <div class="projectlist mt-10">
+      <div class="projectlist mx-auto mt-10">
         <v-row wrap>
-          <v-col cols="12" md="6" >
+          <v-col cols="12" md="6">
             <!-- NOTIFICATIONS -->
-            <v-sheet
+            <div
               @click.stop="$router.push('/notifications')"
               target="_blank"
-              class="pointer workcard notifications-card ma-2 fill-height smooth-shadow rounded-lg"
+              class="pointer workcard"
             >
-              <div class="">
-                <div class="px-6 pt-6">
-                  <div class="d-flex align-center">
-                    <div class="body-1 font-italic font-weight-light mb-1">
-                      Ushur
-                    </div>
-                    <div class="ml-2"
-                      :style="'background:black;height: 2px; width:2rem;opacity:0.5;'"
-                    ></div>
-                  </div>
-                  <div class="font-weight-medium text-h5 mb-4">
-                    Notification Center
-                  </div>
+              <div class="notifications-card smooth-shadow">
+                <div class="px-10 pt-10">
                   <div class="darkbg lighten-1">
                     <v-responsive>
                       <v-img
+                        class="image-shadow"
                         :src="require(`@/assets/media/notifications/hero.png`)"
                       ></v-img>
                     </v-responsive>
                   </div>
                 </div>
-                <div class="workcard_right px-6 pt-4">
+                <!-- <div class="workcard_right px-6 pt-4">
                   <div>
                     <div
                       class="d-flex align-center body-1 caption text-uppercase mt-2"
@@ -61,30 +54,31 @@
                       <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
                     </v-btn>
                   </div>
-                </div>
+                </div> -->
               </div>
-            </v-sheet>
+              <div class="d-flex align-center mt-4">
+                <div class="caption font-italic font-weight-light mb-1">
+                  Ushur
+                </div>
+                <div
+                  class="ml-2"
+                  :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
+                ></div>
+              </div>
+              <div class="font-weight-medium text-h5 mb-4">
+                Notification Center
+              </div>
+            </div>
           </v-col>
           <v-col cols="12" md="6">
             <!-- NOTIFICATIONS -->
-            <v-sheet
+            <div
               @click.stop="$router.push('/aisuggest')"
               target="_blank"
-              class="pointer workcard ai-card ma-2 fill-height smooth-shadow rounded-lg"
+              class="pointer workcard"
             >
-              <div class="">
-                <div class="px-6 pt-6">
-                  <div class="d-flex align-center">
-                    <div class="body-1 font-italic font-weight-light mb-1">
-                      Ushur
-                    </div>
-                    <div class="ml-2"
-                      :style="'background:black;height: 2px; width:2rem;opacity:0.5;'"
-                    ></div>
-                  </div>
-                  <div class="font-weight-medium text-h5 mb-4">
-                    AI Smart Suggest
-                  </div>
+              <div class="ai-card smooth-shadow fill-height">
+                <div class="px-10 pt-10">
                   <div class="frame-border">
                     <v-responsive>
                       <v-img
@@ -93,7 +87,7 @@
                     </v-responsive>
                   </div>
                 </div>
-                <div class="workcard_right px-6 pt-4">
+                <!-- <div class="workcard_right px-6 pt-4">
                   <div>
                     <div
                       class="d-flex align-center body-1 caption text-uppercase mt-2"
@@ -122,16 +116,149 @@
                       <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
                     </v-btn>
                   </div>
-                </div>
+                </div> -->
               </div>
-            </v-sheet>
+              <div class="d-flex align-center mt-4">
+                <div class="caption font-italic font-weight-light mb-1">
+                  Ushur
+                </div>
+                <div
+                  class="ml-2"
+                  :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
+                ></div>
+              </div>
+              <div class="font-weight-medium text-h5 mb-4">
+                AI Smart Suggest
+              </div>
+            </div>
           </v-col>
           <v-col cols="12" md="6">
-            <!-- Planner -->
+            <!-- PLANNEr -->
+            <div
+              @click.stop="$router.push('/plan')"
+              target="_blank"
+              class="pointer workcard"
+            >
+              <div class="plan-card smooth-shadow">
+                <div class="px-10 pt-10">
+                  <div>
+                    <v-responsive>
+                      <v-img
+                        :src="require(`@/assets/media/plan/plan.png`)"
+                      ></v-img>
+                    </v-responsive>
+                  </div>
+                </div>
+                <!-- <div class="workcard_right px-6 pt-4">
+                  <div>
+                    <div
+                      class="d-flex align-center body-1 caption text-uppercase mt-2"
+                    >
+                      <span>UX/UI Design</span
+                      ><span class="mx-2">&#x2022;</span> <span>Shipped</span
+                      ><span class="mx-2">&#x2022;</span>
+                      <v-chip small class="white body-1 caption greybg"
+                        >B2B SaaS</v-chip
+                      >
+                    </div>
+                  </div>
+                  <div class="align-end justify-end mt-4">
+                    <p class="body-1">
+                      Real-time updates for solution developers of no-code app to address
+                      critical events impacting customers.
+                    </p>
+                    <v-btn
+                      plain
+                      large
+                      class="bottom-line--light text-uppercase font-weight-medium pa-0"
+                      @click.stop="$router.push('/notifications')"
+                      target="_blank"
+                    >
+                      read more
+                      <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
+                    </v-btn>
+                  </div>
+                </div> -->
+              </div>
+              <div class="d-flex align-center mt-4">
+                <div class="caption font-italic font-weight-light mb-1">
+                  Indiana University
+                </div>
+                <div
+                  class="ml-2"
+                  :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
+                ></div>
+              </div>
+              <div class="font-weight-medium text-h5 mb-4">Course Planner</div>
+            </div>
+          </v-col>
+          <v-col cols="12" md="6">
+            <!-- THERM -->
+            <div
+              @click.stop="$router.push('/therm')"
+              target="_blank"
+              class="pointer workcard"
+            >
+              <div class="sh-card smooth-shadow">
+                <div class="px-10 pt-10">
+                  <div>
+                    <v-responsive>
+                      <v-img
+                        :src="require(`@/assets/media/sensehawk/hero.png`)"
+                      ></v-img>
+                    </v-responsive>
+                  </div>
+                </div>
+                <!-- <div class="workcard_right px-6 pt-4">
+                  <div>
+                    <div
+                      class="d-flex align-center body-1 caption text-uppercase mt-2"
+                    >
+                      <span>UX/UI Design</span
+                      ><span class="mx-2">&#x2022;</span> <span>Shipped</span
+                      ><span class="mx-2">&#x2022;</span>
+                      <v-chip small class="white body-1 caption greybg"
+                        >B2B SaaS</v-chip
+                      >
+                    </div>
+                  </div>
+                  <div class="align-end justify-end mt-4">
+                    <p class="body-1">
+                      Real-time updates for solution developers of no-code app to address
+                      critical events impacting customers.
+                    </p>
+                    <v-btn
+                      plain
+                      large
+                      class="bottom-line--light text-uppercase font-weight-medium pa-0"
+                      @click.stop="$router.push('/notifications')"
+                      target="_blank"
+                    >
+                      read more
+                      <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
+                    </v-btn>
+                  </div>
+                </div> -->
+              </div>
+              <div class="d-flex align-center mt-4">
+                <div class="caption font-italic font-weight-light mb-1">
+                  Sensehawk
+                </div>
+                <div
+                  class="ml-2"
+                  :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
+                ></div>
+              </div>
+              <div class="font-weight-medium text-h5 mb-4">
+                Defect management for solar
+              </div>
+            </div>
+          </v-col>
+          <!-- <v-col cols="12" md="6">
             <v-sheet
               @click.stop="$router.push('/plan')"
               target="_blank"
-              class="pointer workcard plan-card ma-2 fill-height smooth-shadow rounded-lg"
+              class="pointer workcard plan-card ma-2 fill-height smooth-shadow "
             >
               <div class="">
                 <div class="px-6 pt-6">
@@ -139,17 +266,15 @@
                     <div class="body-1 font-italic font-weight-light mb-1">
                       Indiana University
                     </div>
-                    <div class="ml-2"
-                      :style="'background:black;height: 2px; width:2rem;opacity:0.5;'"
+                    <div
+                      class="ml-2"
+                      :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
                     ></div>
                   </div>
-                  <!-- <div class="body-1 font-italic font-weight-light mb-1">
-                    Indiana University
-                  </div> -->
                   <div class="font-weight-medium text-h5 mb-4">
                     Course Planner
                   </div>
-                  <div class="">
+                  <div class="mb-6">
                     <v-responsive>
                       <v-img
                         :src="require(`@/assets/media/plan/plan.png`)"
@@ -186,12 +311,11 @@
                       <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
                     </v-btn>
                   </div>
-                </div>
+                </div> 
               </div>
             </v-sheet>
-          </v-col>
-          <v-col cols="12" md="6">
-            <!-- Planner -->
+          </v-col> -->
+          <!-- <v-col cols="12" md="6">
             <v-sheet
               @click.stop="$router.push('/therm')"
               target="_blank"
@@ -203,13 +327,11 @@
                     <div class="body-1 font-italic font-weight-light mb-1">
                       Sensehawk
                     </div>
-                    <div class="ml-2"
+                    <div
+                      class="ml-2"
                       :style="'background:black;height: 2px; width:2rem;opacity:0.5;'"
                     ></div>
                   </div>
-                  <!-- <div class="body-1 font-italic font-weight-light mb-1">
-                    Sensehawk
-                  </div> -->
                   <div class="font-weight-medium text-h5 mb-4">
                     Solar Defect Management
                   </div>
@@ -253,7 +375,7 @@
                 </div>
               </div>
             </v-sheet>
-          </v-col>
+          </v-col> -->
         </v-row>
         <!-- CAPSTONE -->
         <!-- <v-sheet flat @click="$router.push('/capstone')"
@@ -539,32 +661,15 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
-// .workcard_right {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-// }
-
+<style lang="scss" scoped>
 .projectlist {
-  // display: grid;
-  // grid-gap: 20px;
-  // transition: all 0.3s ease;
-  // padding: 0 20px;
-  // grid-template-columns: repeat(2, 1fr) !important;
-  // .workcard {
-  //   width:500px;
-  //   height: 500px;
-  // }
+  margin-bottom: 2rem;
   .workcard {
-    min-height: 420px;
+    background: black;
+    // min-height: 440px;
+    height:max-content;
     cursor: pointer;
-    // color:white;
-    // background: rgb(26, 26, 27);
-    // background: white;
-    color: black;
-    // border-radius: 16px;
+    color: white;
   }
 }
 
@@ -583,117 +688,24 @@ export default {
   }
 }
 
-
 // NEW
 
 .notifications-card {
-  background:#ffed75;
+  background: linear-gradient(262deg, #f68479 13.08%, #fee382 95.82%);
 }
 .ai-card {
-  background:#3b598a;
+  background: linear-gradient(295deg, #8877df 25.41%, #6bbac1 97.08%);
+  background: linear-gradient(280deg, #2a2a2c 17.03%, #292a32 90.28%);
+
 }
-
-
-// .plan-container {
-//   &--left {
-//     background: #97395a;
-//   }
-//   &--right {
-//     color: #ffd5ea;
-//     background: #1c0115;
-//     // background: rgb(0,0,0);
-
-//     // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
-//     // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
-//   }
-// }
-// .ai-container {
-//   &--left {
-//     background: #b2a1ff;
-//   }
-//   &--right {
-//     background: #120d2b;
-//     background: rgb(255, 255, 255);
-//     color: #d6d1ec;
-
-//     // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
-//     // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
-//   }
-//   transition: all 300ms;
-//   // transform: rotate(1deg);
-
-//   &:hover {
-//     // border: 2px solid white;
-//     // transform: rotate(0deg);
-//   }
-// }
-
-// .notifications-container {
-//   // background: white;
-//   &--left {
-//     // background: #fbf2a2;
-//     background: black;
-//     color: white;
-//   }
-//   &--right {
-//     color: #fff9c5;
-//     background: black;
-//     // background: #1b190b;
-//   }
-//   // border-top-left-radius: 250px 15px;
-//   //   border-bottom-left-radius: 20px 115px;
-//   //   border-bottom-right-radius: 105px 15px;
-//   // background: #fff;
-//   transition: all 300ms;
-//   // transform: rotate(1deg);
-
-//   &:hover {
-//     // background:#fbf2a2;
-//     // border: 2px solid white;
-//     // transform: rotate(0deg);
-//   }
-// }
-
-// .therm-container {
-//   &--left {
-//     background: #1576b7;
-//   }
-//   &--right {
-//     color: #8dbdda;
-//     background: #0d1724;
-//     // background: rgb(0,0,0);
-
-//     // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
-//     // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
-//   }
-// }
-.salesforce-container {
-  &--left {
-    background: #3b598a;
-  }
-  &--right {
-    color: #9fc1dd;
-    background: #000b1b;
-    // background: rgb(0,0,0);
-
-    // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
-    // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
-  }
+.plan-card {
+  background: linear-gradient(280deg, #6f7178 17.03%, #4b4d57 90.28%);
 }
-.capstone-container {
-  &--left {
-    background: #ffed75;
-  }
-  &--right {
-    color: #f7f4cc;
-    background: #241f10;
-    // background: rgb(0,0,0);
+.sh-card {
+  background: linear-gradient(295deg, #1c4235 25.41%, #57bf9b 97.08%);
+  background: linear-gradient(295deg, #8877df 25.41%, #6bbac1 97.08%);
 
-    // background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(42,6,6,1) 100%);
-    // background-image: linear-gradient(135deg, rgba(0, 81, 194, 0.1), rgba(45, 129, 247, 0.1));
-  }
 }
-
 .v-btn__content {
   opacity: 1 !important;
 }
