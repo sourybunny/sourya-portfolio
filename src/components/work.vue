@@ -4,10 +4,10 @@
     style="background: #f9f9fb"
   >
     <div class="layout-container__inner py-0">
-      <!-- style="margin-top:-3rem;" -->
+      <sectionTitle :title="'work'" :is_dark="true"></sectionTitle>
       <div class="projectlist mx-auto mt-10">
         <v-row wrap>
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" class="mt-6">
             <!-- NOTIFICATIONS -->
             <div
               @click.stop="$router.push('/notifications')"
@@ -63,12 +63,21 @@
                   :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
                 ></div>
               </div>
-              <div class="font-weight-medium text-h5 mb-4">
-                Notification Center
+              <div class="font-weight-medium text-h5">Notification Center</div>
+              <div>
+                <div
+                  class="d-flex align-center body-1 caption text-uppercase font-weight-light mt-1"
+                >
+                  <span>UX Design</span><span class="mx-2">&#x2022;</span>
+                  <span>Shipped</span><span class="mx-2">&#x2022;</span>
+                  <v-chip small class="darkbg lighten-1 white--text body-1 caption"
+                    >B2B SaaS</v-chip
+                  >
+                </div>
               </div>
             </div>
           </v-col>
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" class="mt-6">
             <!-- NOTIFICATIONS -->
             <div
               @click.stop="$router.push('/aisuggest')"
@@ -124,12 +133,24 @@
                   :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
                 ></div>
               </div>
-              <div class="font-weight-medium text-h5 mb-4">
+              <div class="font-weight-medium text-h5">
                 AI Smart Suggest
+              </div>
+              <div>
+                <div
+                  class="d-flex align-center body-1 caption text-uppercase font-weight-light mt-1"
+                >
+                  <span>UX Design</span><span class="mx-2">&#x2022;</span>
+                  <span>Gen AI</span><span class="mx-2">&#x2022;</span>
+                  <span>Launched</span><span class="mx-2">&#x2022;</span>
+                  <v-chip small class="darkbg lighten-1 white--text body-1 caption"
+                    >B2B SaaS</v-chip
+                  >
+                </div>
               </div>
             </div>
           </v-col>
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" class="mt-6">
             <!-- PLANNEr -->
             <div
               @click.stop="$router.push('/plan')"
@@ -141,7 +162,7 @@
                   <div class="card-image">
                     <img
                       width="100%"
-                      :src="require(`@/assets/media/plan/planner-hero.png`)"
+                      :src="require(`@/assets/media/plan/planner-hero2.png`)"
                     />
                   </div>
                 </div>
@@ -185,10 +206,23 @@
                   :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
                 ></div>
               </div>
-              <div class="font-weight-medium text-h5 mb-4">Course Planner</div>
+              <div class="font-weight-medium text-h5">Course Planner</div>
+              <div>
+                <div
+                  class="d-flex align-center body-1 caption text-uppercase font-weight-light mt-1"
+                >
+                  <span>UX design</span><span class="mx-2">&#x2022;</span>
+                  <span>Usability test</span><span class="mx-2">&#x2022;</span>
+
+                  <span>Launched</span><span class="mx-2">&#x2022;</span>
+                  <v-chip small class="darkbg lighten-1 white--text body-1 caption"
+                    >B2C</v-chip
+                  >
+                </div>
+              </div>
             </div>
           </v-col>
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" class="mt-6">
             <!-- THERM -->
             <div
               @click.stop="$router.push('/therm')"
@@ -244,12 +278,26 @@
                   :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
                 ></div>
               </div>
-              <div class="font-weight-medium text-h5 mb-4">
-                Defect management for solar
+              <div class="font-weight-medium text-h5">
+                Solar Defect Management
+              </div>
+              <div>
+                <div
+                  class="d-flex align-center body-1 caption text-uppercase font-weight-light mt-1"
+                >
+                <span>Front-end</span><span class="mx-2">&#x2022;</span>
+                  <span>UX</span><span class="mx-2">&#x2022;</span>
+                  <span>ML app</span><span class="mx-2">&#x2022;</span>
+                  <span>Launched</span><span class="mx-2">&#x2022;</span>
+
+                  <v-chip small class="darkbg lighten-1 white--text body-1 caption"
+                    >B2B SaaS</v-chip
+                  >
+                </div>
               </div>
             </div>
           </v-col>
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" class="mt-6">
             <!-- THERM -->
             <div
               @click.stop="$router.push('/capstone')"
@@ -307,12 +355,27 @@
                   :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
                 ></div>
               </div>
-              <div class="font-weight-medium text-h5 mb-4">
-                AR/AI/ML Game Design
+              <div class="font-weight-medium text-h5">
+                Museum AR/AI/ML 
               </div>
+              <div>
+                <div
+                  class="d-flex align-center body-1 caption text-uppercase font-weight-light mt-1"
+                >
+                <span>Augmented reality</span><span class="mx-2">&#x2022;</span>
+                  <span>Gen AI</span><span class="mx-2">&#x2022;</span>
+                  <span>Game UX</span><span class="mx-2">&#x2022;</span>
+                  <span>Launched</span><span class="mx-2">&#x2022;</span>
+
+                  <v-chip small class="darkbg lighten-1 white--text body-1 caption"
+                    >Course project</v-chip
+                  >
+                </div>
+              </div>
+
             </div>
           </v-col>
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" class="mt-6">
             <!-- STR -->
             <div
               @click.stop="$router.push('/streamanity')"
@@ -324,9 +387,7 @@
                   <div class="card-image">
                     <img
                       width="100%"
-                      :src="
-                        require(`@/assets/media/streamanity/str.png`)
-                      "
+                      :src="require(`@/assets/media/streamanity/str.png`)"
                     />
                   </div>
                 </div>
@@ -370,8 +431,21 @@
                   :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
                 ></div>
               </div>
-              <div class="font-weight-medium text-h5 mb-4">
+              <div class="font-weight-medium text-h5">
                 Video Streaming app
+              </div>
+              <div>
+                <div
+                  class="d-flex align-center body-1 caption text-uppercase font-weight-light mt-1"
+                >
+                  <span>UX</span><span class="mx-2">&#x2022;</span>
+                  <span>MVP</span><span class="mx-2">&#x2022;</span>
+
+                  <span>Launched</span><span class="mx-2">&#x2022;</span>
+                  <v-chip small class="darkbg lighten-1 white--text body-1 caption"
+                    >B2C</v-chip
+                  >
+                </div>
               </div>
             </div>
           </v-col>
@@ -774,8 +848,9 @@
 
 <script>
 import SectionTitle from "@/components/project/section-title";
+import sectionOverview from "@/components/project/section-overview.vue";
 export default {
-  components: { SectionTitle },
+  components: { SectionTitle, sectionOverview },
   data: function () {
     return {};
   },
@@ -821,6 +896,8 @@ export default {
 }
 .plan-card {
   background: linear-gradient(280deg, #323337 17.03%, #31343f 90.28%);
+  background: linear-gradient(280deg, #6f7178 17.03%, #4b4d57 90.28%);
+
   border-radius: 1rem;
 }
 .sh-card {
@@ -829,7 +906,7 @@ export default {
 }
 .capstone-card {
   background: linear-gradient(295deg, #ffda75 25.41%, #ffed75 97.08%);
- 
+
   border-radius: 1rem;
 }
 .str-card {
@@ -842,7 +919,7 @@ export default {
     transform-origin: 50% 100%;
     transition: border-radius 0.2s, transform 0.2s, box-shadow 0.5s;
 
-    transform: scale(0.9);
+    transform: scale(0.88);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     overflow: hidden;
