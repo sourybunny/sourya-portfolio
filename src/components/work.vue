@@ -77,12 +77,11 @@
             >
               <div class="ai-card smooth-shadow fill-height">
                 <div>
-                  <div class=" card-image">
-                      <img
+                  <div class="card-image">
+                    <img
                       width="100%"
-
-                        :src="require(`@/assets/media/aisuggest/aicropped.gif`)"
-                      />
+                      :src="require(`@/assets/media/aisuggest/aicropped.gif`)"
+                    />
                   </div>
                 </div>
                 <!-- <div class="workcard_right px-6 pt-4">
@@ -140,9 +139,10 @@
               <div class="plan-card smooth-shadow">
                 <div>
                   <div class="card-image">
-                      <img width="100%"
-                        :src="require(`@/assets/media/plan/plan.png`)"
-                      />
+                    <img
+                      width="100%"
+                      :src="require(`@/assets/media/plan/planner-hero.png`)"
+                    />
                   </div>
                 </div>
                 <!-- <div class="workcard_right px-6 pt-4">
@@ -198,9 +198,10 @@
               <div class="sh-card smooth-shadow">
                 <div>
                   <div class="card-image">
-                      <img width="100%"
-                        :src="require(`@/assets/media/sensehawk/hero.png`)"
-                      />
+                    <img
+                      width="100%"
+                      :src="require(`@/assets/media/sensehawk/hero.png`)"
+                    />
                   </div>
                 </div>
                 <!-- <div class="workcard_right px-6 pt-4">
@@ -245,6 +246,132 @@
               </div>
               <div class="font-weight-medium text-h5 mb-4">
                 Defect management for solar
+              </div>
+            </div>
+          </v-col>
+          <v-col cols="12" md="6">
+            <!-- THERM -->
+            <div
+              @click.stop="$router.push('/capstone')"
+              target="_blank"
+              class="pointer workcard"
+            >
+              <div class="capstone-card smooth-shadow">
+                <div>
+                  <div class="card-image">
+                    <img
+                      width="100%"
+                      :src="
+                        require(`@/assets/media/capstone/capstone-hero.png`)
+                      "
+                    />
+                  </div>
+                </div>
+                <!-- <div class="workcard_right px-6 pt-4">
+                  <div>
+                    <div
+                      class="d-flex align-center body-1 caption text-uppercase mt-2"
+                    >
+                      <span>UX/UI Design</span
+                      ><span class="mx-2">&#x2022;</span> <span>Shipped</span
+                      ><span class="mx-2">&#x2022;</span>
+                      <v-chip small class="white body-1 caption greybg"
+                        >B2B SaaS</v-chip
+                      >
+                    </div>
+                  </div>
+                  <div class="align-end justify-end mt-4">
+                    <p class="body-1">
+                      Real-time updates for solution developers of no-code app to address
+                      critical events impacting customers.
+                    </p>
+                    <v-btn
+                      plain
+                      large
+                      class="bottom-line--light text-uppercase font-weight-medium pa-0"
+                      @click.stop="$router.push('/notifications')"
+                      target="_blank"
+                    >
+                      read more
+                      <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
+                    </v-btn>
+                  </div>
+                </div> -->
+              </div>
+              <div class="d-flex align-center mt-4">
+                <div class="caption font-italic font-weight-light mb-1">
+                  Wonder Lab
+                </div>
+                <div
+                  class="ml-2"
+                  :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
+                ></div>
+              </div>
+              <div class="font-weight-medium text-h5 mb-4">
+                AR/AI/ML Game Design
+              </div>
+            </div>
+          </v-col>
+          <v-col cols="12" md="6">
+            <!-- STR -->
+            <div
+              @click.stop="$router.push('/streamanity')"
+              target="_blank"
+              class="pointer workcard"
+            >
+              <div class="str-card smooth-shadow">
+                <div>
+                  <div class="card-image">
+                    <img
+                      width="100%"
+                      :src="
+                        require(`@/assets/media/streamanity/str.png`)
+                      "
+                    />
+                  </div>
+                </div>
+                <!-- <div class="workcard_right px-6 pt-4">
+                  <div>
+                    <div
+                      class="d-flex align-center body-1 caption text-uppercase mt-2"
+                    >
+                      <span>UX/UI Design</span
+                      ><span class="mx-2">&#x2022;</span> <span>Shipped</span
+                      ><span class="mx-2">&#x2022;</span>
+                      <v-chip small class="white body-1 caption greybg"
+                        >B2B SaaS</v-chip
+                      >
+                    </div>
+                  </div>
+                  <div class="align-end justify-end mt-4">
+                    <p class="body-1">
+                      Real-time updates for solution developers of no-code app to address
+                      critical events impacting customers.
+                    </p>
+                    <v-btn
+                      plain
+                      large
+                      class="bottom-line--light text-uppercase font-weight-medium pa-0"
+                      @click.stop="$router.push('/notifications')"
+                      target="_blank"
+                    >
+                      read more
+                      <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
+                    </v-btn>
+                  </div>
+                </div> -->
+              </div>
+              <div class="d-flex align-center mt-4">
+                <div class="caption font-italic font-weight-light mb-1">
+                  Streamanity
+                </div>
+                <div
+                  class="ml-2"
+                  :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
+                ></div>
+              </div>
+              <div class="font-weight-medium text-h5 mb-4">
+                Video Streaming app
               </div>
             </div>
           </v-col>
@@ -700,12 +827,21 @@ export default {
   background: linear-gradient(295deg, #8877df 25.41%, #6bbac1 97.08%);
   border-radius: 1rem;
 }
+.capstone-card {
+  background: linear-gradient(295deg, #ffda75 25.41%, #ffed75 97.08%);
+ 
+  border-radius: 1rem;
+}
+.str-card {
+  background: linear-gradient(280deg, #323337 17.03%, #31343f 90.28%);
+  border-radius: 1rem;
+}
 .workcard {
   .card-image {
     // padding: 2rem 0 2rem;
     transform-origin: 50% 100%;
     transition: border-radius 0.2s, transform 0.2s, box-shadow 0.5s;
-  
+
     transform: scale(0.9);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;

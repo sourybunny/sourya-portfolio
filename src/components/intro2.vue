@@ -1,8 +1,7 @@
 <template>
   <div class="white is-relative">
-    <img
-      style="width: 100%"
-      class="is-absolute fill-height"
+    <img width="100%"
+      class="is-absolute fill-height" height="100%"
       :src="require(`@/assets/media/intro/lines.svg`)"
     />
     <div

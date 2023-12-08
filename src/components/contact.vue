@@ -1,5 +1,9 @@
 <template>
-  <div class="mainbg">
+  <div class="mainbg is-relative">
+    <!-- <img
+      class="is-absolute" height="80%"
+      :src="require(`@/assets/media/intro/grid.svg`)"
+    /> -->
     <div class="layout-container">
       <div
         class="white--text py-16 layout-container__inner"
