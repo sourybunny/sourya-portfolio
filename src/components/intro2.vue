@@ -37,21 +37,35 @@
     </div>
   </div> -->
 
-  <div class="white layout-container">
+  <div class="white layout-container is-relative">
     <v-row wrap no-gutters>
-      <v-col cols="12" md="7">
+      <v-col cols="12" md="6">
         <div class="layout-container__inner">
-          <sectionTitle :title="'I am sourya'"></sectionTitle>
-          <div class="text-h5 font-weight-light mt-4">
-            UX designer with a background in front-end engineering and
-            interaction design.
-          </div>
-          <div class="text-h7 font-weight-medium mt-4">
-            I previously worked at Ushur, Sensehawk and IBM.
+          <div class="py-16">
+            <sectionTitle :title="'I am sourya'"></sectionTitle>
+            <div class="text-h5 font-weight-light mt-4">
+              UX designer with a background in front-end engineering and
+              interaction design. I have experience across wide range of
+              startups solving complex problems at scale. Previously @Ushur,
+              Sensehawk & IBM
+            </div>
+            <div class="text-h7 font-weight-medium mt-8">
+                Ready to dive in? Skip the fluff and explore my work below. 🚀✨
+            </div>
           </div>
         </div>
       </v-col>
-      <v-col cols="12" md="5">
+      <div class="rightside is-absolute">
+        <img
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="500"
+          data-aos-duration="500"
+          class=""
+          :src="require(`@/assets/media/intro/me.png`)"
+        />
+      </div>
+      <!-- <v-col cols="12" md="5">
         <div class="pt-16">
           <img
             data-aos="fade-up"
@@ -63,7 +77,7 @@
             :src="require(`@/assets/media/intro/Subject.png`)"
           />
         </div>
-      </v-col>
+      </v-col> -->
     </v-row>
   </div>
 </template>
@@ -86,8 +100,12 @@ export default {
   margin-left: 18rem;
 }
 .rightside {
+  right: 0;
+  bottom: 0;
+
   img {
-    width: 600px;
+    max-width: 600px;
+    width: auto;
   }
 }
 @media screen and (max-width: 500px) and (orientation: portrait) {
