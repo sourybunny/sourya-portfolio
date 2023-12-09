@@ -893,11 +893,11 @@ export default {
 .ai-card {
   background: linear-gradient(280deg, #3a3535 17.03%, #3e3243 90.28%);
   border-radius: 1rem;
+
 }
 .plan-card {
   background: linear-gradient(280deg, #323337 17.03%, #31343f 90.28%);
   background: linear-gradient(280deg, #6f7178 17.03%, #4b4d57 90.28%);
-
   border-radius: 1rem;
 }
 .sh-card {
@@ -923,6 +923,8 @@ export default {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     overflow: hidden;
+    box-shadow: -1px -3px 19.399999618530273px rgba(0, 0, 0, 0.16);
+
     img {
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;

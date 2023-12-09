@@ -1,5 +1,5 @@
 <template>
-  <div class="white is-relative">
+  <!-- <div class="white is-relative">
     <img width="100%"
       class="is-absolute fill-height" height="100%"
       :src="require(`@/assets/media/intro/lines.svg`)"
@@ -35,14 +35,48 @@
         />
       </div>
     </div>
+  </div> -->
+
+  <div class="white layout-container">
+    <v-row wrap no-gutters>
+      <v-col cols="12" md="7">
+        <div class="layout-container__inner">
+          <sectionTitle :title="'I am sourya'"></sectionTitle>
+          <div class="text-h5 font-weight-light mt-4">
+            UX designer with a background in front-end engineering and
+            interaction design.
+          </div>
+          <div class="text-h7 font-weight-medium mt-4">
+            I previously worked at Ushur, Sensehawk and IBM.
+          </div>
+        </div>
+      </v-col>
+      <v-col cols="12" md="5">
+        <div class="pt-16">
+          <img
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="500"
+            data-aos-duration="500"
+            class=""
+            width="50%"
+            :src="require(`@/assets/media/intro/Subject.png`)"
+          />
+        </div>
+      </v-col>
+    </v-row>
   </div>
 </template>
   
   <script>
 import Tangram from "./tangram.vue";
+import SectionTitle from "@/components/project/section-title";
+import sectionOverview from "@/components/project/section-overview.vue";
 export default {
   components: {
     Tangram,
+    SectionTitle,
+    sectionOverview,
   },
 };
 </script>
@@ -62,7 +96,7 @@ export default {
     margin-bottom: 2rem;
   }
   .rightside {
-    display:none;
+    display: none;
   }
 }
 .intro-left {
