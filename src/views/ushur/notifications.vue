@@ -643,11 +643,11 @@
           x-large
           outlined
           @click.stop="show_process = !show_process"
-          > ❤️ I want to see 👀  Process<img
-                  :src="require(`@/assets/media/me/right-down.svg`)"
-                  alt="arrow"
-                /></v-btn
         >
+          ❤️ I want to see 👀 Process<img
+            :src="require(`@/assets/media/me/right-down.svg`)"
+            alt="arrow"
+        /></v-btn>
       </div>
       <v-btn
         rounded
@@ -803,6 +803,16 @@
               </div>
             </section-overview>
           </v-flex>
+          <div class="d-flex justify-center">
+
+              <img 
+                height="80%"
+                width="80%"
+                :src="
+                  require(`@/assets/media/notifications/notification-product.png`)
+                "
+              />
+          </div>
         </v-layout>
       </section>
     </article>

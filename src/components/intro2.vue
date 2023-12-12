@@ -42,7 +42,7 @@
       <v-col cols="12" md="6">
         <div class="layout-container__inner pb-0">
           <div>
-            <sectionTitle :title="'I am sourya'"></sectionTitle>
+            <sectionTitle :title="'👋 Hey, I am Sourya'"></sectionTitle>
             <div class="text-h5 font-weight-light mt-4">
               UX designer with a background in front-end engineering and
               interaction design. I have experience across wide range of
@@ -50,6 +50,7 @@
               <span class="company-names font-weight-light"
                 >@Ushur, Sensehawk & IBM</span
               >
+              
             </div>
             <div class="text-h7 font-weight-medium mt-8 pb-4">
               Ready to dive in? Skip the fluff and explore my work below. 🚀✨
@@ -83,23 +84,25 @@
       </v-col> -->
     </v-row>
     <v-row wrap no-gutters>
-        <v-col cols="12" md="8">
-            <div></div>
+      <v-col cols="12" md="8">
+        <div></div>
+        
       </v-col>
       <v-col cols="12" md="4">
-
-          <div class="rightside">
-            <img
-              data-aos-once="true"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-delay="100"
-              data-aos-duration="300"
-              class=""
-              style="max-width:300px;"
-              :src="require(`@/assets/media/intro/Subject.png`)"
-            />
-          </div>
+        
+        <div class="rightside">
+          <img
+            data-aos-once="true"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="100"
+            data-aos-duration="300"
+            class=""
+            style="max-width: 300px"
+            :src="require(`@/assets/media/intro/Subject.png`)"
+          />
+          
+        </div>
       </v-col>
     </v-row>
   </div>

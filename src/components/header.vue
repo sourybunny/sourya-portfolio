@@ -6,7 +6,7 @@
           @click.stop="$router.push({ path: '/' })"
           class="d-flex align-center is-pointer"
         >
-          <img width="44" class="ma-2" :src="require(`@/assets/media/intro/logo.svg`)" />
+          <img width="44" class="ma-1" :src="require(`@/assets/media/intro/logo.svg`)" />
         </div>
         <div class="d-flex align-center">
           <!-- <v-btn
@@ -46,6 +46,19 @@
               alt="arrow"
             />
           </v-btn>
+                <v-btn
+                  href="https://www.linkedin.com/in/souryav/"
+                  target="_blank"
+                  plain
+                  dark
+                  class="text-capitalize"
+                >
+                  Linkedin
+                  <img
+                    :src="require(`@/assets/media/me/linkwhite.svg`)"
+                    alt="arrow"
+                  />
+                </v-btn>
           <!-- <v-btn href="mailto:sourya0411@gmail.com" target="_blank" plain dark v-bind="attrs" v-on="on"
             class="text-lowercase">
             sourya0411@gmail.com
