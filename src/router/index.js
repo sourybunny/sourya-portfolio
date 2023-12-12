@@ -23,13 +23,7 @@ const routes = [
     component: Streamanity
   },
 
-  {
-    path: '/lufe',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "lufe" */ '@/views/casestudies/lufe.vue')
-  },
+ 
   {
     path: '/plan',
     // route level code-splitting
@@ -77,7 +71,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "lufe" */ '@/views/casestudies/soar.vue')
+    component: () => import(/* webpackChunkName: "soar" */ '@/views/casestudies/soar.vue')
   },
   {
     path: '/about',
