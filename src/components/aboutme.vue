@@ -1,28 +1,35 @@
 <template>
   <div class="">
-    <div class="layout-container ">
+    <div class="layout-container">
       <div class="layout-container__inner">
         <section-title :is_dark="true" :title="'About me'"></section-title>
-        <div class="text-h4 white--text py-8 text-center mx-auto" style="max-width: 70%;">
+        <div
+          class="text-h5 font-weight-light white--text py-8 text-center mx-auto"
+          style="max-width: 80%"
+        >
           From a young age, I enjoyed solving puzzles and building stuff,
           nurturing my creativity and shaping my design mindset
         </div>
-        <v-layout xs12 wrap align-end>
+        <v-layout xs12 wrap align-end mt-6>
           <v-flex xs12 sm9 md6 lg6 class="about">
             <div class="about-right">
               <TangramAbout />
             </div>
-            <div class="white--text text-center text-h6 font-weight-light mt-6">
-              Design, to
-                  me, mirrors the graceful metamorphosis of a butterfly, where
-                  ideas undergo a transformative journey to emerge as beautiful
-                  and impactful products.
+            <div class="white--text text-h6 text-center font-weight-light mt-6">
+              Design, to me, mirrors the graceful metamorphosis of a butterfly,
+              where ideas undergo a transformative journey to emerge as
+              humanized products.
+            </div>
+            <div
+              class="white--text quote-text text-center font-weight-light mt-2"
+            >
+              And, great teams shape greater products
             </div>
           </v-flex>
           <v-spacer></v-spacer>
-          <v-flex xs12 sm3 md7 lg4 :right-align="!$vuetify.breakpoint.mobile">
+          <v-flex xs12 sm3 md6 lg5 :right-align="!$vuetify.breakpoint.mobile">
             <v-card flat class="mt-2 black">
-              <v-img class="" :src="require(`@/assets/blue.png`)"></v-img>
+              <v-img class="" :src="require(`@/assets/duotone.png`)"></v-img>
             </v-card>
           </v-flex>
         </v-layout>
@@ -68,93 +75,12 @@
         </v-layout>
       </div>
     </div>
-    <div class="layout-container bottom-line">
-      <div class="layout-container__inner about">
-        
-
-        <!-- <v-btn medium class="my-8 text-capitalize" outlined rounded>
-          see my resume
-        </v-btn> -->
-      </div>
-    </div>
     <section>
-      <div class="layout-container bottom-line">
+      <div class="layout-container ">
         <div class="layout-container__inner">
-          <v-layout row wrap>
-            
-            <v-flex xs12 md6>
-              <v-card
-                elevation-20
-                dark
-                class="cardbgdark my-4 mx-auto"
-                max-width="580"
-                min-height="280"
-              >
-                <v-card-title class="purple-gradient bottom-line--light">
-                  Design and Me...
-                </v-card-title>
-                <v-card-text
-                  class="pt-4 body-1 paragraph-gradient font-weight-light darken-4"
-                >
-                  As a designer, I embrace a growth mindset and strive to
-                  continuously improve by staying abreast of the latest
-                  developments in the design industry worldwide. I approach
-                  design with a keen sense of observation, drawing inspiration
-                  from my surroundings to fuel my creative process. I firmly
-                  believe that observation leads to ideas, and ideas lead to
-                  innovation—a philosophy that drives the designer in me.
-                </v-card-text>
-              </v-card>
-            </v-flex>
-            <v-flex xs12 md6>
-              <v-card
-                elevation-20
-                dark
-                class="cardbgdark my-4 mx-auto"
-                max-width="580"
-                min-height="280"
-              >
-                <v-card-title class="red-gradient bottom-line--light">
-                  Collaboration and Communication...
-                </v-card-title>
-                <v-card-text
-                  class="pt-4 body-1 paragraph-gradient font-weight-light darken-2"
-                >
-                  My experience in tech startups has allowed me to wear multiple
-                  hats, fostering strong collaboration skills. I believe in the
-                  power of discussions to bring valuable insights, and I
-                  effectively communicate my designs with product owners,
-                  developers, and stakeholders at all levels. Embracing an
-                  iterative approach, I welcome feedback to continuously refine
-                  and enhance my designs.
-                </v-card-text>
-              </v-card>
-            </v-flex>
-            <!-- <v-flex xs12 md6>
-              <v-card
-                elevation-20
-                dark
-                class="cardbgdark my-4 mx-auto"
-                max-width="580"
-                min-height="280"
-              >
-                <v-card-title class="orange-gradient bottom-line--light">
-                  Engineering and Design...
-                </v-card-title>
-                <v-card-text
-                  class="pt-4 body-1 paragraph-gradient font-weight-light darken-3"
-                >
-                  My approach is rooted in the fusion of creativity and
-                  technical expertise, where I strive to craft innovative and
-                  user-centered solutions that seamlessly integrate form and
-                  function. Drawing from my background in engineering, I bring a
-                  unique perspective to my design process, leveraging my
-                  understanding of technical constraints and possibilities to
-                  inform my creative decisions.
-                </v-card-text>
-              </v-card>
-            </v-flex> -->
-          </v-layout>
+          <!-- <p class="missing-text white--text text-center mb-12">
+            Here's what I bring to the table
+          </p> -->
 
           <!-- <v-card class="cardbgdark">
                 <v-card-title class=" darken-4">
@@ -195,7 +121,7 @@
               <div class="d-flex align-center">
                 <div>
                   <p class="missing-text">
-                    Am I the missing piece you're looking for in your team?
+                    I'm the missing piece you're looking for in your team
                   </p>
                   <v-btn
                     large
@@ -231,7 +157,7 @@ import Contact from "./contact.vue";
 import Grid from "./grid.vue";
 import SectionTitle from "@/components/project/section-title";
 import sectionOverview from "@/components/project/section-overview.vue";
-
+import sectionHighlight from "@/components/project/section-highlight.vue";
 export default {
   data: function () {
     return {
@@ -244,6 +170,7 @@ export default {
     Grid,
     SectionTitle,
     sectionOverview,
+    sectionHighlight,
   },
 };
 </script>
@@ -255,6 +182,13 @@ export default {
   font-style: italic;
   font-size: 2.8rem;
   line-height: normal;
+}
+.quote-text {
+  font-family: "Tiempos-Headline-BoldItalic", "Georgia", "Times New Roman",
+    Times, serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  // line-height: normal;
 }
 // .intro-left {
 //   max-width: 500px;
