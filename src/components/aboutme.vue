@@ -1,100 +1,72 @@
 <template>
-  <div class="">
-    <div class="layout-container">
+  <div class="white mx-auto">
+    <div class="layout-container mx-auto" style="max-width: 90%">
       <div class="layout-container__inner">
-        <section-title :is_dark="true" :title="'About me'"></section-title>
-        <div
-          class="text-h5 font-weight-light white--text py-8 text-center mx-auto"
+        <section-title :is_dark="false" :title="'About'"></section-title>
+        <!-- <div
+          class="text-h5 font-weight-light py-8 text-center mx-auto"
           style="max-width: 80%"
         >
           From a young age, I enjoyed solving puzzles and building stuff,
           nurturing my creativity and shaping my design mindset
-        </div>
-        <v-layout xs12 wrap align-end mt-6>
-          <v-flex xs12 sm9 md6 lg6 class="about">
-            <div class="about-right">
-              <TangramAbout />
-            </div>
-            <div class="white--text text-h6 text-center font-weight-light mt-6">
-              Design, to me, mirrors the graceful metamorphosis of a butterfly,
-              where ideas undergo a transformative journey to emerge as
-              humanized products.
-            </div>
-            <div
-              class="white--text quote-text text-center font-weight-light mt-2"
-            >
-              And, great teams shape greater products
-            </div>
-          </v-flex>
-          <v-spacer></v-spacer>
-          <v-flex xs12 sm3 md6 lg5 :right-align="!$vuetify.breakpoint.mobile">
-            <v-card flat class="mt-2 black">
-              <v-img class="" :src="require(`@/assets/duotone.png`)"></v-img>
-            </v-card>
-          </v-flex>
-        </v-layout>
-        <v-layout wrap class="align-start justify-space-between">
-          <!-- <v-flex xs12 sm9 md6 lg5 class="pt-4">
-            <p
-              class="font-weight-bold white--text my-6"
-              :class="$vuetify.breakpoint.mdAndUp ? ' display-3' : 'display-1'"
-            >
-              About
-              <span class="tangram_blue--text text--lighten-1 aboutme-gradient"
-                >Me</span
-              >
-            </p>
-            <div class="headline grey--text font-weight-light text-loop">
+        </div> -->
+        <!-- <div class="d-flex justify-center about">
+          <TangramAbout />
+        </div> -->
+        <div class="about-card about black white--text text-center pa-2 mt-6">
+          <v-row wrap align-lg="center">
+            <v-col cols="12" md="4">
+              <TangramAbout style="transform: scale(0.6)" />
+            </v-col>
+            <v-col cols="12" md="7">
               <div>
-                I'm a digital designer
-                <span class="text-highlight">transforming</span> products to
-                <span class="text-highlight">humanize</span> them.
+                <p
+                  class="text-h6 text-left font-weight-light"
+                  style="max-width: 85%"
+                >
+                  To me, design mirrors the graceful metamorphosis of a
+                  butterfly, where ideas undergo a transformative journey to
+                  emerge as beautiful & humanized products.
+                </p>
+                <p class="quote-text text-left mt-2">
+                  And, great teams shape greater products
+                </p>
               </div>
-            </div>
-            <v-btn
-              large
-              href="https://www.linkedin.com/in/souryav/"
-              target="_blank"
-              dark
-              class="text-capitalize mt-6 tangram_blue"
-              >Let's Connect <v-icon dark> mdi-arrow-right </v-icon></v-btn
-            >
-          </v-flex>
-          <v-flex
-            class="about-right"
-            :order="$vuetify.breakpoint.xsOnly ? '-1' : '13'"
-            xs12
-            sm3
-            md6
-            lg5
-          >
-            <div>
-              <TangramAbout />
-            </div>
-          </v-flex> -->
-        </v-layout>
+            </v-col>
+          </v-row>
+        </div>
+        <div class="mt-8 pa-2">
+          <v-row wrap align-lg="center" justify-lg="space-between">
+            <v-col cols="12" md="9">
+              <div>
+                <p class="quote-text text-left mt-2">
+                  Playing games to solving complex problems
+                </p>
+                <p class="text-h6 text-left font-weight-light">
+                  From a young age, I enjoyed solving puzzles and building
+                  stuff, nurturing my creativity and shaping my design mindset.
+                  Tangrams, Catan, Chess, Lego are some of my favorites.
+                </p>
+              </div>
+            </v-col>
+            <v-col md="3">
+              <img
+                width="160"
+                height="160"
+                class="ml-4"
+                :src="require(`@/assets/profilepic.png`)"
+              />
+            </v-col>
+          </v-row>
+        </div>
+        <div>
+          <p class="black--text missing-text text-center my-6">
+            Skills I bring to the table
+          </p>
+        </div>
+        <img width="100%" :src="require(`@/assets/cards.png`)" />
       </div>
     </div>
-    <section>
-      <div class="layout-container ">
-        <div class="layout-container__inner">
-          <!-- <p class="missing-text white--text text-center mb-12">
-            Here's what I bring to the table
-          </p> -->
-
-          <!-- <v-card class="cardbgdark">
-                <v-card-title class=" darken-4">
-                  What else can I do?
-                </v-card-title>
-                <v-card-text class="pt-4  accordionbg2 darken-3">
-                  I'm a self-taught artist who can work with watercolor,
-                  charcoal and acrylic paintings. Occasionally, I partcipated in
-                  local exhibits in my city back in India to showcase my work.
-                </v-card-text>
-              </v-card> -->
-        </div>
-      </div>
-    </section>
 
     <!-- <Grid /> -->
     <div class="mainbg is-relative">
@@ -103,9 +75,12 @@
       :src="require(`@/assets/media/intro/grid.svg`)"
     /> -->
 
-      <div class="layout-container">
-        <div class="white--text py-16 layout-container__inner">
-          <v-layout row wrap justify-space-between class="">
+      <div class="layout-container black">
+        <div
+          class="white--text py-16 layout-container__inner mx-auto"
+          style="max-width: 90%"
+        >
+          <v-layout row wrap justify-space-between align-center class="">
             <v-flex xs7>
               <img
                 data-aos="slide-down"
@@ -141,7 +116,7 @@
             </v-flex>
 
             <v-flex xs4>
-              <img width="85%" :src="require(`@/assets/missing-tangram.png`)" />
+              <img width="70%" :src="require(`@/assets/missing-tangram.png`)" />
             </v-flex>
           </v-layout>
         </div>
@@ -180,7 +155,7 @@ export default {
   font-family: "Tiempos-Headline-BoldItalic", "Georgia", "Times New Roman",
     Times, serif;
   font-style: italic;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   line-height: normal;
 }
 .quote-text {
@@ -188,7 +163,12 @@ export default {
     Times, serif;
   font-style: italic;
   font-size: 1.5rem;
+  font-weight: 500;
   // line-height: normal;
+}
+.about-card {
+  border-radius: 1rem;
+  // background: linear-gradient(279deg, #8a68fe 38.47%, #9cf7ff 107.16%);
 }
 // .intro-left {
 //   max-width: 500px;

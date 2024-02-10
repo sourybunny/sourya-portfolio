@@ -19,7 +19,7 @@ export default {};
   // position: absolute;
   // transform: translate(15%,15%);
   width: 100%;
-  height: 380px;
+  height: 320px;
   // height: 450px;
   // top: 150px;
   // left: 150px;
@@ -138,13 +138,7 @@ export default {};
   -webkit-transform: translate(222px, 163px) rotate(70deg) skew(45deg);
   transform: translate(222px, 163px) rotate(70deg) skew(45deg);
 }
-.about .tangram-about {
-  transform: rotate(-10deg);
-}
-.about:hover .tangram-about {
-  transform: translate(15%, 15%);
 
-}
 .about:hover .parallelogram--green {
   transform: translate(78px, 145px) rotate(45deg) skew(-45deg);
 }
