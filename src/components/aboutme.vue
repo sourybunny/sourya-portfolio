@@ -2,7 +2,28 @@
   <div class="white mx-auto">
     <div class="layout-container mx-auto" style="max-width: 90%">
       <div class="layout-container__inner">
-        <section-title :is_dark="false" :title="'About'"></section-title>
+        <section-title :is_dark="false" :title="'my journey in numbers'"></section-title>
+        <div class="my-8">
+          <div class="d-flex flex-wrap align-start text-center justify-space-between">
+            <div style="width:auto;">
+              <p class="font-weight-bold display-2">4+</p>
+              <p class="text-capitalize ">Years of Design Experience</p>
+            </div>
+            
+            <div class="vertical-line"></div>
+            <!-- <img :src="require(`@/assets/Line.png`)" /> -->
+            <div style="width:auto;">
+              <p class="font-weight-bold display-2">$50M+</p>
+              <p class="text-capitalize">Million cost savings and revenue generation</p>
+            </div>
+            <div class="vertical-line"></div>
+
+            <div style="width:auto;">
+              <p class="font-weight-bold display-2">6</p>
+              <p class="text-capitalize">High Priority Projects</p>
+            </div>
+          </div>
+        </div>
         <!-- <div
           class="text-h5 font-weight-light py-8 text-center mx-auto"
           style="max-width: 80%"
@@ -162,9 +183,15 @@ export default {
   font-family: "Tiempos-Headline-BoldItalic", "Georgia", "Times New Roman",
     Times, serif;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 500;
   // line-height: normal;
+}
+.vertical-line {
+  width: 1px;
+  height:8rem;
+  background: #d0d0d0;
+  // margin: 0 1rem;
 }
 .about-card {
   border-radius: 1rem;
