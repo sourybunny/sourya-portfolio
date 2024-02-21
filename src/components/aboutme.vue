@@ -34,29 +34,44 @@
         <!-- <div class="d-flex justify-center about">
           <TangramAbout />
         </div> -->
-        <div class="about-card about black white--text text-center pa-2 mt-6">
-          <v-row wrap align-lg="center">
-            <v-col cols="12" md="4">
-              <TangramAbout style="transform: scale(0.6)" />
-            </v-col>
-            <v-col cols="12" md="7">
-              <div>
+        <div class="about-card about black white--text text-center pa-1 mt-6">
+          <v-row wrap align-lg="center" justify-sm="center">
+            <v-col cols="12" xs="6"  md="7" >
+              <div class="pa-4">
                 <p
-                  class="text-h6 text-left font-weight-light"
+                  class="text-h6  text-left font-weight-light opacity-8"
                   style="max-width: 85%"
+
                 >
                   To me, design mirrors the graceful metamorphosis of a
                   butterfly, where ideas undergo a transformative journey to
                   emerge as beautiful & humanized products.
                 </p>
-                <p class="quote-text text-left mt-2">
+                <p class="quote-text text-left mt-1">
                   And, great teams shape greater products
                 </p>
               </div>
             </v-col>
+            <v-col cols="12"  xs="6" md="3">
+              <TangramAbout style="transform: scale(0.5)" />
+
+            
+            </v-col>
           </v-row>
         </div>
-        <div class="mt-8 pa-2">
+        <img width="100%" class="my-8"
+                :src="require(`@/assets/gamesproblems.png`)"
+              />
+            
+                <div
+          class="text-h6 font-weight-light  text-center mx-auto"
+          style="max-width: 90%"
+        >
+        From a young age, I enjoyed solving puzzles and building
+                  stuff, nurturing my creativity and shaping my design mindset.
+                  Tangrams, Catan, Chess, Lego are some of my favorites.
+        </div>
+        <!-- <div class="mt-8 pa-2">
           <v-row wrap align-lg="center" justify-lg="space-between">
             <v-col cols="12" md="9">
               <div>
@@ -79,13 +94,8 @@
               />
             </v-col>
           </v-row>
-        </div>
-        <div>
-          <p class="black--text missing-text text-center my-6">
-            Skills I bring to the table
-          </p>
-        </div>
-        <img width="100%" :src="require(`@/assets/cards.png`)" />
+        </div> -->
+        <img width="100%" class="my-8" :src="require(`@/assets/cards.png`)" />
       </div>
     </div>
 
@@ -142,7 +152,6 @@
           </v-layout>
         </div>
       </div>
-      <!-- <Contact/> -->
     </div>
   </div>
 </template>
