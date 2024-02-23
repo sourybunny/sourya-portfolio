@@ -50,11 +50,10 @@
               <span class="company-names font-weight-light"
                 >@Ushur, Sensehawk & IBM</span
               >
-              
             </div>
-            <div class="text-h7 font-weight-medium mt-8 pb-4">
+            <!-- <div class="text-h7 font-weight-medium mt-8 pb-4">
               Ready to dive in? Skip the fluff and explore my work below. 🚀✨
-            </div>
+            </div> -->
           </div>
         </div>
       </v-col>
@@ -83,28 +82,56 @@
         </div>
       </v-col> -->
     </v-row>
-    <v-row wrap no-gutters>
-      <v-col cols="12" md="8">
-        <div></div>
-        
-      </v-col>
-      <v-col cols="12" md="4">
-        
-        <div class="rightside">
-          <img
-            data-aos-once="true"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="100"
-            data-aos-duration="300"
-            class=""
-            style="max-width: 300px"
-            :src="require(`@/assets/media/intro/Subject.png`)"
-          />
-          
-        </div>
-      </v-col>
-    </v-row>
+    <div class="layout-container__inner py-0">
+      <v-row wrap no-gutters>
+        <v-col cols="12" md="6">
+          <div class="d-flex align-start text-left mt-12">
+            <div style="max-width: 15rem">
+              <div class="font-weight-bold text-h3">$50M+</div>
+              <div class="text-capitalize">
+                Million cost savings and revenue generation
+              </div>
+            </div>
+
+            <div style="max-width: 20rem">
+              <div class="font-weight-bold text-h3">150k+</div>
+              <div class="text-capitalize ">
+                Customers designed for in telecom, insurance, solar & education
+              </div>
+            </div>
+          </div>
+          <div class="linebar mt-14 mb-2"></div>
+          <div class="text-h7 font-weight-medium">
+              Ready to dive in? Skip the fluff and explore my work below. 🚀✨
+            </div>
+          <!-- <div class="d-flex align-start ">
+            <div>
+              <div>sourya0411@gmail.com</div>
+              <div>resume</div>
+            </div>
+            <div class="ml-13">
+              <div>About</div>
+              <div>linkedin</div>
+            </div>
+          </div> -->
+        </v-col>
+        <v-spacer></v-spacer>
+        <v-col cols="12" md="4">
+          <div class="rightside">
+            <img
+              data-aos-once="true"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+              data-aos-duration="300"
+              class=""
+              style="max-width: 300px"
+              :src="require(`@/assets/media/intro/Subject.png`)"
+            />
+          </div>
+        </v-col>
+      </v-row>
+    </div>
   </div>
 </template>
   
@@ -122,6 +149,17 @@ export default {
 </script>
   
   <style lang="scss">
+.vertical-line {
+  width: 1px;
+  height: 8rem;
+  background: #d0d0d0;
+  // margin: 0 1rem;
+}
+.linebar {
+  height: 1px;
+  flex: 1 0 0;
+  background: black;
+}
 .leftside {
   margin-left: 18rem;
 }

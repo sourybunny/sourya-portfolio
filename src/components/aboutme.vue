@@ -34,6 +34,7 @@
         <!-- <div class="d-flex justify-center about">
           <TangramAbout />
         </div> -->
+        
         <div class="about-card about black white--text text-center pa-1 mt-6">
           <v-row wrap align-lg="center" justify-sm="center">
             <v-col cols="12" xs="6"  md="7" >
@@ -59,6 +60,8 @@
             </v-col>
           </v-row>
         </div>
+        <section-title :is_dark="false" :title="'my evolution as a designer'"></section-title>
+
         <img width="100%" class="my-8"
                 :src="require(`@/assets/gamesproblems.png`)"
               />
@@ -71,33 +74,13 @@
                   stuff, nurturing my creativity and shaping my design mindset.
                   Tangrams, Catan, Chess, Lego are some of my favorites.
         </div>
-        <!-- <div class="mt-8 pa-2">
-          <v-row wrap align-lg="center" justify-lg="space-between">
-            <v-col cols="12" md="9">
-              <div>
-                <p class="quote-text text-left mt-2">
-                  Playing games to solving complex problems
-                </p>
-                <p class="text-h6 text-left font-weight-light">
-                  From a young age, I enjoyed solving puzzles and building
-                  stuff, nurturing my creativity and shaping my design mindset.
-                  Tangrams, Catan, Chess, Lego are some of my favorites.
-                </p>
-              </div>
-            </v-col>
-            <v-col md="3">
-              <img
-                width="160"
-                height="160"
-                class="ml-4"
-                :src="require(`@/assets/profilepic.png`)"
-              />
-            </v-col>
-          </v-row>
-        </div> -->
+        
         <img width="100%" class="my-8" :src="require(`@/assets/cards.png`)" />
+        <section-title :is_dark="false" :title="'my values and superpowers'"></section-title>
       </div>
     </div>
+
+
 
     <!-- <Grid /> -->
     <div class="mainbg is-relative">
