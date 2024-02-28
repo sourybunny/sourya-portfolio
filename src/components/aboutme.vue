@@ -76,7 +76,7 @@
         </div>
         
         <img width="100%" class="my-8" :src="require(`@/assets/cards.png`)" />
-        <section-title :is_dark="false" :title="'my values and superpowers'"></section-title>
+        <!-- <section-title :is_dark="false" :title="'my values and superpowers'"></section-title> -->
       </div>
     </div>
 

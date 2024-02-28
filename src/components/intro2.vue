@@ -1,46 +1,8 @@
 <template>
-  <!-- <div class="white is-relative">
-    <img width="100%"
-      class="is-absolute fill-height" height="100%"
-      :src="require(`@/assets/media/intro/lines.svg`)"
-    />
-    <div
-      class="d-flex align-start justify-space-between pt-16"
-      :style="'margin:0;'"
-    >
-      <div class="leftside is-relative mt-12">
-        <div class="headline black--text" style="max-width: 250px">
-          Hi,
-          <br />
-          I'm Sourya.
-        </div>
-        <img
-          style="left: -50px; top: 80px"
-          class="is-absolute"
-          :src="require(`@/assets/media/intro/curve-arrow.svg`)"
-        />
-        <div class="mt-14 ml-8 text-h4">
-          I design modern,<br />
-          thoughtful and <br />functional <br />products.
-        </div>
-      </div>
-      <div class="rightside">
-        <img
-          data-aos="fade-up"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="500"
-          data-aos-duration="500"
-          class=""
-          :src="require(`@/assets/media/intro/me.png`)"
-        />
-      </div>
-    </div>
-  </div> -->
-
-  <div class="white layout-container is-relative">
-    <v-row wrap no-gutters>
+  <div class="white layout-container ">
+    <v-row wrap no-gutters align-md="end" justify-md="space-between" class="pt-4">
       <v-col cols="12" md="6">
-        <div class="layout-container__inner pb-0">
+        <div class="layout-container__inner ">
           <div>
             <sectionTitle :title="'👋 Hey, I am Sourya'"></sectionTitle>
             <div class="text-h5 font-weight-light mt-4">
@@ -51,38 +13,59 @@
                 >@Ushur, Sensehawk & IBM</span
               >
             </div>
+            <div class="d-flex align-start justify-space-between text-left mt-12">
+            <div >
+              <div class="font-weight-bold text-h3">$50M+</div>
+              <div class="text-capitalize">
+                Million cost savings and revenue generation
+              </div>
+            </div>
+
+            <div class="ml-6">
+              <div class="font-weight-bold text-h3">150k+</div>
+              <div class="text-capitalize ">
+                Customers designed for in telecom, insurance, solar & education
+              </div>
+            </div>
+          </div>
+          <div class="linebar mt-14 mb-2"></div>
+          <div class="text-h7 font-weight-medium mb-2">
+              Ready to dive in? Skip the fluff and explore my work below. 🚀✨
+            </div>
+            <!-- <div class="d-flex align-start justify-space-between">
+            <div>
+              <div>sourya0411@gmail.com</div>
+              </div>
+              <div>resume</div>
+              <div>About</div>
+              <div>linkedin</div>
+          </div> -->
             <!-- <div class="text-h7 font-weight-medium mt-8 pb-4">
               Ready to dive in? Skip the fluff and explore my work below. 🚀✨
             </div> -->
           </div>
         </div>
       </v-col>
-      <!-- <div class="rightside is-absolute">
-        <img
-          data-aos-once="true"
-          data-aos="fade-up"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="100"
-          data-aos-duration="300"
-          class=""
-          :src="require(`@/assets/media/intro/me.png`)"
-        />
-      </div> -->
-      <!-- <v-col cols="12" md="5">
-        <div class="pt-16">
-          <img
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="500"
-            data-aos-duration="500"
-            class=""
-            width="50%"
-            :src="require(`@/assets/media/intro/Subject.png`)"
-          />
-        </div>
-      </v-col> -->
+      <v-spacer></v-spacer>
+        <v-col cols="12" md="6">
+          <div class="layout-container__inner pb-0">
+
+            <div class="rightside">
+              <img
+                data-aos-once="true"
+                data-aos="fade-left"
+                data-aos-easing="ease-in-out"
+                data-aos-delay="100"
+                data-aos-duration="300"
+                class=""
+                style="max-width: 95%;"
+                :src="require(`@/assets/media/intro/intro-skills.png`)"
+              />
+            </div>
+          </div>
+        </v-col>
     </v-row>
-    <div class="layout-container__inner py-0">
+    <!-- <div class="layout-container__inner py-0">
       <v-row wrap no-gutters>
         <v-col cols="12" md="6">
           <div class="d-flex align-start text-left mt-12">
@@ -104,16 +87,7 @@
           <div class="text-h7 font-weight-medium">
               Ready to dive in? Skip the fluff and explore my work below. 🚀✨
             </div>
-          <!-- <div class="d-flex align-start ">
-            <div>
-              <div>sourya0411@gmail.com</div>
-              <div>resume</div>
-            </div>
-            <div class="ml-13">
-              <div>About</div>
-              <div>linkedin</div>
-            </div>
-          </div> -->
+         
         </v-col>
         <v-spacer></v-spacer>
         <v-col cols="12" md="4">
@@ -125,14 +99,14 @@
               data-aos-delay="100"
               data-aos-duration="300"
               class=""
-              style="max-width: 300px"
-              :src="require(`@/assets/media/intro/Subject.png`)"
+              :src="require(`@/assets/media/intro/intro-skills.png`)"
             />
           </div>
         </v-col>
       </v-row>
-    </div>
+    </div> -->
   </div>
+ 
 </template>
   
   <script>
@@ -163,13 +137,20 @@ export default {
 .leftside {
   margin-left: 18rem;
 }
-.rightside {
-  right: 0;
-  bottom: 0;
+// .rightside {
+//   right: 0;
+//   bottom: 0;
 
+//   img {
+//     max-width: 600px;
+//     width: auto;
+//   }
+// }
+.rightside{
   img {
-    max-width: 600px;
-    width: auto;
+    float: right;
+    width: 100%;
+    height: 100%;
   }
 }
 .company-names {
@@ -182,7 +163,7 @@ export default {
     margin-bottom: 2rem;
   }
   .rightside {
-    display: none;
+    // display: none;
   }
 }
 .intro-left {
