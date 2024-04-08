@@ -43,7 +43,7 @@
           <v-card flat class="rounded-lg pa-6 t-2">
             <h1 class="t-2--text">Good Listener</h1>
             <v-row align-sm="end">
-              <v-col sm="8">
+              <v-col cols="12" sm="8">
                 <div class="testimonial-text opacity-8 mt-4 font-weight-light">
                   Sourya
                   <span class="font-weight-medium"
