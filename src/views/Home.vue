@@ -2,6 +2,8 @@
   <div>
     <Intro />
     <Work />
+    <Testimonials />
+    
     <!-- <Shorts /> -->
 
     <!-- <Aboutme id="about" /> -->
@@ -15,6 +17,8 @@ import Aboutme from "../components/aboutme";
 import Contact from "../components/contact";
 import Work from "../components/work";
 import Shorts from "../components/shorts";
+import Testimonials from "../components/testimonials";
+
 export default {
   components: {
     Intro,
@@ -22,6 +26,7 @@ export default {
     Contact,
     Work,
     Shorts,
+    Testimonials
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-container shorts">
+  <div class="layout-container shorts white">
     <div class="layout-container__inner ">
       <div class="text-h4 white--text font-weight-bold mb-8">
         View my design
