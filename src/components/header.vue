@@ -6,17 +6,11 @@
           @click.stop="$router.push({ path: '/' })"
           class="d-flex align-center is-pointer"
         >
-          <img width="44" class="ma-1" :src="require(`@/assets/media/intro/logo.svg`)" />
+          <!-- <img width="44" class="ma-1" :src="require(`@/assets/media/intro/logo.svg`)" /> -->
+          <img width="140" class="ma-2" :src="require(`@/assets/media/intro/header-logo.png`)" />
+        
         </div>
         <div class="d-flex align-center">
-          <!-- <v-btn
-            plain
-            dark
-            class="text-capitalize"
-            @click.stop="$router.push({ path: '/' })"
-          >
-            Home
-          </v-btn> -->
           <v-btn
             plain
             dark
@@ -81,6 +75,7 @@ export default {
 <style lang="scss">
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  // background: #FEFDF9;
 }
 .removeBorder {
   .layout-container__inner {
