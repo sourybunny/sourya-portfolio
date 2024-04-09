@@ -1,14 +1,21 @@
 <template>
   <div class="layout-container navbar">
-    <div class="px-16">
+    <div class="px-sm-4 px-md-16">
       <div class="d-flex align-center justify-space-between">
         <div
           @click.stop="$router.push({ path: '/' })"
           class="d-flex align-center is-pointer"
         >
           <!-- <img width="44" class="ma-1" :src="require(`@/assets/media/intro/logo.svg`)" /> -->
-          <img width="140" class="ma-2" :src="require(`@/assets/media/intro/header-logo.png`)" />
-        
+          <img width="130" class="ma-1" :src="require(`@/assets/media/intro/header-logo.png`)" />
+          <v-btn
+            plain
+            dark
+            class="text-capitalize"
+            @click.stop="$router.push({ path: '/' })"
+          >
+            Work
+          </v-btn>
         </div>
         <div class="d-flex align-center">
           <v-btn
