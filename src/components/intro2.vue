@@ -1,6 +1,6 @@
 <template>
   <div class="white layout-container ">
-    <v-row wrap no-gutters align-md="end" justify-md="space-between" class="pt-4">
+    <v-row wrap no-gutters align-md="end" justify-md="space-between" >
       <v-col cols="12" md="6">
         <div class="layout-container__inner ">
           <div>

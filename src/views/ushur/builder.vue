@@ -61,19 +61,20 @@
               <v-flex xs12 sm6>
                 <section-content :title="'Problem'">
                   <div>
-                    Users found it challenging to use the drag-&-drop interface
-                    and hard to discover primary features. The main objective of
-                    this redesign is to tackle identified challenges and enhance
-                    their work efficiency.
+                    current design is not scalable leading to a frustrating
+                    experience. Users found it outdated and fraught with
+                    friction points leading to high error rate The main
+                    objective of this redesign is to tackle identified
+                    challenges and enhance their work efficiency.
                   </div>
                 </section-content>
               </v-flex>
               <v-flex xs12 sm5>
                 <section-content :title="'Outcome'">
                   <div>
-                    I overhauled the flow builder, improved usability,
-                    redesigned & modernized the UI with industry standards
-                    maximizing efficiency & user satisifaction.
+                    I led the complete overhaul of the form builder feature,improved usability &
+                    modernized the UI with industry standards maximizing
+                    efficiency & user satisifaction.
                   </div>
                 </section-content>
               </v-flex>
@@ -216,8 +217,8 @@
             height="100%"
             :src="require(`@/assets/media/builder/context.png`)"
           />
-          <div class="text-center  my-4">
-            User builds and tests app using no-code Ushur platform. 
+          <div class="text-center my-4">
+            User builds and tests app using no-code Ushur platform.
           </div>
         </div>
       </section>
@@ -264,10 +265,10 @@
     <article id="process" class="white">
       <div v-if="show_process">
         <section class="inner-section">
-          <sectionTitle :title="'Market Study'"></sectionTitle>
+          <sectionTitle :title="'Journey'"></sectionTitle>
           <section-overview
             :title="'Understanding —'"
-            :emphasize="'Industry Patterns'"
+            :emphasize="'User Journey'"
             :right="true"
           >
             <div>
@@ -284,44 +285,23 @@
             <img
               width="100%"
               height="100%"
-              :src="require(`@/assets/media/notifications/market.png`)"
+              :src="require(`@/assets/media/builder/flow.png`)"
             />
           </div>
-          <v-layout row wrap align-start justify-space-between mt-4 pa-4>
-            <v-flex xs12 sm4>
-              <section-card class="ma-2" :title="'Segmented control'">
-                <div>
-                  Tabs and segmented buttons to segregate important events.
-                </div>
-              </section-card>
-            </v-flex>
-            <v-flex xs12 sm4>
-              <section-card class="ma-2" :title="'Grouping and stacking'">
-                <div>
-                  Grouping by categories or source of notification to digest
-                  information quickly.
-                </div>
-              </section-card>
-            </v-flex>
-            <v-flex xs12 sm4>
-              <section-card class="ma-2" :title="'Prioritizing'">
-                <template v-slot>
-                  <div>
-                    Visual indication to highlight and draw attention to high
-                    impact & critical events.
-                  </div>
-                </template>
-              </section-card>
-            </v-flex>
-
-            <!-- <v-flex xs12 sm4>
-                <section-card :title="'Tell what to expect'">
-                  <template v-slot>
-                    <div>Nudges to inform what value to expect.</div>
-                  </template>
-                </section-card>
-              </v-flex> -->
-          </v-layout>
+          <div class="mx-auto pa-4 greybg">
+            <img
+              width="100%"
+              height="100%"
+              :src="require(`@/assets/media/builder/journey.png`)"
+            />
+          </div>
+          <div class="mx-auto pa-4 greybg">
+            <img
+              width="100%"
+              height="100%"
+              :src="require(`@/assets/media/builder/current.png`)"
+            />
+          </div>
         </section>
         <div class="is-relative">
           <img
@@ -331,31 +311,25 @@
           />
         </div>
         <section class="inner-section">
-          <sectionTitle :title="'Questions and unknowns'"></sectionTitle>
+          <sectionTitle :title="'Pain Points'"></sectionTitle>
           <section-overview
-            :title="'Dealing with —'"
-            :emphasize="'Unknowns'"
+            :title="'Identifying —'"
+            :emphasize="'Pain Points'"
             :right="true"
           >
-            The themes and patterns helped me
-            <span class="font-weight-medium"> ask clarifying questions</span>
-            and identify cases that haven't emerged during the kickoff. At this
-            point, the requirements from product team were rough (some details
-            of events listed in spreadsheet). But,
-            <span class="font-weight-medium">
-              these aren't enough to frame the content of each
-              notification.</span
-            >
-            So, I used my judgement on making some guesses.
+            I worked closely with the product manager and design manager by
+            presenting pain points in existing design hindering efficiency and
+            as a team, we prioritized on high impact issues that need to be
+            addressed immediately
           </section-overview>
 
           <div class="greybg pa-6">
             <section-highlight class="py-2">
-              Some unknowns...
+              Prioritizing pain points
               <p class="text-center body-1 mt-2"></p>
               <img
-                width="70%"
-                :src="require(`@/assets/media/notifications/unknowns.png`)"
+                width="100%"
+                :src="require(`@/assets/media/builder/painpoints.png`)"
               />
             </section-highlight>
           </div>
@@ -367,221 +341,168 @@
             :src="require(`@/assets/media/aisuggest/arrow1.png`)"
           />
         </div>
-        <section class="inner-section">
-          <sectionTitle :title="'Assumptions'"></sectionTitle>
-          <section-overview
-            :title="'to fill the gaps'"
-            :emphasize="'Assumptions'"
-            :left="true"
-          >
-            Since I couldn't do user interviews to know their expectations, in
-            order to fill the gap, I discussed with team and we made some
-            assumptions and design considerations.
-          </section-overview>
-
-          <div class="greybg pa-6">
-            <section-highlight class="py-2">
-              Things to consider...
-              <p class="text-center body-1 mt-2"></p>
-              <img
-                width="70%"
-                :src="
-                  require(`@/assets/media/notifications/considerations.png`)
-                "
-              />
-            </section-highlight>
-          </div>
-        </section>
 
         <!-- </article> -->
-
-        <section class="inner-section mt-12">
+        <section class="inner-section">
           <sectionTitle :title="'Design review 1-2'"></sectionTitle>
           <section-overview
-            :title="'Overcoming'"
-            :emphasize="'constraints'"
+            :title="'Market'"
+            :emphasize="'Research'"
             :right="true"
           >
             <div>
-              <span class="font-weight-medium">Absence of top nav</span> posed a
-              challenge to place the bell elsewhere. I came up with many options
-              and discussing with the team helped me
-              <span class="font-weight-medium"
-                >analyze pros and cons and decide on an optimal location for the
-                bell so it's discoverable & prominent.</span
-              >
+              I did market study on various form builders to gain better
+              understanding of industry patterns and user mental modals.
             </div>
           </section-overview>
           <div class="text-center my-2 grey--text font-weight-medium">
-            4 design options for placing the bell.
+            Insights from 10 similar B2B apps with form builder
           </div>
-          <div class="greybg text-center pa-8">
-            <img
-              width="80%"
-              :src="require(`@/assets/media/notifications/bellposition.png`)"
-            />
-          </div>
+          <v-layout row wrap align-start justify-space-between mt-4 pa-4>
+            <v-flex xs12 sm4>
+              <section-card class="ma-2" :title="'8/10'">
+                <div>have draggable form fields from left to right</div>
+              </section-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <section-card class="ma-2" :title="'7/10'">
+                <div>have a way to preview the form</div>
+              </section-card>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <section-card class="ma-2" :title="'10/10 '">
+                <template v-slot>
+                  <div>used progressive disclosure for properties</div>
+                </template>
+              </section-card>
+            </v-flex>
+          </v-layout>
         </section>
-
         <section class="inner-section">
-          <sectionTitle :title="'Design review 3-4'"></sectionTitle>
+          <sectionTitle :title="'Constraints'"></sectionTitle>
           <section-overview
-            :title="'critical events'"
-            :emphasize="'Prioritizing'"
-            :left="true"
+            :title="'Challenges and'"
+            :emphasize="'Constraints'"
+            :right="true"
           >
             <div>
-              While grouping events by source made most sense for the user,
-              there's a risk of missing a critical event when it's stacked to
-              bottom. Adhering to the goal to keep it easy to use, we chose to
-              categorize them into
-              <span class="font-weight-medium"
-                >primary and informational tabs.
-              </span>
+              I came up with concepts that are feasible based on the timeline
+              and capacity while also presenting long term solutions to the team
+              that would significantly improve the user experience. Feedback
+              from the team helped choose a design direction.
             </div>
           </section-overview>
           <div class="text-center my-2 grey--text font-weight-medium">
-            3 design options for prioritizing and anchoring the notifications.
+            4 design concepts addressing immediate issues and long term
+            feasibility
           </div>
-          <div class="greybg pa-4">
-            <v-layout row wrap align-end justify-space-between mt-4 pb-4>
-              <v-flex xs12 sm4>
-                <img
-                  width="90%"
-                  :src="require(`@/assets/media/notifications/page.png`)"
-                />
-                <div class="light--text text-center">Full page view</div>
-              </v-flex>
-              <v-flex xs12 sm4>
-                <img
-                  width="90%"
-                  :src="require(`@/assets/media/notifications/drawer.png`)"
-                />
-                <div class="light--text text-center">Drawer</div>
-              </v-flex>
-              <v-flex xs12 sm4>
-                <img
-                  width="90%"
-                  :src="require(`@/assets/media/notifications/panel.png`)"
-                />
-                <div class="light--text text-center">Side panel</div>
-              </v-flex>
-
-              <!-- <v-flex xs12 sm4>
+          <div class="greybg">
+            <img
+              width="90%"
+              :src="require(`@/assets/media/builder/constraints.png`)"
+            />
+          </div>
+          <!-- <v-flex xs12 sm4>
                     <section-card :title="'Tell what to expect'">
                       <template v-slot>
                         <div>Nudges to inform what value to expect.</div>
                       </template>
                     </section-card>
                   </v-flex> -->
-            </v-layout>
-          </div>
         </section>
-
         <section class="inner-section">
-          <sectionTitle :title="'Design review 5-6'"></sectionTitle>
+          <sectionTitle :title="'Design review 1-2'"></sectionTitle>
           <section-overview
-            :title="'Information'"
-            :emphasize="'hierarchy'"
+            :title="'Feedback on'"
+            :emphasize="'Ideation'"
             :right="true"
           >
             <div>
-              While I did not have relevant examples of what information to
-              display for campaign related activities, I took references based
-              on other events in the spreadsheet to design the information so
-              it's easy to scan quickly.
+              I came up with concepts that are feasible based on the timeline
+              and capacity while also presenting long term solutions to the team
+              that would significantly improve the user experience. Feedback
+              from the team helped choose a design direction.
             </div>
           </section-overview>
           <div class="text-center my-2 grey--text font-weight-medium">
-            Design options for quickly digesting content of notification.
+            4 design concepts addressing immediate issues and long term
+            feasibility
           </div>
-          <div class="greybg text-center pa-8">
+          <div class="greybg pa-4">
+            <img
+              width="90%"
+              :src="require(`@/assets/media/builder/ideation.png`)"
+            />
+          </div>
+          <!-- <v-flex xs12 sm4>
+                    <section-card :title="'Tell what to expect'">
+                      <template v-slot>
+                        <div>Nudges to inform what value to expect.</div>
+                      </template>
+                    </section-card>
+                  </v-flex> -->
+        </section>
+
+        <section class="inner-section">
+          <sectionTitle :title="'Design review 3-4'"></sectionTitle>
+          <section-overview
+            :title="'Design'"
+            :emphasize="'Direction'"
+            :right="true"
+          >
+            <div>
+              I took the best of all concepts and created wireframes for
+              simplified user flow.
+            </div>
+          </section-overview>
+          <div class="text-center my-2 grey--text font-weight-medium">
+            Chosen direction
+          </div>
+          <div class="darkbg text-center pa-8">
             <img
               width="100%"
-              :src="require(`@/assets/media/notifications/cards.png`)"
+              :src="require(`@/assets/media/builder/direction.png`)"
             />
           </div>
         </section>
         <section class="inner-section">
           <sectionTitle :title="'Design review 7-8'"></sectionTitle>
           <section-overview
-            :title="'Providing user with'"
-            :emphasize="'control and delightful animations'"
-            :right="true"
+            :title="'and visual design'"
+            :emphasize="'Iterations  '"
+            :left="true"
           >
             <div>
-              After discussing, we believed it would be meaningful to allow the
-              user to mark a notification as read or unread for refering it
-              back. I prototyped different motion designs to our team to get
-              feedback on a read/unread visual indicator. As a team, we came up
-              with
-              <span class="font-weight-medium"
-                >decisions on when & how a notification will be marked as read
-                or unread.</span
-              >
+              I came up with an iterative approach taking direct feedback from
+              users through guerrilla and usability testing.
             </div>
           </section-overview>
           <div class="text-center my-2 grey--text font-weight-medium">
-            Design options for read / unread indicator
+            Iterations
           </div>
         </section>
-        <div class="darkbg text-center pa-8">
+        <div class="greybg text-center pa-8">
           <v-layout row wrap align-start justify-center mt-4>
-            <v-flex xs12 sm3>
+            <v-flex xs12 sm4>
               <v-img
-                :src="require(`@/assets/media/notifications/dot3.png`)"
+                :src="require(`@/assets/media/builder/iteration2.png`)"
               ></v-img>
               <div class="light--text">Iteration 1</div>
             </v-flex>
-            <v-img
-              class="mx-2"
-              width="20"
-              height="40"
-              :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
-            ></v-img>
-            <v-flex xs12 sm3>
+
+            <v-flex xs12 sm4>
               <v-img
                 class="px-4"
-                :src="require(`@/assets/media/notifications/colorhover.gif`)"
+                :src="require(`@/assets/media/builder/iteration1.png`)"
               ></v-img>
               <div class="light--text">Iteration 2</div>
             </v-flex>
-            <v-img
-              class="mx-2"
-              width="20"
-              height="40"
-              :src="require(`@/assets/media/aisuggest/arrow-right.png`)"
-            ></v-img>
             <v-flex xs12 sm4>
-              <video width="80%" autoplay muted loop>
-                <source
-                  :src="require(`@/assets/media/notifications/dot1.mp4`)"
-                  type="video/mp4"
-                />
-                Your browser does not support HTML video.
-              </video>
-              <div class="light--text">Iteration 3</div>
-            </v-flex>
-          </v-layout>
-        </div>
-        <div class="greybg">
-          <v-layout row wrap align-end justify-center pa-12>
-            <v-flex xs12 sm5>
-              <img
-                width="100%"
-                :src="
-                  require(`@/assets/media/notifications/bell conditions.png`)
-                "
-              />
-              <div class="light--text text-center">Conditions</div>
-            </v-flex>
-            <v-flex xs12 sm4>
-              <img
-                width="100%"
+              <v-img
                 class="px-4"
-                :src="require(`@/assets/media/notifications/states.png`)"
-              />
-              <div class="light--text text-center">Transition flow</div>
+                :src="require(`@/assets/media/builder/iteration3.png`)"
+              ></v-img>
+              <div class="light--text">Iteration 3</div>
             </v-flex>
           </v-layout>
         </div>
@@ -589,7 +510,7 @@
 
       <div v-else>
         <v-btn
-          class="mx-auto is-center text-capitalize"
+          class="mx-auto is-center text-capitalize yellow"
           rounded
           raised
           x-large
@@ -601,17 +522,24 @@
             alt="arrow"
         /></v-btn>
       </div>
-      <v-btn
-        rounded
-        raised
-        outlined
-        v-if="show_process"
-        class="mx-auto is-center text-capitalize"
-        @click.stop="show_process = !show_process"
-        >Hide Process</v-btn
-      >
-    </article>
 
+      <section>
+        <div class="greybg text-center pa-8">
+          <img
+            width="100%"
+            :src="require(`@/assets/media/builder/compare1.png`)"
+          />
+        </div>
+      </section>
+      <section>
+        <div class="greybg text-center pa-8">
+          <img
+            width="100%"
+            :src="require(`@/assets/media/builder/compare2.png`)"
+          />
+        </div>
+      </section>
+    </article>
     <div class="is-relative">
       <img
         class="is-absolute is-center"
@@ -635,6 +563,51 @@
         </section>
       </article> -->
     <article>
+      <section id="design" class="inner-section">
+        <sectionTitle :title="'Design'" :is_dark="true"></sectionTitle>
+        <section-overview
+          :title="'proposal'"
+          :emphasize="'Final design —'"
+          :left="true"
+          :is_dark="true"
+        >
+          <div>
+            In just three weeks, faced with the challenge of creating a
+            <span class="font-weight-medium white--text">scalable</span> and
+            efficient solution for handling hundreds of notifications, I
+            embraced an
+            <span class="font-weight-medium white--text"
+              >iterative design
+            </span>
+            approach. Every step of the way, I prioritized the user experience,
+            ensuring the design remained both
+            <span class="font-weight-medium white--text"
+              >lightweight and delightful.</span
+            >
+            Incorporating subtle motion elements added a touch of cheer for
+            users navigating through their daily task overload.
+          </div>
+        </section-overview>
+        <video
+          width="100%"
+          class="mx-auto elevation-4 rounded"
+          loop
+          autoplay
+          muted
+          controls
+        >
+          <source
+            :src="require(`@/assets/media/notifications/notification.mp4`)"
+            type="video/mp4"
+          />
+          Your browser does not support HTML video.
+        </video>
+        <!-- <v-img
+                class="mt-3"
+                width="100%"
+                :src="require(`@/assets/media/notifications/anim1.gif`)"
+              ></v-img> -->
+      </section>
       <section class="inner-section">
         <sectionTitle
           :title="'Part-1: Modules Redesign'"
@@ -750,8 +723,8 @@
     <Contact />
   </main>
 </template>
-  
-  <script>
+
+<script>
 import projectHeader from "@/components/project/project-header.vue";
 import projectTestimonials from "@/components/project/project-testimonials.vue";
 import sectionTitle from "@/components/project/section-title.vue";
@@ -779,14 +752,14 @@ export default {
   data: () => {
     return {
       project_desc:
-        "Redesigning no-code interface to help developers build workflows 10x faster 💨",
+        "Redesigning no-code interface to help developers build workflows 3x faster 💨",
       show_process: false,
     };
   },
 };
 </script>
-  
-  <style lang="scss" scoped>
+
+<style lang="scss" scoped>
 .project-section {
   display: flex;
   flex-direction: column;
