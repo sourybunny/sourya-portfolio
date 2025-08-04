@@ -1,35 +1,36 @@
 <template>
-  <div class="white layout-container ">
-    <v-row wrap no-gutters align-md="end" justify-md="space-between" >
+  <div class="white layout-container">
+    <v-row wrap no-gutters align-md="end" justify-md="space-between">
       <v-col cols="12" md="6">
-        <div class="layout-container__inner ">
+        <div class="layout-container__inner">
           <div>
             <sectionTitle :title="'👋 Hey, I am Sourya'"></sectionTitle>
             <div class="text-h5 font-weight-light mt-4">
-              UX designer with a background in front-end engineering and
-              interaction design. I have experience across wide range of
-              startups solving complex problems at scale. Previously
+              Interaction designer specialized in AI products,
+              designing seamless AI-powered experiences that augment human capability. Previously
               <span class="company-names font-weight-light"
-                >@US Bank, Citi Bank, Ushur</span
+                >@ US Bank, Citi Bank</span
               >
             </div>
-            <div class="d-flex align-start justify-space-between text-left mt-12">
-            <div >
-              <div class="font-weight-bold text-h3">$50M+</div>
-              <div class="text-capitalize">
-                Million cost savings and revenue generation
+            <div
+              class="d-flex align-start justify-space-between text-left mt-12"
+            >
+              <div>
+                <div class="font-weight-bold text-h3">$50M+</div>
+                <div class="text-capitalize">
+                  Million cost savings and revenue generation
+                </div>
               </div>
-            </div>
 
-            <div class="ml-6">
-              <div class="font-weight-bold text-h3">150k+</div>
-              <div class="text-capitalize ">
-                Customers designed for in Banking, Solar and Education
+              <div class="ml-6">
+                <div class="font-weight-bold text-h3">150k+</div>
+                <div class="text-capitalize">
+                  Customers designed for in Banking, Solar and Education
+                </div>
               </div>
             </div>
-          </div>
-          <div class="linebar mt-14 mb-2"></div>
-          <div class="text-h7 font-weight-medium mb-2">
+            <div class="linebar mt-14 mb-2"></div>
+            <div class="text-h7 font-weight-medium mb-2">
               Ready to dive in? Skip the fluff and explore my work below. 🚀✨
             </div>
             <!-- <div class="d-flex align-start justify-space-between">
@@ -47,23 +48,22 @@
         </div>
       </v-col>
       <v-spacer></v-spacer>
-        <v-col cols="12" md="6">
-          <div class="layout-container__inner pb-0">
-
-            <div class="rightside">
-              <img
-                data-aos-once="true"
-                data-aos="fade-left"
-                data-aos-easing="ease-in-out"
-                data-aos-delay="100"
-                data-aos-duration="300"
-                class=""
-                style="max-width: 95%;"
-                :src="require(`@/assets/media/intro/intro-skills.png`)"
-              />
-            </div>
+      <v-col cols="12" md="6">
+        <div class="layout-container__inner pb-0">
+          <div class="rightside">
+            <img
+              data-aos-once="true"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="100"
+              data-aos-duration="300"
+              class=""
+              style="max-width: 95%"
+              :src="require(`@/assets/media/intro/intro-skills.png`)"
+            />
           </div>
-        </v-col>
+        </div>
+      </v-col>
     </v-row>
     <!-- <div class="layout-container__inner py-0">
       <v-row wrap no-gutters>
@@ -106,7 +106,6 @@
       </v-row>
     </div> -->
   </div>
- 
 </template>
   
   <script>
@@ -146,7 +145,7 @@ export default {
 //     width: auto;
 //   }
 // }
-.rightside{
+.rightside {
   img {
     float: right;
     width: 100%;
