@@ -1,10 +1,10 @@
 <template>
   <main class="project-section">
-    <div class="builder-bg mx-16 mt-4">
-      <v-img
-        height="100%"
-        width="100%"
-        :src="require(`@/assets/media/notifications/banner3.png`)"
+    <div class="builder-bg  mt-4 py-12">
+      <v-img class="mx-auto"
+        height="80%"
+        width="80%"
+        :src="require(`@/assets/media/builder/builder.png`)"
       ></v-img>
     </div>
     <article class="white">
@@ -127,22 +127,6 @@
         </v-layout>
       </section>
 
-      <section class="inner-section">
-        <section-highlight
-          :is_underline="true"
-          :is_quote="true"
-          :sticker="'dontknow'"
-        >
-          “ We know users found the UI confusing. But, ”
-          <template v-slot:description>
-            <!-- <sectionContent style="width: 65%; margin: 2rem auto 0rem">
-                Adhering to a set launch date required us to prioritize engineering
-                over design. Key milestones were determined by engineering estimates,
-                and the time allocated for design was essentially 5 days. 
-              </sectionContent> -->
-          </template>
-        </section-highlight>
-      </section>
     </article>
     <article class="greybg" id="users">
       <section class="inner-section">
@@ -563,51 +547,7 @@
         </section>
       </article> -->
     <article>
-      <section id="design" class="inner-section">
-        <sectionTitle :title="'Design'" :is_dark="true"></sectionTitle>
-        <section-overview
-          :title="'proposal'"
-          :emphasize="'Final design —'"
-          :left="true"
-          :is_dark="true"
-        >
-          <div>
-            In just three weeks, faced with the challenge of creating a
-            <span class="font-weight-medium white--text">scalable</span> and
-            efficient solution for handling hundreds of notifications, I
-            embraced an
-            <span class="font-weight-medium white--text"
-              >iterative design
-            </span>
-            approach. Every step of the way, I prioritized the user experience,
-            ensuring the design remained both
-            <span class="font-weight-medium white--text"
-              >lightweight and delightful.</span
-            >
-            Incorporating subtle motion elements added a touch of cheer for
-            users navigating through their daily task overload.
-          </div>
-        </section-overview>
-        <video
-          width="100%"
-          class="mx-auto elevation-4 rounded"
-          loop
-          autoplay
-          muted
-          controls
-        >
-          <source
-            :src="require(`@/assets/media/notifications/notification.mp4`)"
-            type="video/mp4"
-          />
-          Your browser does not support HTML video.
-        </video>
-        <!-- <v-img
-                class="mt-3"
-                width="100%"
-                :src="require(`@/assets/media/notifications/anim1.gif`)"
-              ></v-img> -->
-      </section>
+      
       <section class="inner-section">
         <sectionTitle
           :title="'Part-1: Modules Redesign'"
@@ -801,7 +741,7 @@ export default {
   }
 }
 .builder-bg {
-  background: linear-gradient(148deg, #6fcf97 0%, #6fcf97 87.72%);
+  background: linear-gradient(148deg, #acdbf2 0%, #e3b0f1 87.72%);
   //   display: flex;
   //   flex-direction: column;
   //   align-content: center;

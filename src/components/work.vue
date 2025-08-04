@@ -8,6 +8,76 @@
       <div class="projectlist mx-auto mt-10">
         <v-row wrap>
           <v-col cols="12" md="6" class="mt-6">
+            <!-- AGENT ASSIST -->
+            <div
+              @click.stop="$router.push('/agentassist')"
+              target="_blank"
+              class="pointer workcard"
+            >
+              <div class="agentassist-card smooth-shadow">
+                <div>
+                  <div class="darkbg lighten-1 card-image">
+                    <img
+                      width="100%"
+                      :src="require(`@/assets/media/agentassist/agentassisthero.png`)"
+                    />
+                  </div>
+                </div>
+                <!-- <div class="workcard_right px-6 pt-4">
+                  <div>
+                    <div
+                      class="d-flex align-center body-1 caption text-uppercase mt-2"
+                    >
+                      <span>UX/UI Design</span
+                      ><span class="mx-2">&#x2022;</span> <span>Shipped</span
+                      ><span class="mx-2">&#x2022;</span>
+                      <v-chip small class="white body-1 caption greybg"
+                        >B2B SaaS</v-chip
+                      >
+                    </div>
+                  </div>
+                  <div class="align-end justify-end mt-4">
+                    <p class="body-1">
+                      Real-time updates for solution developers of no-code app to address
+                      critical events impacting customers.
+                    </p>
+                    <v-btn
+                      plain
+                      large
+                      class="bottom-line--light text-uppercase font-weight-medium pa-0"
+                      @click.stop="$router.push('/notifications')"
+                      target="_blank"
+                    >
+                      read more
+                      <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
+                    </v-btn>
+                  </div>
+                </div> -->
+              </div>
+              <div class="d-flex align-center mt-4">
+                <div class="caption font-italic font-weight-light mb-1">
+                  Citi Bank
+                </div>
+                <div
+                  class="ml-2"
+                  :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
+                ></div>
+              </div>
+              <div class="font-weight-medium text-h5">Agent Assist 🔒</div>
+              <div>
+                <div
+                  class="d-flex align-center body-1 caption text-uppercase font-weight-light mt-1"
+                >
+                  <span>UX Design</span><span class="mx-2">&#x2022;</span>
+                  <span>Launched</span><span class="mx-2">&#x2022;</span>
+                  <v-chip small class="darkbg lighten-1 white--text body-1 caption"
+                    >Enterprise</v-chip
+                  >
+                </div>
+              </div>
+            </div>
+          </v-col>
+          <v-col cols="12" md="6" class="mt-6">
             <!-- NOTIFICATIONS -->
             <div
               @click.stop="$router.push('/notifications')"
@@ -78,7 +148,77 @@
             </div>
           </v-col>
           <v-col cols="12" md="6" class="mt-6">
-            <!-- NOTIFICATIONS -->
+            <!-- FORMBUILDER -->
+            <div
+              @click.stop="$router.push('/builder')"
+              target="_blank"
+              class="pointer workcard"
+            >
+              <div class="builder-card smooth-shadow">
+                <div>
+                  <div class="darkbg lighten-1 card-image">
+                    <img
+                      width="100%"
+                      :src="require(`@/assets/media/builder/formbuilder.png`)"
+                    />
+                  </div>
+                </div>
+                <!-- <div class="workcard_right px-6 pt-4">
+                  <div>
+                    <div
+                      class="d-flex align-center body-1 caption text-uppercase mt-2"
+                    >
+                      <span>UX/UI Design</span
+                      ><span class="mx-2">&#x2022;</span> <span>Shipped</span
+                      ><span class="mx-2">&#x2022;</span>
+                      <v-chip small class="white body-1 caption greybg"
+                        >B2B SaaS</v-chip
+                      >
+                    </div>
+                  </div>
+                  <div class="align-end justify-end mt-4">
+                    <p class="body-1">
+                      Real-time updates for solution developers of no-code app to address
+                      critical events impacting customers.
+                    </p>
+                    <v-btn
+                      plain
+                      large
+                      class="bottom-line--light text-uppercase font-weight-medium pa-0"
+                      @click.stop="$router.push('/notifications')"
+                      target="_blank"
+                    >
+                      read more
+                      <v-icon class="ml-2" dark> mdi-arrow-right </v-icon>
+                    </v-btn>
+                  </div>
+                </div> -->
+              </div>
+              <div class="d-flex align-center mt-4">
+                <div class="caption font-italic font-weight-light mb-1">
+                  Ushur
+                </div>
+                <div
+                  class="ml-2"
+                  :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
+                ></div>
+              </div>
+              <div class="font-weight-medium text-h5">No-Code Workflow Builder</div>
+              <div>
+                <div
+                  class="d-flex align-center body-1 caption text-uppercase font-weight-light mt-1"
+                >
+                  <span>UX Design</span><span class="mx-2">&#x2022;</span>
+                  <span>Shipped</span><span class="mx-2">&#x2022;</span>
+                  <v-chip small class="darkbg lighten-1 white--text body-1 caption"
+                    >B2B SaaS</v-chip
+                  >
+                </div>
+              </div>
+            </div>
+          </v-col>
+          <v-col cols="12" md="6" class="mt-6">
+            <!-- AI Suggest -->
             <div
               @click.stop="$router.push('/aisuggest')"
               target="_blank"
@@ -885,7 +1025,16 @@ export default {
 }
 
 // NEW
+.builder-card {
+  background: linear-gradient(25deg, #66555a 13.08%, #384147 95.82%);
+  border-radius: 1rem;
+}
+.agentassist-card{
+  background: linear-gradient(22deg, #4666f0 13.08%, #94adf9 95.82%);
+  background: linear-gradient(22deg, #e8626b 13.08%, #62a1e0 95.82%);
 
+  border-radius: 1rem;
+}
 .notifications-card {
   background: linear-gradient(262deg, #f68479 13.08%, #fee382 95.82%);
   border-radius: 1rem;

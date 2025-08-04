@@ -10,7 +10,7 @@
               interaction design. I have experience across wide range of
               startups solving complex problems at scale. Previously
               <span class="company-names font-weight-light"
-                >@Ushur, Sensehawk & IBM</span
+                >@US Bank, Citi Bank, Ushur</span
               >
             </div>
             <div class="d-flex align-start justify-space-between text-left mt-12">
@@ -24,7 +24,7 @@
             <div class="ml-6">
               <div class="font-weight-bold text-h3">150k+</div>
               <div class="text-capitalize ">
-                Customers designed for in telecom, insurance, solar & education
+                Customers designed for in Banking, Solar and Education
               </div>
             </div>
           </div>
