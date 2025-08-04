@@ -249,7 +249,7 @@
       </section>
     </div>
 
-    <article class="white">
+    <article class="white" id="userjourney">
       <section-highlight>
         Deep Dive - Agent Journey
         <template v-slot:description>

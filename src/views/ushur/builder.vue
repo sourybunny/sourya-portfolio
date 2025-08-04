@@ -8,17 +8,16 @@
       ></v-img>
     </div>
     <article class="white">
-      <!-- <div class="stickynav">
+      <div class="stickynav">
         <div class="subnavigation glass-header">
           <a href="#overview">Overview</a>
           <a href="#users">Users</a>
           <a href="#process">Process</a>
-          <a href="#principles">Design Principles</a>
-          <a href="#concepts">Concepts</a>
+          <a href="#concepts">Ideation</a>
           <a href="#design">Design</a>
           <a href="#reflection">Reflection</a>
         </div>
-      </div> -->
+      </div>
       <section
         id="overview"
         class="inner-section"
@@ -501,9 +500,7 @@
           outlined
           @click.stop="show_process = !show_process"
         >
-          ❤️ I want to see 👀 Process<img
-            :src="require(`@/assets/media/me/right-down.svg`)"
-            alt="arrow"
+          I want to see 👀 Process<img
         /></v-btn>
       </div>
 
@@ -546,7 +543,7 @@
           </section-overview>
         </section>
       </article> -->
-    <article>
+    <article id="design">
       
       <section class="inner-section">
         <sectionTitle

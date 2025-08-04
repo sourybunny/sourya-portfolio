@@ -1,6 +1,6 @@
 <template>
   <main class="project-section">
-    <div class="notifications-bg mx-16 mt-4">
+    <div class="notifications-bg  mt-4">
       <v-img
         height="100%"
         width="100%"
@@ -8,17 +8,16 @@
       ></v-img>
     </div>
     <article class="white">
-      <!-- <div class="stickynav">
+      <div class="stickynav">
         <div class="subnavigation glass-header">
           <a href="#overview">Overview</a>
           <a href="#users">Users</a>
           <a href="#process">Process</a>
-          <a href="#principles">Design Principles</a>
-          <a href="#concepts">Concepts</a>
+          <a href="#concepts">Ideation</a>
           <a href="#design">Design</a>
           <a href="#reflection">Reflection</a>
         </div>
-      </div> -->
+      </div>
       <section
         id="overview"
         class="inner-section"
@@ -435,7 +434,7 @@
 
         <!-- </article> -->
 
-        <section class="inner-section mt-12">
+        <section class="inner-section mt-12" id="concepts"> 
           <sectionTitle :title="'Design review 1-2'"></sectionTitle>
           <section-overview
             :title="'Overcoming'"
