@@ -36,9 +36,9 @@
                 to reduce banking support operational costs and improve customer
                 experience through streamlined AI-assisted workflows. Designed
                 an intuitive, contextual interface that integrates seamlessly
-                with existing banking systems. The end result was a 42%
-                reduction in average handle time, 35% improvement in first-call
-                resolution, and $xxM in annual operational savings.
+                with existing banking systems. The design is expected to
+                reduce average handle time by 40%, significantly improve first-call
+                resolution rate, and bring $xxM in annual operational savings.
 
                 <!-- <br> -->
               </div>

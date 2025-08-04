@@ -63,7 +63,7 @@
                   :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
                 ></div>
               </div>
-              <div class="font-weight-medium text-h5">Agent Assist 🔒</div>
+              <div class="font-weight-medium text-h5">✨ Agent Assist 🔒</div>
               <div>
                 <div
                   class="d-flex align-center body-1 caption text-uppercase font-weight-light mt-1"
@@ -203,7 +203,7 @@
                   :style="'background:grey;height: 2px; width:2rem;opacity:0.5;'"
                 ></div>
               </div>
-              <div class="font-weight-medium text-h5">No-Code Workflow Builder</div>
+              <div class="font-weight-medium text-h5">Redesign No-Code Workflow Builder</div>
               <div>
                 <div
                   class="d-flex align-center body-1 caption text-uppercase font-weight-light mt-1"
@@ -274,7 +274,7 @@
                 ></div>
               </div>
               <div class="font-weight-medium text-h5">
-                AI Smart Suggest
+                ✨ AI Smart Suggest
               </div>
               <div>
                 <div
