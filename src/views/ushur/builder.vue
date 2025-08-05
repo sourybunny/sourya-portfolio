@@ -176,6 +176,12 @@
             high impact issues that need need to be addressed immediately.
           </span>
         </section-overview>
+        <div class="mx-auto mb-8 text-center darkbg" >
+          <img 
+              width="70%"
+              :src="require(`@/assets/media/builder/builderpersona.png`)"
+            />
+        </div>
         <div class="content">
           <div class="pain-points">
             <div class="pain-point">
@@ -191,7 +197,7 @@
                 Spends 25% of time hunting for hidden errors
               </div>
             </div>
-
+    
             <div class="pain-point">
               <div class="pain-title">Scroll & Drag-Drop Issues</div>
               <div class="pain-description">
@@ -203,7 +209,7 @@
                 Takes multiple attempts to drag-drop from bottom.
               </div>
             </div>
-
+    
             <div class="pain-point">
               <div class="pain-title">Poor Module Scalability</div>
               <div class="pain-description">
@@ -215,7 +221,7 @@
                 Workflows with 4+ modules become difficult to edit
               </div>
             </div>
-
+    
             <div class="pain-point">
               <div class="pain-title">
                 No Mobile Preview During Form Building
@@ -232,6 +238,8 @@
         </div>
       </section>
     </article>
+
+    
     <div class="is-relative">
       <img
         class="is-absolute is-center"
