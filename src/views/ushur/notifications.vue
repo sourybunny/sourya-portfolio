@@ -913,37 +913,100 @@ export default {
 .stickynav {
   position: absolute;
 }
+
 .glass-header {
-  background: rgba(255, 255, 255, 0.176);
-  backdrop-filter: blur(6px);
-  border-radius: 10px;
-  // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.2s ease; /* Add a transition for hover effect */
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 8px;
+  // box-shadow:
+  //     0 8px 32px rgba(31, 38, 135, 0.25),
+  //     inset 0 1px 0 rgba(255, 255, 255, 0.6),
+  //     0 2px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Enhanced glass effect with gradient overlay */
+.glass-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.glass-header:hover {
+  background: rgba(255, 255, 255, 0.45);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 4px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
 }
 
 .subnavigation {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
   z-index: 100;
   margin-top: 8rem;
   top: 1rem;
   right: 0.5rem;
   position: fixed;
-
-  a {
-    color: #6f6f6f;
-    font-weight: 500;
-    font-size: 12px;
-    margin: 0.3rem;
-    text-align: right;
-    &:hover {
-      color: #474747;
-    }
-  }
+  min-width: 120px;
 }
+
+.subnavigation a {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0.2rem 0;
+  padding: 0.25rem 0.5rem;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+.subnavigation a:hover {
+  color: rgba(0, 0, 0, 0.95);
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateX(-2px);
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.subnavigation a:active {
+  transform: translateX(-1px);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Active state for current section */
+.subnavigation a.active {
+  color: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
 .notifications-bg {
   background: linear-gradient(148deg, #fdf188 0%, #f8eb77 87.72%);
   //   display: flex;
