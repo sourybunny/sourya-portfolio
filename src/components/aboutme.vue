@@ -2,19 +2,6 @@
   <div class="white mx-auto">
     <v-layout wrap>
       <v-flex sm2>
-        <!-- Left Navigation -->
-        <!-- <nav class="left-nav">
-          <a href="#why" class="nav-item" data-section="why">Why should you hire me?</a>
-          <a href="#how" class="nav-item" data-section="how"
-            >What's my design process?</a
-          >
-          <a href="#lessons" class="nav-item" data-section="lessons"
-            >Lessons learned</a
-          >
-          <a href="#facts" class="nav-item" data-section="facts"
-            >Fun facts</a
-          >
-        </nav> -->
         <nav class="left-nav">
           <a
             v-for="item in navItems"
@@ -26,6 +13,22 @@
             {{ item.label }}
           </a>
         </nav>
+        <div class="vertical-reel-container">
+          <div
+            class="vertical-reel-track"
+            @mouseover="pauseReel"
+            @mouseleave="resumeReel"
+            :style="{ animationPlayState: isPaused ? 'paused' : 'running' }"
+          >
+            <!-- Repeat the images to ensure smooth loop -->
+            <img
+              v-for="(img, index) in images.concat(images)"
+              :key="index"
+              :src="img"
+              :alt="'Me ' + (index + 1)"
+            />
+          </div>
+        </div>
       </v-flex>
       <v-flex sm10>
         <div class="layout-container mx-auto">
@@ -253,30 +256,30 @@
             </div>
             <section id="facts">
               <section-title
-              :is_dark="false"
-              :title="'fun facts'"
-            ></section-title>
+                :is_dark="false"
+                :title="'fun facts'"
+              ></section-title>
 
-            <img
-              width="100%"
-              class="my-8"
-              :src="require(`@/assets/gamesproblems.png`)"
-            />
+              <img
+                width="100%"
+                class="my-8"
+                :src="require(`@/assets/gamesproblems.png`)"
+              />
 
-            <div
-              class="text-h6 font-weight-light text-center mx-auto"
-              style="max-width: 90%"
-            >
-              From a young age, I enjoyed solving puzzles and building stuff,
-              nurturing my creativity and shaping my design mindset. Tangrams,
-              Catan, Chess, Lego are some of my favorites.
-            </div>
+              <div
+                class="text-h6 font-weight-light text-center mx-auto"
+                style="max-width: 90%"
+              >
+                From a young age, I enjoyed solving puzzles and building stuff,
+                nurturing my creativity and shaping my design mindset. Tangrams,
+                Catan, Chess, Lego are some of my favorites.
+              </div>
 
-            <img
-              width="100%"
-              class="my-8"
-              :src="require(`@/assets/cards.png`)"
-            />
+              <img
+                width="100%"
+                class="my-8"
+                :src="require(`@/assets/cards.png`)"
+              />
             </section>
           </div>
         </div>
@@ -353,13 +356,25 @@ export default {
   data: function () {
     return {
       isActive: false,
-      activeSection: 'hero',
+      activeSection: "hero",
       visibleSections: [],
       navItems: [
         { id: "why", label: "Why should you hire me?" },
         { id: "how", label: `What's my design process?` },
         { id: "lessons", label: "Lessons learned" },
         { id: "facts", label: "Fun Facts" },
+      ],
+      isPaused: false,
+      images: [
+      require(`@/assets/travel/1.png`),
+      require(`@/assets/travel/2.png`),
+      require(`@/assets/travel/3.png`),
+      require(`@/assets/travel/4.png`),
+      require(`@/assets/travel/5.png`),
+
+
+      
+
       ],
     };
   },
@@ -383,6 +398,12 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
+    pauseReel() {
+      this.isPaused = true;
+    },
+    resumeReel() {
+      this.isPaused = false;
+    },
     scrollToSection(sectionId) {
       const element = document.getElementById(sectionId);
       if (element) {
@@ -516,11 +537,11 @@ export default {
 /* Left Navigation */
 .left-nav {
   position: fixed;
-  left: 2rem;
+  margin-left: 2rem;
   top: 10rem;
   transform: translateY(-50%);
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.9);
+  // background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 1rem 0;
@@ -529,7 +550,7 @@ export default {
 
 .nav-item {
   display: block;
-  padding: 0.5rem .5rem;
+  padding: 0.5rem 0.5rem;
   color: #6b7280;
   text-decoration: none;
   font-size: 0.9rem;
@@ -550,7 +571,7 @@ export default {
 }
 
 .nav-item.active::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -565,6 +586,63 @@ export default {
 @media (max-width: 1024px) {
   .left-nav {
     display: none;
+  }
+}
+/* Vertical image reel container */
+.vertical-reel-container {
+  position: fixed;
+  top:15rem;
+  margin-top: 40px;
+  margin-left: 2rem;
+  overflow: hidden;
+    /* Dark-to-transparent fade effect */
+    -webkit-mask-image: linear-gradient(to bottom,
+    rgba(30, 30, 47, 0) 0%,     /* fully transparent */
+    rgba(30, 30, 47, 1) 10%,    /* solid dark */
+    rgba(30, 30, 47, 1) 60%,    /* solid dark */
+    rgba(30, 30, 47, 0) 100%    /* fully transparent */
+  );
+  mask-image: linear-gradient(to bottom,
+    rgba(30, 30, 47, 0) 0%,
+    rgba(30, 30, 47, 1) 10%,
+    rgba(30, 30, 47, 1) 60%,
+    rgba(30, 30, 47, 0) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  // height: 300px;
+}
+
+/* Scrolling track */
+.vertical-reel-track {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-vertical 10s linear infinite;
+}
+
+.vertical-reel-track img {
+  width:200px;
+  height:auto;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  align-self: center;
+  transition: transform 0.3s ease;
+}
+
+.vertical-reel-track img:hover {
+  transform: scale(1.1);
+}
+
+/* Vertical scrolling animation */
+@keyframes scroll-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
   }
 }
 </style>
