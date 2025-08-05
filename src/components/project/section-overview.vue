@@ -1,6 +1,6 @@
 <template>
-  <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="400" data-aos-duration="500" data-aos-once="true"
-    class="section-overview"
+  <div 
+    class="section-overview" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="800" 
     :class="is_dark ? 'section-overview--dark' : ''"
   >
     <v-layout wrap v-if="!vertical">

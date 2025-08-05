@@ -86,42 +86,45 @@
                 :right="true"
               >
               </section-overview>
-              <v-layout wrap class="my-6">
-                <v-flex xs12 sm6>
-                  <section-content
-                    class="mr-12"
-                    is_number="true"
-                    :title="'Cross-Industry Experience'"
-                  >
-                    5 years across fintech, solar, AI, and B2B SaaS
-                  </section-content>
-                </v-flex>
-                <v-flex xs12 sm6>
-                  <section-content
-                    is_number="true"
-                    :title="'Full-Spectrum Skills'"
-                  >
-                    Research, strategy, visual design, prototyping, testing
-                  </section-content>
-                </v-flex>
-                <v-flex xs12 sm6>
-                  <section-content
-                    class="mr-12"
-                    is_number="true"
-                    :title="' Stakeholder Alignment'"
-                  >
-                    Get tech, product, and business rowing together
-                  </section-content>
-                </v-flex>
-                <v-flex xs12 sm6>
-                  <section-content
-                    is_number="true"
-                    :title="'Complex-to-Simple Magic'"
-                  >
-                    Make technical products feel human
-                  </section-content>
-                </v-flex>
-              </v-layout>
+              <div>
+
+                <v-layout wrap class="my-6">
+                  <v-flex xs12 sm6>
+                    <section-content
+                      class="mr-12"
+                      is_number="true"
+                      :title="'Cross-Industry Experience'"
+                    >
+                      5 years across fintech, solar, AI, and B2B SaaS
+                    </section-content>
+                  </v-flex>
+                  <v-flex xs12 sm6>
+                    <section-content
+                      is_number="true"
+                      :title="'Full-Spectrum Skills'"
+                    >
+                      Research, strategy, visual design, prototyping, testing
+                    </section-content>
+                  </v-flex>
+                  <v-flex xs12 sm6>
+                    <section-content
+                      class="mr-12"
+                      is_number="true"
+                      :title="' Stakeholder Alignment'"
+                    >
+                      Get tech, product, and business rowing together
+                    </section-content>
+                  </v-flex>
+                  <v-flex xs12 sm6>
+                    <section-content
+                      is_number="true"
+                      :title="'Complex-to-Simple Magic'"
+                    >
+                      Make technical products feel human
+                    </section-content>
+                  </v-flex>
+                </v-layout>
+              </div>
             </section>
             <section id="how">
               <section-title
@@ -136,7 +139,7 @@
               </section-overview>
               <v-layout wrap class="my-6">
                 <v-flex xs12 sm6>
-                  <section-content
+                  <section-content 
                     :number="'01'"
                     class="mr-12"
                     is_number="true"
@@ -146,7 +149,7 @@
                   </section-content>
                 </v-flex>
                 <v-flex xs12 sm6>
-                  <section-content
+                  <section-content 
                     :number="'02'"
                     is_number="true"
                     :title="'Ideate Together'"
@@ -235,10 +238,9 @@
             >
               <v-row wrap align-lg="center" justify-sm="center">
                 <v-col cols="12" xs="6" md="7">
-                  <div class="pa-4">
+                  <div>
                     <p
                       class="text-h6 text-left font-weight-light opacity-8"
-                      style="max-width: 85%"
                     >
                       To me, design mirrors the graceful metamorphosis of a
                       butterfly, where ideas undergo a transformative journey to
@@ -595,12 +597,12 @@ export default {
   margin-top: 40px;
   margin-left: 2rem;
   overflow: hidden;
-    /* Dark-to-transparent fade effect */
+  
     -webkit-mask-image: linear-gradient(to bottom,
-    rgba(30, 30, 47, 0) 0%,     /* fully transparent */
-    rgba(30, 30, 47, 1) 10%,    /* solid dark */
-    rgba(30, 30, 47, 1) 60%,    /* solid dark */
-    rgba(30, 30, 47, 0) 100%    /* fully transparent */
+    rgba(30, 30, 47, 0) 0%,     
+    rgba(30, 30, 47, 1) 10%,    
+    rgba(30, 30, 47, 1) 60%,  
+    rgba(30, 30, 47, 0) 100%  
   );
   mask-image: linear-gradient(to bottom,
     rgba(30, 30, 47, 0) 0%,
@@ -612,7 +614,6 @@ export default {
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
-  // height: 300px;
 }
 
 /* Scrolling track */

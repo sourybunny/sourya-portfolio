@@ -1,5 +1,5 @@
 <template>
-    <div class="section-content"     :class="is_dark ? 'section-content--dark' : ''">
+    <div class="section-content" :class="is_dark ? 'section-content--dark' : ''" >
         <span class="content-number" v-if="is_number">{{ number }}</span>
         <div class="content-title">{{ title }}</div>
         <p class="content-body">

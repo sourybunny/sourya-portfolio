@@ -1,5 +1,5 @@
 <template>
-    <div class="project-header">
+    <div class="project-header" data-aos="fade-up" data-aos-delay="400"  data-aos-duration="2000">
       <p class="project-title">{{ title }}</p>
       <p class="project-description">{{ description }}</p>
     </div>
