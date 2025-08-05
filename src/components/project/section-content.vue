@@ -25,14 +25,16 @@ export default {
 <style lang="scss" scoped>
 .section-content{
     margin-top: 2rem;
+    
     &--dark {
-    color: white;
-    .content-body {
-    color: #a0a0a0;
+        color: white;
+        .content-body {
+            color: #a0a0a0;
+        }
     }
-  }
 }
 .content-title {
+    font-family: 'Poppins';
         font-size: 18px;
         line-height: 24px;
         font-weight: 500;
@@ -42,6 +44,8 @@ export default {
 
 .content-body{
         font-size: 18px;
+    font-family: 'Poppins';
+
         line-height: 27px;
         font-weight: 300;
         // color:#545454;
