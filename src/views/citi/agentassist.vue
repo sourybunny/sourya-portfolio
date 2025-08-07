@@ -216,7 +216,7 @@
         <v-flex xs12 sm6>
           <img
             width="100%"
-            :src="require(`@/assets/media/agentassist/persona.gif`)"
+            :src="require(`@/assets/media/agentassist/persona.png`)"
           />
         </v-flex>
         <v-flex xs12 sm4>

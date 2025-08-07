@@ -368,15 +368,13 @@ export default {
       ],
       isPaused: false,
       images: [
-      require(`@/assets/travel/1.png`),
-      require(`@/assets/travel/2.png`),
-      require(`@/assets/travel/3.png`),
-      require(`@/assets/travel/4.png`),
+      require(`@/assets/travel/12.png`),
+      require(`@/assets/travel/7.png`),
+      require(`@/assets/travel/14.png`),
+      require(`@/assets/travel/13.png`),
+      require(`@/assets/travel/15.png`),
+      require(`@/assets/travel/11.png`),
       require(`@/assets/travel/5.png`),
-
-
-      
-
       ],
     };
   },
@@ -598,17 +596,10 @@ export default {
   margin-left: 2rem;
   overflow: hidden;
   
-    -webkit-mask-image: linear-gradient(to bottom,
-    rgba(30, 30, 47, 0) 0%,     
-    rgba(30, 30, 47, 1) 10%,    
-    rgba(30, 30, 47, 1) 60%,  
-    rgba(30, 30, 47, 0) 100%  
-  );
   mask-image: linear-gradient(to bottom,
     rgba(30, 30, 47, 0) 0%,
+    rgba(30, 30, 47, 0.9) 3%,
     rgba(30, 30, 47, 1) 10%,
-    rgba(30, 30, 47, 1) 60%,
-    rgba(30, 30, 47, 0) 100%
   );
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
@@ -620,7 +611,7 @@ export default {
 .vertical-reel-track {
   display: flex;
   flex-direction: column;
-  animation: scroll-vertical 10s linear infinite;
+  animation: scroll-vertical 15s linear infinite;
 }
 
 .vertical-reel-track img {
