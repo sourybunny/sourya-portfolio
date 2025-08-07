@@ -625,7 +625,7 @@
           <v-flex xs12 sm8>
             <img
               width="100%"
-              :src="require(`@/assets/media/agentassist/summary.png`)"
+              :src="require(`@/assets/media/agentassist/aftercall.png`)"
             />
           </v-flex>
           <v-flex xs12 sm4>
