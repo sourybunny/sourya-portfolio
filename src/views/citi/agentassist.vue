@@ -27,23 +27,39 @@
           <v-flex xs12 sm8>
             <sectionTitle :title="'Citi Bank /'"></sectionTitle>
             <projectHeader
-              :title="'Agent Assist '"
+              :title="'AI- Agent Assist '"
               :description="project_desc"
             ></projectHeader>
             <sectionContent>
               <div>
-                As the lead UX designer on this project, I designed a solution
-                to reduce banking support operational costs and improve customer
-                experience through streamlined AI-assisted workflows. Designed
-                an intuitive, contextual interface that integrates seamlessly
-                with existing banking systems. The design is expected to reduce
-                average handle time by 40%, significantly improve first-call
-                resolution rate, and bring $xxM in annual operational savings.
+                Citi Bank's
+                <span class="font-weight-medium"
+                  >customer support agents work across multiple lines of
+                  business, each requiring different applications and distinct
+                  processes for handling customer inquiries.</span
+                >
+                As the lead UX designer, I created an intuitive, contextual
+                AI-powered widget that integrates seamlessly across Citi's
+                diverse banking applications and business lines, delivering
+                real-time customer context, guided workflows tailored to each
+                LOB, and intelligent recommendations that adapt to different
+                processes.
 
                 <!-- <br> -->
               </div>
             </sectionContent>
+            <sectionTitle :title="'Business Impact'"></sectionTitle>
 
+            <div class="mt-8 py-8 px-4 metric-card">
+              <img
+              width="100%"
+              :src="require(`@/assets/media/agentassist/topmetrics.png`)"
+            />
+          </div>
+          <img
+            width="100%" class="mt-8"
+            :src="require(`@/assets/media/agentassist/savings.png`)"
+          />
             <sectionTitle :title="'Overview'"></sectionTitle>
             <v-layout wrap class="align-start justify-space-between mt-4">
               <v-flex xs12 sm6>
@@ -85,7 +101,7 @@
                 ></sectionTitle>
                 <sectionContent>
                   <div>
-                    <li>Integration with 3 legacy banking systems</li>
+                    <li>Integration with 3 legacy banking systems (Sawgrass, Olympus, Eclipse)</li>
                     <li>
                       Inconsistent processes across multiple business lines
                     </li>
@@ -154,7 +170,7 @@
             With
             <span class="impact-highlight">60 million calls annually</span>,
             every second reduction in call handle time saves
-            <span class="impact-highlight">$X million</span> in operational
+            <span class="impact-highlight">$0.7 million</span> in operational
             costs.
           </h1>
         </div>
@@ -716,7 +732,7 @@ export default {
   },
   data: () => {
     return {
-      project_desc: "Transforming Customer Support 🎧 with AI.",
+      project_desc: "Reducing Call Times by 50% & Saving $20M Annually",
       show_process: false,
     };
   },
@@ -1234,5 +1250,10 @@ export default {
 .impact-highlight {
   color: #fbbf24;
   font-weight: 700;
+}
+.metric-card {
+  border: 1px solid rgb(237, 243, 255);
+  border-radius: 0.5rem;
+  background:#fafefa
 }
 </style>
