@@ -52,14 +52,16 @@
 
             <div class="mt-8 py-8 px-4 metric-card">
               <img
+                width="100%"
+                :src="require(`@/assets/media/agentassist/topmetrics.png`)"
+              />
+            </div>
+            <img
               width="100%"
-              :src="require(`@/assets/media/agentassist/topmetrics.png`)"
+              class="mt-8"
+              :src="require(`@/assets/media/agentassist/savings.png`)"
             />
-          </div>
-          <img
-            width="100%" class="mt-8"
-            :src="require(`@/assets/media/agentassist/savings.png`)"
-          />
+
             <sectionTitle :title="'Overview'"></sectionTitle>
             <v-layout wrap class="align-start justify-space-between mt-4">
               <v-flex xs12 sm6>
@@ -101,7 +103,10 @@
                 ></sectionTitle>
                 <sectionContent>
                   <div>
-                    <li>Integration with 3 legacy banking systems (Sawgrass, Olympus, Eclipse)</li>
+                    <li>
+                      Integration with 3 legacy banking systems (Sawgrass,
+                      Olympus, Eclipse)
+                    </li>
                     <li>
                       Inconsistent processes across multiple business lines
                     </li>
@@ -157,14 +162,38 @@
         </v-layout>
       </section>
     </article>
-    <section class="inner-section">
+    <article class="white">
+      <section class="inner-section">
+        <sectionTitle :title="'My Role & Collaboration'"></sectionTitle>
+        <sectionContent>
+          <div>
+            As the lead designer, I
+            <span class="font-weight-medium"
+              >bridged silos across product owners, AI engineers, developers,
+              and design teams</span
+            >
+            by setting up shared workshops that aligned design milestones with
+            development sprints.
+          </div>
+          <div>
+            I also brought structure that enabled smoother handoffs between
+            design, product, and engineering.
+          </div>
+        </sectionContent>
+        <v-img
+          width="80%"
+          class="mt-8 mx-auto"
+          :src="require(`@/assets/media/agentassist/team.png`)"
+        />
+      </section>
+    </article>
+    <!-- <section class="inner-section">
       <sectionTitle
         is_dark="true"
         :title="'Why is it a problem for business'"
       ></sectionTitle>
 
       <div>
-        <!-- <h1 class="white--text">Every Second Counts in Banking Support</h1> -->
         <div class="impact-statement white--text">
           <h1 class="impact-text">
             With
@@ -180,101 +209,82 @@
           <div class="money-icon">💰</div>
         </div>
       </div>
-    </section>
+    </section> -->
     <article class="greybg pb-0" id="users">
       <section class="inner-section">
         <sectionTitle :title="'Empathizing with users'"></sectionTitle>
+
         <section-overview
-          :title="'is it for?'"
-          :emphasize="'Who —'"
-          :left="true"
+          class="mr-10"
+          :title="'Who -'"
+          :emphasize="'is it for?'"
+          :right="true"
+          :is_dark="false"
+          :vertical="false"
         >
           <div>
-            Our primary users are
-            <span class="font-weight-medium font-italic"
-              >customer support agents
-            </span>
-            who interact with customers in personal banking through IVR (voice)
-            system across multiple business lines such as branded cards, CRS and
-            Retail.
+            To deeply understand the user problem, I did user interviews and
+            stakeholder interviews. I then presented my findings to
+            stakeholders.
           </div>
         </section-overview>
-        <!-- <img width="100%" :src="require(`@/assets/media/agentassist/pains.png`)" /> -->
+        <v-layout wrap class="align-start justify-space-between">
+          <v-flex xs12 sm5>
+            <img
+              width="100%"
+              :src="require(`@/assets/media/agentassist/user.png`)"
+            />
+          </v-flex>
+          <v-flex xs12 sm6>
+            <div>
+              <p>Pain Points</p>
+              <div class="pain-point">
+                <div class="pain-icon">❌</div>
+                <div class="pain-text">
+                  Difficulty locating customer information
+                </div>
+              </div>
+              <div class="pain-point">
+                <div class="pain-icon">❌</div>
+                <div class="pain-text">
+                  Manual call summarization eating up time
+                </div>
+              </div>
+
+              <div class="pain-point">
+                <div class="pain-icon">❌</div>
+                <div class="pain-text">
+                  Time consuming to find relevant procedures
+                </div>
+              </div>
+
+              <div class="pain-point">
+                <div class="pain-icon">❌</div>
+                <div class="pain-text">Complex processes leading to errors</div>
+              </div>
+            </div>
+          </v-flex>
+        </v-layout>
+        <!-- <div class="pa-12">
+                <img
+                  width="100%"
+                  :src="require(`@/assets/media/agentassist/usermetric.png`)"
+                />
+              </div> -->
       </section>
     </article>
 
-    <section class="greybg">
+    <article class="greybg" id="userjourney">
       <section-highlight>
-        Multiple Systems, One Frustrated Agent
-        <template v-slot:description>
-          <sectionContent style="width: 75%; margin: 1rem auto 0rem">
-            The chaotic reality of customer support agent
-          </sectionContent>
-        </template>
+        Understanding Agent Journey
       </section-highlight>
-      <v-layout wrap class="align-start justify-center">
-        <v-flex xs12 sm6>
-          <img
-            width="100%"
-            :src="require(`@/assets/media/agentassist/persona.png`)"
-          />
-        </v-flex>
-        <v-flex xs12 sm4>
-          <div class="mx-12">
-            <div class="pain-point">
-              <div class="pain-icon">🔍</div>
-              <div class="pain-text">
-                Information scattered across 7 different systems
-              </div>
-            </div>
-
-            <div class="pain-point">
-              <div class="pain-icon">⏰</div>
-              <div class="pain-text">
-                Manual data entry eating up valuable time
-              </div>
-            </div>
-
-            <div class="pain-point">
-              <div class="pain-icon">📞</div>
-              <div class="pain-text">
-                Customers calling back due to incomplete information
-              </div>
-            </div>
-
-            <div class="pain-point">
-              <div class="pain-icon">😰</div>
-              <div class="pain-text">High stress levels during peak hours</div>
-            </div>
-          </div>
-        </v-flex>
-      </v-layout>
-      <div class="pa-12">
-        <img
-          width="100%"
-          :src="require(`@/assets/media/agentassist/usermetric.png`)"
+     <div class="mx-auto text-center">
+       <img
+          width="100%" class="inner-section"
+          :src="require(`@/assets/media/agentassist/journey.png`)"
         />
-      </div>
-    </section>
-    <div style="background: #151b24">
-      <section class="inner-section">
-        <img
-          width="100%"
-          :src="require(`@/assets/media/agentassist/pains.png`)"
-        />
-      </section>
-    </div>
-
-    <article class="white" id="userjourney">
-      <section-highlight>
-        Deep Dive - Agent Journey
-        <template v-slot:description>
-          <sectionContent>
-            From Call Preparation to Post-Call Documentation
-          </sectionContent>
-        </template>
-      </section-highlight>
-      <div class="journey-grid">
+     </div>
+      <!-- <div class="journey-grid">
         <div class="row-header">PHASES</div>
         <div class="phase-header">
           <div class="phase-icon">🎯</div>
@@ -413,10 +423,57 @@
           <div class="bullet-point">AI-generated summary</div>
           <div class="bullet-point">Key actions captured</div>
         </div>
-        <!-- AI Solutions -->
-      </div>
-    </article>
+      </div> -->
 
+     
+    </article>
+<article class="white">
+   <section>
+        <sectionTitle
+          class="inner-section"
+          :title="'content analysis'"
+        ></sectionTitle>
+        <section-overview
+          class="inner-section"
+          :title="'Analyze'"
+          :emphasize="'Call Transcripts'"
+          :right="true"
+        >
+          <div>
+            I reached out to data analysts for content analysis of call
+            transcripts and found 3 distinct patterns that guided my design
+            direction
+          </div>
+        </section-overview>
+        <img
+          width="100%"
+          :src="require(`@/assets/media/agentassist/analyze.png`)"
+        />
+      </section>
+      <section class="inner-section">
+        <sectionTitle :title="'what users need'"></sectionTitle>
+
+        <section-overview
+          class="mr-10"
+          :title="'from Research'"
+          :emphasize="'Insights'"
+          :left="true"
+          :is_dark="false"
+          :vertical="false"
+        >
+          <div>
+            Users want to understand customer context, quickly able to access information almost at their fingertips and need guidance while taking actions on behalf of customer
+          </div>
+
+        </section-overview>
+         <div class="mx-auto text-center">
+       <img
+          width="100%" class="inner-section"
+          :src="require(`@/assets/media/agentassist/insights.png`)"
+        />
+     </div>
+      </section>
+</article>
     <article id="principles" class="white">
       <section class="inner-section">
         <sectionTitle :title="'Key considerations'"></sectionTitle>
@@ -871,7 +928,7 @@ export default {
 .pain-point {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   animation: slideIn 0.6s ease-out forwards;
   opacity: 0;
   transform: translateX(30px);
@@ -898,9 +955,9 @@ export default {
 }
 
 .pain-icon {
-  font-size: 40px;
-  margin-right: 20px;
-  min-width: 60px;
+  font-size: 20px;
+  margin-right: 16px;
+  min-width: 20px;
   text-align: center;
 }
 
@@ -1254,6 +1311,6 @@ export default {
 .metric-card {
   border: 1px solid rgb(237, 243, 255);
   border-radius: 0.5rem;
-  background:#fafefa
+  background: #fafefa;
 }
 </style>
