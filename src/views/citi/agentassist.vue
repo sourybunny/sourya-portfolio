@@ -71,18 +71,16 @@
                     fragmented systems, outdated interfaces, and information
                     silos, leading to longer call times, multiple transfers, and
                     frustrated customers. -->
-                    Banking customer support agents handle 40-50 calls daily
-                    with 8-12 minute average handle times and only 70%
-                    first-call resolution rates.
+                    Banking customer support agents take longer time to resolve customer issues leading to
+                     poor end customer experience and increased costs.
                   </div>
                 </section-content>
               </v-flex>
               <v-flex xs12 sm5>
                 <section-content :title="'Outcome'">
                   <div>
-                    I designed an AI-powered real-time support system that
-                    provides contextual guidance during live interactions saving
-                    millions of operational costs
+                    I designed an AI widget that
+                    provides contextual guidance in real-time helping agents resolve issues faster.
                   </div>
                 </section-content>
               </v-flex>
@@ -223,6 +221,8 @@
           :vertical="false"
         >
           <div>
+            Our primary users are
+            <span class="font-weight-medium">call center agents.</span>
             To deeply understand the user problem, I did user interviews and
             stakeholder interviews. I then presented my findings to
             stakeholders.
@@ -275,15 +275,14 @@
     </article>
 
     <article class="greybg" id="userjourney">
-      <section-highlight>
-        Understanding Agent Journey
-      </section-highlight>
-     <div class="mx-auto text-center">
-       <img
-          width="100%" class="inner-section"
+      <section-highlight> Understanding Agent Journey </section-highlight>
+      <div class="mx-auto text-center">
+        <img
+          width="100%"
+          class="inner-section"
           :src="require(`@/assets/media/agentassist/journey.png`)"
         />
-     </div>
+      </div>
       <!-- <div class="journey-grid">
         <div class="row-header">PHASES</div>
         <div class="phase-header">
@@ -424,11 +423,9 @@
           <div class="bullet-point">Key actions captured</div>
         </div>
       </div> -->
-
-     
     </article>
-<article class="white">
-   <section>
+    <article class="white">
+      <section>
         <sectionTitle
           class="inner-section"
           :title="'content analysis'"
@@ -440,9 +437,10 @@
           :right="true"
         >
           <div>
-            I reached out to data analysts for content analysis of call
-            transcripts and found 3 distinct patterns that guided my design
-            direction
+            To understand the language the agents speak, the customer behavior
+            and the type of queries agents resolve, I reached out to data
+            analysts for analysis of call transcripts and found 3 distinct
+            patterns that guided my design direction
           </div>
         </section-overview>
         <img
@@ -462,18 +460,20 @@
           :vertical="false"
         >
           <div>
-            Users want to understand customer context, quickly able to access information almost at their fingertips and need guidance while taking actions on behalf of customer
+            Users want to understand customer context, quickly able to access
+            information almost at their fingertips and need guidance while doing
+            complex actions on behalf of the customer
           </div>
-
         </section-overview>
-         <div class="mx-auto text-center">
-       <img
-          width="100%" class="inner-section"
-          :src="require(`@/assets/media/agentassist/insights.png`)"
-        />
-     </div>
+        <div class="mx-auto text-center">
+          <img
+            width="100%"
+            class="inner-section"
+            :src="require(`@/assets/media/agentassist/insights.png`)"
+          />
+        </div>
       </section>
-</article>
+    </article>
     <article id="principles" class="white">
       <section class="inner-section">
         <sectionTitle :title="'Key considerations'"></sectionTitle>
@@ -558,15 +558,69 @@
             </li>
           </div>
         </sectionContent>
-      </section>
-      <div style="background: #151b24">
-        <section class="inner-section">
+        <sectionTitle :title="'Design validation'"></sectionTitle>
+        <section-overview
+          :title="'Design'"
+          :emphasize="'Reviews'"
+          :right="true"
+        >
+          <div>
+            I led design review sessions with Product owners, BAs, users and
+            extended design teams validating the IA, content and also reviewed
+            with risk ond compliance team ensuring alignment.
+          </div>
+        </section-overview>
+        <div class="mx-auto text-center">
           <img
             width="100%"
-            :src="require(`@/assets/media/agentassist/ideas.png`)"
+            :src="require(`@/assets/media/agentassist/validate.png`)"
           />
-        </section>
-      </div>
+        </div>
+        <sectionTitle :title="'Design Rationale'"></sectionTitle>
+        <section-overview
+          :title="'Design'"
+          :emphasize="'Rationale'"
+          :right="true"
+        >
+          <div>
+            I worked closely with AI engineers on defining the logic, intents
+            and decision points which they mapped to the LLMs and backend
+            services.
+          </div>
+        </section-overview>
+        <div class="mx-auto text-center">
+          <img
+            width="80%"
+            :src="require(`@/assets/media/agentassist/carddesign.png`)"
+          />
+        </div>
+        <sectionTitle :title="'Modular framework'"></sectionTitle>
+        <section-overview :title="'Design'" :emphasize="'System'" :right="true">
+          <div>
+            I created a modular, flexible and adaptable framework that works for
+            multiple use cases.
+          </div>
+        </section-overview>
+        <div class="mx-auto text-center">
+          <img
+            width="80%"
+            :src="require(`@/assets/media/agentassist/system.png`)"
+          />
+        </div>
+        <sectionTitle :title="'how it comes to life'"></sectionTitle>
+        <section-overview :title="'Use'" :emphasize="'Cases'" :right="true">
+          <div>
+            These are some examples of personalized FAQs showing how the design
+            scales and adapts to provide contextual information
+          </div>
+        </section-overview>
+        <div class="mx-auto text-center">
+          <img
+            width="100%"
+            :src="require(`@/assets/media/agentassist/personalized.png`)"
+          />
+        </div>
+      </section>
     </article>
     <!-- <article class="white">
         <section class="inner-section">
