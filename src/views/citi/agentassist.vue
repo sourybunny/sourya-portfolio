@@ -71,16 +71,17 @@
                     fragmented systems, outdated interfaces, and information
                     silos, leading to longer call times, multiple transfers, and
                     frustrated customers. -->
-                    Banking customer support agents take longer time to resolve customer issues leading to
-                     poor end customer experience and increased costs.
+                    Banking customer support agents take longer time to resolve
+                    customer issues leading to poor end customer experience and
+                    increased costs.
                   </div>
                 </section-content>
               </v-flex>
               <v-flex xs12 sm5>
                 <section-content :title="'Outcome'">
                   <div>
-                    I designed an AI widget that
-                    provides contextual guidance in real-time helping agents resolve issues faster.
+                    I designed an AI widget that provides contextual guidance in
+                    real-time helping agents resolve issues faster.
                   </div>
                 </section-content>
               </v-flex>
@@ -519,10 +520,10 @@
           <v-flex xs12 sm6>
             <section-card
               class="ma-2"
-              :title="'Seamless Integration'"
+              :title="'🔌 Seamless Integration'"
               :is_light="true"
             >
-              <div>Feels native to existing workflow</div>
+              <div>Should feel native to existing workflow</div>
             </section-card>
           </v-flex>
         </v-layout>
@@ -533,30 +534,41 @@
         <sectionTitle :title="'Concepts'"></sectionTitle>
         <section-overview
           :title="'Ideation & '"
-          :emphasize="'Concept Development'"
+          :emphasize="'Concepts'"
           :right="true"
         >
           <div>
-            I used a structured approach to map identified pain points directly
-            to potential solutions, ensuring every design decision addressed
-            real user needs.
+            I came up with a broad range of concepts and presented to
+            stakeholders. We prioritized ideas based on etchnical feasibility,
+            adoption and focused on solving immediate needs first while keeping
+            in mind the longterm vision.
           </div>
         </section-overview>
         <sectionTitle :title="'Process'"></sectionTitle>
         <sectionContent>
-          <div>
-            <li>Design workshops: 2 workshops with frontline agents</li>
+          <ul>
             <li>
-              Workflow Mapping: Redesigned processes for top 5 inquiry types
+              <span class="font-weight-medium">Competitor Research</span>:
+              Identified industry patterns to benchmark experience
+            </li>
+            <li class="my-2">
+              <span class="font-weight-medium">Design workshops</span>: 5
+              workshops with 250+ agents in multiple business lines
+            </li>
+
+            <li >
+              <span class="font-weight-medium">Technical Feasibility</span>:
+              Collaborated with engineering on AI/ML capabilities
+            </li>
+            <li class="my-2">
+              <span class="font-weight-medium">Workflow Mapping</span>: Refined
+              user flows for top 5 inquiry types
             </li>
             <li>
-              Technical Feasibility: Collaborated with engineering on AI/ML
-              capabilities
+              <span class="font-weight-medium">Compliance Review</span>: Ensured
+              designs met banking regulations
             </li>
-            <li>
-              Compliance Review: Ensured all concepts met banking regulations
-            </li>
-          </div>
+          </ul>
         </sectionContent>
         <sectionTitle :title="'Design validation'"></sectionTitle>
         <section-overview
