@@ -1,10 +1,7 @@
 <template>
   <main class="project-section">
     <div>
-      <img
-        width="100%"
-        :src="require(`@/assets/media/agentassist/hero.png`)"
-      />
+      <img width="100%" :src="require(`@/assets/media/agentassist/hero.png`)" />
     </div>
     <article class="white">
       <div class="stickynav">
@@ -160,6 +157,34 @@
           </v-flex>
         </v-layout>
       </section>
+      <section class="inner-section">
+        <sectionTitle :title="'Solution'"></sectionTitle>
+        <sectionContent>
+          <p>
+            I designed an AI widget that provides contextual guidance in
+            real-time helping agents resolve customer issues faster and more
+            accurately.
+          </p>
+        </sectionContent>
+      </section>
+      <div class="mt-12 text-center mx-auto is-relative">
+        <img
+          width="100%"
+          src="@/assets/media/agentassist/solutionbg.png"
+          alt=""
+        />
+        <img
+          style="
+            position: absolute;
+            top: 50%;
+            right: 32%;
+            transform: translateY(-50%);
+            border-radius: 8px;
+          "
+          width="250"
+          :src="require(`@/assets/media/agentassist/solution preview.gif`)"
+        />
+      </div>
     </article>
     <article class="white">
       <section class="inner-section">
@@ -556,7 +581,7 @@
               workshops with 250+ agents in multiple business lines
             </li>
 
-            <li >
+            <li>
               <span class="font-weight-medium">Technical Feasibility</span>:
               Collaborated with engineering on AI/ML capabilities
             </li>
