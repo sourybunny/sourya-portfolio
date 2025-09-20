@@ -3,7 +3,7 @@
     <div>
       <img
         width="100%"
-        :src="require(`@/assets/media/agentassist/banner.png`)"
+        :src="require(`@/assets/media/agentassist/hero.png`)"
       />
     </div>
     <article class="white">
