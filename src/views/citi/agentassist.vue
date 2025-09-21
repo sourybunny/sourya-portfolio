@@ -68,17 +68,18 @@
                     fragmented systems, outdated interfaces, and information
                     silos, leading to longer call times, multiple transfers, and
                     frustrated customers. -->
-                    Banking customer support agents take longer time to resolve
-                    customer issues leading to poor end customer experience and
-                    increased costs.
+                    Banking customer support agents were taking too long to
+                    resolve customer issues, leading to poor end-customer
+                    experience and increased operational costs.
                   </div>
                 </section-content>
               </v-flex>
               <v-flex xs12 sm5>
                 <section-content :title="'Outcome'">
                   <div>
-                    I designed an AI widget that provides contextual guidance in
-                    real-time helping agents resolve issues faster.
+                    The design reduced call time by 50% and doubled agent
+                    productivity, increasing capacity from <span class="font-weight-medium">~10 calls per day to
+                    25+ calls per day</span>.
                   </div>
                 </section-content>
               </v-flex>
@@ -90,27 +91,6 @@
                     <li>Reduce Average Handling Time (AHT)</li>
                     <li>Improve First Call Resolution (FCR)</li>
                     <li>Decrease new agent training time</li>
-                  </div>
-                </sectionContent>
-              </v-flex>
-              <v-flex xs12>
-                <sectionTitle
-                  :title="'Design Challenge and Constraints'"
-                ></sectionTitle>
-                <sectionContent>
-                  <div>
-                    <li>
-                      Integration with 3 legacy banking systems (Sawgrass,
-                      Olympus, Eclipse)
-                    </li>
-                    <li>
-                      Inconsistent processes across multiple business lines
-                    </li>
-                    <li>Compliance with financial regulations and Risk team</li>
-                    <li>
-                      Real-time performance requirements (< 1 second response)
-                    </li>
-                    <li>Varying agent technical skills and experience</li>
                   </div>
                 </sectionContent>
               </v-flex>
@@ -161,7 +141,7 @@
         <sectionTitle :title="'Solution'"></sectionTitle>
         <sectionContent>
           <p>
-            I designed an AI widget that provides contextual guidance in
+            I designed an <span class="font-weight-medium">integrated AI widget</span> that provides contextual guidance in
             real-time helping agents resolve customer issues faster and more
             accurately.
           </p>
@@ -209,6 +189,46 @@
           class="mt-8 mx-auto"
           :src="require(`@/assets/media/agentassist/team.png`)"
         />
+        <sectionContent>
+          <div>
+            I led the project end-to-end, from initial discovery through
+            development, collaborated closely with Experience Owners and
+            <span class="font-weight-medium">influenced shaping and prioritizing roadmaps, epics, and stories</span>.
+          </div>
+        </sectionContent>
+        <!-- <sectionTitle :title="'Responsibilities'"></sectionTitle> -->
+        <sectionContent> </sectionContent>
+        <sectionTitle :title="'Process'"></sectionTitle>
+        <sectionContent>
+          <ul>
+            <li class="my-2">
+              <span class="font-weight-medium">User Research</span>: Stakeholder
+              and user interviews to understand the problem, mapped user journey
+            </li>
+
+            <li>
+              <span class="font-weight-medium">Competitor Research</span>:
+              Identified industry patterns to benchmark experience
+            </li>
+            <li class="my-2">
+              <span class="font-weight-medium">Design workshops</span>: 5
+              workshops with 250+ agents in multiple business lines
+            </li>
+
+            <li>
+              <span class="font-weight-medium">Technical Feasibility</span>:
+              Collaborated with engineering on AI/ML capabilities
+            </li>
+            <li class="my-2">
+              <span class="font-weight-medium">Refine user flow</span>: Refined
+              user flows for top 5 inquiry types
+            </li>
+            <li>
+              <span class="font-weight-medium">Compliance Review</span>: Ensured
+              designs met banking regulations
+            </li>
+          </ul>
+        </sectionContent>
       </section>
     </article>
     <!-- <section class="inner-section">
@@ -503,6 +523,7 @@
     <article id="principles" class="white">
       <section class="inner-section">
         <sectionTitle :title="'Key considerations'"></sectionTitle>
+       
         <section-overview
           :title="'Design'"
           :emphasize="'Principles'"
@@ -552,6 +573,7 @@
             </section-card>
           </v-flex>
         </v-layout>
+       
       </section>
     </article>
     <article id="concepts" class="greybg">
@@ -564,98 +586,90 @@
         >
           <div>
             I came up with a broad range of concepts and presented to
-            stakeholders. We prioritized ideas based on etchnical feasibility,
+            stakeholders. We prioritized ideas based on technical feasibility,
             adoption and focused on solving immediate needs first while keeping
             in mind the longterm vision.
           </div>
         </section-overview>
-        <sectionTitle :title="'Process'"></sectionTitle>
+        <sectionTitle
+          :title="'Design Challenge and Constraints'"
+        ></sectionTitle>
         <sectionContent>
-          <ul>
+          <div>
             <li>
-              <span class="font-weight-medium">Competitor Research</span>:
-              Identified industry patterns to benchmark experience
+              Integration with 3 legacy banking systems (Sawgrass, Olympus,
+              Eclipse)
             </li>
-            <li class="my-2">
-              <span class="font-weight-medium">Design workshops</span>: 5
-              workshops with 250+ agents in multiple business lines
-            </li>
-
-            <li>
-              <span class="font-weight-medium">Technical Feasibility</span>:
-              Collaborated with engineering on AI/ML capabilities
-            </li>
-            <li class="my-2">
-              <span class="font-weight-medium">Workflow Mapping</span>: Refined
-              user flows for top 5 inquiry types
-            </li>
-            <li>
-              <span class="font-weight-medium">Compliance Review</span>: Ensured
-              designs met banking regulations
-            </li>
-          </ul>
+            <li>Inconsistent processes across multiple business lines</li>
+            <li>Compliance with financial regulations and Risk team</li>
+            <li>Real-time performance requirements</li>
+            <li>Varying agent technical skills and experience</li>
+          </div>
         </sectionContent>
-        <sectionTitle :title="'Design validation'"></sectionTitle>
-        <section-overview
-          :title="'Design'"
-          :emphasize="'Reviews'"
-          :right="true"
-        >
-          <div>
-            I led design review sessions with Product owners, BAs, users and
-            extended design teams validating the IA, content and also reviewed
-            with risk ond compliance team ensuring alignment.
+        <div v-if="false">
+
+          <sectionTitle :title="'Design validation'"></sectionTitle>
+          <section-overview
+            :title="'Design'"
+            :emphasize="'Reviews'"
+            :right="true"
+          >
+            <div>
+              I led design review sessions with Product owners, BAs, users and
+              extended design teams validating the IA, content and also reviewed
+              with risk ond compliance team ensuring alignment.
+            </div>
+          </section-overview>
+          <div class="mx-auto text-center">
+            <img
+              width="100%"
+              :src="require(`@/assets/media/agentassist/validate.png`)"
+            />
           </div>
-        </section-overview>
-        <div class="mx-auto text-center">
-          <img
-            width="100%"
-            :src="require(`@/assets/media/agentassist/validate.png`)"
-          />
-        </div>
-        <sectionTitle :title="'Design Rationale'"></sectionTitle>
-        <section-overview
-          :title="'Design'"
-          :emphasize="'Rationale'"
-          :right="true"
-        >
-          <div>
-            I worked closely with AI engineers on defining the logic, intents
-            and decision points which they mapped to the LLMs and backend
-            services.
+          <sectionTitle :title="'Design Rationale'"></sectionTitle>
+          <section-overview
+            :title="'Design'"
+            :emphasize="'Rationale'"
+            :right="true"
+          >
+            <div>
+              I worked closely with AI engineers on defining the logic, intents
+              and decision points which they mapped to the LLMs and backend
+              services.
+            </div>
+          </section-overview>
+          <div class="mx-auto text-center">
+            <img
+              width="80%"
+              :src="require(`@/assets/media/agentassist/carddesign.png`)"
+            />
           </div>
-        </section-overview>
-        <div class="mx-auto text-center">
-          <img
-            width="80%"
-            :src="require(`@/assets/media/agentassist/carddesign.png`)"
-          />
-        </div>
-        <sectionTitle :title="'Modular framework'"></sectionTitle>
-        <section-overview :title="'Design'" :emphasize="'System'" :right="true">
-          <div>
-            I created a modular, flexible and adaptable framework that works for
-            multiple use cases.
+          <sectionTitle :title="'Modular framework'"></sectionTitle>
+          <section-overview :title="'Design'" :emphasize="'System'" :right="true">
+            <div>
+              I created a modular, flexible and adaptable framework that works for
+              multiple use cases.
+            </div>
+          </section-overview>
+          <div class="mx-auto text-center">
+            <img
+              width="80%"
+              :src="require(`@/assets/media/agentassist/system.png`)"
+            />
           </div>
-        </section-overview>
-        <div class="mx-auto text-center">
-          <img
-            width="80%"
-            :src="require(`@/assets/media/agentassist/system.png`)"
-          />
-        </div>
-        <sectionTitle :title="'how it comes to life'"></sectionTitle>
-        <section-overview :title="'Use'" :emphasize="'Cases'" :right="true">
-          <div>
-            These are some examples of personalized FAQs showing how the design
-            scales and adapts to provide contextual information
+          <sectionTitle :title="'how it comes to life'"></sectionTitle>
+          <section-overview :title="'Use'" :emphasize="'Cases'" :right="true">
+            <div>
+              These are some examples of personalized FAQs showing how the design
+              scales and adapts to provide contextual information
+            </div>
+          </section-overview>
+          <div class="mx-auto text-center">
+            <img
+              width="100%"
+              :src="require(`@/assets/media/agentassist/personalized.png`)"
+            />
           </div>
-        </section-overview>
-        <div class="mx-auto text-center">
-          <img
-            width="100%"
-            :src="require(`@/assets/media/agentassist/personalized.png`)"
-          />
         </div>
       </section>
     </article>
